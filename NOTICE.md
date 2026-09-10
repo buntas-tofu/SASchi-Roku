@@ -1,4 +1,4 @@
-# Rosetta Code SAS Solutions Corpus — License & Provenance Notice
+# Rosetta Code SAS Solutions Corpus : License & Provenance Notice
 
 ## License
 
@@ -12,8 +12,8 @@ Individual Rosetta Code contributors may have licensed their contributions
 under more permissive terms in addition to GFDL; page revision history is the
 authoritative record.
 
-This repository — including its directory structure, index files, provenance
-headers, and documentation — is likewise made available under GFDL 1.2. The
+This repository: including its directory structure, index files, provenance
+headers, and documentation: is likewise made available under GFDL 1.2. The
 full license text is available at
 <https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt>.
 
@@ -27,9 +27,9 @@ full license text is available at
 
 Each file in `corpus/` preserves the following in its header comment:
 
-- **Source URL** — the canonical Rosetta Code task page.
-- **Page revision ID** — pins the file to the exact upstream revision extracted.
-- **Retrieval timestamp** — when the snapshot was taken (UTC).
+- **Source URL**: the canonical Rosetta Code task page.
+- **Page revision ID**: pins the file to the exact upstream revision extracted.
+- **Retrieval timestamp**: when the snapshot was taken (UTC).
 
 The machine-readable index in `TASKS.csv` mirrors these fields for the whole
 corpus.

@@ -1,0 +1,56 @@
+{
+  "$schema": "./agent-manifest.schema.json",
+  "manifest_version": "0.1.0",
+
+  "_DMF_global": {
+    "_comment": "buntas-tofu principal defaults, carried from the Inertia-Drift-Framework master instance.",
+    "owner": {
+      "name": "buntas-tofu",
+      "contact": "buntas-tofu@users.noreply.github.com"
+    },
+    "defaults": {
+      "license": "MIT",
+      "versioning_scheme": "semver",
+      "timestamp_format": "RFC3339",
+      "hash_algorithm": "sha256",
+      "changelog": "CHANGELOG.md",
+      "inference_posture": "labeled",
+      "authority_model": "three-tier"
+    }
+  },
+
+  "project": {
+    "name": "SASchi-Roku",
+    "description": "Provenance-pinned snapshot of the Rosetta Code SAS category: 56 tasks, one file each, GFDL 1.2, retrieved 2026-09-08.",
+    "version": "0.1.0",
+    "repo_root": ".",
+    "primary_language": "SAS",
+    "framework": "dmf",
+    "readme": "README.md",
+    "agents_doc": "AGENTS.md"
+  },
+
+  "agent_contract": {
+    "prompt_pack": "",
+    "policies": ["AGENTS.md"],
+    "schemas": ["agent-manifest.schema.json"],
+    "state_snapshot": ""
+  },
+
+  "tools": [
+    {
+      "tool_id": "inertia-drift-lint",
+      "description": "DMF invariant linter: fences, pointers, manifests, status lines, style floor."
+    }
+  ],
+
+  "provenance": {
+    "run_manifest_dir": "runs/",
+    "timestamp_format": "RFC3339",
+    "hash": "sha256"
+  },
+
+  "versioning": {
+    "scheme": "semver"
+  }
+}

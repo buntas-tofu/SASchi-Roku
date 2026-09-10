@@ -15,7 +15,7 @@ upstream revision each file was taken from. Refresh = regenerate + commit
 2. Preserve the provenance header block. If you are adding **your own** new SAS
    (not re-scraped upstream), write your own header noting it is a new
    contribution rather than a Rosetta mirror.
-3. Solutions here are community probes — clearly mark anything not yet executed
+3. Solutions here are community probes: clearly mark anything not yet executed
    and verified.
 4. Follow the existing style: `data step`/`proc` SAS, numbered `/* --- ... --- */`
    banners when a task has multiple examples.

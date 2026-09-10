@@ -1,11 +1,11 @@
-# Rosetta Code — SAS Solutions Corpus
+# Rosetta Code : SAS Solutions Corpus
 
 A provenance-pinned snapshot of every SAS solution currently published on
 [Rosetta Code](https://rosettacode.org/wiki/Category:SAS): **56 tasks, 100% of
 the category**, retrieved **2026-09-08**.
 
 This repository is a *data corpus*, not a software project. It holds the SAS
-side of Rosetta Code's "same task, many languages" canon — community-written
+side of Rosetta Code's "same task, many languages" canon: community-written
 SAS, from classroom classics (FizzBuzz, Fibonacci, N-queens, Sudoku) to
 genuinely statistical material (Welch's t-test, QR decomposition, P-value
 correction, cumulative standard deviation). It exists so that SAS work can be
@@ -57,7 +57,7 @@ the authority. Accordingly:
   **GFDL 1.2** (see [`LICENSE`](LICENSE)) with attribution to the Rosetta Code
   project and the individual task authors.
 - Each file preserves its own provenance so downstream reuse can attribute
-  correctly. See [`NOTICE`](NOTICE).
+  correctly. See [`NOTICE`](NOTICE.md).
 - This is a **point-in-time snapshot** of a wiki; upstream content is licensed
   by its contributors, not by this repository.
 
@@ -87,9 +87,22 @@ release (see [CONTRIBUTING](CONTRIBUTING.md)).
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) — briefly: prefer a PR per task,
+See [CONTRIBUTING.md](CONTRIBUTING.md): briefly: prefer a PR per task,
 keep provenance headers intact, and mark any additions that are *yours*
 (not re-scraped) clearly.
+
+## Governance
+
+This repository is governed under the
+[Inertia-Drift-Framework](https://github.com/buntas-tofu/Inertia-Drift-Framework)
+(DMF 2.0), file-based governance for projects worked on by humans and agents
+together. The contract is [`AGENTS.md`](AGENTS.md); the machine-readable
+descriptor is [`agent-manifest.json`](agent-manifest.json), validated against
+[`agent-manifest.schema.json`](agent-manifest.schema.json) in CI; and the
+invariants are checked by
+[`scripts/inertia-drift-lint`](scripts/inertia-drift-lint) on every push:
+fences, pointers, manifest shape, status lines, and the style floor of no em
+dashes and no ellipses in artifacts.
 
 ---
 
