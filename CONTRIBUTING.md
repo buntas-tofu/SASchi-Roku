@@ -4,11 +4,23 @@ This repository is a **passive, provenance-pinned snapshot** of Rosetta Code's
 SAS category. The primary workflow is *refresh*, not hand-editing.
 
 ## Refresh (recommended)
-The corpus is generated from upstream by a reproducible harvest pipeline.
-If upstream SAS solutions have changed or grown, re-run the refresh rather than
-hand-editing `corpus/`. Keep the provenance headers: each run pins the exact
-upstream revision each file was taken from. Refresh = regenerate + commit
-`corpus/`, `TASKS.csv`, `TASKS.md`, and bump the snapshot date in `README.md`.
+The corpus is generated from upstream by the harvest pipeline bundled at
+`tools/fetch_rosetta_sas.py` (standard library only). Check first, then
+refresh:
+
+```sh
+python3 tools/fetch_rosetta_sas.py --check   # report drift; writes nothing
+python3 tools/fetch_rosetta_sas.py           # regenerate + report
+```
+
+`--check` exits non-zero when the repository is not current, so it doubles
+as a drift alarm. A refresh is faithful and minimal: unchanged files keep
+their original retrieval stamps, and anything that moved is restored to
+byte-faithful upstream extraction, so local touch-ups to generated files are
+overwritten by design. If you need a deliberate local edit, keep it out of
+generated files or mark it in the file header as your own contribution.
+Refresh = regenerate + commit `corpus/`, `TASKS.csv`, `TASKS.md`, and update
+the snapshot dates in `README.md`.
 
 ## Adding or fixing a solution (rare, deliberate)
 1. Keep it scoped to one task; one PR per task.

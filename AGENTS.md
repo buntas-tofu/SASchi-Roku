@@ -304,16 +304,17 @@ https://github.com/buntas-tofu/Inertia-Drift-Framework
 The GLOBAL above is the principal contract, copied byte-stable from the
 framework master. The LOCAL below is this project's layer. SASchi-Roku is a
 data corpus, not a software project: a provenance-pinned snapshot of every
-SAS solution currently published on Rosetta Code (56 tasks, retrieved
-2026-09-08), one file per task under corpus/, indexed by TASKS.csv and
-TASKS.md. Each file carries a provenance header pinning its source page
-revision.
+SAS solution currently published on Rosetta Code (56 tasks, first retrieved
+2026-09-08, refreshable via the bundled pipeline), one file per task under
+corpus/, indexed by TASKS.csv and TASKS.md. Each file carries a provenance
+header pinning its source page revision.
 
 ## LOCAL
 
 - **Allowed tools**: file operations, git, the bundled linter
-  (scripts/inertia-drift-lint), and markdown, CSV, and JSON tooling. No
-  runtime or dependency install required.
+  (scripts/inertia-drift-lint), the harvest pipeline
+  (tools/fetch_rosetta_sas.py; standard library only), and markdown, CSV,
+  and JSON tooling. No runtime or dependency install required.
 - **Prohibited**: stripping, editing, or reordering a provenance header;
   re-licensing a corpus file; changing a corpus file without updating
   TASKS.csv; changing the four core invariants without an issue first.
@@ -325,8 +326,8 @@ revision.
   with the corpus; multiple examples per task stay in one file under
   numbered comment banners.
 - **Workflow**: a PR per task; keep provenance headers intact; mark any
-  addition that is yours and not re-scraped. Refresh is reproducible via
-  the MediaWiki API (see README).
+  addition that is yours and not re-scraped. Refresh ships as
+  tools/fetch_rosetta_sas.py (check or refresh; see README).
 - **Project-specific constraints**: nothing in this repository is a
   correctness claim until it has been executed and checked; upstream
   content is GFDL 1.2 and licensed by its contributors, not by this

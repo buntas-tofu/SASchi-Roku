@@ -21,7 +21,7 @@
 
   "project": {
     "name": "SASchi-Roku",
-    "description": "Provenance-pinned snapshot of the Rosetta Code SAS category: 56 tasks, one file each, GFDL 1.2, retrieved 2026-09-08.",
+    "description": "Provenance-pinned snapshot of the Rosetta Code SAS category: 56 tasks, one file each, GFDL 1.2, first retrieved 2026-09-08, refreshable via the bundled harvest pipeline.",
     "version": "0.1.0",
     "repo_root": ".",
     "primary_language": "SAS",
@@ -41,6 +41,10 @@
     {
       "tool_id": "inertia-drift-lint",
       "description": "DMF invariant linter: fences, pointers, manifests, status lines, style floor."
+    },
+    {
+      "tool_id": "fetch-rosetta-sas",
+      "description": "MediaWiki harvest pipeline: refresh or check the corpus against Category:SAS upstream (tools/fetch_rosetta_sas.py)."
     }
   ],
 
