@@ -1,6 +1,6 @@
 # Task Index
 
-56 tasks from https://rosettacode.org/wiki/Category:SAS, snapshot 2026-09-08.
+56 tasks from https://rosettacode.org/wiki/Category:SAS, snapshot 2026-09-08 (refreshed 2026-09-11).
 Machine-readable form: [`TASKS.csv`](TASKS.csv).
 
 | File | Rosetta Code task | Revision |
@@ -13,7 +13,7 @@ Machine-readable form: [`TASKS.csv`](TASKS.csv).
 | [`corpus/csv_data_manipulation.sas`](corpus/csv_data_manipulation.sas) | [CSV data manipulation](https://rosettacode.org/wiki/CSV_data_manipulation) | 404580 |
 | [`corpus/cumulative_standard_deviation.sas`](corpus/cumulative_standard_deviation.sas) | [Cumulative standard deviation](https://rosettacode.org/wiki/Cumulative_standard_deviation) | 410283 |
 | [`corpus/day_of_the_week.sas`](corpus/day_of_the_week.sas) | [Day of the week](https://rosettacode.org/wiki/Day_of_the_week) | 409981 |
-| [`corpus/dijkstra_s_algorithm.sas`](corpus/dijkstra_s_algorithm.sas) | [Dijkstra](https://rosettacode.org/wiki/Dijkstra%27s_algorithm) | 410289 |
+| [`corpus/dijkstra_s_algorithm.sas`](corpus/dijkstra_s_algorithm.sas) | [Dijkstra's algorithm](https://rosettacode.org/wiki/Dijkstra%27s_algorithm) | 410289 |
 | [`corpus/fibonacci_sequence.sas`](corpus/fibonacci_sequence.sas) | [Fibonacci sequence](https://rosettacode.org/wiki/Fibonacci_sequence) | 410577 |
 | [`corpus/fivenum.sas`](corpus/fivenum.sas) | [Fivenum](https://rosettacode.org/wiki/Fivenum) | 407440 |
 | [`corpus/fizzbuzz.sas`](corpus/fizzbuzz.sas) | [FizzBuzz](https://rosettacode.org/wiki/FizzBuzz) | 410510 |
@@ -59,5 +59,5 @@ Machine-readable form: [`TASKS.csv`](TASKS.csv).
 | [`corpus/transportation_problem.sas`](corpus/transportation_problem.sas) | [Transportation problem](https://rosettacode.org/wiki/Transportation_problem) | 380907 |
 | [`corpus/trigonometric_functions.sas`](corpus/trigonometric_functions.sas) | [Trigonometric functions](https://rosettacode.org/wiki/Trigonometric_functions) | 408550 |
 | [`corpus/validate_international_securities_identification_number.sas`](corpus/validate_international_securities_identification_number.sas) | [Validate International Securities Identification Number](https://rosettacode.org/wiki/Validate_International_Securities_Identification_Number) | 404837 |
-| [`corpus/welch_s_t_test.sas`](corpus/welch_s_t_test.sas) | [Welch](https://rosettacode.org/wiki/Welch%27s_t-test) | 401158 |
+| [`corpus/welch_s_t_test.sas`](corpus/welch_s_t_test.sas) | [Welch's t-test](https://rosettacode.org/wiki/Welch%27s_t-test) | 401158 |
 | [`corpus/write_float_arrays_to_a_text_file.sas`](corpus/write_float_arrays_to_a_text_file.sas) | [Write float arrays to a text file](https://rosettacode.org/wiki/Write_float_arrays_to_a_text_file) | 406323 |

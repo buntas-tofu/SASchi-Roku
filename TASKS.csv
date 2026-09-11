@@ -1,57 +1,57 @@
 file,task,url,revision,retrieved
-100_doors.sas,100 doors,https://rosettacode.org/wiki/100_doors,410483,2026-09-08T14:04:55Z.
-archimedean_spiral.sas,Archimedean spiral,https://rosettacode.org/wiki/Archimedean_spiral,403755,2026-09-08T14:04:56Z.
-bitwise_operations.sas,Bitwise operations,https://rosettacode.org/wiki/Bitwise_operations,406458,2026-09-08T14:04:57Z.
-comments.sas,Comments,https://rosettacode.org/wiki/Comments,409003,2026-09-08T14:04:58Z.
-count_the_coins.sas,Count the coins,https://rosettacode.org/wiki/Count_the_coins,406819,2026-09-08T14:04:58Z.
-csv_data_manipulation.sas,CSV data manipulation,https://rosettacode.org/wiki/CSV_data_manipulation,404580,2026-09-08T14:04:59Z.
-cumulative_standard_deviation.sas,Cumulative standard deviation,https://rosettacode.org/wiki/Cumulative_standard_deviation,410283,2026-09-08T14:05:00Z.
-day_of_the_week.sas,Day of the week,https://rosettacode.org/wiki/Day_of_the_week,409981,2026-09-08T14:05:00Z.
-dijkstra_s_algorithm.sas,Dijkstra,https://rosettacode.org/wiki/Dijkstra%27s_algorithm,410289,2026-09-08T14:05:01Z.
-fibonacci_sequence.sas,Fibonacci sequence,https://rosettacode.org/wiki/Fibonacci_sequence,410577,2026-09-08T14:05:02Z.
-fivenum.sas,Fivenum,https://rosettacode.org/wiki/Fivenum,407440,2026-09-08T14:05:02Z.
-fizzbuzz.sas,FizzBuzz,https://rosettacode.org/wiki/FizzBuzz,410510,2026-09-08T14:05:03Z.
-flow_control_structures.sas,Flow-control structures,https://rosettacode.org/wiki/Flow-control_structures,403690,2026-09-08T14:05:04Z.
-hailstone_sequence.sas,Hailstone sequence,https://rosettacode.org/wiki/Hailstone_sequence,410468,2026-09-08T14:05:05Z.
-haversine_formula.sas,Haversine formula,https://rosettacode.org/wiki/Haversine_formula,410517,2026-09-08T14:05:06Z.
-hello_world_text.sas,Hello world/Text,https://rosettacode.org/wiki/Hello_world/Text,410518,2026-09-08T14:05:07Z.
-integer_comparison.sas,Integer comparison,https://rosettacode.org/wiki/Integer_comparison,406350,2026-09-08T14:05:07Z.
-knapsack_problem_0_1.sas,Knapsack problem/0-1,https://rosettacode.org/wiki/Knapsack_problem/0-1,410342,2026-09-08T14:05:08Z.
-knapsack_problem_bounded.sas,Knapsack problem/Bounded,https://rosettacode.org/wiki/Knapsack_problem/Bounded,408481,2026-09-08T14:05:09Z.
-knapsack_problem_continuous.sas,Knapsack problem/Continuous,https://rosettacode.org/wiki/Knapsack_problem/Continuous,403664,2026-09-08T14:05:09Z.
-knapsack_problem_unbounded.sas,Knapsack problem/Unbounded,https://rosettacode.org/wiki/Knapsack_problem/Unbounded,409454,2026-09-08T14:05:10Z.
-loops_break.sas,Loops/Break,https://rosettacode.org/wiki/Loops/Break,409014,2026-09-08T14:05:11Z.
-loops_do_while.sas,Loops/Do-while,https://rosettacode.org/wiki/Loops/Do-while,408099,2026-09-08T14:05:12Z.
-loops_for.sas,Loops/For,https://rosettacode.org/wiki/Loops/For,408391,2026-09-08T14:05:12Z.
-loops_for_with_a_specified_step.sas,Loops/For with a specified step,https://rosettacode.org/wiki/Loops/For_with_a_specified_step,408665,2026-09-08T14:05:13Z.
-loops_foreach.sas,Loops/Foreach,https://rosettacode.org/wiki/Loops/Foreach,409015,2026-09-08T14:05:13Z.
-loops_while.sas,Loops/While,https://rosettacode.org/wiki/Loops/While,409850,2026-09-08T14:05:14Z.
-merge_and_aggregate_datasets.sas,Merge and aggregate datasets,https://rosettacode.org/wiki/Merge_and_aggregate_datasets,387554,2026-09-08T14:05:15Z.
-n_queens_problem.sas,N-queens problem,https://rosettacode.org/wiki/N-queens_problem,410582,2026-09-08T14:05:16Z.
-p_value_correction.sas,P-value correction,https://rosettacode.org/wiki/P-value_correction,387675,2026-09-08T14:05:16Z.
-palindrome_detection.sas,Palindrome detection,https://rosettacode.org/wiki/Palindrome_detection,410537,2026-09-08T14:05:17Z.
-permutations.sas,Permutations,https://rosettacode.org/wiki/Permutations,410369,2026-09-08T14:05:18Z.
-pointers_and_references.sas,Pointers and references,https://rosettacode.org/wiki/Pointers_and_references,398361,2026-09-08T14:05:19Z.
-power_set.sas,Power set,https://rosettacode.org/wiki/Power_set,410372,2026-09-08T14:05:19Z.
-primality_by_trial_division.sas,Primality by trial division,https://rosettacode.org/wiki/Primality_by_trial_division,409888,2026-09-08T14:05:20Z.
-priority_queue.sas,Priority queue,https://rosettacode.org/wiki/Priority_queue,408035,2026-09-08T14:05:21Z.
-qr_decomposition.sas,QR decomposition,https://rosettacode.org/wiki/QR_decomposition,408956,2026-09-08T14:05:22Z.
-random_numbers.sas,Random numbers,https://rosettacode.org/wiki/Random_numbers,407260,2026-09-08T14:05:22Z.
-reverse_a_string.sas,Reverse a string,https://rosettacode.org/wiki/Reverse_a_string,410541,2026-09-08T14:05:23Z.
-send_email.sas,Send email,https://rosettacode.org/wiki/Send_email,408858,2026-09-08T14:05:24Z.
-sieve_of_eratosthenes.sas,Sieve of Eratosthenes,https://rosettacode.org/wiki/Sieve_of_Eratosthenes,410247,2026-09-08T14:05:24Z.
-stair_climbing_puzzle.sas,Stair-climbing puzzle,https://rosettacode.org/wiki/Stair-climbing_puzzle,403342,2026-09-08T14:05:25Z.
-statistics_normal_distribution.sas,Statistics/Normal distribution,https://rosettacode.org/wiki/Statistics/Normal_distribution,406969,2026-09-08T14:05:26Z.
-string_concatenation.sas,String concatenation,https://rosettacode.org/wiki/String_concatenation,406325,2026-09-08T14:05:26Z.
-string_length.sas,String length,https://rosettacode.org/wiki/String_length,410119,2026-09-08T14:05:27Z.
-strip_a_set_of_characters_from_a_string.sas,Strip a set of characters from a string,https://rosettacode.org/wiki/Strip_a_set_of_characters_from_a_string,402825,2026-09-08T14:05:28Z.
-substring.sas,Substring,https://rosettacode.org/wiki/Substring,409497,2026-09-08T14:05:29Z.
-sudoku.sas,Sudoku,https://rosettacode.org/wiki/Sudoku,404865,2026-09-08T14:05:30Z.
-sum_and_product_of_an_array.sas,Sum and product of an array,https://rosettacode.org/wiki/Sum_and_product_of_an_array,408601,2026-09-08T14:05:31Z.
-sum_of_a_series.sas,Sum of a series,https://rosettacode.org/wiki/Sum_of_a_series,406317,2026-09-08T14:05:31Z.
-table_creation_postal_addresses.sas,Table creation/Postal addresses,https://rosettacode.org/wiki/Table_creation/Postal_addresses,408583,2026-09-08T14:05:32Z.
-transportation_problem.sas,Transportation problem,https://rosettacode.org/wiki/Transportation_problem,380907,2026-09-08T14:05:33Z.
-trigonometric_functions.sas,Trigonometric functions,https://rosettacode.org/wiki/Trigonometric_functions,408550,2026-09-08T14:05:33Z.
-validate_international_securities_identification_number.sas,Validate International Securities Identification Number,https://rosettacode.org/wiki/Validate_International_Securities_Identification_Number,404837,2026-09-08T14:05:34Z.
-welch_s_t_test.sas,Welch,https://rosettacode.org/wiki/Welch%27s_t-test,401158,2026-09-08T14:05:35Z.
-write_float_arrays_to_a_text_file.sas,Write float arrays to a text file,https://rosettacode.org/wiki/Write_float_arrays_to_a_text_file,406323,2026-09-08T14:05:35Z.
+100_doors.sas,100 doors,https://rosettacode.org/wiki/100_doors,410483,2026-09-08T14:04:55Z
+archimedean_spiral.sas,Archimedean spiral,https://rosettacode.org/wiki/Archimedean_spiral,403755,2026-09-08T14:04:56Z
+bitwise_operations.sas,Bitwise operations,https://rosettacode.org/wiki/Bitwise_operations,406458,2026-09-08T14:04:57Z
+comments.sas,Comments,https://rosettacode.org/wiki/Comments,409003,2026-09-08T14:04:58Z
+count_the_coins.sas,Count the coins,https://rosettacode.org/wiki/Count_the_coins,406819,2026-09-08T14:04:58Z
+csv_data_manipulation.sas,CSV data manipulation,https://rosettacode.org/wiki/CSV_data_manipulation,404580,2026-09-08T14:04:59Z
+cumulative_standard_deviation.sas,Cumulative standard deviation,https://rosettacode.org/wiki/Cumulative_standard_deviation,410283,2026-09-08T14:05:00Z
+day_of_the_week.sas,Day of the week,https://rosettacode.org/wiki/Day_of_the_week,409981,2026-09-08T14:05:00Z
+dijkstra_s_algorithm.sas,Dijkstra's algorithm,https://rosettacode.org/wiki/Dijkstra%27s_algorithm,410289,2026-09-08T14:05:01Z
+fibonacci_sequence.sas,Fibonacci sequence,https://rosettacode.org/wiki/Fibonacci_sequence,410577,2026-09-08T14:05:02Z
+fivenum.sas,Fivenum,https://rosettacode.org/wiki/Fivenum,407440,2026-09-08T14:05:02Z
+fizzbuzz.sas,FizzBuzz,https://rosettacode.org/wiki/FizzBuzz,410510,2026-09-08T14:05:03Z
+flow_control_structures.sas,Flow-control structures,https://rosettacode.org/wiki/Flow-control_structures,403690,2026-09-08T14:05:04Z
+hailstone_sequence.sas,Hailstone sequence,https://rosettacode.org/wiki/Hailstone_sequence,410468,2026-09-08T14:05:05Z
+haversine_formula.sas,Haversine formula,https://rosettacode.org/wiki/Haversine_formula,410517,2026-09-08T14:05:06Z
+hello_world_text.sas,Hello world/Text,https://rosettacode.org/wiki/Hello_world/Text,410518,2026-09-08T14:05:07Z
+integer_comparison.sas,Integer comparison,https://rosettacode.org/wiki/Integer_comparison,406350,2026-09-08T14:05:07Z
+knapsack_problem_0_1.sas,Knapsack problem/0-1,https://rosettacode.org/wiki/Knapsack_problem/0-1,410342,2026-09-08T14:05:08Z
+knapsack_problem_bounded.sas,Knapsack problem/Bounded,https://rosettacode.org/wiki/Knapsack_problem/Bounded,408481,2026-09-08T14:05:09Z
+knapsack_problem_continuous.sas,Knapsack problem/Continuous,https://rosettacode.org/wiki/Knapsack_problem/Continuous,403664,2026-09-08T14:05:09Z
+knapsack_problem_unbounded.sas,Knapsack problem/Unbounded,https://rosettacode.org/wiki/Knapsack_problem/Unbounded,409454,2026-09-08T14:05:10Z
+loops_break.sas,Loops/Break,https://rosettacode.org/wiki/Loops/Break,409014,2026-09-08T14:05:11Z
+loops_do_while.sas,Loops/Do-while,https://rosettacode.org/wiki/Loops/Do-while,408099,2026-09-08T14:05:12Z
+loops_for.sas,Loops/For,https://rosettacode.org/wiki/Loops/For,408391,2026-09-08T14:05:12Z
+loops_for_with_a_specified_step.sas,Loops/For with a specified step,https://rosettacode.org/wiki/Loops/For_with_a_specified_step,408665,2026-09-08T14:05:13Z
+loops_foreach.sas,Loops/Foreach,https://rosettacode.org/wiki/Loops/Foreach,409015,2026-09-08T14:05:13Z
+loops_while.sas,Loops/While,https://rosettacode.org/wiki/Loops/While,409850,2026-09-08T14:05:14Z
+merge_and_aggregate_datasets.sas,Merge and aggregate datasets,https://rosettacode.org/wiki/Merge_and_aggregate_datasets,387554,2026-09-08T14:05:15Z
+n_queens_problem.sas,N-queens problem,https://rosettacode.org/wiki/N-queens_problem,410582,2026-09-08T14:05:16Z
+p_value_correction.sas,P-value correction,https://rosettacode.org/wiki/P-value_correction,387675,2026-09-08T14:05:16Z
+palindrome_detection.sas,Palindrome detection,https://rosettacode.org/wiki/Palindrome_detection,410537,2026-09-11T00:04:55Z
+permutations.sas,Permutations,https://rosettacode.org/wiki/Permutations,410369,2026-09-08T14:05:18Z
+pointers_and_references.sas,Pointers and references,https://rosettacode.org/wiki/Pointers_and_references,398361,2026-09-08T14:05:19Z
+power_set.sas,Power set,https://rosettacode.org/wiki/Power_set,410372,2026-09-08T14:05:19Z
+primality_by_trial_division.sas,Primality by trial division,https://rosettacode.org/wiki/Primality_by_trial_division,409888,2026-09-08T14:05:20Z
+priority_queue.sas,Priority queue,https://rosettacode.org/wiki/Priority_queue,408035,2026-09-08T14:05:21Z
+qr_decomposition.sas,QR decomposition,https://rosettacode.org/wiki/QR_decomposition,408956,2026-09-08T14:05:22Z
+random_numbers.sas,Random numbers,https://rosettacode.org/wiki/Random_numbers,407260,2026-09-08T14:05:22Z
+reverse_a_string.sas,Reverse a string,https://rosettacode.org/wiki/Reverse_a_string,410541,2026-09-08T14:05:23Z
+send_email.sas,Send email,https://rosettacode.org/wiki/Send_email,408858,2026-09-08T14:05:24Z
+sieve_of_eratosthenes.sas,Sieve of Eratosthenes,https://rosettacode.org/wiki/Sieve_of_Eratosthenes,410247,2026-09-08T14:05:24Z
+stair_climbing_puzzle.sas,Stair-climbing puzzle,https://rosettacode.org/wiki/Stair-climbing_puzzle,403342,2026-09-08T14:05:25Z
+statistics_normal_distribution.sas,Statistics/Normal distribution,https://rosettacode.org/wiki/Statistics/Normal_distribution,406969,2026-09-08T14:05:26Z
+string_concatenation.sas,String concatenation,https://rosettacode.org/wiki/String_concatenation,406325,2026-09-08T14:05:26Z
+string_length.sas,String length,https://rosettacode.org/wiki/String_length,410119,2026-09-08T14:05:27Z
+strip_a_set_of_characters_from_a_string.sas,Strip a set of characters from a string,https://rosettacode.org/wiki/Strip_a_set_of_characters_from_a_string,402825,2026-09-08T14:05:28Z
+substring.sas,Substring,https://rosettacode.org/wiki/Substring,409497,2026-09-08T14:05:29Z
+sudoku.sas,Sudoku,https://rosettacode.org/wiki/Sudoku,404865,2026-09-08T14:05:30Z
+sum_and_product_of_an_array.sas,Sum and product of an array,https://rosettacode.org/wiki/Sum_and_product_of_an_array,408601,2026-09-08T14:05:31Z
+sum_of_a_series.sas,Sum of a series,https://rosettacode.org/wiki/Sum_of_a_series,406317,2026-09-08T14:05:31Z
+table_creation_postal_addresses.sas,Table creation/Postal addresses,https://rosettacode.org/wiki/Table_creation/Postal_addresses,408583,2026-09-08T14:05:32Z
+transportation_problem.sas,Transportation problem,https://rosettacode.org/wiki/Transportation_problem,380907,2026-09-08T14:05:33Z
+trigonometric_functions.sas,Trigonometric functions,https://rosettacode.org/wiki/Trigonometric_functions,408550,2026-09-08T14:05:33Z
+validate_international_securities_identification_number.sas,Validate International Securities Identification Number,https://rosettacode.org/wiki/Validate_International_Securities_Identification_Number,404837,2026-09-08T14:05:34Z
+welch_s_t_test.sas,Welch's t-test,https://rosettacode.org/wiki/Welch%27s_t-test,401158,2026-09-08T14:05:35Z
+write_float_arrays_to_a_text_file.sas,Write float arrays to a text file,https://rosettacode.org/wiki/Write_float_arrays_to_a_text_file,406323,2026-09-08T14:05:35Z

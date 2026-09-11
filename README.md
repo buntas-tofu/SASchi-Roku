@@ -2,7 +2,7 @@
 
 A provenance-pinned snapshot of every SAS solution currently published on
 [Rosetta Code](https://rosettacode.org/wiki/Category:SAS): **56 tasks, 100% of
-the category**, retrieved **2026-09-08**.
+the category**. First retrieved **2026-09-08**; refreshed **2026-09-11**.
 
 This repository is a *data corpus*, not a software project. It holds the SAS
 side of Rosetta Code's "same task, many languages" canon: community-written
@@ -30,6 +30,7 @@ summarized in [`TASKS.md`](TASKS.md).
 |------|---------|
 | `corpus/` | One `.sas` file per task. Filenames are slugified task titles. |
 | `TASKS.csv` | Machine-readable index: file, task title, source URL, revision, retrieval time. |
+| `tools/fetch_rosetta_sas.py` | The harvest pipeline: refresh the corpus against upstream, or check it with `--check`. |
 | `LICENSE` | Corpus-wide license statement (GFDL 1.2, see below). |
 | `NOTICE` | Provenance & attribution appendix. |
 
@@ -76,14 +77,38 @@ headers attached and reproduce this notice.
   section is captured regardless of its `lang=` label (PROC IML has shipped as
   `lang=text`, PROC SQL as `lang=sql`).
 
+## Lineage
+
+This corpus is the SAS material layer of a pair. The sibling repository,
+[SASchi-Go](https://github.com/buntas-tofu/SASchi-Go), carries the migration
+toolchain and documents the shared origin of the concept: a 2018
+statistical-agency wiki of side-by-side SAS, R, and Python examples built to
+move statistical work onto open languages, which itself names
+[Rosetta Code](https://rosettacode.org) (2007) as related prior work. The
+full citation lives in the sibling's Origins section.
+
+The roles differ by design. SASchi-Go proves SAS semantics with executable
+gates and receipts; SASchi-Roku preserves the community corpus that tooling
+is exercised against, pinned to source so it can be cited without scraping
+the wiki.
+
 ## Refresh
 
-This snapshot is reproducible by re-running the harvest pipeline against the
-MediaWiki API: enumerate the `Category:SAS` members, fetch each task's
-wikitext, and extract the `{{header|SAS}}` sections. The upstream category
-grows over time; refresh whenever a newer snapshot is wanted. Provenance
-headers make each generation auditable. A refresh script is planned in a future
-release (see [CONTRIBUTING](CONTRIBUTING.md)).
+The snapshot is reproducible with the harvest pipeline in this repository:
+
+```sh
+python3 tools/fetch_rosetta_sas.py --check   # report drift; exit 1 if any
+python3 tools/fetch_rosetta_sas.py           # refresh corpus/ and indexes
+```
+
+The pipeline enumerates the `Category:SAS` members, fetches each task's
+wikitext, and extracts the `{{header|SAS}}` sections. A refresh is faithful
+and minimal: unchanged files keep their original retrieval stamps, changed
+pages are re-extracted with the fetched revision, and `TASKS.csv` plus
+`TASKS.md` are regenerated in the same pass. `--check` writes nothing and
+exits non-zero when the repository is not current, so it doubles as a drift
+alarm. See [CONTRIBUTING](CONTRIBUTING.md) before touching generated files
+by hand.
 
 ## Contributing
 
@@ -107,5 +132,5 @@ dashes and no ellipses in artifacts.
 ---
 
 *Mirrored snapshot of https://rosettacode.org/wiki/Category:SAS retrieved
-2026-09-08. Rosetta Code and its content are © their respective contributors
+2026-09-08; refreshed 2026-09-11. Rosetta Code and its content are © their respective contributors
 and licensed under GFDL 1.2.*
