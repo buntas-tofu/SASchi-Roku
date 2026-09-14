@@ -48,3 +48,14 @@ jobs:
               raise SystemExit(1)
           print("Manifest validates against the schema.")
           PY
+
+  index:
+    name: Corpus index lockstep
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Corpus, TASKS.csv, TASKS.md, and the provenance headers agree
+        run: python3 scripts/check_corpus_index.py

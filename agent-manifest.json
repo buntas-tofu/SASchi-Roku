@@ -1,7 +1,6 @@
 {
   "$schema": "./agent-manifest.schema.json",
   "manifest_version": "0.1.0",
-
   "_DMF_global": {
     "_comment": "buntas-tofu principal defaults, carried from the Inertia-Drift-Framework master instance.",
     "owner": {
@@ -9,7 +8,7 @@
       "contact": "buntas-tofu@users.noreply.github.com"
     },
     "defaults": {
-      "license": "MIT",
+      "license": "GFDL-1.2",
       "versioning_scheme": "semver",
       "timestamp_format": "RFC3339",
       "hash_algorithm": "sha256",
@@ -18,7 +17,6 @@
       "authority_model": "three-tier"
     }
   },
-
   "project": {
     "name": "SASchi-Roku",
     "description": "Provenance-pinned snapshot of the Rosetta Code SAS category: 56 tasks, one file each, GFDL 1.2, first retrieved 2026-09-08, refreshable via the bundled harvest pipeline.",
@@ -29,14 +27,16 @@
     "readme": "README.md",
     "agents_doc": "AGENTS.md"
   },
-
   "agent_contract": {
     "prompt_pack": "",
-    "policies": ["AGENTS.md"],
-    "schemas": ["agent-manifest.schema.json"],
+    "policies": [
+      "AGENTS.md"
+    ],
+    "schemas": [
+      "agent-manifest.schema.json"
+    ],
     "state_snapshot": ""
   },
-
   "tools": [
     {
       "tool_id": "inertia-drift-lint",
@@ -47,14 +47,13 @@
       "description": "MediaWiki harvest pipeline: refresh or check the corpus against Category:SAS upstream (tools/fetch_rosetta_sas.py)."
     }
   ],
-
   "provenance": {
     "run_manifest_dir": "runs/",
     "timestamp_format": "RFC3339",
     "hash": "sha256"
   },
-
   "versioning": {
-    "scheme": "semver"
+    "scheme": "semver",
+    "changelog": "CHANGELOG.md"
   }
 }
