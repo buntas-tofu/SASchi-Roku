@@ -318,13 +318,16 @@ header pinning its source page revision.
 - **Prohibited**: stripping, editing, or reordering a provenance header;
   re-licensing a corpus file; changing a corpus file without updating
   TASKS.csv; changing the four core invariants without an issue first.
-- **CI**: the governance workflow runs the invariant linter and validates
-  agent-manifest.json against agent-manifest.schema.json on every push to
-  main.
+- **CI**: the governance workflow runs three checks on every push and pull
+  request to main: the invariant linter, `agent-manifest.json` validated
+  against `agent-manifest.schema.json`, and `scripts/check_corpus_index.py`,
+  which proves the corpus, `TASKS.csv`, `TASKS.md`, and every provenance
+  header agree.
 - **File conventions**: one .sas file per task, filename slugified from the
   task title; TASKS.csv is the machine-readable index and stays in lockstep
-  with the corpus; multiple examples per task stay in one file under
-  numbered comment banners.
+  with the corpus, which `scripts/check_corpus_index.py` enforces rather than
+  assumes; multiple examples per task stay in one file under numbered comment
+  banners.
 - **Workflow**: a PR per task; keep provenance headers intact; mark any
   addition that is yours and not re-scraped. Refresh ships as
   tools/fetch_rosetta_sas.py (check or refresh; see README).
