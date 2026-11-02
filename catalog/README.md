@@ -5,11 +5,17 @@ Status: Discovery catalog for maintainer use; reference inspection is not runtim
 Generated from [resources.json](resources.json). Edit that file, then run
 `python3 scripts/check_toolkit.py --write-index` from the repository root.
 
-32 resources. Source/lookup review date: 2026-11-01.
+33 resources. Source/lookup review date: 2026-11-01.
 
 September census counts describe the original testbed, not today's upstream.
 GitHub license identifiers are dated API observations, not per-file rights
 reviews. Unknown identifiers and upstream origins remain explicit.
+
+## analysis
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [mishamsk/sas-lexer](https://github.com/mishamsk/sas-lexer) | Static SAS lexer with a Rust core and Python bindings; useful for source inventories with documented contextual limitations. | source-inspected; [source](https://github.com/mishamsk/sas-lexer/blob/7cd39aba21776f4ebbaa2689707e0c45f6097dce/README.md); license ID: AGPL-3.0 |
 
 ## comparison
 

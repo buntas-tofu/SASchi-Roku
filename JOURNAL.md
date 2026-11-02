@@ -13,14 +13,17 @@ Sources explicitly identified by the principal: sas-ref, sas-campaign/docs and
 sas-training-modules in the professional lane. Inspected commit pins are in
 [the catalog](catalog/resources.json). The Campaign macro census supplies the
 22-repository seed. The training source has also been consolidated into sas-ref;
-both locations belong to one catalog resource.
+both locations belong to one catalog resource. The principal also identified a
+broader local reference archive. Its public acquisition inventory matches the
+22 census repositories; a SAS lexer pointer was checked against public upstream
+and added separately. No archive programs, data or private records were imported.
 
 ## Implemented locally
 
 - Preserved the collection under `references/rosetta-code/`, retaining old paths
   as symlinks and retargeting the harvest/index commands.
 - Recorded 60 matching preservation comparisons against the source commit.
-- Added 32 catalog resources, three initial workflow skills, a roadmap, and
+- Added 33 catalog resources, three initial workflow skills, a roadmap, and
   repository checks. GLOBAL and license files remain unchanged.
 
 ## Validation
