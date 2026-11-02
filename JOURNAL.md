@@ -164,3 +164,36 @@ The six initial skills remain unchanged. CI adds this replay after the earlier
 three-proposal replay. The linter has zero errors and 20 status warnings across
 the skills and exact snapshots; its implementation is unchanged. No SAS runtime,
 SAS-binary reader, R metadata consumer or Parquet round trip has been verified.
+
+## Accepted boundary batch, 2026-11-02
+
+The principal merged PR 3 and deleted its remote branch. Local main was verified
+at `27025665bb89e0b67c3f5f6fcf0f6113b9c54e10`, with the same tested tree and no
+local changes. The principal then accepted the proposed next immediate batch:
+group boundaries, merge behavior and character-width propagation.
+
+Work starts on `codex/state-boundaries-trial`. The
+[contract](trials/state-boundaries/CONTRACT.md) and literal oracle were frozen
+before three independent evaluator dispatches under the skill-creator workflow.
+Their packets contain existing skill snapshots, synthetic source and inputs,
+and the interface contract. They do not contain parent truth or earlier answers.
+Six target implementations are paired outputs of three evaluations. Native SAS,
+general metadata interchange and Parquet remain outside this batch.
+
+Completed [boundary results](trials/state-boundaries/README.md): 89 parent machine
+checks and 12 artifact criteria passed. All 18 delivered files were preserved
+byte-for-byte; the parent changed neither candidates nor frozen truth. The group
+bug first differs at main row 3, last_account. Merge acceptance includes actual
+read precedence after exhaustion and missing overwrites. Width acceptance covers
+both DATA-step tables and the descriptor after reopening CSV, including empty data.
+
+The evaluator's additional overflow failure and pre-delivery repair are retained
+as self-reported evidence, not included in parent acceptance. Numeric range and
+recovery after overflow are a candidate future vector, labeled as inference.
+No new skill or skill edit was justified. Full metadata interchange and Parquet
+are the next planned evidence boundary; live-SAS work still awaits onboarding.
+
+All earlier replays, corpus/catalog checks, 10 repository tests and manifest
+validation pass. The unchanged linter reports zero errors and 24 status warnings
+across six skills and their exact snapshots. CI adds the new replay after existing
+ones. Hosted checks must be read from the new PR revision, not inherited from PR 3.

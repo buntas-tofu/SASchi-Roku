@@ -69,6 +69,13 @@ diagnosis to WHERE versus subsetting IF. One fresh paired Python/R delivery pass
 controls. The two outputs have identical row counts but different queue values
 and totals. The skill instructions remain unchanged.
 
+The [group, merge and width batch](trials/state-boundaries/README.md) adds 89
+parent checks across Python and native R, plus 12 artifact-review criteria.
+Three fresh paired deliveries cover nested group flags and queue state, duplicate
+and missing-key match merges, and physical character widths through two DATA
+steps and reopened CSV. First deliveries and frozen expectations are preserved.
+The six skill instructions remain unchanged; live-SAS validation is pending.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.
@@ -86,8 +93,9 @@ python3 trials/sas-translate-sum-array/verify.py
 ```
 
 With native Rscript available, also run `python3 trials/starter-batch/verify.py`,
-`python3 trials/skill-proposals/verify.py` and
-`python3 trials/state-filter-timing/verify.py`.
+`python3 trials/skill-proposals/verify.py`,
+`python3 trials/state-filter-timing/verify.py` and
+`python3 trials/state-boundaries/verify.py`.
 
 CI also validates `agent-manifest.json` against its existing JSON schema.
 These checks cover repository integrity, not execution of the SAS corpus.

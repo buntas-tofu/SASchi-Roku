@@ -1,0 +1,16 @@
+side,table,column,type
+input,have,row_id,text
+input,have,region,number
+input,have,account,number
+input,have,value,number
+output,want,row_id,text
+output,want,region,number
+output,want,account,number
+output,want,value,number
+output,want,raw_prev,number
+output,want,prev,number
+output,want,total,number
+output,want,first_region,number
+output,want,last_region,number
+output,want,first_account,number
+output,want,last_account,number

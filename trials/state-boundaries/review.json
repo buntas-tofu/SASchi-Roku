@@ -1,0 +1,93 @@
+{
+  "status": "Parent artifact review, separate from machine replay and evaluator self-reported test totals",
+  "recorded_at_utc": "2026-11-02T06:54:06.874617+00:00",
+  "verdict": "PASS",
+  "criteria": [
+    {
+      "task": "groups",
+      "criterion": "scope-and-limits",
+      "verdict": "PASS",
+      "evidence": "Report identifies one supplied DATA step, ordinary missing and numeric ordering, paired Python/R targets and no live SAS."
+    },
+    {
+      "task": "groups",
+      "criterion": "independent-mechanism-trace",
+      "verdict": "PASS",
+      "evidence": "Main and missing-key traces agree cell by cell with frozen literal truth; FIRST/LAST prefix propagation, continuous queue, receiver masking and region-only sum reset are distinguished."
+    },
+    {
+      "task": "groups",
+      "criterion": "task-specific-evidence",
+      "verdict": "PASS",
+      "evidence": "The reported original first difference is main row 3 last_account, matching the independently reproduced parent failure. Queue loss at g4 is separately explained."
+    },
+    {
+      "task": "groups",
+      "criterion": "reproducible-validation-history",
+      "verdict": "PASS",
+      "evidence": "Guarded APIs/CLIs and compact self-test sources are supplied. History preserves the additional overflow assertion and pre-delivery repair; expanded self-test counts remain evaluator reports, outside parent acceptance."
+    },
+    {
+      "task": "merge",
+      "criterion": "scope-and-limits",
+      "verdict": "PASS",
+      "evidence": "Report confines the conversion to the supplied numeric MERGE, excludes special tags and arbitrary parsing, and leaves live SAS pending."
+    },
+    {
+      "task": "merge",
+      "criterion": "independent-mechanism-trace",
+      "verdict": "PASS",
+      "evidence": "Main eight-row trace agrees with parent literal values. Source read order, retained unique fields, missing overwrites and group resets are explicit."
+    },
+    {
+      "task": "merge",
+      "criterion": "task-specific-evidence",
+      "verdict": "PASS",
+      "evidence": "Explains max-of-group cardinality, group-level IN flags, actual-read shared-column overwrite and asymmetric exhaustion; missing keys are included."
+    },
+    {
+      "task": "merge",
+      "criterion": "reproducible-validation-history",
+      "verdict": "PASS",
+      "evidence": "Both targets expose guarded APIs/CLIs and reject unsorted inputs. Report and history retain commands and the failed version probe; broader generated-case counts are self-reports."
+    },
+    {
+      "task": "widths",
+      "criterion": "scope-and-limits",
+      "verdict": "PASS",
+      "evidence": "Report distinguishes physically padded decoded ASCII from SAS binary input, and names exclusions for NUL, Unicode, full metadata and Parquet."
+    },
+    {
+      "task": "widths",
+      "criterion": "independent-mechanism-trace",
+      "verdict": "PASS",
+      "evidence": "Character trace agrees with parent literal spaces: stage truncation and pad, lexical tag width, widening before SET, lost exclamation mark and blank LENGTH/LENGTHN distinction."
+    },
+    {
+      "task": "widths",
+      "criterion": "task-specific-evidence",
+      "verdict": "PASS",
+      "evidence": "Eight-row descriptor and exact physical text contract are explicit. Companion order follows requested KEEP order without asserting SAS internal descriptor order. Empty data retains metadata."
+    },
+    {
+      "task": "widths",
+      "criterion": "reproducible-validation-history",
+      "verdict": "PASS",
+      "evidence": "Code exposes separate stage/want/descriptor tables, guards CLI import and preserves text in CSV. Commands and self-test history are present, with expanded coverage kept separate from parent checks."
+    }
+  ],
+  "reviewed_hashes": {
+    "candidates/groups/converted.R": "c781a218575cf41975e8f7e79d8a60c5d47872f92f5d3c2abdd7f76dc83927da",
+    "candidates/groups/converted.py": "e756fba70b732bde12c8fb786c03ebde8a931c6b941a385aa1d732194b7410e4",
+    "candidates/groups/history.md": "ca025503fada68168fbe39186635f982a84bc0f874675e6439c36d28c3ae215e",
+    "candidates/groups/report.md": "d43267149e74cba2a60beb045120e253aa469b4dfac7de119d25e747f523e708",
+    "candidates/merge/converted.R": "730665e2ef6d0b88a978214d2e0c225ea9058e7881cea01307eabd31bc07fe4c",
+    "candidates/merge/converted.py": "9beb2d98b0c32a459a5a2506d97cd197d41dd11e6a47b0356f338263fc91e597",
+    "candidates/merge/history.md": "9e1bd36204296e8aa2e3e948c68b6ccb17433c691d4d400e6d5e241bf059fded",
+    "candidates/merge/report.md": "1a49094e835d7c254b32f80b0a7f110c22207bb7339670bf3644b762465f1695",
+    "candidates/widths/converted.R": "a65a2d287fa409229943ae63492ebd650dcc1dcfb42bd97f2af3596d19753581",
+    "candidates/widths/converted.py": "37144f568a20a7aad8ee12edb0c320188088cb701f549ca168afda175ea2520c",
+    "candidates/widths/history.md": "c029728042100751a4ae08a84dc16d280829977b326f6d21fd5629b18a7a086a",
+    "candidates/widths/report.md": "6e0115c42db92daf883255c19a1fbcc87bf7e1ca2745eb402b6709303d72f48d"
+  }
+}

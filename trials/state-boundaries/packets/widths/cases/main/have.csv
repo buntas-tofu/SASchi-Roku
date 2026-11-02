@@ -1,0 +1,6 @@
+row_id,raw,suffix,flag
+0007,ABCDEF,Z ,0
+NA, A    ,Q?,1
+x3,      ,  ,0
+x4,"A""B,C ", !,0
+x5,XY    ,R ,1
