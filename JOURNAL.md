@@ -164,3 +164,32 @@ The six initial skills remain unchanged. CI adds this replay after the earlier
 three-proposal replay. The linter has zero errors and 20 status warnings across
 the skills and exact snapshots; its implementation is unchanged. No SAS runtime,
 SAS-binary reader, R metadata consumer or Parquet round trip has been verified.
+
+## Reference-home layers landed (2026-11-02, Hermes session)
+
+The principal cleared the re-cut after PR #3 merged. The professional-lane
+reference home (its Phases 0-4: consolidation ledger, stamped syncs, the 9.4
+reference harvest, the advisory MCP, the workflow skills, the sanitization
+gate) was adapted to this repository's shape and landed on
+`hermes/reference-home-layers`:
+
+- The corpus stayed exactly where the toolkit put it
+  (`references/rosetta-code/`, root compat symlinks untouched); the MCP
+  server discovers it there via a location-independent resolution order, so
+  one server codebase serves both instances.
+- kb/ layers are additive; the catalog, trials, tests, and the six toolkit
+  skills are untouched except for the remediation below.
+- Remediation, disclosed: the sanitization gate (landing in the same PR)
+  found 84 raw hits of the private professional account name in public
+  files: ten trial-packet citation links, the decision record, the catalog
+  (three entries describing private repositories), and README links. The
+  citations were re-voiced to neutral text pins (name, lane, private, the
+  40-hex commit pin kept); the three catalog entries for private
+  repositories were removed (the record contract requires a public HTTPS
+  URL for repository-kind entries, and the lane ruling forbids the account
+  token in public trees); the catalog README was regenerated with
+  `check_toolkit.py --write-index`. No trial results, evaluations, or
+  receipts were altered; only the citations' addresses.
+- Receipts: both instances' corpora and harvested reference outputs are
+  byte-identical; nine CI checks green on the branch; the professional
+  instance runs the same server code against its own kb/corpus location.

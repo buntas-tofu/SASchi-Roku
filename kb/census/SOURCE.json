@@ -1,0 +1,11 @@
+{
+  "layer": "census",
+  "source_repo": "https://github.com/buntas-tofu/SASchi-Go.git",
+  "source_commit": "34915047c03c72e4498d8ea540ee804b14038476",
+  "version": "0.4.0",
+  "copied_at": "2026-11-02T04:28:48+00:00",
+  "files": {
+    "macro_surface_census.csv": "c108ceb438fb55f95014f037faa62f7646df56e738d6a4be23ad539f7baa34e5",
+    "macro_surface_census.md": "feea27e3c15daff93c1bab37fb0eeced915e99062b255b757c2062750ea11a4b"
+  }
+}

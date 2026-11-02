@@ -1,0 +1,12 @@
+{
+  "docset": "dso",
+  "docset_id": "ledsoptsref",
+  "title": "SAS 9.4 Data Set Options: Reference, Fourth Edition",
+  "url": "https://documentation.sas.com/api/docsets/ledsoptsref/9.4/content/ledsoptsref.pdf",
+  "pdf_sha256": "b8333948cec7db9b6ca6ee74540b9b5a217049e7f203882f183ea08e68f580d4",
+  "pdf_bytes": 875256,
+  "pdf_pages": 112,
+  "retrieved_at": "2026-11-02T05:21:59+00:00",
+  "license": "SAS Institute public documentation; see the document's copyright page",
+  "tool": "tools/fetch_sas_reference.py"
+}

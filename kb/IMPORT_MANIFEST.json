@@ -1,0 +1,291 @@
+{
+  "origin_commit": "49e2f7626eb4d0b41ced06ae241567304eb44b12",
+  "note": "Historical import receipt; only collection README files were adapted",
+  "files": [
+    {
+      "path": "landmines/llm-migration-quirks/README.md",
+      "original_sha256": "85c2bd7b0e4214a0c5dcbb9e0781fd87b31ff2cdcb672db6b5547f9785e23026",
+      "imported_sha256": "fc7eff4e196bf5785e8d0196a34ce45f4650e4470573d2a8cd9f9464cc5dc9e7"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-001-invented-api.md",
+      "original_sha256": "d4faadd786f56bda4ea20cb523ce464df890564c555dda96fa912205cef01029",
+      "imported_sha256": "d4faadd786f56bda4ea20cb523ce464df890564c555dda96fa912205cef01029"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-002-stale-api.md",
+      "original_sha256": "7c69c06398c2aa0d111b88e7132102ad7ce185b7fc4b9eedfeae3e5e0ee070d7",
+      "imported_sha256": "7c69c06398c2aa0d111b88e7132102ad7ce185b7fc4b9eedfeae3e5e0ee070d7"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-003-syntax-is-not-equivalence.md",
+      "original_sha256": "f96e38bf95fe8f28226796165093c2f8ad52f64b2da774818890dedac2c40c7e",
+      "imported_sha256": "f96e38bf95fe8f28226796165093c2f8ad52f64b2da774818890dedac2c40c7e"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-004-context-omission.md",
+      "original_sha256": "aae786cb4d52acd70601b9bba1a90c15220ba97743ee957864e8de4e0246fbb0",
+      "imported_sha256": "aae786cb4d52acd70601b9bba1a90c15220ba97743ee957864e8de4e0246fbb0"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-005-self-review.md",
+      "original_sha256": "f74f77252c54043d0f88e188a0e4f84c9531e1e22397a5e79123a090b09e37c3",
+      "imported_sha256": "f74f77252c54043d0f88e188a0e4f84c9531e1e22397a5e79123a090b09e37c3"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-006-keyword-contamination.md",
+      "original_sha256": "78fd8c48b8ed88003a66ef8fb17572f1b166f1b70bfdf19ea5c076307b0f774d",
+      "imported_sha256": "78fd8c48b8ed88003a66ef8fb17572f1b166f1b70bfdf19ea5c076307b0f774d"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-007-business-logic-rewrite.md",
+      "original_sha256": "ac40368ae9a7308fc4beca64afe2bec1742dfdabbc90892e2b596360ca3b8208",
+      "imported_sha256": "ac40368ae9a7308fc4beca64afe2bec1742dfdabbc90892e2b596360ca3b8208"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-008-shared-oracle.md",
+      "original_sha256": "9e1e91b14cafb2e57240bb39aac44b46a4093d9c429daafa6b69dcdb53ce8e8f",
+      "imported_sha256": "9e1e91b14cafb2e57240bb39aac44b46a4093d9c429daafa6b69dcdb53ce8e8f"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-009-evaluation-leakage.md",
+      "original_sha256": "0447eb4660ef6d62ce51674f4590c3bb68956930c16d52c22739850598baae3a",
+      "imported_sha256": "0447eb4660ef6d62ce51674f4590c3bb68956930c16d52c22739850598baae3a"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-010-retrieved-instructions.md",
+      "original_sha256": "2fc9d7afcebdb921de052ab834909b3c3a3db2bdd928992fe4ff7caca3345aac",
+      "imported_sha256": "2fc9d7afcebdb921de052ab834909b3c3a3db2bdd928992fe4ff7caca3345aac"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-011-partial-conversion.md",
+      "original_sha256": "f6b58f4a701764dcf25d95a7e938ad3f1a0f8661694c523b00778d3c23eb1339",
+      "imported_sha256": "f6b58f4a701764dcf25d95a7e938ad3f1a0f8661694c523b00778d3c23eb1339"
+    },
+    {
+      "path": "landmines/llm-migration-quirks/lq-012-structured-confidence.md",
+      "original_sha256": "b9aa8e6a6ecab48e20dc040d864653729bd947ef32090c0c6250a3cf2c1d0138",
+      "imported_sha256": "b9aa8e6a6ecab48e20dc040d864653729bd947ef32090c0c6250a3cf2c1d0138"
+    },
+    {
+      "path": "landmines/macro-landmines/README.md",
+      "original_sha256": "912eb562e54584c6abb716bfc92ec65bbfc5a590e7bd202143e57c7b1a8dcfee",
+      "imported_sha256": "53e65e116015f542515e1ce39045c90f035be3f0a208206b6aa056339bc6b1d2"
+    },
+    {
+      "path": "landmines/macro-landmines/SOURCES.md",
+      "original_sha256": "8006dd3f452621539f4ec7b4116dff93e65784d32a0c14c7b2a64bbc14636e69",
+      "imported_sha256": "8006dd3f452621539f4ec7b4116dff93e65784d32a0c14c7b2a64bbc14636e69"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-001-symput-timing.md",
+      "original_sha256": "b6b11918792712f17578badf16d4387a491d0de09f72ecba7d3ab2d309c0e4f8",
+      "imported_sha256": "b6b11918792712f17578badf16d4387a491d0de09f72ecba7d3ab2d309c0e4f8"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-002-call-execute-order.md",
+      "original_sha256": "efab90a3d45f51d28f536ad1b4c397123c54c3fd2975b654e1295a6eb9e2e057",
+      "imported_sha256": "efab90a3d45f51d28f536ad1b4c397123c54c3fd2975b654e1295a6eb9e2e057"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-003-scope-leakage.md",
+      "original_sha256": "908b095629c4adb5b75e5f877cd8e74610699bf35d85d4663198c88cca6aedba",
+      "imported_sha256": "908b095629c4adb5b75e5f877cd8e74610699bf35d85d4663198c88cca6aedba"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-004-symputx-scope.md",
+      "original_sha256": "d7c408fe1f86e495b4cabfea2dda5daf9f57a6f8321f7d47818f995028de89c9",
+      "imported_sha256": "d7c408fe1f86e495b4cabfea2dda5daf9f57a6f8321f7d47818f995028de89c9"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-005-quoting-and-rescan.md",
+      "original_sha256": "ddebd7276e617bc99d5fa24fbaa2a8a943e63c534bd7086d7a19e0d00f92e719",
+      "imported_sha256": "ddebd7276e617bc99d5fa24fbaa2a8a943e63c534bd7086d7a19e0d00f92e719"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-006-period-delimiter.md",
+      "original_sha256": "8e1e292a887bd6c0640ef9cff71f40f18647ebd0667a40fe7d13604956988023",
+      "imported_sha256": "8e1e292a887bd6c0640ef9cff71f40f18647ebd0667a40fe7d13604956988023"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-007-indirect-resolution.md",
+      "original_sha256": "0999b1e63efb8e4f744d3448edb6294c039d05233d9509de5ba76fda7c5491d2",
+      "imported_sha256": "0999b1e63efb8e4f744d3448edb6294c039d05233d9509de5ba76fda7c5491d2"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-008-sysfunc-boundary.md",
+      "original_sha256": "d15e811afa3c5bbdbf8b9d3a68884272db08d50b7be259748896db7165db0bc2",
+      "imported_sha256": "d15e811afa3c5bbdbf8b9d3a68884272db08d50b7be259748896db7165db0bc2"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-009-integer-evaluation.md",
+      "original_sha256": "d7dbba4387e10f20c7b6f90ece2606e8b29b9440ec43883ee86bb97e62ba1b2f",
+      "imported_sha256": "d7dbba4387e10f20c7b6f90ece2606e8b29b9440ec43883ee86bb97e62ba1b2f"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-010-sql-empty-result.md",
+      "original_sha256": "f5e03efc680e9680a7ad5c2cf553c22ea2db075b0fd6f7a010353af8d8c8d8d5",
+      "imported_sha256": "f5e03efc680e9680a7ad5c2cf553c22ea2db075b0fd6f7a010353af8d8c8d8d5"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-011-generated-by-list.md",
+      "original_sha256": "bcee603604c4dbef5812e20d0976efa2cba8b1eca58f2fd255b616fc1186ee1a",
+      "imported_sha256": "bcee603604c4dbef5812e20d0976efa2cba8b1eca58f2fd255b616fc1186ee1a"
+    },
+    {
+      "path": "landmines/macro-landmines/ml-012-scan-empty-fields.md",
+      "original_sha256": "a173e2d7180e7fe4a70572a6a9e0410e16509dca20e9b74210e074d3268b44c5",
+      "imported_sha256": "a173e2d7180e7fe4a70572a6a9e0410e16509dca20e9b74210e074d3268b44c5"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/README.md",
+      "original_sha256": "3a8bab9eee6b293caf8d0948f3dc630a42bd7eaa9cc80a920474a63faa8e04eb",
+      "imported_sha256": "0e7932eb6d8cd6ea4da5db1f7c9a6e11d5f5d4f4134e780ce762d118ae8c8164"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-001-match-merge.md",
+      "original_sha256": "3352b4ae7acff446c597d625de257cf065a13061e14ab0034eb223ec7a3fc318",
+      "imported_sha256": "3352b4ae7acff446c597d625de257cf065a13061e14ab0034eb223ec7a3fc318"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-002-missing-keys.md",
+      "original_sha256": "6b42fbeb7e31abe47c60a9cb1125ef86144b52c053602a0a3e39a9e566279b69",
+      "imported_sha256": "6b42fbeb7e31abe47c60a9cb1125ef86144b52c053602a0a3e39a9e566279b69"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-003-pdv-state.md",
+      "original_sha256": "8430a9a0c03b4809ec18664d6bf6840f2cd4d89b8c7ed46f36cd0d258eb1def0",
+      "imported_sha256": "8430a9a0c03b4809ec18664d6bf6840f2cd4d89b8c7ed46f36cd0d258eb1def0"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-004-where-if.md",
+      "original_sha256": "a65020011d9ea070c0d9d2679427708c6c1c0b089cf174146f3b2be059f7c59a",
+      "imported_sha256": "a65020011d9ea070c0d9d2679427708c6c1c0b089cf174146f3b2be059f7c59a"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-005-explicit-output.md",
+      "original_sha256": "b9918a8d08c1b098e0abba0662b12e4879c921062610b22e3f328612a0082241",
+      "imported_sha256": "b9918a8d08c1b098e0abba0662b12e4879c921062610b22e3f328612a0082241"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-006-character-width.md",
+      "original_sha256": "73eabd5f0acbeee92961827be2ab3bc2bf1549b4c3dd46f91cbcb4807276d470",
+      "imported_sha256": "73eabd5f0acbeee92961827be2ab3bc2bf1549b4c3dd46f91cbcb4807276d470"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-007-lag-history.md",
+      "original_sha256": "17f2a94f0df9a2bec99562a8215c4500caa467ffd14fce2372af5a5aab4c8e3f",
+      "imported_sha256": "17f2a94f0df9a2bec99562a8215c4500caa467ffd14fce2372af5a5aab4c8e3f"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-008-sort-survivors.md",
+      "original_sha256": "8f4cce905e452d1435551d4366136c011e477d34f8b5a1de644ae6c6b8c53a22",
+      "imported_sha256": "8f4cce905e452d1435551d4366136c011e477d34f8b5a1de644ae6c6b8c53a22"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-009-sql-remerge.md",
+      "original_sha256": "dd558ffbd045215fd3d8a3beba65a8e19ac5bd0814fb58a3ceb321902bd77563",
+      "imported_sha256": "dd558ffbd045215fd3d8a3beba65a8e19ac5bd0814fb58a3ceb321902bd77563"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-010-transpose-names.md",
+      "original_sha256": "f3a6c2495a853958e2e2c64dff2cefcb58ba8d408e0ec3aa484acdff72c48064",
+      "imported_sha256": "f3a6c2495a853958e2e2c64dff2cefcb58ba8d408e0ec3aa484acdff72c48064"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-011-format-grouping.md",
+      "original_sha256": "6b4c95e35025db4ea24658a9450fd2b2088eeccef59ff8e4362f8590531bf63f",
+      "imported_sha256": "6b4c95e35025db4ea24658a9450fd2b2088eeccef59ff8e4362f8590531bf63f"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-012-rounding-family.md",
+      "original_sha256": "93050a9c54679e93133172feb36f6d2b71b8317b02d07f68e33450cfcdb38f9f",
+      "imported_sha256": "93050a9c54679e93133172feb36f6d2b71b8317b02d07f68e33450cfcdb38f9f"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-013-date-intervals.md",
+      "original_sha256": "7c449e70e0204d8e798960da80caf1bff6b1cdd1a2f19150b05fdfde90224b30",
+      "imported_sha256": "7c449e70e0204d8e798960da80caf1bff6b1cdd1a2f19150b05fdfde90224b30"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-014-raw-input.md",
+      "original_sha256": "8abbf43fb488c65e64d34c669cc6b3e30d831b01a6d1442881f28db7cc69b657",
+      "imported_sha256": "8abbf43fb488c65e64d34c669cc6b3e30d831b01a6d1442881f28db7cc69b657"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-015-weights.md",
+      "original_sha256": "7f9d5b55f76bf19f65b0c5d56bb2d51bbbd96c230348c906196c5a0b1cbb6136",
+      "imported_sha256": "7f9d5b55f76bf19f65b0c5d56bb2d51bbbd96c230348c906196c5a0b1cbb6136"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-016-quantiles.md",
+      "original_sha256": "9196705d78eee542328d22834114a76b71339ebb5507acd0fe4567365329f321",
+      "imported_sha256": "9196705d78eee542328d22834114a76b71339ebb5507acd0fe4567365329f321"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-017-logistic-contract.md",
+      "original_sha256": "68bc8132b78871cab71ca5c801c1cccb6e71e17ee6aca170b9cf44f9c2ad4361",
+      "imported_sha256": "68bc8132b78871cab71ca5c801c1cccb6e71e17ee6aca170b9cf44f9c2ad4361"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-018-survey-domain.md",
+      "original_sha256": "141b40cdcd4b955a13f174294c9ee5a032e33750f6dae1e79f8b7c514327b228",
+      "imported_sha256": "141b40cdcd4b955a13f174294c9ee5a032e33750f6dae1e79f8b7c514327b228"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-019-rng-contract.md",
+      "original_sha256": "1ce320084c774074a8e6befa919660efe9aea201bf38a70c2010c36b9b8d958c",
+      "imported_sha256": "1ce320084c774074a8e6befa919660efe9aea201bf38a70c2010c36b9b8d958c"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-020-metadata-roundtrip.md",
+      "original_sha256": "72fa57e44339afe0023834a685aa4efebb6d11f4d7f077dc432b7560295b5ab1",
+      "imported_sha256": "72fa57e44339afe0023834a685aa4efebb6d11f4d7f077dc432b7560295b5ab1"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-021-engine-mode.md",
+      "original_sha256": "267df3de6e24e25b48c4bbbff9fd7f8edfb4356cf0a4fe15289f07fd04420ff1",
+      "imported_sha256": "267df3de6e24e25b48c4bbbff9fd7f8edfb4356cf0a4fe15289f07fd04420ff1"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-022-array-aliasing.md",
+      "original_sha256": "0f9dcbbb87f87f17e5e37c0b4653ed2d575ab53cbc1b48300526a7a1f031bf53",
+      "imported_sha256": "0f9dcbbb87f87f17e5e37c0b4653ed2d575ab53cbc1b48300526a7a1f031bf53"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-023-ods-lifecycle.md",
+      "original_sha256": "41ed05f4548c31fb227115dd691eb196bea65220ec028d76e46286ab01db58ce",
+      "imported_sha256": "41ed05f4548c31fb227115dd691eb196bea65220ec028d76e46286ab01db58ce"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-024-mixed-model-contract.md",
+      "original_sha256": "64f707aa5b140074e1c60aaa468f0e1916646a7e16bd06176e861c5735fb3be9",
+      "imported_sha256": "64f707aa5b140074e1c60aaa468f0e1916646a7e16bd06176e861c5735fb3be9"
+    },
+    {
+      "path": "landmines/sas-conversion-landmines/sl-025-survival-ties.md",
+      "original_sha256": "d2740afcfa05f3e9427182cfed277e0ddc808d53b96d4f4300bebf21367173b5",
+      "imported_sha256": "d2740afcfa05f3e9427182cfed277e0ddc808d53b96d4f4300bebf21367173b5"
+    },
+    {
+      "path": "research/LLM_MIGRATION_QUIRKS_20260915.md",
+      "original_sha256": "4db7705183ab5ef0d335912e1fe3eb07cb753064d88cb5b44d9654a5826e35c5",
+      "imported_sha256": "4db7705183ab5ef0d335912e1fe3eb07cb753064d88cb5b44d9654a5826e35c5"
+    },
+    {
+      "path": "research/SAS_FIXTURE_QUEUE_20260915.csv",
+      "original_sha256": "83d0c447e5aa6ecb1a5e89470c0ea42c5067faa2414f8540f55d8129bd6d395a",
+      "imported_sha256": "83d0c447e5aa6ecb1a5e89470c0ea42c5067faa2414f8540f55d8129bd6d395a"
+    },
+    {
+      "path": "research/SAS_REBUILD_RESEARCH_20260915.md",
+      "original_sha256": "cba0d2f9ca42a20f3c399d119a12913a0f27e6fd913aaf95140234875a6291df",
+      "imported_sha256": "cba0d2f9ca42a20f3c399d119a12913a0f27e6fd913aaf95140234875a6291df"
+    },
+    {
+      "path": "research/SOURCES_20260915.json",
+      "original_sha256": "2309ab1b1e5e76d6edcff5611b30962748059e6ad9e313083eb1b71fa3a371d6",
+      "imported_sha256": "2309ab1b1e5e76d6edcff5611b30962748059e6ad9e313083eb1b71fa3a371d6"
+    }
+  ]
+}

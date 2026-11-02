@@ -19,8 +19,8 @@
   },
   "project": {
     "name": "SASchi-Roku",
-    "description": "SAS toolkit foundation: preserved Rosetta Code reference, portable migration workflow skills and a source-backed resource catalog. MCP remains planned.",
-    "version": "0.1.0",
+    "description": "SAS toolkit foundation: preserved Rosetta Code reference, portable migration workflow skills and a source-backed resource catalog. MCP remains planned, plus the reference-home layers: a stamp-synced knowledge base, the harvested page-pinned SAS 9.4 reference, and the advisory MCP server (sas-ref-mcp).",
+    "version": "0.2.0",
     "repo_root": ".",
     "primary_language": "SAS",
     "framework": "dmf",
@@ -49,6 +49,22 @@
     {
       "tool_id": "check-toolkit",
       "description": "Validate resource records, generated catalog and compatibility paths (scripts/check_toolkit.py)."
+    },
+    {
+      "tool_id": "sync-knowledge",
+      "description": "Knowledge sync: pull canonical copies into kb/ with SOURCE.json stamps; --check verifies them offline (tools/sync_knowledge.py)."
+    },
+    {
+      "tool_id": "fetch-sas-reference",
+      "description": "Reference harvester: the SAS 9.4 docsets into page-pinned kb/reference/ entries, reconciled against the capability manifest; deterministic regeneration gate in CI (tools/fetch_sas_reference.py)."
+    },
+    {
+      "tool_id": "sas-ref-mcp",
+      "description": "Advisory knowledge and skills MCP server over the kb/ layers: twelve tools, nine resources, three prompts; self-test via python -m sas_ref.mcp.selftest (mcp/ subproject)."
+    },
+    {
+      "tool_id": "check-sanitization",
+      "description": "Sanitization token gate for this instance's allowed identity, with declared exemptions and an adjudicated allowlist (scripts/check_sanitization.py buntas)."
     }
   ],
   "provenance": {

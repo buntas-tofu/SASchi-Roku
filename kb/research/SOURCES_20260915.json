@@ -1,0 +1,308 @@
+{
+  "status": "Candidate source register, not an execution receipt or a complete systematic review",
+  "consulted": "2026-09-15",
+  "method": "Targeted primary documentation, original research abstracts/selected sections, and community-authored comparison pages. No full-paper review is implied by an abstract citation. Mutable pages are not hash-pinned snapshots.",
+  "sources": [
+    {
+      "id": "P01",
+      "title": "Package hallucinations in code-generating LLMs",
+      "url": "https://arxiv.org/abs/2406.10279",
+      "scope": "Research abstract; evaluated Python/JavaScript models, not this SAS pipeline",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P02",
+      "title": "LLMs Meet Library Evolution",
+      "url": "https://arxiv.org/abs/2406.09834v3",
+      "scope": "ICSE 2025 paper, arXiv v3; abstract consulted",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P03",
+      "title": "EvalPlus: rigorous evaluation of generated code",
+      "url": "https://arxiv.org/abs/2305.01210v3",
+      "scope": "NeurIPS 2023 paper, arXiv v3; abstract consulted",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P04",
+      "title": "Lost in the Middle",
+      "url": "https://arxiv.org/abs/2307.03172",
+      "scope": "Research abstract; multi-document QA and key-value retrieval",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P05",
+      "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "url": "https://arxiv.org/abs/2310.01798",
+      "scope": "Research abstract; intrinsic correction without external feedback",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P06",
+      "title": "Large Language Models have Intrinsic Self-Correction Ability",
+      "url": "https://arxiv.org/abs/2406.15673",
+      "scope": "Research abstract; counterpoint on task and prompting dependence",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P07",
+      "title": "Indirect prompt injection in LLM-integrated applications",
+      "url": "https://arxiv.org/abs/2302.12173",
+      "scope": "Research abstract; indirect instructions in retrieved content",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P08",
+      "title": "Scalable, Validated Code Translation of Entire Projects",
+      "url": "https://mengwangoxf.github.io/Papers/PLDI25.pdf",
+      "scope": "PLDI 2025, selected full-text sections; project-level translation",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "P09",
+      "title": "LiveCodeBench",
+      "url": "https://arxiv.org/abs/2403.07974",
+      "scope": "Research abstract; contamination-aware coding evaluation",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S01",
+      "title": "MERGE statement",
+      "url": "https://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/a000202970.htm",
+      "scope": "SAS 9.2 statement reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S02",
+      "title": "LAG function",
+      "url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/n0l66p5oqex1f2n1quuopdvtcjqb.htm",
+      "scope": "SAS 9.3 function reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S03",
+      "title": "WHERE statement",
+      "url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/n1xbr9r0s9veq0n137iftzxq4g7e.htm",
+      "scope": "SAS 9.3 statement reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S04",
+      "title": "Ways to Create Variables",
+      "url": "https://support.sas.com/documentation/cdl/en/lrcon/62955/HTML/default/a000695113.htm",
+      "scope": "SAS language concepts; cited 9.x edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S05",
+      "title": "RETAIN statement",
+      "url": "https://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/a000214163.htm",
+      "scope": "SAS 9.2 statement reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S06",
+      "title": "OUTPUT statement",
+      "url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/n1lltvbis7ye1an1eryo4leh2mck.htm",
+      "scope": "SAS 9.3 statement reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S07",
+      "title": "Remerging summary statistics",
+      "url": "https://support.sas.com/techsup/notes/v8/4/308.html",
+      "scope": "SAS Usage Note 4308; older documented PROC SQL behavior",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S08",
+      "title": "PROC SQL joins and missing keys",
+      "url": "https://support.sas.com/documentation/cdl/en/sqlproc/62086/HTML/default/a001361784.htm",
+      "scope": "SAS 9.2 SQL Procedure User's Guide",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S09",
+      "title": "PROC SORT: retaining the first BY observation",
+      "url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a002473667.htm",
+      "scope": "Base SAS procedures, cited 9.x edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S10",
+      "title": "PROC TRANSPOSE ID statement",
+      "url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000063668.htm",
+      "scope": "Base SAS procedures, cited 9.x edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S11",
+      "title": "PROC MEANS CLASS statement",
+      "url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000146731.htm",
+      "scope": "Base SAS procedures, cited 9.x edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S12",
+      "title": "ROUNDZ and rounding-family distinctions",
+      "url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/p1u0w0omad7fyxn1unu83odr6vy2.htm",
+      "scope": "SAS 9.3 function reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S13",
+      "title": "INTCK function",
+      "url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/p1md4mx2crzfaqn14va8kt7qvfhr.htm",
+      "scope": "SAS 9.3 function reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S14",
+      "title": "INFILE statement",
+      "url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/n1rill4udj0tfun1fvce3j401plo.htm",
+      "scope": "SAS 9.3 statement reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S15",
+      "title": "PROC MEANS WEIGHT statement",
+      "url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000146736.htm",
+      "scope": "Base SAS procedures, cited 9.x edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S16",
+      "title": "Statistical computations in PROC MEANS",
+      "url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000608466.htm",
+      "scope": "Base SAS procedures, cited 9.x edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S17",
+      "title": "PROC LOGISTIC odds-ratio reversal",
+      "url": "https://support.sas.com/kb/39/085.html",
+      "scope": "SAS Usage Note 39085, 2010",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S18",
+      "title": "SURVEYMEANS domain analysis",
+      "url": "https://support.sas.com/documentation/cdl/en/statug/68162/HTML/default/statug_surveymeans_examples02.htm",
+      "scope": "SAS/STAT 14.1 example",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S19",
+      "title": "Considerations and Techniques for Analyzing Domains of Complex Survey Data",
+      "url": "https://support.sas.com/resources/papers/proceedings13/449-2013.pdf",
+      "scope": "SAS Global Forum 2013; relevant domain-analysis section",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S20",
+      "title": "RAND function",
+      "url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/p0fpeei0opypg8n1b06qe4r040lv.htm",
+      "scope": "SAS 9.3; not a claim about every later RNG implementation",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S21",
+      "title": "FedSQL null and missing modes",
+      "url": "https://support.sas.com/documentation/cdl/en/fedsqlref/67364/HTML/default/n1c5ladx770rq4n11a0mi33q9pad.htm",
+      "scope": "SAS 9.4 FedSQL Language Reference, third edition",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S22",
+      "title": "ARRAY statement",
+      "url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/p08do6szetrxe2n136ush727sbuo.htm",
+      "scope": "SAS 9.3 statement reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S23",
+      "title": "Interactive procedure and ODS lifecycle",
+      "url": "https://support.sas.com/kb/37/105.html",
+      "scope": "SAS Usage Note 37105; consulted current page",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S24",
+      "title": "FedSQL data types and transcoding",
+      "url": "https://support.sas.com/documentation/cdl/en/fedsqlref/67364/HTML/default/n19bf2z7e9p646n0z224cokuj567.htm",
+      "scope": "SAS 9.4 FedSQL third edition; byte-width warning",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S25",
+      "title": "SAS macro quoting",
+      "url": "https://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/n0o0rjikrg6iezn1ltra79iamibr.htm",
+      "scope": "SAS 9.3 macro reference",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "T01",
+      "title": "pandas.merge",
+      "url": "https://pandas.pydata.org/docs/reference/api/pandas.merge.html",
+      "scope": "pandas 3.0.5 page as served; stable URL is mutable",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "T02",
+      "title": "NumPy RNG compatibility",
+      "url": "https://numpy.org/doc/stable/reference/random/compatibility.html",
+      "scope": "NumPy 2.5 manual as served; stable URL is mutable",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "T03",
+      "title": "Haven conversion semantics",
+      "url": "https://haven.tidyverse.org/articles/semantics.html",
+      "scope": "Haven current documentation; mutable URL",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "T04",
+      "title": "Haven SAS reader",
+      "url": "https://haven.tidyverse.org/reference/read_sas.html",
+      "scope": "Haven current documentation; mutable URL",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "T05",
+      "title": "R sample quantiles",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/quantile.html",
+      "scope": "R development manual; pin actual installed R before implementation",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "C01",
+      "title": "CAMIS: R versus SAS MMRM",
+      "url": "https://psiaims.github.io/CAMIS/Comp/r-sas_mmrm.html",
+      "scope": "Community-authored comparison; current mutable page, its examples are not our receipts",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "C02",
+      "title": "CAMIS: R versus SAS random effect models",
+      "url": "https://psiaims.github.io/CAMIS/Comp/r-sas_random_effects_models.html",
+      "scope": "Community-authored comparison; current mutable page",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "S26",
+      "title": "PROC PHREG MODEL statement",
+      "url": "https://support.sas.com/documentation/cdl/en/statug/66859/HTML/default/statug_phreg_syntax17.htm",
+      "scope": "SAS/STAT 13.1; tie-handling options",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    },
+    {
+      "id": "T06",
+      "title": "R survival coxph",
+      "url": "https://stat.ethz.ch/R-manual/R-devel/library/survival/html/coxph.html",
+      "scope": "R development manual; pin actual installed survival version",
+      "content_snapshot": "not archived; revalidate mutable URLs before implementation"
+    }
+  ]
+}
