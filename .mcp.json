@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "sas-ref": {
+      "command": "python3",
+      "args": ["-m", "sas_ref.mcp.server"],
+      "cwd": ".",
+      "env": {
+        "PYTHONPATH": "mcp",
+        "SAS_REF_KB": "kb"
+      }
+    }
+  }
+}

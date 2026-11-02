@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the state-filtering follow-up below. This
+2026-11-02. The latest checkpoint is the PR 5 conflict resolution below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -165,6 +165,42 @@ three-proposal replay. The linter has zero errors and 20 status warnings across
 the skills and exact snapshots; its implementation is unchanged. No SAS runtime,
 SAS-binary reader, R metadata consumer or Parquet round trip has been verified.
 
+## Reference-home layers landed (2026-11-02, Hermes session)
+
+The principal cleared the re-cut after PR #3 merged. The professional-lane
+reference home (its Phases 0-4: consolidation ledger, stamped syncs, the 9.4
+reference harvest, the advisory MCP, the workflow skills, the sanitization
+gate) was adapted to this repository's shape and landed on
+`hermes/reference-home-layers`:
+
+- The corpus stayed exactly where the toolkit put it
+  (`references/rosetta-code/`, root compat symlinks untouched); the MCP
+  server discovers it there via a location-independent resolution order, so
+  one server codebase serves both instances.
+- kb/ layers are additive; the catalog, trials, tests, and the six toolkit
+  skills are untouched except for the remediation below.
+- Remediation, disclosed: the sanitization gate (landing in the same PR)
+  found 84 raw hits of the private professional account name in public
+  files: ten trial-packet citation links, the decision record, the catalog
+  (three entries describing private repositories), and README links. The
+  citations in the live files (catalog, decision record, README, the live
+  sas-translate reference) were re-voiced to neutral text pins (name, lane,
+  private, the 40-hex commit pin kept); the three catalog entries for
+  private repositories were removed (the record contract requires a public
+  HTTPS URL for repository-kind entries, and the lane ruling forbids the
+  account token in public trees); the catalog README was regenerated with
+  `check_toolkit.py --write-index`. The FROZEN trial packets were first
+  repaired as well, and the starter replay correctly rejected the edit as
+  frozen-input drift: they were restored verbatim, because updating their
+  hashes would misrepresent what the frozen candidates were generated
+  against. Their citation tokens are allowlisted in the sanitization gate
+  with the collision declared for the principal's ruling: keep verbatim
+  (receipt integrity) or re-freeze with repaired citations and fresh
+  evaluations. No trial results, evaluations, or receipts were altered.
+- Receipts: both instances' corpora and harvested reference outputs are
+  byte-identical; nine CI checks green on the branch; the professional
+  instance runs the same server code against its own kb/corpus location.
+
 ## Accepted boundary batch, 2026-11-02
 
 The principal merged PR 3 and deleted its remote branch. Local main was verified
@@ -197,3 +233,32 @@ All earlier replays, corpus/catalog checks, 10 repository tests and manifest
 validation pass. The unchanged linter reports zero errors and 24 status warnings
 across six skills and their exact snapshots. CI adds the new replay after existing
 ones. Hosted checks must be read from the new PR revision, not inherited from PR 3.
+
+
+## PR 5 conflict resolution, 2026-11-02
+
+Status: conflict resolution and local validation for maintainer review, not a
+merge approval or a live-SAS correctness result. Only
+`codex/state-boundaries-trial` is updated; public catalog PR 6 stays unmerged.
+
+Merged main at `33b337dd11e98022afa1161e2ca74a2a7aff31c7` into PR 5 at
+`c6b8a41f77efaed8eb5c0c6346e447ae1a75416b`. Resolved the workflow by retaining
+all nine main jobs, its documented linter evidence exemption and every existing
+step, plus the state-boundaries replay after the earlier starter replays.
+Resolved this journal by retaining both the reference-home and boundary-batch
+handoffs. No frozen input, candidate, receipt, gate or allowlist was changed.
+
+Local validation: actionlint 1.7.12 passes, and a parsed workflow comparison
+confirms main differs only by the intended replay step. The corpus/index check,
+30-record catalog check, all 10 regression tests, every trial replay (including
+89 state-boundaries checks), manifest schema and instance validation, synced-copy
+stamps, pinned reference regeneration and MCP self-test pass. Python 3.12.3 and
+native R 4.3.3 ran. The invariant linter reports zero errors and 23 warnings.
+The MCP protocol test stalled in the restricted local runner, then passed in the
+normal local runner using a temporary isolated dependency environment.
+
+The unchanged sanitization gate fails on two historical citation tokens in the
+frozen merge and widths packets under `trials/state-boundaries/packets/`.
+Changing the packets would invalidate their freeze; broadening the allowlist
+would alter governance. Both remain unchanged for a separate maintainer ruling.
+Hosted CI and mergeability must be read from the resulting PR revision.

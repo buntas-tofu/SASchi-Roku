@@ -1,7 +1,7 @@
 # Changelog
 
 All notable changes to SASchi-Roku are recorded here. Versioning is semver per
-`agent-manifest.json`, and the current version is `0.1.0`.
+`agent-manifest.json`, and the current version is `0.2.0`.
 
 The repository carries no release tags yet, so a version named in this file
 describes a state of `main` rather than a published artifact. This file was added
@@ -9,9 +9,28 @@ on 2026-09-14, and the entries below were reconstructed from the commit history 
 `main`, which was the only record before it existed. Short hashes are given so
 every line can be traced to its commit.
 
-## Unreleased
+## 0.2.0 - 2026-11-02
 
 ### Added
+
+- The reference-home layers, cut from the professional-lane instance at its
+  post-Phase-4 state and adapted to this repository's shape: `kb/` (stamp-synced
+  copies of the canonical rulebook (115 rules), capability manifest (148
+  entries), semantics, census, and 23 evidence documents at source pin
+  `3491504`; the harvested SAS 9.4 reference, 148 page-pinned dictionary
+  entries reconciled 108/108 and 40/40 against the capability manifest and
+  page-pin matched 148/148; the 49 landmine cards; conversion guides; field-guide
+  research), `mcp/` (the advisory MCP server: twelve tools, nine resources,
+  three prompts, stdio with the HTTP transport flag ready, installable via
+  `pip install ./mcp` or the git subdirectory URL), the two knowledge-base
+  skills (`sas-conversion`, `sas-kb-maintenance`), and `vendor/` (the
+  parquet-format reference pair under pinned provenance).
+- Four new CI checks (nine total): synced-copy stamps, reference determinism
+  (harvest from the pinned public URLs, committed output reproduces
+  byte-identical; the PDFs themselves are gitignored, the sha256 pins and
+  URLs are the provenance), the MCP self-test, and the sanitization token
+  gate under this instance's profile with declared exemptions and an
+  adjudicated allowlist.
 
 - Toolkit scope decision, roadmap, session handoff and relocation receipt.
 - Initial assessment, translation and Parquet interchange skills.

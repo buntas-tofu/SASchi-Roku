@@ -16,7 +16,11 @@ jobs:
         with:
           python-version: "3.x"
       - name: Run the DMF invariant linter
-        run: python3 scripts/inertia-drift-lint .
+        # kb/evidence holds byte-stable synced copies whose links resolve in
+        # the source repository; the stamp gate below protects their
+        # integrity. The exemption skips the markdown checks only; the style
+        # floor still applies.
+        run: python3 scripts/inertia-drift-lint . --ignore evidence
 
   manifest:
     name: Manifest validation
@@ -95,3 +99,57 @@ jobs:
         run: python3 trials/state-filter-timing/verify.py
       - name: Replay group boundaries, match merges and character widths
         run: python3 trials/state-boundaries/verify.py
+
+  sync:
+    name: Synced-copy stamps
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Every kb/ copy matches its SOURCE.json stamp
+        run: python3 tools/sync_knowledge.py --check
+
+  reference:
+    name: Reference determinism
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install poppler for pdftotext
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends poppler-utils
+      - name: Harvest from the pinned URLs and prove the committed layer reproduces
+        run: |
+          python3 tools/fetch_sas_reference.py
+          git diff --exit-code -- kb/reference/index.json \
+            kb/reference/extracted/stmt/entries kb/reference/extracted/dso/entries \
+            kb/reference/extracted/stmt/lestmtsref.txt kb/reference/extracted/dso/ledsoptsref.txt
+
+  mcp:
+    name: MCP self-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install the server subproject
+        run: pip install ./mcp
+      - name: Self-test against the live kb/ (direct asserts plus in-memory protocol pass)
+        env:
+          SAS_REF_KB: kb
+        run: python -m sas_ref.mcp.selftest
+
+  sanitization:
+    name: Sanitization token gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: The tree carries no tokens beyond this instance's allowed identity
+        run: python3 scripts/check_sanitization.py buntas

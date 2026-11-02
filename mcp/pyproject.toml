@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sas-ref-mcp"
+version = "0.6.0"
+description = "Knowledge and skills MCP over the sas-ref consolidated SAS conversion reference. Advisory by design: it explains, drafts, and interprets; the gate verifies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GFDL-1.2" }
+authors = [{ name = "Matthew Haubach" }]
+dependencies = ["fastmcp>=2.0"]
+
+[project.scripts]
+sas-ref-mcp = "sas_ref.mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["sas_ref"]

@@ -1,0 +1,1201 @@
+{
+ "docsets": {
+  "dso": {
+   "count": 40,
+   "entries": {
+    "ALTER= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/alter-data-set-option.md",
+     "page": 9,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "BUFNO= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/bufno-data-set-option.md",
+     "page": 11,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "BUFSIZE= Data Set Option": {
+     "category": "Data Set Control This data set option is not supported in a DATA step that runs in CAS.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/bufsize-data-set-option.md",
+     "page": 13,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "CNTLLEV= Data Set Option": {
+     "category": "Data Set Control Specify for input data sets only.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/cntllev-data-set-option.md",
+     "page": 14,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "COMPRESS= Data Set Option": {
+     "category": "Data Set Control CAS Use with output data sets only.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/compress-data-set-option.md",
+     "page": 16,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "DLDMGACTION= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/dldmgaction-data-set-option.md",
+     "page": 19,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "DROP= Data Set Option": {
+     "category": "Variable Control CAS",
+     "docset": "dso",
+     "file": "extracted/dso/entries/drop-data-set-option.md",
+     "page": 20,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "ENCRYPT= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/encrypt-data-set-option.md",
+     "page": 22,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "ENCRYPTKEY= Data Set Option": {
+     "category": "Data Set Control Use only with SAS 9.4 or later. Use only with AES-encrypted data files.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/encryptkey-data-set-option.md",
+     "page": 27,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "EXTENDOBSCOUNTER= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/extendobscounter-data-set-option.md",
+     "page": 30,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "FILECLOSE= Data Set Option": {
+     "category": "Miscellaneous",
+     "docset": "dso",
+     "file": "extracted/dso/entries/fileclose-data-set-option.md",
+     "page": 32,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "FIRSTOBS= Data Set Option": {
+     "category": "Observation Control Valid for input (read) processing only. Cannot use with PROC SQL views.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/firstobs-data-set-option.md",
+     "page": 33,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "GENMAX= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/genmax-data-set-option.md",
+     "page": 35,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "GENNUM= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/gennum-data-set-option.md",
+     "page": 36,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "IDXNAME= Data Set Option": {
+     "category": "User Control of SAS Index Usage Use with input data sets only. Mutually exclusive with IDXWHERE= data set option",
+     "docset": "dso",
+     "file": "extracted/dso/entries/idxname-data-set-option.md",
+     "page": 38,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "IDXWHERE= Data Set Option": {
+     "category": "User Control of SAS Index Usage Use with input data sets only. Mutually exclusive with IDXNAME= data set option",
+     "docset": "dso",
+     "file": "extracted/dso/entries/idxwhere-data-set-option.md",
+     "page": 40,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "IN= Data Set Option": {
+     "category": "Observation Control CAS",
+     "docset": "dso",
+     "file": "extracted/dso/entries/in-data-set-option.md",
+     "page": 44,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "INDEX= Data Set Option": {
+     "category": "Data Set Control Use with output data sets only.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/index-data-set-option.md",
+     "page": 42,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "KEEP= Data Set Option": {
+     "category": "Variable Control CAS",
+     "docset": "dso",
+     "file": "extracted/dso/entries/keep-data-set-option.md",
+     "page": 45,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "LABEL= Data Set Option": {
+     "category": "Data Set Control CAS",
+     "docset": "dso",
+     "file": "extracted/dso/entries/label-data-set-option.md",
+     "page": 47,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "MAXTABLEMEM= Data Set Option": {
+     "category": "CAS Data Access",
+     "docset": "dso",
+     "file": "extracted/dso/entries/maxtablemem-data-set-option.md",
+     "page": 49,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "OBS= Data Set Option": {
+     "category": "Observation Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/obs-data-set-option.md",
+     "page": 52,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "OBSBUF= Data Set Option": {
+     "category": "Data Set Control Valid only for a DATA step view",
+     "docset": "dso",
+     "file": "extracted/dso/entries/obsbuf-data-set-option.md",
+     "page": 50,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "OUTREP= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/outrep-data-set-option.md",
+     "page": 61,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "POINTOBS= Data Set Option": {
+     "category": "Observation Control POINTOBS= is effective only when creating a compressed data set. Otherwise, it is ignored.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/pointobs-data-set-option.md",
+     "page": 64,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "PW= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/pw-data-set-option.md",
+     "page": 66,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "PWREQ= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/pwreq-data-set-option.md",
+     "page": 67,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "READ= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/read-data-set-option.md",
+     "page": 68,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "RENAME= Data Set Option": {
+     "category": "Variable Control CAS",
+     "docset": "dso",
+     "file": "extracted/dso/entries/rename-data-set-option.md",
+     "page": 70,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "REPEMPTY= Data Set Option": {
+     "category": "Data Set Control This data set option is not supported in a DATA step that runs in CAS.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/repempty-data-set-option.md",
+     "page": 73,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "REPLACE= Data Set Option": {
+     "category": "Data Set Control CAS This option is valid only when creating a SAS data set.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/replace-data-set-option.md",
+     "page": 76,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "REUSE= Data Set Option": {
+     "category": "Data Set Control Use with output data sets only.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/reuse-data-set-option.md",
+     "page": 77,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "ROLE= Data Set Option": {
+     "category": "Data Set Control Use with input data sets only.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/role-data-set-option.md",
+     "page": 78,
+     "type": "",
+     "valid_in": "PROC SQL"
+    },
+    "SORTEDBY= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/sortedby-data-set-option.md",
+     "page": 79,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "SPILL= Data Set Option": {
+     "category": "Data Set Control Valid only for a DATA step view",
+     "docset": "dso",
+     "file": "extracted/dso/entries/spill-data-set-option.md",
+     "page": 82,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "TOBSNO= Data Set Option": {
+     "category": "Data Set Control The TOBSNO= option is valid only for data sets that are accessed through a SAS server by using the REMOTE engine.",
+     "docset": "dso",
+     "file": "extracted/dso/entries/tobsno-data-set-option.md",
+     "page": 90,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "TYPE= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/type-data-set-option.md",
+     "page": 91,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "WHERE= Data Set Option": {
+     "category": "Observation Control CAS",
+     "docset": "dso",
+     "file": "extracted/dso/entries/where-data-set-option.md",
+     "page": 93,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "WHEREUP= Data Set Option": {
+     "category": "Observation Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/whereup-data-set-option.md",
+     "page": 96,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    },
+    "WRITE= Data Set Option": {
+     "category": "Data Set Control",
+     "docset": "dso",
+     "file": "extracted/dso/entries/write-data-set-option.md",
+     "page": 98,
+     "type": "",
+     "valid_in": "DATA step and PROC steps"
+    }
+   },
+   "pdf_sha256": "b8333948cec7db9b6ca6ee74540b9b5a217049e7f203882f183ea08e68f580d4"
+  },
+  "stmt": {
+   "count": 108,
+   "entries": {
+    "%INCLUDE Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/macro-include-statement.md",
+     "page": 122,
+     "type": "",
+     "valid_in": ""
+    },
+    "%LIST Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/macro-list-statement.md",
+     "page": 228,
+     "type": "",
+     "valid_in": ""
+    },
+    "%RUN Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/macro-run-statement.md",
+     "page": 326,
+     "type": "",
+     "valid_in": ""
+    },
+    "ABORT Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/abort-statement.md",
+     "page": 15,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "ARRAY Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/array-statement.md",
+     "page": 21,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "ATTRIB Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/attrib-statement.md",
+     "page": 33,
+     "type": "Declarative",
+     "valid_in": "DATA step or PROC step"
+    },
+    "Array Reference Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/array-reference-statement.md",
+     "page": 27,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "Assignment Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/assignment-statement.md",
+     "page": 32,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "BY Statement": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/by-statement.md",
+     "page": 39,
+     "type": "Declarative",
+     "valid_in": "DATA step or PROC step"
+    },
+    "CALL Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/call-statement.md",
+     "page": 46,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "CARDS Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/cards-statement.md",
+     "page": 47,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "CARDS4 Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/cards4-statement.md",
+     "page": 47,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "CATNAME Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/catname-statement.md",
+     "page": 47,
+     "type": "",
+     "valid_in": ""
+    },
+    "CHECKPOINT EXECUTE_ALWAYS Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/checkpoint-execute-always-statement.md",
+     "page": 48,
+     "type": "",
+     "valid_in": ""
+    },
+    "CONTINUE Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/continue-statement.md",
+     "page": 48,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "Comment Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/comment-statement.md",
+     "page": 48,
+     "type": "",
+     "valid_in": ""
+    },
+    "DATA Statement": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/data-statement.md",
+     "page": 49,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "DATALINES Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/datalines-statement.md",
+     "page": 61,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "DATALINES4 Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/datalines4-statement.md",
+     "page": 63,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "DELETE Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/delete-statement.md",
+     "page": 65,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "DESCRIBE Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/describe-statement.md",
+     "page": 66,
+     "type": "Executable Use DESCRIBE only with stored compiled DATA step programs and DATA step views.",
+     "valid_in": "DATA step"
+    },
+    "DISPLAY Statement": {
+     "category": "Window Display",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/display-statement.md",
+     "page": 67,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "DM Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/dm-statement.md",
+     "page": 70,
+     "type": "",
+     "valid_in": ""
+    },
+    "DO Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/do-statement.md",
+     "page": 70,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "DO Statement: Iterative": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/do-statement-iterative.md",
+     "page": 72,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "DO UNTIL Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/do-until-statement.md",
+     "page": 76,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "DO WHILE Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/do-while-statement.md",
+     "page": 78,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "DROP Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/drop-statement.md",
+     "page": 79,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "END Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/end-statement.md",
+     "page": 81,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "ENDSAS Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/endsas-statement.md",
+     "page": 82,
+     "type": "",
+     "valid_in": ""
+    },
+    "ERROR Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/error-statement.md",
+     "page": 82,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "EXECUTE Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/execute-statement.md",
+     "page": 84,
+     "type": "Executable Use EXECUTE with stored compiled DATA step programs only.",
+     "valid_in": "DATA step"
+    },
+    "FILE Statement": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/file-statement.md",
+     "page": 85,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "FILENAME Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement.md",
+     "page": 108,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: Azure Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-azure-access-method.md",
+     "page": 108,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: CATALOG Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-catalog-access-method.md",
+     "page": 109,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: CLIPBOARD Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-clipboard-access-method.md",
+     "page": 109,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: DATAURL Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-dataurl-access-method.md",
+     "page": 109,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: EMAIL (SMTP) Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-email-smtp-access-method.md",
+     "page": 109,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: FILESRVC Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-filesrvc-access-method.md",
+     "page": 109,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: FTP Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-ftp-access-method.md",
+     "page": 110,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: Hadoop Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-hadoop-access-method.md",
+     "page": 110,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: S3 Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-s3-access-method.md",
+     "page": 110,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: SFTP Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-sftp-access-method.md",
+     "page": 110,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: SOCKET Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-socket-access-method.md",
+     "page": 110,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: URL Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-url-access-method.md",
+     "page": 111,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: WebDAV Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-webdav-access-method.md",
+     "page": 111,
+     "type": "",
+     "valid_in": ""
+    },
+    "FILENAME Statement: ZIP Access Method": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/filename-statement-zip-access-method.md",
+     "page": 111,
+     "type": "",
+     "valid_in": ""
+    },
+    "FOOTNOTE Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/footnote-statement.md",
+     "page": 111,
+     "type": "",
+     "valid_in": ""
+    },
+    "FORMAT Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/format-statement.md",
+     "page": 111,
+     "type": "Declarative",
+     "valid_in": "DATA step or PROC step"
+    },
+    "GOTO Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/goto-statement.md",
+     "page": 115,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "IF Statement: Subsetting": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/if-statement-subsetting.md",
+     "page": 117,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "IF-THEN/ELSE Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/if-then-else-statement.md",
+     "page": 120,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "INFILE Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/infile-statement.md",
+     "page": 122,
+     "type": "Executable",
+     "valid_in": "DATA Step"
+    },
+    "INFORMAT Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/informat-statement.md",
+     "page": 161,
+     "type": "Declarative",
+     "valid_in": "DATA step or PROC step"
+    },
+    "INPUT Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/input-statement.md",
+     "page": 165,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "INPUT Statement: Column": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/input-statement-column.md",
+     "page": 183,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "INPUT Statement: Formatted": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/input-statement-formatted.md",
+     "page": 187,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "INPUT Statement: List": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/input-statement-list.md",
+     "page": 192,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "INPUT Statement: Named": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/input-statement-named.md",
+     "page": 200,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "KEEP Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/keep-statement.md",
+     "page": 204,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "LABEL Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/label-statement.md",
+     "page": 206,
+     "type": "Declarative",
+     "valid_in": "DATA step or PROC step"
+    },
+    "LEAVE Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/leave-statement.md",
+     "page": 214,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "LENGTH Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/length-statement.md",
+     "page": 215,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "LIBNAME Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/libname-statement.md",
+     "page": 221,
+     "type": "",
+     "valid_in": ""
+    },
+    "LIBNAME Statement: CVP Engine": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/libname-statement-cvp-engine.md",
+     "page": 221,
+     "type": "",
+     "valid_in": ""
+    },
+    "LIBNAME Statement: JMP Engine": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/libname-statement-jmp-engine.md",
+     "page": 221,
+     "type": "",
+     "valid_in": ""
+    },
+    "LIBNAME Statement: JSON Engine": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/libname-statement-json-engine.md",
+     "page": 221,
+     "type": "",
+     "valid_in": ""
+    },
+    "LIBNAME Statement: WebDAV Server Access": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/libname-statement-webdav-server-access.md",
+     "page": 221,
+     "type": "",
+     "valid_in": ""
+    },
+    "LINK Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/link-statement.md",
+     "page": 222,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "LIST Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/list-statement.md",
+     "page": 224,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "LOCK Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/lock-statement.md",
+     "page": 228,
+     "type": "",
+     "valid_in": ""
+    },
+    "LOCKDOWN Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/lockdown-statement.md",
+     "page": 229,
+     "type": "",
+     "valid_in": ""
+    },
+    "LOSTCARD Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/lostcard-statement.md",
+     "page": 229,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "Label: Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/label-statement-p211.md",
+     "page": 211,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "MERGE Statement": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/merge-statement.md",
+     "page": 231,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "MISSING Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/missing-statement.md",
+     "page": 240,
+     "type": "",
+     "valid_in": ""
+    },
+    "MODIFY Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/modify-statement.md",
+     "page": 240,
+     "type": "Executable This statement cannot modify the descriptor portion of a SAS data set, such as adding a variable.",
+     "valid_in": "DATA step"
+    },
+    "Null Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/null-statement.md",
+     "page": 261,
+     "type": "",
+     "valid_in": ""
+    },
+    "OPTIONS Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/options-statement.md",
+     "page": 261,
+     "type": "",
+     "valid_in": ""
+    },
+    "OUTPUT Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/output-statement.md",
+     "page": 261,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "PAGE Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/page-statement.md",
+     "page": 265,
+     "type": "",
+     "valid_in": ""
+    },
+    "PUT Statement": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/put-statement.md",
+     "page": 265,
+     "type": "Executable write to the SAS log, PRINT, or an external file, missing values might be suppressed in the output. Missing values can be displayed if an explicit line break (/) is included in the PUT statement.",
+     "valid_in": "DATA step"
+    },
+    "PUT Statement: Column": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/put-statement-column.md",
+     "page": 289,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "PUT Statement: Formatted": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/put-statement-formatted.md",
+     "page": 292,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "PUT Statement: List": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/put-statement-list.md",
+     "page": 296,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "PUT Statement: Named": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/put-statement-named.md",
+     "page": 302,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "PUTLOG Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/putlog-statement.md",
+     "page": 304,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "REDIRECT Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/redirect-statement.md",
+     "page": 310,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "REMOVE Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/remove-statement.md",
+     "page": 312,
+     "type": "Executable Use only with a MODIFY statement.",
+     "valid_in": "DATA step"
+    },
+    "RENAME Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/rename-statement.md",
+     "page": 314,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "REPLACE Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/replace-statement.md",
+     "page": 316,
+     "type": "Executable Use only with a MODIFY statement.",
+     "valid_in": "DATA step REPLACE Statement   317"
+    },
+    "RESETLINE Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/resetline-statement.md",
+     "page": 319,
+     "type": "",
+     "valid_in": ""
+    },
+    "RETAIN Statement": {
+     "category": "CAS Information",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/retain-statement.md",
+     "page": 319,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "RETURN Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/return-statement.md",
+     "page": 324,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "RUN Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/run-statement.md",
+     "page": 326,
+     "type": "",
+     "valid_in": ""
+    },
+    "SASFILE Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/sasfile-statement.md",
+     "page": 326,
+     "type": "",
+     "valid_in": ""
+    },
+    "SELECT Statement": {
+     "category": "CAS Control",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/select-statement.md",
+     "page": 326,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "SET Statement": {
+     "category": "CAS File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/set-statement.md",
+     "page": 331,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "SKIP Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/skip-statement.md",
+     "page": 346,
+     "type": "",
+     "valid_in": ""
+    },
+    "STOP Statement": {
+     "category": "Action",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/stop-statement.md",
+     "page": 346,
+     "type": "",
+     "valid_in": "DATA step"
+    },
+    "SYSECHO Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/sysecho-statement.md",
+     "page": 350,
+     "type": "",
+     "valid_in": ""
+    },
+    "Sum Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/sum-statement.md",
+     "page": 348,
+     "type": "Executable set Table1; total + x; run;",
+     "valid_in": "DATA step"
+    },
+    "TITLE Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/title-statement.md",
+     "page": 350,
+     "type": "",
+     "valid_in": ""
+    },
+    "UPDATE Statement": {
+     "category": "File-Handling",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/update-statement.md",
+     "page": 350,
+     "type": "Executable",
+     "valid_in": "DATA step"
+    },
+    "WHERE Statement": {
+     "category": "Action CAS",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/where-statement.md",
+     "page": 359,
+     "type": "Declarative",
+     "valid_in": "DATA step or PROC step"
+    },
+    "WINDOW Statement": {
+     "category": "Window Display",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/window-statement.md",
+     "page": 367,
+     "type": "Declarative",
+     "valid_in": "DATA step"
+    },
+    "X Statement": {
+     "category": "",
+     "docset": "stmt",
+     "file": "extracted/stmt/entries/x-statement.md",
+     "page": 380,
+     "type": "",
+     "valid_in": ""
+    }
+   },
+   "pdf_sha256": "b6e04675b26a5f8882816c939d1f76e06199627a617377640a4beb09dd4fdb11"
+  }
+ },
+ "generated_by": "tools/fetch_sas_reference.py"
+}

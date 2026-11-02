@@ -1,0 +1,10 @@
+{
+  "layer": "rulebook",
+  "source_repo": "https://github.com/buntas-tofu/SASchi-Go.git",
+  "source_commit": "34915047c03c72e4498d8ea540ee804b14038476",
+  "version": "1.0",
+  "copied_at": "2026-11-02T04:28:48+00:00",
+  "files": {
+    "sasconversionrulebook.json": "82ec2867728d074be717dce7e33829aec83da5819176c28382543d8f9fe26c41"
+  }
+}

@@ -3,9 +3,10 @@
 The SAS toolkit shelf: reference programs, migration skills, and an indexed map
 of the tools and lessons gathered across the SASchi projects.
 
-Status: toolkit foundation for maintainer review. The preserved corpus is
-community probe material. The skills are initial workflow guidance, not a
-universal converter or a claim of live-SAS equivalence. MCP is planned.
+Status: toolkit foundation plus the reference-home layers (2026-11-02). The
+preserved corpus is community probe material. The skills are initial workflow
+guidance, not a universal converter or a claim of live-SAS equivalence. The
+MCP server is landed: an advisory knowledge layer over kb/, gated by CI.
 
 ## Start here
 
@@ -19,7 +20,9 @@ universal converter or a claim of live-SAS equivalence. MCP is planned.
 | Define byte, character and metadata preservation | [Interchange contracts](skills/sas-define-interchange/SKILL.md) |
 | Diagnose conditional queues and retained state | [Stateful failure diagnosis](skills/sas-diagnose-state/SKILL.md) |
 | Find repositories and already gathered material | [Resource catalog](catalog/README.md) |
-| See the build sequence and future MCP work | [Roadmap](docs/ROADMAP.md) |
+| Query the knowledge base (rulebook, 9.4 reference, landmines, corpus) | [MCP server](mcp/README.md) |
+| Maintain the kb: syncs, harvests, drift, gates | [KB maintenance skill](skills/sas-kb-maintenance/SKILL.md) |
+| See the build sequence | [Roadmap](docs/ROADMAP.md) |
 | Review staged tests and starter observations | [Test plan](docs/TEST_PLAN.md), [starter results](trials/starter-batch/README.md) |
 
 ## Repository shape
@@ -28,6 +31,9 @@ universal converter or a claim of live-SAS equivalence. MCP is planned.
 |---|---|
 | `references/rosetta-code/` | SAS files, task indexes, collection documentation and attribution |
 | `skills/` | Individually usable agent workflow instructions and focused references |
+| `kb/` | The layered knowledge base: stamped canonical copies (rulebook, capability, semantics, census, evidence), the harvested SAS 9.4 reference (148 page-pinned entries), landmine cards, conversion guides, research |
+| `mcp/` | The advisory MCP server subproject (`sas-ref-mcp`): twelve tools, nine resources, three prompts |
+| `vendor/` | Declared foreign trees with pinned provenance |
 | `catalog/resources.json` | Source-backed resource records; generates `catalog/README.md` |
 | `docs/` | Scope decision, migration receipt and roadmap |
 | `tools/` and `scripts/` | Harvesting and repository checks |
@@ -109,9 +115,9 @@ and semantic gates. [SASchi-Garage](https://github.com/buntas-tofu/SASchi-Garage
 owns its authored field guide and research. Roku brings references, workflows,
 and discovery together without duplicating those implementation sources.
 
-The professional lane has [sas-campaign](https://github.com/the-pgh-cid/sas-campaign),
-[sas-ref](https://github.com/the-pgh-cid/sas-ref), and the collected
-[training modules](https://github.com/the-pgh-cid/sas-training-modules).
+The professional lane has sas-campaign (sas-campaign, professional lane, private),
+sas-ref (sas-ref, professional lane, private), and the collected
+training modules (sas-training-modules, professional lane, private).
 Catalog records identify the inspected commits. Shared ancestry does not imply
 matching versions, gates, or results.
 
