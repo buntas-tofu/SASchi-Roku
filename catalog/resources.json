@@ -1,0 +1,953 @@
+{
+  "schema_version": 1,
+  "status": "Discovery catalog for maintainer use; reference inspection is not runtime validation or a redistribution grant.",
+  "updated_on": "2026-11-01",
+  "resources": [
+    {
+      "id": "camis",
+      "name": "PSIAIMS/CAMIS",
+      "kind": "repository",
+      "category": "comparison",
+      "url": "https://github.com/PSIAIMS/CAMIS",
+      "description": "Cross-software statistical comparison reference identified in Garage research.",
+      "tags": [
+        "r",
+        "sas",
+        "statistics"
+      ],
+      "locations": [
+        "https://psiaims.github.io/CAMIS/Comp/r-sas_mmrm.html",
+        "https://psiaims.github.io/CAMIS/Comp/r-sas_random_effects_models.html"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json",
+        "source_revision": "8c78212041ac65478d93bb1f394edaa48d53025f",
+        "notes": "Seeded from Garage C01/C02; upstream README inspected, blob 9934662950bf29107b1ae17a6642f952db74c51c. Published examples are not receipts for a user program."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "pandas",
+      "name": "pandas-dev/pandas",
+      "kind": "repository",
+      "category": "dataframe",
+      "url": "https://github.com/pandas-dev/pandas",
+      "description": "Python data analysis toolkit referenced by the gathered migration research.",
+      "tags": [
+        "python",
+        "dataframe"
+      ],
+      "locations": [
+        "https://pandas.pydata.org/docs/reference/api/pandas.merge.html"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json",
+        "source_revision": "8c78212041ac65478d93bb1f394edaa48d53025f",
+        "notes": "Seeded from Garage T01; upstream README inspected, blob 0558b6a6e9b3e22669be157f2d364c08b823656c. Merge behavior requires its own migration contract."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "sas-campaign",
+      "name": "the-pgh-cid/sas-campaign",
+      "kind": "repository",
+      "category": "family",
+      "url": "https://github.com/the-pgh-cid/sas-campaign",
+      "description": "Professional translation lane; user guide, rulebook, macro census and coverage map.",
+      "tags": [
+        "python",
+        "r",
+        "translation",
+        "census"
+      ],
+      "locations": [
+        "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/sasconversionrulebook.json"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/USER_GUIDE.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Version parity with SASchi-Go is not assumed."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "sas-ref",
+      "name": "the-pgh-cid/sas-ref",
+      "kind": "repository",
+      "category": "family",
+      "url": "https://github.com/the-pgh-cid/sas-ref",
+      "description": "Consolidated reference home: corpus, field guide, training, program archive and declared vendor material.",
+      "tags": [
+        "reference",
+        "collection",
+        "provenance"
+      ],
+      "locations": [
+        "https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/consolidation/LEDGER.md",
+        "source_revision": "9760721edf0c7fccae15b41a331a8cae904ec0e5",
+        "notes": "Indexing this collection does not import its trees or promote their evidence."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "saschi-garage",
+      "name": "buntas-tofu/SASchi-Garage",
+      "kind": "repository",
+      "category": "family",
+      "url": "https://github.com/buntas-tofu/SASchi-Garage",
+      "description": "Authored teaching cards, migration landmines, research and evidence maps.",
+      "tags": [
+        "research",
+        "macros",
+        "semantics"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/README.md",
+        "source_revision": "8c78212041ac65478d93bb1f394edaa48d53025f",
+        "notes": "Candidate/asserted research is distinct from runtime evidence."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "saschi-go",
+      "name": "buntas-tofu/SASchi-Go",
+      "kind": "repository",
+      "category": "family",
+      "url": "https://github.com/buntas-tofu/SASchi-Go",
+      "description": "SAS translation implementation, bounded semantic profiles and verification gates.",
+      "tags": [
+        "python",
+        "r",
+        "translation",
+        "verification"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/buntas-tofu/SASchi-Go/blob/34915047c03c72e4498d8ea540ee804b14038476/docs/OPERATIONS.md",
+        "source_revision": "34915047c03c72e4498d8ea540ee804b14038476",
+        "notes": ""
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "apache-parquet-format",
+      "name": "apache/parquet-format",
+      "kind": "repository",
+      "category": "format",
+      "url": "https://github.com/apache/parquet-format",
+      "description": "Apache Parquet storage-format specification, identified in the gathered sas-ref vendor shelf.",
+      "tags": [
+        "parquet",
+        "format"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md",
+        "source_revision": "9760721edf0c7fccae15b41a331a8cae904ec0e5",
+        "notes": "Original vendor import did not record an upstream revision. A format specification is not a SAS conversion tool."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "master"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "haven",
+      "name": "tidyverse/haven",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/tidyverse/haven",
+      "description": "R statistical-file interchange, including SAS readers and metadata representations.",
+      "tags": [
+        "r",
+        "sas-data",
+        "metadata"
+      ],
+      "locations": [
+        "https://haven.tidyverse.org/reference/read_sas.html",
+        "https://haven.tidyverse.org/articles/semantics.html"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json",
+        "source_revision": "8c78212041ac65478d93bb1f394edaa48d53025f",
+        "notes": "Seeded from Garage T03/T04; upstream README inspected, blob 3492b8021d83f0c15f422f527744889bda589974. Conversion path still needs validation."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "census-atorus-research-atorus-sas-macros",
+      "name": "atorus-research/atorus-sas-macros",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/atorus-research/atorus-sas-macros",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "dev"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 31,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-boemska-macrocore",
+      "name": "Boemska/macrocore",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/Boemska/macrocore",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 76,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-causalinference-gformula-sas",
+      "name": "CausalInference/GFORMULA-SAS",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/CausalInference/GFORMULA-SAS",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 11,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-cdisc-org-cosmos",
+      "name": "cdisc-org/COSMoS",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/cdisc-org/COSMoS",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 31,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-danielegiardiello-prediction-performance-survival",
+      "name": "danielegiardiello/Prediction_performance_survival",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/danielegiardiello/Prediction_performance_survival",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "GPL-3.0",
+        "default_branch": "main"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 6,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-eleanormurray-causalsurvivalanalysisworkshop",
+      "name": "eleanormurray/CausalSurvivalAnalysisWorkshop",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/eleanormurray/CausalSurvivalAnalysisWorkshop",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 1,
+        "license_files_observed": "no license file in clone"
+      }
+    },
+    {
+      "id": "census-friendly-sas-macros",
+      "name": "friendly/SAS-macros",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/friendly/SAS-macros",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 463,
+        "license_files_observed": "no license file in clone"
+      }
+    },
+    {
+      "id": "census-hhs-ahrq-meps",
+      "name": "HHS-AHRQ/MEPS",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/HHS-AHRQ/MEPS",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 58,
+        "license_files_observed": "no license file in clone"
+      }
+    },
+    {
+      "id": "census-paulschmidtgit-heritability",
+      "name": "PaulSchmidtGit/Heritability",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/PaulSchmidtGit/Heritability",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 11,
+        "license_files_observed": "no license file in clone"
+      }
+    },
+    {
+      "id": "census-phuse-org-phuse-scripts",
+      "name": "phuse-org/phuse-scripts",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/phuse-org/phuse-scripts",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 164,
+        "license_files_observed": "LICENSE, LICENSE.md, LICENSE.txt"
+      }
+    },
+    {
+      "id": "census-rhoinc-sas-statistical-data-checks",
+      "name": "RhoInc/sas-statistical-data-checks",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/RhoInc/sas-statistical-data-checks",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 14,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sascommunities-learning-sas-by-example-2nd",
+      "name": "sascommunities/learning-sas-by-example-2nd",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sascommunities/learning-sas-by-example-2nd",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 3,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sascommunities-sas-cert-prep-data",
+      "name": "sascommunities/sas-cert-prep-data",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sascommunities/sas-cert-prep-data",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 8,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sascommunities-sas-global-forum-2019",
+      "name": "sascommunities/sas-global-forum-2019",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sascommunities/sas-global-forum-2019",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 152,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sascommunities-sas-prog-for-r-users",
+      "name": "sascommunities/sas-prog-for-r-users",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sascommunities/sas-prog-for-r-users",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "CC-BY-4.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 83,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sasjs-core",
+      "name": "sasjs/core",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sasjs/core",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 408,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sassoftware-enlighten-apply",
+      "name": "sassoftware/enlighten-apply",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sassoftware/enlighten-apply",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": true,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 23,
+        "license_files_observed": "LICENSE, LICENSE.txt"
+      }
+    },
+    {
+      "id": "census-sassoftware-sas-code-examples",
+      "name": "sassoftware/sas-code-examples",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sassoftware/sas-code-examples",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "main"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 51,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sassoftware-sas-iml-packages",
+      "name": "sassoftware/sas-iml-packages",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sassoftware/sas-iml-packages",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "main"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 42,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-sasutils-macros",
+      "name": "sasutils/macros",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/sasutils/macros",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "GPL-3.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 49,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-wyp1125-sas-clinical-trials-toolkit",
+      "name": "wyp1125/SAS-Clinical-Trials-Toolkit",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/wyp1125/SAS-Clinical-Trials-Toolkit",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "GPL-3.0",
+        "default_branch": "master"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 22,
+        "license_files_observed": "LICENSE"
+      }
+    },
+    {
+      "id": "census-yabwon-sas-packages",
+      "name": "yabwon/SAS_PACKAGES",
+      "kind": "repository",
+      "category": "sas-testbed",
+      "url": "https://github.com/yabwon/SAS_PACKAGES",
+      "description": "Repository included in the 2026-09-08 SAS macro testbed census.",
+      "tags": [
+        "sas",
+        "census"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "repository-resolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md",
+        "source_revision": "4a32c5338d0225a117fb14fd016942385c780e06",
+        "notes": "Repository URL resolved through GitHub on review date. Historical counts and clone license filenames are not a current inventory or per-file rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": {
+        "snapshot_date": "2026-09-08",
+        "sas_files": 48,
+        "license_files_observed": "LICENSE, license.sas"
+      }
+    },
+    {
+      "id": "sas-migration-collected",
+      "name": "sas_migration collected scaffold",
+      "kind": "collected-material",
+      "category": "scaffold",
+      "url": null,
+      "description": "Collected migration starter kit with Python/R skill templates and DuckDB, Polars and R guides.",
+      "tags": [
+        "python",
+        "r",
+        "duckdb",
+        "polars",
+        "skills"
+      ],
+      "locations": [
+        "https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/sas_migration-main/README.md"
+      ],
+      "evidence": {
+        "status": "upstream-unresolved",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md",
+        "source_revision": "9760721edf0c7fccae15b41a331a8cae904ec0e5",
+        "notes": "Upstream repository URL and revision were not recorded. No code copied or setup script executed."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "sas-training-modules",
+      "name": "the-pgh-cid/sas-training-modules",
+      "kind": "repository",
+      "category": "training",
+      "url": "https://github.com/the-pgh-cid/sas-training-modules",
+      "description": "Ten SAS migration teaching modules with prompt comparisons, expected results and recorded evidence.",
+      "tags": [
+        "training",
+        "python",
+        "r",
+        "evaluation"
+      ],
+      "locations": [
+        "https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/training/README.md"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Reference/source inspection only; no runtime validation performed in Roku.",
+        "source_url": "https://github.com/the-pgh-cid/sas-training-modules/blob/4be913210dcf3c1befc3367420c4ac9032bac39d/README.md",
+        "source_revision": "4be913210dcf3c1befc3367420c4ac9032bac39d",
+        "notes": "Original and consolidated locations are one resource, not independent evidence. Current README and APPENDICES qualify historical STATUS claims."
+      },
+      "github_snapshot": null,
+      "historical_census": null
+    }
+  ]
+}

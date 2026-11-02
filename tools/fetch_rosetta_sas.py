@@ -6,8 +6,9 @@ MediaWiki API and either refreshes this repository's corpus or, with
 --check, reports how the repository differs from upstream without
 writing anything. Pure standard library; one request per task, throttled.
 
-The corpus is a provenance-pinned snapshot: one .sas file per task under
-corpus/, each opening with a header comment that pins the source URL, the
+The collection lives under references/rosetta-code/ in the toolkit. Its corpus
+is a provenance-pinned snapshot: one .sas file per task under corpus/, each
+opening with a header comment that pins the source URL, the
 page revision the text was extracted from, and the retrieval time.
 TASKS.csv and TASKS.md are generated indexes over the same state.
 
@@ -51,7 +52,7 @@ from pathlib import Path
 API = "https://rosettacode.org/w/api.php"
 CATEGORY = "Category:SAS"
 CATEGORY_URL = "https://rosettacode.org/wiki/" + CATEGORY.replace(" ", "_")
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent.parent / "references" / "rosetta-code"
 CORPUS_DIR = ROOT / "corpus"
 TASKS_CSV = ROOT / "TASKS.csv"
 TASKS_MD = ROOT / "TASKS.md"
@@ -307,10 +308,13 @@ def main() -> int:
     if not debug_limited:
         new_csv = index_csv_text(rows)
         new_md = index_md_text(rows)
-        old_csv = (TASKS_CSV.open("r", encoding="utf-8", newline="").read()
-                   if TASKS_CSV.exists() else "")
-        old_md = (TASKS_MD.open("r", encoding="utf-8", newline="").read()
-                  if TASKS_MD.exists() else "")
+        old_csv = old_md = ""
+        if TASKS_CSV.exists():
+            with TASKS_CSV.open("r", encoding="utf-8", newline="") as stream:
+                old_csv = stream.read()
+        if TASKS_MD.exists():
+            with TASKS_MD.open("r", encoding="utf-8", newline="") as stream:
+                old_md = stream.read()
         idx_changed = new_csv != old_csv or new_md != old_md
         idx_lines = index_diff(old_csv, new_csv)
         for ln in idx_lines:

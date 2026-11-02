@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "status": "Relocation byte comparison passed; maintainer review evidence, not SAS correctness or upstream freshness",
+  "date": "2026-11-01",
+  "source_commit": "00b8b8879292309ef67d8351a05d333a0d66b9ae",
+  "files": [
+    {
+      "source": "corpus/100_doors.sas",
+      "destination": "references/rosetta-code/corpus/100_doors.sas",
+      "sha256": "e708b988d5d9f852cef56150068abeb9eda8bb3ca3eb59d04457429e930d2aa1",
+      "bytes": 540
+    },
+    {
+      "source": "corpus/archimedean_spiral.sas",
+      "destination": "references/rosetta-code/corpus/archimedean_spiral.sas",
+      "sha256": "55c7d6218b62c10a67fddbb5dd3ac5766bbf2bb734142b457b3bd02b636d5a7b",
+      "bytes": 371
+    },
+    {
+      "source": "corpus/bitwise_operations.sas",
+      "destination": "references/rosetta-code/corpus/bitwise_operations.sas",
+      "sha256": "e774418156723a8c2aa8f6a2e6b9fac9f6c258a87ee1aff13502b8a654584799",
+      "bytes": 469
+    },
+    {
+      "source": "corpus/comments.sas",
+      "destination": "references/rosetta-code/corpus/comments.sas",
+      "sha256": "d131c0c99b20751bad95c2ac0d802e06a512174e4af8767341e6fae99441f418",
+      "bytes": 253
+    },
+    {
+      "source": "corpus/count_the_coins.sas",
+      "destination": "references/rosetta-code/corpus/count_the_coins.sas",
+      "sha256": "daa662a6f109357988bef9405da4dae53f294cff1285fdb6f6cd6c0581fe14fa",
+      "bytes": 785
+    },
+    {
+      "source": "corpus/csv_data_manipulation.sas",
+      "destination": "references/rosetta-code/corpus/csv_data_manipulation.sas",
+      "sha256": "f9bf4fc393112052cb76945f6c878e8029160fce27ba223a2dc46d7cfba8fba8",
+      "bytes": 458
+    },
+    {
+      "source": "corpus/cumulative_standard_deviation.sas",
+      "destination": "references/rosetta-code/corpus/cumulative_standard_deviation.sas",
+      "sha256": "e2ead98ca70a6a9f7e6143c5bc864ac3c09ec10cd1f445ee17dfbffce6f94555",
+      "bytes": 953
+    },
+    {
+      "source": "corpus/day_of_the_week.sas",
+      "destination": "references/rosetta-code/corpus/day_of_the_week.sas",
+      "sha256": "4bcce862221b4089d579f178c0a32df845aa2c16655d93388e7c34635c65b667",
+      "bytes": 391
+    },
+    {
+      "source": "corpus/dijkstra_s_algorithm.sas",
+      "destination": "references/rosetta-code/corpus/dijkstra_s_algorithm.sas",
+      "sha256": "b56387196d655a2ef0c637e8beb11d50a79dfb8a61273d946ff2d00a2132856c",
+      "bytes": 1082
+    },
+    {
+      "source": "corpus/fibonacci_sequence.sas",
+      "destination": "references/rosetta-code/corpus/fibonacci_sequence.sas",
+      "sha256": "85ce274b6c9e5030eba66b53eb3fe3f6dcf13dfea4afaab8049e748e8778a088",
+      "bytes": 676
+    },
+    {
+      "source": "corpus/fivenum.sas",
+      "destination": "references/rosetta-code/corpus/fivenum.sas",
+      "sha256": "53b9bf0fb728bdb525df3ea806379278f9f9fa6797e92ecbaf2a1b5cb95dbf76",
+      "bytes": 370
+    },
+    {
+      "source": "corpus/fizzbuzz.sas",
+      "destination": "references/rosetta-code/corpus/fizzbuzz.sas",
+      "sha256": "a2aa8937eb12194fa2b271dd89a329e3be75facae0025961849984dad37b969e",
+      "bytes": 366
+    },
+    {
+      "source": "corpus/flow_control_structures.sas",
+      "destination": "references/rosetta-code/corpus/flow_control_structures.sas",
+      "sha256": "8131b1289000bbb02418d19f4fbd9df9f66df30ea7141fd26f87ba3c28dd42a9",
+      "bytes": 698
+    },
+    {
+      "source": "corpus/hailstone_sequence.sas",
+      "destination": "references/rosetta-code/corpus/hailstone_sequence.sas",
+      "sha256": "d016f3026218ceb6cc9a44cbb8b77d5cdac2c305637d2c4b8648144cdacefcdd",
+      "bytes": 1618
+    },
+    {
+      "source": "corpus/haversine_formula.sas",
+      "destination": "references/rosetta-code/corpus/haversine_formula.sas",
+      "sha256": "09c98307dd1d1e7bcab85802d9e90b127d33b85da49286560733eb34e5c3b737",
+      "bytes": 1306
+    },
+    {
+      "source": "corpus/hello_world_text.sas",
+      "destination": "references/rosetta-code/corpus/hello_world_text.sas",
+      "sha256": "823cd6fe27f7c8d6f6743d2e4edde6fd018106a2e613308987a304499a76cf41",
+      "bytes": 307
+    },
+    {
+      "source": "corpus/integer_comparison.sas",
+      "destination": "references/rosetta-code/corpus/integer_comparison.sas",
+      "sha256": "bfe81fc2f69fbf081a4687c63ff1732f8cc3e2e4a495330dc9583a20ccab2497",
+      "bytes": 742
+    },
+    {
+      "source": "corpus/knapsack_problem_0_1.sas",
+      "destination": "references/rosetta-code/corpus/knapsack_problem_0_1.sas",
+      "sha256": "b4d5697529bae0559f4f7e73e60d626d9978733d0a4a6721d878da0bcd95b65c",
+      "bytes": 1660
+    },
+    {
+      "source": "corpus/knapsack_problem_bounded.sas",
+      "destination": "references/rosetta-code/corpus/knapsack_problem_bounded.sas",
+      "sha256": "77ae51a77ddb6e9160f1012204262aa66156d50691b0dabc3cd1f0add0879a7c",
+      "bytes": 1839
+    },
+    {
+      "source": "corpus/knapsack_problem_continuous.sas",
+      "destination": "references/rosetta-code/corpus/knapsack_problem_continuous.sas",
+      "sha256": "6e67f720e06e40ac816db0413f03080fb0a8a2d67bfcda54c92f0094fbc9d450",
+      "bytes": 1143
+    },
+    {
+      "source": "corpus/knapsack_problem_unbounded.sas",
+      "destination": "references/rosetta-code/corpus/knapsack_problem_unbounded.sas",
+      "sha256": "a741eb7d39d3635b652adc159d79b9e1709bd512e4b710f2d6da8215b05d2a9f",
+      "bytes": 2476
+    },
+    {
+      "source": "corpus/loops_break.sas",
+      "destination": "references/rosetta-code/corpus/loops_break.sas",
+      "sha256": "17ea00daa414f90f487b7a741fc65c200e4884711474cee8b9ed03b327db8d8a",
+      "bytes": 323
+    },
+    {
+      "source": "corpus/loops_do_while.sas",
+      "destination": "references/rosetta-code/corpus/loops_do_while.sas",
+      "sha256": "dd59991a99fdd5b1fa9f9c039d08464bcbe58655533ab6b8b2eff567e410bf53",
+      "bytes": 331
+    },
+    {
+      "source": "corpus/loops_for.sas",
+      "destination": "references/rosetta-code/corpus/loops_for.sas",
+      "sha256": "88ad65e242857efa846bf34618e7b99ec4fba3dec8b3357033a9458759f39f87",
+      "bytes": 502
+    },
+    {
+      "source": "corpus/loops_for_with_a_specified_step.sas",
+      "destination": "references/rosetta-code/corpus/loops_for_with_a_specified_step.sas",
+      "sha256": "274196284d712ebcb9a4bd8c7dc882ad3529a3c1db6e7594678ba60e7aa8922b",
+      "bytes": 283
+    },
+    {
+      "source": "corpus/loops_foreach.sas",
+      "destination": "references/rosetta-code/corpus/loops_foreach.sas",
+      "sha256": "f93ccdac3029a544483d86bb64d88d6b01529ccabec2b641c867659c544205ae",
+      "bytes": 361
+    },
+    {
+      "source": "corpus/loops_while.sas",
+      "destination": "references/rosetta-code/corpus/loops_while.sas",
+      "sha256": "688c60c70435a89c6f05badf4623345311e5bcad05c9b03fb2cd3599c3e42787",
+      "bytes": 263
+    },
+    {
+      "source": "corpus/merge_and_aggregate_datasets.sas",
+      "destination": "references/rosetta-code/corpus/merge_and_aggregate_datasets.sas",
+      "sha256": "3ac1c411eb1f7653030d83bd8a6109e7dbf4f991ba08715ea9d9440330c2f7e5",
+      "bytes": 831
+    },
+    {
+      "source": "corpus/n_queens_problem.sas",
+      "destination": "references/rosetta-code/corpus/n_queens_problem.sas",
+      "sha256": "1561c88ffeda5f8d8e0ccfa56fcd0516fb35976072d72490b162bffec416e340",
+      "bytes": 842
+    },
+    {
+      "source": "corpus/p_value_correction.sas",
+      "destination": "references/rosetta-code/corpus/p_value_correction.sas",
+      "sha256": "3f7fd139bad773e2662f1ca3295e55c94078ade6dd7044162160bcb29827f929",
+      "bytes": 958
+    },
+    {
+      "source": "corpus/palindrome_detection.sas",
+      "destination": "references/rosetta-code/corpus/palindrome_detection.sas",
+      "sha256": "765dbe5317c4f889ea6cb9be121837a580c35d28a3e0cb99c81a446f4d22835e",
+      "bytes": 1770
+    },
+    {
+      "source": "corpus/permutations.sas",
+      "destination": "references/rosetta-code/corpus/permutations.sas",
+      "sha256": "0cdab47685f91a1d24a255ecaeed9f717280190a3cef135ab5d47cdabec72c67",
+      "bytes": 747
+    },
+    {
+      "source": "corpus/pointers_and_references.sas",
+      "destination": "references/rosetta-code/corpus/pointers_and_references.sas",
+      "sha256": "375d77fa6009b29adfee598aeb8bedc1758e474d65a2ac857a7f5d318542e760",
+      "bytes": 476
+    },
+    {
+      "source": "corpus/power_set.sas",
+      "destination": "references/rosetta-code/corpus/power_set.sas",
+      "sha256": "73147bdf583903a05dc53a4f3feb554bf730970c59fcb55cc56f0da0116a66eb",
+      "bytes": 1071
+    },
+    {
+      "source": "corpus/primality_by_trial_division.sas",
+      "destination": "references/rosetta-code/corpus/primality_by_trial_division.sas",
+      "sha256": "d8813e29852d5932149a60886a1846027e04dab66d34868b2489e690c12ad860",
+      "bytes": 495
+    },
+    {
+      "source": "corpus/priority_queue.sas",
+      "destination": "references/rosetta-code/corpus/priority_queue.sas",
+      "sha256": "03522d8b2c3ce5cffe5a134524c5d04472e0fd77e8e85b92ab6d9bbf43107dc8",
+      "bytes": 4983
+    },
+    {
+      "source": "corpus/qr_decomposition.sas",
+      "destination": "references/rosetta-code/corpus/qr_decomposition.sas",
+      "sha256": "9cbc070d629bd0e7854e6ad6bf2c5edbfdbc1a7ff8e8c86fea1c5d9d83b28d01",
+      "bytes": 801
+    },
+    {
+      "source": "corpus/random_numbers.sas",
+      "destination": "references/rosetta-code/corpus/random_numbers.sas",
+      "sha256": "7f039ac58aa360c0dbb34dda12c1edd97f33874dff611eec0289f0fea069a270",
+      "bytes": 565
+    },
+    {
+      "source": "corpus/reverse_a_string.sas",
+      "destination": "references/rosetta-code/corpus/reverse_a_string.sas",
+      "sha256": "e6e28f873fd9b2a468ad34bc21a7759eca7ecd482dbdbd2f6d154d15a8064299",
+      "bytes": 283
+    },
+    {
+      "source": "corpus/send_email.sas",
+      "destination": "references/rosetta-code/corpus/send_email.sas",
+      "sha256": "a83c24445a9daf84bf413a37b86c34d72ce18b3c210adaa761525b17778154ae",
+      "bytes": 379
+    },
+    {
+      "source": "corpus/sieve_of_eratosthenes.sas",
+      "destination": "references/rosetta-code/corpus/sieve_of_eratosthenes.sas",
+      "sha256": "8604c0614844652ce61e8b683e1182b0c43f1daec5a50361ef8887683ee8bb21",
+      "bytes": 497
+    },
+    {
+      "source": "corpus/stair_climbing_puzzle.sas",
+      "destination": "references/rosetta-code/corpus/stair_climbing_puzzle.sas",
+      "sha256": "4320a2a1db3aff10b5fbcc91f0436c91c2248e09dd3482bf79cf6ce914ada18a",
+      "bytes": 700
+    },
+    {
+      "source": "corpus/statistics_normal_distribution.sas",
+      "destination": "references/rosetta-code/corpus/statistics_normal_distribution.sas",
+      "sha256": "94872c534c13f4335f32c1fdededb0728e9b614648f6fd99beaa739420117ed2",
+      "bytes": 696
+    },
+    {
+      "source": "corpus/string_concatenation.sas",
+      "destination": "references/rosetta-code/corpus/string_concatenation.sas",
+      "sha256": "be42363a757aeb8822283782fe80a6c31ad9f4becd8a7c126295ad3849649f5f",
+      "bytes": 364
+    },
+    {
+      "source": "corpus/string_length.sas",
+      "destination": "references/rosetta-code/corpus/string_length.sas",
+      "sha256": "3bc3c50966b3c74e2171e4f22492efb6f3da581662b0fd257f2bda672bbc879f",
+      "bytes": 268
+    },
+    {
+      "source": "corpus/strip_a_set_of_characters_from_a_string.sas",
+      "destination": "references/rosetta-code/corpus/strip_a_set_of_characters_from_a_string.sas",
+      "sha256": "ca114b1a5acb6aa5410692ff0736b1abdc3d193acb7acc430867b3bee5b1c51e",
+      "bytes": 573
+    },
+    {
+      "source": "corpus/substring.sas",
+      "destination": "references/rosetta-code/corpus/substring.sas",
+      "sha256": "acba68aa47ae7970221841a7c7f459ce5c47d8401a7ace72d1bb95f70801ded9",
+      "bytes": 356
+    },
+    {
+      "source": "corpus/sudoku.sas",
+      "destination": "references/rosetta-code/corpus/sudoku.sas",
+      "sha256": "82ff9037570ac17b4778deed37f85f6ef49679383167ef0280a6d3162cc27e34",
+      "bytes": 1261
+    },
+    {
+      "source": "corpus/sum_and_product_of_an_array.sas",
+      "destination": "references/rosetta-code/corpus/sum_and_product_of_an_array.sas",
+      "sha256": "06eca942365b06dec7e0f99b077856b4b33391e8addee0b39a44c0170987ea1a",
+      "bytes": 340
+    },
+    {
+      "source": "corpus/sum_of_a_series.sas",
+      "destination": "references/rosetta-code/corpus/sum_of_a_series.sas",
+      "sha256": "0fd04c9914fcd4d1a517e20aef2fc271602b3c545f6a277f04065c3b745f7c68",
+      "bytes": 330
+    },
+    {
+      "source": "corpus/table_creation_postal_addresses.sas",
+      "destination": "references/rosetta-code/corpus/table_creation_postal_addresses.sas",
+      "sha256": "7dca236b35f04e87491eb9cda52d3ae192b3ee6cb05fc96f674cc59074007349",
+      "bytes": 356
+    },
+    {
+      "source": "corpus/transportation_problem.sas",
+      "destination": "references/rosetta-code/corpus/transportation_problem.sas",
+      "sha256": "2914ddc957d59118bb2610e63a6d80e6d022fe7c390ba0cd7277e9a51248ccf0",
+      "bytes": 1039
+    },
+    {
+      "source": "corpus/trigonometric_functions.sas",
+      "destination": "references/rosetta-code/corpus/trigonometric_functions.sas",
+      "sha256": "d99125f923ad821c5d97754acf14c444841f088a9cfa6da617cd89c6edbf7b5a",
+      "bytes": 521
+    },
+    {
+      "source": "corpus/validate_international_securities_identification_number.sas",
+      "destination": "references/rosetta-code/corpus/validate_international_securities_identification_number.sas",
+      "sha256": "2d8bd540049185fd47241b327c664bf4e2e0414a7ac82a298eb9f327e5cff0ce",
+      "bytes": 1054
+    },
+    {
+      "source": "corpus/welch_s_t_test.sas",
+      "destination": "references/rosetta-code/corpus/welch_s_t_test.sas",
+      "sha256": "83a635da4c2cb0e2c2133c97b6840f930fd516f1a9fad42530e7ab50aba007e2",
+      "bytes": 761
+    },
+    {
+      "source": "corpus/write_float_arrays_to_a_text_file.sas",
+      "destination": "references/rosetta-code/corpus/write_float_arrays_to_a_text_file.sas",
+      "sha256": "442f8df171436d0754ebe752f8e6360543a31b024febf46d70df54bef1f8ee89",
+      "bytes": 405
+    },
+    {
+      "source": "TASKS.csv",
+      "destination": "references/rosetta-code/TASKS.csv",
+      "sha256": "c917abdc838d5c2d3e5d7cf58a91ceb28d204aabd173b4b0c8ea1673fb40fdab",
+      "bytes": 6876
+    },
+    {
+      "source": "TASKS.md",
+      "destination": "references/rosetta-code/TASKS.md",
+      "sha256": "22b529d0b49e48f1dfb7309235f62f33ca185bb2c2ed1c002843c760e3d0139a",
+      "bytes": 8881
+    },
+    {
+      "source": "LICENSE",
+      "destination": "references/rosetta-code/LICENSE",
+      "sha256": "2652c22ba086f92e55ae4a9f9c890ad4766ffd7814a73d318e22a597edf857a4",
+      "bytes": 20394
+    },
+    {
+      "source": "NOTICE.md",
+      "destination": "references/rosetta-code/NOTICE.md",
+      "sha256": "0950cab33550eff3e69baba26e4488cf00b7bf67a9e14a0b22957b7a8f19ce03",
+      "bytes": 1932
+    }
+  ],
+  "result": {
+    "compared": 60,
+    "matching": 60,
+    "mismatched": 0
+  },
+  "scope": "56 SAS files, two indexes, LICENSE and NOTICE.md; README and CONTRIBUTING navigation adapted separately. This is a historical receipt, not a prohibition on later documented refreshes."
+}
