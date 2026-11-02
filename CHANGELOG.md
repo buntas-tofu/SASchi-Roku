@@ -32,6 +32,9 @@ every line can be traced to its commit.
   companion witness, conditional-state repairs in Python and native R, and
   35 independent replay checks including 12 rejected corruption controls.
 - An executed original failure remains archived; actual SAS capture is pending.
+- WHERE versus subsetting IF state trial: one fresh paired Python/R delivery,
+  frozen parent harness, 31 passing checks, six rejected output controls and
+  the reproduced original failure. CI replays the bounded result.
 
 ### Changed
 

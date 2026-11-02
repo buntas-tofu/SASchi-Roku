@@ -1,0 +1,66 @@
+{
+  "where_path": [
+    {
+      "row_id": "r9",
+      "value": 5,
+      "prev": null,
+      "total": 15
+    },
+    {
+      "row_id": "r8",
+      "value": null,
+      "prev": 5,
+      "total": 15
+    },
+    {
+      "row_id": "r4",
+      "value": 3,
+      "prev": null,
+      "total": 18
+    },
+    {
+      "row_id": "r6",
+      "value": 9,
+      "prev": 3,
+      "total": 27
+    },
+    {
+      "row_id": "r7",
+      "value": -4,
+      "prev": 9,
+      "total": 23
+    }
+  ],
+  "if_path": [
+    {
+      "row_id": "r9",
+      "value": 5,
+      "prev": null,
+      "total": 15
+    },
+    {
+      "row_id": "r8",
+      "value": null,
+      "prev": 100,
+      "total": 115
+    },
+    {
+      "row_id": "r4",
+      "value": 3,
+      "prev": 7,
+      "total": 125
+    },
+    {
+      "row_id": "r6",
+      "value": 9,
+      "prev": 3,
+      "total": 134
+    },
+    {
+      "row_id": "r7",
+      "value": -4,
+      "prev": 2,
+      "total": 132
+    }
+  ]
+}

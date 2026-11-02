@@ -31,6 +31,11 @@ diagnosis as separate initial skills. Seven dependency review criteria and
 35 replay checks passed. Actual macro capture, SAS-binary/Parquet round trips,
 and the remaining phases are still open.
 
+The [state-filtering follow-up](../trials/state-filter-timing/README.md) now adds
+WHERE/subsetting-IF timing with 31 parent checks and native Python/R execution.
+This exercises the existing state skill; it does not add another overlapping
+skill or establish live-SAS equivalence.
+
 Start with small examples whose behavior can be observed. Suggested order is
 engineering judgment, not a measured ranking:
 

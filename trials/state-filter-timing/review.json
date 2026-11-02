@@ -1,0 +1,44 @@
+{
+  "status": "Parent artifact review, bounded to the frozen six-case contract. Agent expansion tests are retained as self-reports, not parent certification.",
+  "verdict": "PASS",
+  "criteria": [
+    {
+      "id": "F1",
+      "verdict": "PASS",
+      "evidence": "Original outputs and comparison identify main if_path output row 2, r8.prev: 5 versus 100. The original execution deliberately reports a mismatch."
+    },
+    {
+      "id": "F2",
+      "verdict": "PASS",
+      "evidence": "The trace locates the earlier state divergence at excluded input r2, which must enqueue 100 and raise the IF-path sum to 115."
+    },
+    {
+      "id": "F3",
+      "verdict": "PASS",
+      "evidence": "The report explains that WHERE selects before DATA-step processing regardless of its textual position after the sum statement."
+    },
+    {
+      "id": "F4",
+      "verdict": "PASS",
+      "evidence": "The report and code keep IF filtering after the LAG and sum operations. Queue missing entries and retained initialization remain distinct."
+    },
+    {
+      "id": "F5",
+      "verdict": "PASS",
+      "evidence": "Both implementations run separate fresh passes over the same input, with independent queues and totals rather than chaining the outputs."
+    },
+    {
+      "id": "F6",
+      "verdict": "PASS",
+      "evidence": "The report labels expected values as document-based inference and states that no SAS runtime ran. Broad self-test counts and overflow behavior are not promoted into this parent verdict."
+    }
+  ],
+  "reviewed_hashes": {
+    "candidate/report.md": "2ba1b4d6fc0bae06202b1c750763a1013b44b00389bad64df61c5ddefc2d0b12",
+    "candidate/converted.py": "fc157a8920a209f3a95f5a1139239eefc5e812ffbcf25b470eb9f5873879bdee",
+    "candidate/converted.R": "fd602dab5b63da8fc1db5d1ce8a030750b1233b3fdc392460910013b20cc7039",
+    "candidate/evidence/main_hand_trace.csv": "685a10825c892c8d8ec0ddcb12f6c18e6dd3e5a51e0e0003d01f1df8d87bfa68",
+    "candidate/evidence/original_run/comparison.json": "fe8a6ee08f0f98e4d5fd916d469a3d576d4ad99b9bcc7aa40e1488fded127eaa",
+    "candidate/evidence/history.txt": "fd3e89cfb3227248429cfc0649847d34b3d117557bdc98a232e5edca3e4fd917"
+  }
+}

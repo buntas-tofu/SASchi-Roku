@@ -1,0 +1,8 @@
+{
+  "status": "Parent harness recorded before first candidate delivery; frozen contract and oracle remain in freeze.json.",
+  "hashes": {
+    "verify.py": "4a657cab13d8ddc174e282ea11c4f5da72f103036084ee0f8069ba7305c783fc",
+    "python_driver.py": "31c1d71f9044bdbe293597ba698ae13f6ab4e75091115f824b8a0a21b7e6d9a1",
+    "r_driver.R": "a0aa38e01d85936579a080633cd08747cffbd2381c1bb1ce209050fbc800c4bc"
+  }
+}

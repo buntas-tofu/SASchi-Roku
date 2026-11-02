@@ -1,0 +1,42 @@
+{
+  "main": {
+    "first_difference": {
+      "kind": "cell",
+      "path": "if_path",
+      "row": 2,
+      "row_id": "r8",
+      "column": "prev",
+      "actual": 5.0,
+      "expected": 100
+    },
+    "input_preserved": true
+  },
+  "leading": {
+    "first_difference": {
+      "kind": "cell",
+      "path": "if_path",
+      "row": 1,
+      "row_id": "NA",
+      "column": "prev",
+      "actual": null,
+      "expected": 100
+    },
+    "input_preserved": true
+  },
+  "all-missing": {
+    "first_difference": null,
+    "input_preserved": true
+  },
+  "empty": {
+    "first_difference": null,
+    "input_preserved": true
+  },
+  "silent": {
+    "first_difference": null,
+    "input_preserved": true
+  },
+  "single": {
+    "first_difference": null,
+    "input_preserved": true
+  }
+}

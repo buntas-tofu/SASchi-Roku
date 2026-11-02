@@ -91,3 +91,5 @@ jobs:
         run: python3 trials/starter-batch/verify.py
       - name: Replay dependency, interchange and state proposal evidence
         run: python3 trials/skill-proposals/verify.py
+      - name: Replay WHERE and subsetting IF state timing
+        run: python3 trials/state-filter-timing/verify.py

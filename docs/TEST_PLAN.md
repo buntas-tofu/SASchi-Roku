@@ -59,4 +59,25 @@ These 35 machine checks and artifact review are one exploratory invocation per
 new skill. Python and R repairs came from the same state evaluator. The earlier
 ASCII/NUL gap is retained unchanged; an explicit raw representation in a new
 contract does not retroactively broaden acceptance of the old R interface.
-The remaining individual-behavior cases and later phases have not run.
+Other individual-behavior cases and later-phase slices remain unrun except as
+recorded below.
+
+## State filtering follow-up, 2026-11-02
+
+After the principal requested a return to skill work, the agent selected WHERE
+versus subsetting IF as the next bounded part of phase 3. This is an implementation
+choice within the plan, not a principal-specified fixture list. The
+[trial contract and results](../trials/state-filter-timing/README.md) preserve one
+fresh paired Python/R delivery using the existing state-diagnosis skill.
+
+All six artifact-review criteria and 31 parent machine checks passed: 24
+case/target/interface comparisons, the reproduced original failure, and six
+rejected wrong outputs. Every comparison covers both independent DATA-step
+outputs. WHERE is written after state updates but still filters before processing;
+subsetting IF rejects output only after preceding state changes. Row counts match
+even when values differ. Native Python and R ran; SAS did not.
+
+The instructions remain unchanged. Parent acceptance stays with the six supplied
+cases and declared interfaces. Agent-expanded self-tests are retained separately.
+BY boundaries, merge keys, R metadata consumption, Parquet and live-SAS capture
+remain open work.

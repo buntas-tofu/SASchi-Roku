@@ -1,0 +1,18 @@
+data work.where_path;
+  set work.have;
+  length prev total 8;
+  retain total 10;
+  prev=lag(value);
+  total + value;
+  where eligible=1;
+  keep row_id value prev total;
+run;
+data work.if_path;
+  set work.have;
+  length prev total 8;
+  retain total 10;
+  prev=lag(value);
+  total + value;
+  if eligible=1;
+  keep row_id value prev total;
+run;

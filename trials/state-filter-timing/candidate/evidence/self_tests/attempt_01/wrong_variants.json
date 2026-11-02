@@ -1,0 +1,29 @@
+{
+  "early_filter_both": {
+    "kind": "cell",
+    "path": "if_path",
+    "row": 2,
+    "row_id": "r8",
+    "column": "prev",
+    "actual": 5.0,
+    "expected": 100
+  },
+  "late_filter_both": {
+    "kind": "cell",
+    "path": "where_path",
+    "row": 2,
+    "row_id": "r8",
+    "column": "prev",
+    "actual": 100.0,
+    "expected": 5
+  },
+  "skip_missing_queue": {
+    "kind": "cell",
+    "path": "where_path",
+    "row": 3,
+    "row_id": "r4",
+    "column": "prev",
+    "actual": 5.0,
+    "expected": null
+  }
+}

@@ -1,0 +1,17 @@
+path,input_position,row_id,eligible,lag_and_sum_reached,queue_before,prev_assigned,queue_after,total_before,total_after,output_position
+where_path,1,r9,1,True,,,5,10,15,1
+where_path,2,r2,0,False,5,not reached,5,15,15,
+where_path,3,r8,1,True,5,5,,15,15,2
+where_path,4,r1,0,False,,not reached,,15,15,
+where_path,5,r4,1,True,,,3,15,18,3
+where_path,6,r6,1,True,3,3,9,18,27,4
+where_path,7,r3,0,False,9,not reached,9,27,27,
+where_path,8,r7,1,True,9,9,-4,27,23,5
+if_path,1,r9,1,True,,,5,10,15,1
+if_path,2,r2,0,True,5,5,100,15,115,
+if_path,3,r8,1,True,100,100,,115,115,2
+if_path,4,r1,0,True,,,7,115,122,
+if_path,5,r4,1,True,7,7,3,122,125,3
+if_path,6,r6,1,True,3,3,9,125,134,4
+if_path,7,r3,0,True,9,9,2,134,136,
+if_path,8,r7,1,True,2,2,-4,136,132,5
