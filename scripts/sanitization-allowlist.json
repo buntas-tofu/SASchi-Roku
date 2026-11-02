@@ -1,0 +1,26 @@
+[
+  {
+    "path": "^archive/AGENTS\\.md$",
+    "pattern": "\\bsaschi\\b",
+    "reason": "imported nested contract kept verbatim as provenance (ledger M3); the sentence describes the source-lane topology of the imported tree",
+    "ruling": "operator ruling 2026-11-01 (D1/D3, whole-tree verbatim imports)"
+  },
+  {
+    "path": "^tools/sync_knowledge\\.py$",
+    "pattern": "\\bsaschi\\b",
+    "reason": "the sync pointer names the canonical source repository by design (design doc section 5)",
+    "ruling": "operator ruling 2026-11-02 (Q2, remote-preferred default)"
+  },
+  {
+    "path": "^tools/sync_knowledge\\.py$",
+    "pattern": "\\bbuntas\\b",
+    "reason": "same: DEFAULT_SOURCE is the canonical public repository URL",
+    "ruling": "operator ruling 2026-11-02 (Q2)"
+  },
+  {
+    "path": "^kb/convert/sas_to_r\\.md$",
+    "pattern": "\\bfable\\b",
+    "reason": "SUBJECT MATTER: a CRAN time-series forecasting package named in the R target guide, not the model-vendor string the public-lane ruling forbids (token not repeated here by the gate's own doctrine)",
+    "ruling": "classification per the review doctrine (a token match is not a finding); operator ruling 2026-09-12 targeted vendor strings"
+  }
+]

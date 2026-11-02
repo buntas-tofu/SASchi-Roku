@@ -1,0 +1,11 @@
+{
+  "layer": "semantics",
+  "source_repo": "https://github.com/buntas-tofu/SASchi-Go.git",
+  "source_commit": "34915047c03c72e4498d8ea540ee804b14038476",
+  "version": "0.4.0",
+  "copied_at": "2026-11-02T04:28:48+00:00",
+  "files": {
+    "sas_semantics.py": "5b1fc6fe484fac23fd9e8df5e43b6eff8365d73555151f2fff4e19232cc196ef",
+    "sas_semantics_reference.txt": "5b1fc6fe484fac23fd9e8df5e43b6eff8365d73555151f2fff4e19232cc196ef"
+  }
+}

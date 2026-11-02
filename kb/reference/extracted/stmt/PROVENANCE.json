@@ -1,0 +1,12 @@
+{
+  "docset": "stmt",
+  "docset_id": "lestmtsref",
+  "title": "SAS 9.4 DATA Step Statements: Reference",
+  "url": "https://documentation.sas.com/api/docsets/lestmtsref/9.4/content/lestmtsref.pdf",
+  "pdf_sha256": "b6e04675b26a5f8882816c939d1f76e06199627a617377640a4beb09dd4fdb11",
+  "pdf_bytes": 2838694,
+  "pdf_pages": 394,
+  "retrieved_at": "2026-11-02T05:21:59+00:00",
+  "license": "SAS Institute public documentation; see the document's copyright page",
+  "tool": "tools/fetch_sas_reference.py"
+}

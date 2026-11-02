@@ -3,3 +3,7 @@ __pycache__/
 *.log
 *.lst
 *.sas7bdat
+
+# the pinned 9.4 PDFs regenerate from their public URLs (sha256 stamps in
+# kb/reference/extracted/*/PROVENANCE.json); this instance does not redistribute them
+kb/reference/pdfs/

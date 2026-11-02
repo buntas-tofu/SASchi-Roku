@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "status": "Candidate teaching references; not runtime verification",
+  "collections": [
+    {
+      "id": "macro-landmines",
+      "title": "SAS macro landmines: mechanisms, examples, and corrective guidance",
+      "metadata": {
+        "corpus": "macro-landmines",
+        "doc_class": "macro_landmine",
+        "origin": "operator",
+        "rights": "operator-authored synthesis; cited sources retain their rights",
+        "audience": "public",
+        "citation_permission": "attribution-required",
+        "review_status": "unreviewed",
+        "validation_basis": "asserted",
+        "released": 20260915
+      },
+      "documents": [
+        {
+          "id": "ML-001",
+          "path": "landmines/macro-landmines/ml-001-symput-timing.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a000210322.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-002",
+          "path": "landmines/macro-landmines/ml-002-call-execute-order.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a000543697.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-003",
+          "path": "landmines/macro-landmines/ml-003-scope-leakage.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a001072111.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-004",
+          "path": "landmines/macro-landmines/ml-004-symputx-scope.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/n1nexcs36ctqk5n11uao7k9myz7y.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-005",
+          "path": "landmines/macro-landmines/ml-005-quoting-and-rescan.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/n0o0rjikrg6iezn1ltra79iamibr.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-006",
+          "path": "landmines/macro-landmines/ml-006-period-delimiter.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a001071889.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-007",
+          "path": "landmines/macro-landmines/ml-007-indirect-resolution.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a001071915.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-008",
+          "path": "landmines/macro-landmines/ml-008-sysfunc-boundary.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/p1o13d7wb2zfcnn19s5ssl2zdxvi.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-009",
+          "path": "landmines/macro-landmines/ml-009-integer-evaluation.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/p17i177l3z4kzgn11m7pl8833ch7.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-010",
+          "path": "landmines/macro-landmines/ml-010-sql-empty-result.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/sqlproc/62086/HTML/default/a001360983.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-011",
+          "path": "landmines/macro-landmines/ml-011-generated-by-list.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lrcon/62955/HTML/default/a000761931.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        },
+        {
+          "id": "ML-012",
+          "path": "landmines/macro-landmines/ml-012-scan-empty-fields.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/z3514scan.htm",
+          "source_rev": "Cited SAS 9.x edition; consulted 2026-09-15; mutable URL, not hash-pinned"
+        }
+      ]
+    },
+    {
+      "id": "llm-migration-quirks",
+      "title": "LLM failure modes in SAS migration",
+      "metadata": {
+        "corpus": "llm-migration-quirks",
+        "doc_class": "llm_failure_mode",
+        "origin": "operator",
+        "rights": "operator-authored synthesis; cited sources retain their rights",
+        "audience": "public",
+        "citation_permission": "attribution-required",
+        "review_status": "unreviewed",
+        "validation_basis": "asserted",
+        "released": 20260915
+      },
+      "documents": [
+        {
+          "id": "LQ-001",
+          "path": "landmines/llm-migration-quirks/lq-001-invented-api.md",
+          "source_url": "https://arxiv.org/abs/2406.10279",
+          "source_rev": "Research abstract; evaluated Python/JavaScript models, not this SAS pipeline; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-002",
+          "path": "landmines/llm-migration-quirks/lq-002-stale-api.md",
+          "source_url": "https://arxiv.org/abs/2406.09834v3",
+          "source_rev": "ICSE 2025 paper, arXiv v3; abstract consulted; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-003",
+          "path": "landmines/llm-migration-quirks/lq-003-syntax-is-not-equivalence.md",
+          "source_url": "https://arxiv.org/abs/2305.01210v3",
+          "source_rev": "NeurIPS 2023 paper, arXiv v3; abstract consulted; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-004",
+          "path": "landmines/llm-migration-quirks/lq-004-context-omission.md",
+          "source_url": "https://arxiv.org/abs/2307.03172",
+          "source_rev": "Research abstract; multi-document QA and key-value retrieval; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-005",
+          "path": "landmines/llm-migration-quirks/lq-005-self-review.md",
+          "source_url": "https://arxiv.org/abs/2310.01798",
+          "source_rev": "Research abstract; intrinsic correction without external feedback; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-006",
+          "path": "landmines/llm-migration-quirks/lq-006-keyword-contamination.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/mcrolref/62978/HTML/default/n0o0rjikrg6iezn1ltra79iamibr.htm",
+          "source_rev": "SAS 9.3 macro reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-007",
+          "path": "landmines/llm-migration-quirks/lq-007-business-logic-rewrite.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/n0l66p5oqex1f2n1quuopdvtcjqb.htm",
+          "source_rev": "SAS 9.3 function reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-008",
+          "path": "landmines/llm-migration-quirks/lq-008-shared-oracle.md",
+          "source_url": "https://arxiv.org/abs/2305.01210v3",
+          "source_rev": "NeurIPS 2023 paper, arXiv v3; abstract consulted; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-009",
+          "path": "landmines/llm-migration-quirks/lq-009-evaluation-leakage.md",
+          "source_url": "https://arxiv.org/abs/2403.07974",
+          "source_rev": "Research abstract; contamination-aware coding evaluation; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-010",
+          "path": "landmines/llm-migration-quirks/lq-010-retrieved-instructions.md",
+          "source_url": "https://arxiv.org/abs/2302.12173",
+          "source_rev": "Research abstract; indirect instructions in retrieved content; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-011",
+          "path": "landmines/llm-migration-quirks/lq-011-partial-conversion.md",
+          "source_url": "https://mengwangoxf.github.io/Papers/PLDI25.pdf",
+          "source_rev": "PLDI 2025, selected full-text sections; project-level translation; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "LQ-012",
+          "path": "landmines/llm-migration-quirks/lq-012-structured-confidence.md",
+          "source_url": "https://arxiv.org/abs/2305.01210v3",
+          "source_rev": "NeurIPS 2023 paper, arXiv v3; abstract consulted; consulted 2026-09-15; mutable URL unless versioned"
+        }
+      ]
+    },
+    {
+      "id": "sas-conversion-landmines",
+      "title": "SAS conversion and rebuild landmines",
+      "metadata": {
+        "corpus": "sas-conversion-landmines",
+        "doc_class": "conversion_landmine",
+        "origin": "operator",
+        "rights": "operator-authored synthesis; cited sources retain their rights",
+        "audience": "public",
+        "citation_permission": "attribution-required",
+        "review_status": "unreviewed",
+        "validation_basis": "asserted",
+        "released": 20260915
+      },
+      "documents": [
+        {
+          "id": "SL-001",
+          "path": "landmines/sas-conversion-landmines/sl-001-match-merge.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/a000202970.htm",
+          "source_rev": "SAS 9.2 statement reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-002",
+          "path": "landmines/sas-conversion-landmines/sl-002-missing-keys.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/sqlproc/62086/HTML/default/a001361784.htm",
+          "source_rev": "SAS 9.2 SQL Procedure User's Guide; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-003",
+          "path": "landmines/sas-conversion-landmines/sl-003-pdv-state.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/a000214163.htm",
+          "source_rev": "SAS 9.2 statement reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-004",
+          "path": "landmines/sas-conversion-landmines/sl-004-where-if.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/n1xbr9r0s9veq0n137iftzxq4g7e.htm",
+          "source_rev": "SAS 9.3 statement reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-005",
+          "path": "landmines/sas-conversion-landmines/sl-005-explicit-output.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/n1lltvbis7ye1an1eryo4leh2mck.htm",
+          "source_rev": "SAS 9.3 statement reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-006",
+          "path": "landmines/sas-conversion-landmines/sl-006-character-width.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lrcon/62955/HTML/default/a000695113.htm",
+          "source_rev": "SAS language concepts; cited 9.x edition; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-007",
+          "path": "landmines/sas-conversion-landmines/sl-007-lag-history.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/n0l66p5oqex1f2n1quuopdvtcjqb.htm",
+          "source_rev": "SAS 9.3 function reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-008",
+          "path": "landmines/sas-conversion-landmines/sl-008-sort-survivors.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a002473667.htm",
+          "source_rev": "Base SAS procedures, cited 9.x edition; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-009",
+          "path": "landmines/sas-conversion-landmines/sl-009-sql-remerge.md",
+          "source_url": "https://support.sas.com/techsup/notes/v8/4/308.html",
+          "source_rev": "SAS Usage Note 4308; older documented PROC SQL behavior; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-010",
+          "path": "landmines/sas-conversion-landmines/sl-010-transpose-names.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000063668.htm",
+          "source_rev": "Base SAS procedures, cited 9.x edition; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-011",
+          "path": "landmines/sas-conversion-landmines/sl-011-format-grouping.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000146731.htm",
+          "source_rev": "Base SAS procedures, cited 9.x edition; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-012",
+          "path": "landmines/sas-conversion-landmines/sl-012-rounding-family.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/p1u0w0omad7fyxn1unu83odr6vy2.htm",
+          "source_rev": "SAS 9.3 function reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-013",
+          "path": "landmines/sas-conversion-landmines/sl-013-date-intervals.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/p1md4mx2crzfaqn14va8kt7qvfhr.htm",
+          "source_rev": "SAS 9.3 function reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-014",
+          "path": "landmines/sas-conversion-landmines/sl-014-raw-input.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/n1rill4udj0tfun1fvce3j401plo.htm",
+          "source_rev": "SAS 9.3 statement reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-015",
+          "path": "landmines/sas-conversion-landmines/sl-015-weights.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/proc/61895/HTML/default/a000146736.htm",
+          "source_rev": "Base SAS procedures, cited 9.x edition; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-016",
+          "path": "landmines/sas-conversion-landmines/sl-016-quantiles.md",
+          "source_url": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/quantile.html",
+          "source_rev": "R development manual; pin actual installed R before implementation; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-017",
+          "path": "landmines/sas-conversion-landmines/sl-017-logistic-contract.md",
+          "source_url": "https://support.sas.com/kb/39/085.html",
+          "source_rev": "SAS Usage Note 39085, 2010; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-018",
+          "path": "landmines/sas-conversion-landmines/sl-018-survey-domain.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/statug/68162/HTML/default/statug_surveymeans_examples02.htm",
+          "source_rev": "SAS/STAT 14.1 example; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-019",
+          "path": "landmines/sas-conversion-landmines/sl-019-rng-contract.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lefunctionsref/63354/HTML/default/p0fpeei0opypg8n1b06qe4r040lv.htm",
+          "source_rev": "SAS 9.3; not a claim about every later RNG implementation; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-020",
+          "path": "landmines/sas-conversion-landmines/sl-020-metadata-roundtrip.md",
+          "source_url": "https://haven.tidyverse.org/articles/semantics.html",
+          "source_rev": "Haven current documentation; mutable URL; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-021",
+          "path": "landmines/sas-conversion-landmines/sl-021-engine-mode.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/fedsqlref/67364/HTML/default/n1c5ladx770rq4n11a0mi33q9pad.htm",
+          "source_rev": "SAS 9.4 FedSQL Language Reference, third edition; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-022",
+          "path": "landmines/sas-conversion-landmines/sl-022-array-aliasing.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/lestmtsref/63323/HTML/default/p08do6szetrxe2n136ush727sbuo.htm",
+          "source_rev": "SAS 9.3 statement reference; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-023",
+          "path": "landmines/sas-conversion-landmines/sl-023-ods-lifecycle.md",
+          "source_url": "https://support.sas.com/kb/37/105.html",
+          "source_rev": "SAS Usage Note 37105; consulted current page; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-024",
+          "path": "landmines/sas-conversion-landmines/sl-024-mixed-model-contract.md",
+          "source_url": "https://psiaims.github.io/CAMIS/Comp/r-sas_mmrm.html",
+          "source_rev": "Community-authored comparison; current mutable page, its examples are not our receipts; consulted 2026-09-15; mutable URL unless versioned"
+        },
+        {
+          "id": "SL-025",
+          "path": "landmines/sas-conversion-landmines/sl-025-survival-ties.md",
+          "source_url": "https://support.sas.com/documentation/cdl/en/statug/66859/HTML/default/statug_phreg_syntax17.htm",
+          "source_rev": "SAS/STAT 13.1; tie-handling options; consulted 2026-09-15; mutable URL unless versioned"
+        }
+      ]
+    }
+  ]
+}
