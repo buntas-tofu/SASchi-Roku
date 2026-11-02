@@ -63,6 +63,12 @@ LAG repairs ran in Python and native R; the CSV witness preserves raw fallback
 bytes and missing tags. Actual macro capture, SAS-binary reading and Parquet
 round trips remain unperformed. All six skills retain initial-guidance status.
 
+The [filter-timing trial](trials/state-filter-timing/README.md) extends state
+diagnosis to WHERE versus subsetting IF. One fresh paired Python/R delivery passes
+31 parent checks, including the reproduced original failure and six rejected
+controls. The two outputs have identical row counts but different queue values
+and totals. The skill instructions remain unchanged.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.
@@ -79,8 +85,9 @@ python3 -m unittest discover -s tests -v
 python3 trials/sas-translate-sum-array/verify.py
 ```
 
-With native Rscript available, also run `python3 trials/starter-batch/verify.py`
-and `python3 trials/skill-proposals/verify.py`.
+With native Rscript available, also run `python3 trials/starter-batch/verify.py`,
+`python3 trials/skill-proposals/verify.py` and
+`python3 trials/state-filter-timing/verify.py`.
 
 CI also validates `agent-manifest.json` against its existing JSON schema.
 These checks cover repository integrity, not execution of the SAS corpus.

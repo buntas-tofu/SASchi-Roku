@@ -1,0 +1,18 @@
+{
+  "base_commit": "093ea3bd88f85a74ce798f28779f7fec861aec02",
+  "hashes": {
+    "CONTRACT.md": "76562bf3e087ceb63453bb2bf0b3c60f02032f8f80fb6fe2b3b3818211bf579f",
+    "oracle.json": "e26fae982c67f47df7742f258d9026e9da36ce3891c8ae0f7a126fd26a44ed2a",
+    "packet/all-missing.csv": "a43bcad07a10b28cef5a64ed409aca8cf21aea3674c2b6596293d68b312bee15",
+    "packet/buggy.py": "c03543b088b320ee1244933d4d027981b73a57943055ec1116fcfa5846e272ce",
+    "packet/empty.csv": "af4588fae2d74142af1b7ecbbbe7aa9ecabd50160248096207b8edd1017170db",
+    "packet/leading.csv": "b49e4c106167f5731a5eb5d5fea3327999f92d0efdc639d86528382266aaeb34",
+    "packet/main.csv": "d8c5d8729f6979a420e5deab3893cc27a107f865333331428f2453884dfa2aba",
+    "packet/request.txt": "4977435249b401cf6d8786658e79aab5e54c723bf3450b535505f8fde3f704fe",
+    "packet/silent.csv": "0c5fc5894fd5d51287ce990f21e61451c8b51f53aa48db53749f673c9f00c7e5",
+    "packet/single.csv": "153b98cb5eb87c2aa0125ed623a5763fee682915b6db73984526aca5779b1f28",
+    "packet/skill/SKILL.md": "2b1af2424609948390b5856cebb3015c7e11c8cb393b28f82175e6838b511bd6",
+    "packet/skill/references/state.md": "fa6c42892055019298118eaaff40799351e6199415308e7e95b946ea1d371e43",
+    "packet/source.sas": "3bf676c4934458ac10951c7d3a42ac658f5286b6316a6a5e88e404de7701ed98"
+  }
+}

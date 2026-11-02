@@ -1,0 +1,141 @@
+{
+  "status": "Independent hand truth, not live SAS output",
+  "columns": [
+    "row_id",
+    "value",
+    "prev",
+    "total"
+  ],
+  "where_path": {
+    "main": [
+      [
+        "r9",
+        5,
+        null,
+        15
+      ],
+      [
+        "r8",
+        null,
+        5,
+        15
+      ],
+      [
+        "r4",
+        3,
+        null,
+        18
+      ],
+      [
+        "r6",
+        9,
+        3,
+        27
+      ],
+      [
+        "r7",
+        -4,
+        9,
+        23
+      ]
+    ],
+    "leading": [
+      [
+        "NA",
+        8,
+        null,
+        18
+      ]
+    ],
+    "single": [
+      [
+        "s1",
+        8,
+        null,
+        18
+      ]
+    ],
+    "all-missing": [
+      [
+        "m1",
+        null,
+        null,
+        10
+      ],
+      [
+        "m3",
+        null,
+        null,
+        10
+      ]
+    ],
+    "silent": [],
+    "empty": []
+  },
+  "if_path": {
+    "main": [
+      [
+        "r9",
+        5,
+        null,
+        15
+      ],
+      [
+        "r8",
+        null,
+        100,
+        115
+      ],
+      [
+        "r4",
+        3,
+        7,
+        125
+      ],
+      [
+        "r6",
+        9,
+        3,
+        134
+      ],
+      [
+        "r7",
+        -4,
+        2,
+        132
+      ]
+    ],
+    "leading": [
+      [
+        "NA",
+        8,
+        100,
+        118
+      ]
+    ],
+    "single": [
+      [
+        "s1",
+        8,
+        null,
+        18
+      ]
+    ],
+    "all-missing": [
+      [
+        "m1",
+        null,
+        null,
+        10
+      ],
+      [
+        "m3",
+        null,
+        null,
+        10
+      ]
+    ],
+    "silent": [],
+    "empty": []
+  }
+}

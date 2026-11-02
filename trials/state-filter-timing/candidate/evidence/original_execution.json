@@ -1,0 +1,7 @@
+{
+  "command": [
+    "python3",
+    "output/reproduce_original.py"
+  ],
+  "exit_code": 1
+}

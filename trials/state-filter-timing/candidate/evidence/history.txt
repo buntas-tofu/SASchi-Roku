@@ -1,0 +1,8 @@
+01. Read only the supplied packet; Python 3.12.3 and base R 4.3.3 are available.
+02. Public SAS primary documentation consulted for WHERE, subsetting IF, LAG, sum statements and implicit OUTPUT. A direct WHERE documentation fetch timed out; other primary references returned.
+03. Initial preparation attempted output.mkdir(exist_ok=False), failed because the provided output directory already existed. No files were changed by that failed call.
+04. Inspected the existing output directory: it was empty. Preserved the complete packet with SHA-256 manifest before repair.
+05. Wrote independent literal expectations for all six fixtures and the physical-row main trace before writing either repair. No target implementation generated these expectations.
+06. Ran frozen buggy.py on all six fixtures. Original mismatches reproduced on main and leading; remaining fixtures match hand expectations. This diagnostic command deliberately exits 1 for a reproduced mismatch.
+Self-test attempt 01: PASS. Snapshot, commands, output, expectations and any traceback retained in evidence/self_tests/attempt_01/.
+07. Completed report after passing self-test attempt 01. Confirmed delivered target and test files match the tested snapshots; no post-test code changes. Python sources compiled successfully in memory.

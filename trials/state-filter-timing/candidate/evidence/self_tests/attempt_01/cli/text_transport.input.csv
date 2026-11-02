@@ -1,0 +1,6 @@
+row_id,value,eligible
+0007,1.25,1
+NA,,1
+" A,#""x"" ",-0.5,0
+0010,2.25,1
+" !""#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~",0,1

@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the three follow-on skills below. This
+2026-11-02. The latest checkpoint is the state-filtering follow-up below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -138,3 +138,29 @@ billing and onboarding credentials outside the public repository. The immediate
 evidence milestone remains a real SAS run with finalized source capture and raw
 log, after resolving the complete input context. No MCP implementation or skill
 installation has occurred.
+
+## State-filtering follow-up, 2026-11-02
+
+The principal asked to return to skill work. The agent selected the existing
+phase 3 WHERE/subsetting-IF item as a bounded next test, recording that choice in
+[its contract](trials/state-filter-timing/CONTRACT.md) before generation. One fresh
+evaluator used the unchanged state-diagnosis skill and produced both target
+repairs. The parent froze its independent oracle and harness before first delivery.
+
+[Results](trials/state-filter-timing/README.md): all six artifact-review criteria
+and 31 independent replay checks passed under CPython 3.12.3 and native R 4.3.3.
+The original bug reproduced `if_path` row 2, r8.prev as 5 instead of 100. Both
+paths emit the same row identifiers, so values and state timing distinguish them.
+Six deliberately wrong outputs were rejected. Calls preserve inputs and fresh
+state; existing CLI destinations are refused without changes.
+
+The archive preserves 163 regular first-delivery files unchanged. Two temporary
+test symlinks are recorded literally instead of made active, and empty directories
+are inventoried. A setup failure from an already existing empty output folder is
+retained in the agent history. Its broader self-test corpus remains separate from
+the parent checks. No candidate repair or oracle change followed delivery.
+
+The six initial skills remain unchanged. CI adds this replay after the earlier
+three-proposal replay. The linter has zero errors and 20 status warnings across
+the skills and exact snapshots; its implementation is unchanged. No SAS runtime,
+SAS-binary reader, R metadata consumer or Parquet round trip has been verified.

@@ -1,0 +1,30 @@
+{
+  "where_path": [
+    {
+      "row_id": "m1",
+      "value": null,
+      "prev": null,
+      "total": 10
+    },
+    {
+      "row_id": "m3",
+      "value": null,
+      "prev": null,
+      "total": 10
+    }
+  ],
+  "if_path": [
+    {
+      "row_id": "m1",
+      "value": null,
+      "prev": null,
+      "total": 10
+    },
+    {
+      "row_id": "m3",
+      "value": null,
+      "prev": null,
+      "total": 10
+    }
+  ]
+}
