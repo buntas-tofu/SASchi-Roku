@@ -18,6 +18,8 @@ every line can be traced to its commit.
 - Source-backed resource catalog seeded from the Campaign census, sas-ref,
   training modules, Go and Garage, including unresolved upstream provenance.
 - Toolkit checks and relocation regression tests alongside existing CI gates.
+- First isolated translation skill trial: archived candidate, independent
+  arithmetic/missingness oracle, seven rejected negative controls and CI replay.
 
 ### Changed
 

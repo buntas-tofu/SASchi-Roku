@@ -72,3 +72,5 @@ jobs:
         run: python3 scripts/check_toolkit.py
       - name: Relocation and catalog regression tests
         run: python3 -m unittest discover -s tests -v
+      - name: Replay the bounded translation skill trial
+        run: python3 trials/sas-translate-sum-array/verify.py

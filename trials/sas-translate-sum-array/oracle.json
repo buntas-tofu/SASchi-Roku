@@ -1,0 +1,53 @@
+{
+  "status": "Independent derived expectation, not captured SAS output",
+  "basis": "Sum of squares identity n(n+1)(2n+1)/6 at n=100; c has no assignment and remains ordinary numeric missing.",
+  "logical_records": [
+    [
+      "338350",
+      "."
+    ]
+  ],
+  "comparison": "One record, two ordered tokens; whitespace between fields normalized; finite first-field Decimal value exact, ordinary missing second field exactly a period.",
+  "negative_controls": {
+    "missing_replaced_by_zero": [
+      [
+        "338350",
+        "0"
+      ]
+    ],
+    "invented_product": [
+      [
+        "338350",
+        "8709782489089480079416590161944485865569720643940840134215932536243379996346583325877967096332754920644690380762219607476364289411435920190573960677507881394607489905331729758013432992987184764607375889434313483382966801515156280854162691766195737493173453603519594496000000000000000000000000000000000000000000000000"
+      ]
+    ],
+    "off_by_one_range": [
+      [
+        "328350",
+        "."
+      ]
+    ],
+    "dropped_missing_field": [
+      [
+        "338350"
+      ]
+    ],
+    "extra_record": [
+      [
+        "338350",
+        "."
+      ],
+      [
+        "338350",
+        "."
+      ]
+    ],
+    "precision_loss_hidden_by_float": [
+      [
+        "338350.00000000000000000001",
+        "."
+      ]
+    ]
+  },
+  "sas_reference": "https://support.sas.com/documentation/cdl/en/lrcon/62955/HTML/default/a001291423.htm"
+}
