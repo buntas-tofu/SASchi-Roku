@@ -1,38 +1,60 @@
 # Contributing
 
-This repository is a **passive, provenance-pinned snapshot** of Rosetta Code's
-SAS category. The primary workflow is *refresh*, not hand-editing.
+Keep the toolkit useful through bounded workflows, traceable sources and checks
+that can fail. The project scope is recorded in
+[decision 0001](docs/decisions/0001-toolkit-scope.md).
 
-## Refresh (recommended)
-The corpus is generated from upstream by the harvest pipeline bundled at
-`tools/fetch_rosetta_sas.py` (standard library only). Check first, then
-refresh:
+## Reference collection
+
+The original corpus now lives under `references/rosetta-code/`. Preserve its
+headers and indexes. From the repository root:
 
 ```sh
-python3 tools/fetch_rosetta_sas.py --check   # report drift; writes nothing
-python3 tools/fetch_rosetta_sas.py           # regenerate + report
+python3 tools/fetch_rosetta_sas.py --check
+python3 tools/fetch_rosetta_sas.py
+python3 scripts/check_corpus_index.py
 ```
 
-`--check` exits non-zero when the repository is not current, so it doubles
-as a drift alarm. A refresh is faithful and minimal: unchanged files keep
-their original retrieval stamps, and anything that moved is restored to
-byte-faithful upstream extraction, so local touch-ups to generated files are
-overwritten by design. If you need a deliberate local edit, keep it out of
-generated files or mark it in the file header as your own contribution.
-Refresh = regenerate + commit `corpus/`, `TASKS.csv`, `TASKS.md`, and update
-the snapshot dates in `README.md`.
+The first command checks upstream and writes nothing. The second refreshes the
+collection and can remove files that left the upstream category. Review that
+diff deliberately. It is a separate operation from relocating the collection.
+See the [collection contribution guide](references/rosetta-code/CONTRIBUTING.md).
+The original migration receipt is historical; later refreshes record their own
+changes rather than overwriting that receipt.
 
-## Adding or fixing a solution (rare, deliberate)
-1. Keep it scoped to one task; one PR per task.
-2. Preserve the provenance header block. If you are adding **your own** new SAS
-   (not re-scraped upstream), write your own header noting it is a new
-   contribution rather than a Rosetta mirror.
-3. Solutions here are community probes: clearly mark anything not yet executed
-   and verified.
-4. Follow the existing style: `data step`/`proc` SAS, numbered `/* --- ... --- */`
-   banners when a task has multiple examples.
-5. Re-run the index: `TASKS.csv`/`TASKS.md` must stay in sync with `corpus/`.
+## Resource catalog
 
-## Questions / licensing
-See `LICENSE` and `NOTICE`. When in doubt about GFDL compliance of a reuse,
-ask before copying code into other projects.
+Edit `catalog/resources.json`, then regenerate the human index:
+
+```sh
+python3 scripts/check_toolkit.py --write-index
+python3 scripts/check_toolkit.py
+```
+
+Use stable resource IDs. Record where an item was found, the inspected revision,
+and what was actually checked. Unknown upstream URLs stay null. Preserve dated
+census counts as historical observations. An API license identifier is a lookup
+result, not a review of every file or a grant to redistribute a tree.
+Prefer links to imported copies; copying material requires a distinct provenance
+and rights review. Do not add local account paths, private data or credentials.
+
+## Skills
+
+Create one folder per useful task with a `SKILL.md` containing `name` and
+`description` frontmatter. Describe a precise trigger. Keep supporting references
+inside the skill so it can be installed separately. Link to source evidence;
+distinguish instructions, implemented behavior, and measured outcomes.
+
+Do not turn a rulebook entry, teaching example or successful parse into an
+equivalence claim. Use a realistic trial before promoting initial guidance to a
+validated workflow. Record the input, environment, comparator, outcome and known
+limits. Keep evaluation answers out of retrieval inputs for that evaluation.
+
+## Checks
+
+Run the four commands listed in the [README](README.md) before committing.
+The governance workflow also checks the existing manifest schema. Add meaningful
+negative controls when changing a validator or fragile preservation behavior.
+The vendored linter's missing-status-frontmatter warning is expected for
+`SKILL.md`: the skill format uses supported metadata and a body status line.
+Do not edit the shared linter to silence that warning.

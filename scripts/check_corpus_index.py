@@ -28,7 +28,7 @@ import re
 import sys
 from pathlib import Path
 
-ROOM = Path(__file__).resolve().parent.parent
+ROOM = Path(__file__).resolve().parent.parent / "references" / "rosetta-code"
 CORPUS = ROOM / "corpus"
 INDEX = ROOM / "TASKS.csv"
 HUMAN = ROOM / "TASKS.md"

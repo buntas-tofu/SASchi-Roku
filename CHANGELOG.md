@@ -9,6 +9,26 @@ on 2026-09-14, and the entries below were reconstructed from the commit history 
 `main`, which was the only record before it existed. Short hashes are given so
 every line can be traced to its commit.
 
+## Unreleased
+
+### Added
+
+- Toolkit scope decision, roadmap, session handoff and relocation receipt.
+- Initial assessment, translation and Parquet interchange skills.
+- Source-backed resource catalog seeded from the Campaign census, sas-ref,
+  training modules, Go and Garage, including unresolved upstream provenance.
+- Toolkit checks and relocation regression tests alongside existing CI gates.
+
+### Changed
+
+- Preserve the Rosetta Code corpus, indexes and attribution under
+  `references/rosetta-code/`; retain old paths as compatibility symlinks.
+- Retarget the harvest and corpus-index checks to the nested collection.
+- Close harvest index readers explicitly while preserving newline handling.
+- Expand the LOCAL contract and root documentation to the toolkit scope.
+- Preserve all 56 SAS files and both indexes byte for byte. Keep license terms
+  unchanged. No upstream refresh or live-SAS execution is part of this move.
+
 ## 0.1.0 - 2026-09-14
 
 ### Added

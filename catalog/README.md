@@ -1,0 +1,92 @@
+# Resource catalog
+
+Status: Discovery catalog for maintainer use; reference inspection is not runtime validation or a redistribution grant.
+
+Generated from [resources.json](resources.json). Edit that file, then run
+`python3 scripts/check_toolkit.py --write-index` from the repository root.
+
+32 resources. Source/lookup review date: 2026-11-01.
+
+September census counts describe the original testbed, not today's upstream.
+GitHub license identifiers are dated API observations, not per-file rights
+reviews. Unknown identifiers and upstream origins remain explicit.
+
+## comparison
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [PSIAIMS/CAMIS](https://github.com/PSIAIMS/CAMIS) | Cross-software statistical comparison reference identified in Garage research. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+
+## dataframe
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [pandas-dev/pandas](https://github.com/pandas-dev/pandas) | Python data analysis toolkit referenced by the gathered migration research. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+
+## family
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [the-pgh-cid/sas-campaign](https://github.com/the-pgh-cid/sas-campaign) | Professional translation lane; user guide, rulebook, macro census and coverage map. | source-inspected; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/USER_GUIDE.md) |
+| [the-pgh-cid/sas-ref](https://github.com/the-pgh-cid/sas-ref) | Consolidated reference home: corpus, field guide, training, program archive and declared vendor material. | source-inspected; [source](https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/consolidation/LEDGER.md) |
+| [buntas-tofu/SASchi-Garage](https://github.com/buntas-tofu/SASchi-Garage) | Authored teaching cards, migration landmines, research and evidence maps. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/README.md) |
+| [buntas-tofu/SASchi-Go](https://github.com/buntas-tofu/SASchi-Go) | SAS translation implementation, bounded semantic profiles and verification gates. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Go/blob/34915047c03c72e4498d8ea540ee804b14038476/docs/OPERATIONS.md) |
+
+## format
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [apache/parquet-format](https://github.com/apache/parquet-format) | Apache Parquet storage-format specification, identified in the gathered sas-ref vendor shelf. | source-inspected; [source](https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md); license ID: Apache-2.0 |
+
+## interop
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [tidyverse/haven](https://github.com/tidyverse/haven) | R statistical-file interchange, including SAS readers and metadata representations. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+
+## sas-testbed
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [atorus-research/atorus-sas-macros](https://github.com/atorus-research/atorus-sas-macros) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 31 SAS files at 2026-09-08; license ID: MIT |
+| [Boemska/macrocore](https://github.com/Boemska/macrocore) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 76 SAS files at 2026-09-08; license ID: MIT |
+| [CausalInference/GFORMULA-SAS](https://github.com/CausalInference/GFORMULA-SAS) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 11 SAS files at 2026-09-08; license ID: MIT |
+| [cdisc-org/COSMoS](https://github.com/cdisc-org/COSMoS) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 31 SAS files at 2026-09-08; license ID: MIT |
+| [danielegiardiello/Prediction_performance_survival](https://github.com/danielegiardiello/Prediction_performance_survival) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 6 SAS files at 2026-09-08; license ID: GPL-3.0 |
+| [eleanormurray/CausalSurvivalAnalysisWorkshop](https://github.com/eleanormurray/CausalSurvivalAnalysisWorkshop) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 1 SAS files at 2026-09-08; license ID: unknown |
+| [friendly/SAS-macros](https://github.com/friendly/SAS-macros) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 463 SAS files at 2026-09-08; license ID: unknown |
+| [HHS-AHRQ/MEPS](https://github.com/HHS-AHRQ/MEPS) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 58 SAS files at 2026-09-08; license ID: unknown |
+| [PaulSchmidtGit/Heritability](https://github.com/PaulSchmidtGit/Heritability) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 11 SAS files at 2026-09-08; license ID: unknown |
+| [phuse-org/phuse-scripts](https://github.com/phuse-org/phuse-scripts) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 164 SAS files at 2026-09-08; license ID: MIT |
+| [RhoInc/sas-statistical-data-checks](https://github.com/RhoInc/sas-statistical-data-checks) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 14 SAS files at 2026-09-08; license ID: MIT |
+| [sascommunities/learning-sas-by-example-2nd](https://github.com/sascommunities/learning-sas-by-example-2nd) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 3 SAS files at 2026-09-08; license ID: Apache-2.0 |
+| [sascommunities/sas-cert-prep-data](https://github.com/sascommunities/sas-cert-prep-data) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 8 SAS files at 2026-09-08; license ID: Apache-2.0 |
+| [sascommunities/sas-global-forum-2019](https://github.com/sascommunities/sas-global-forum-2019) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 152 SAS files at 2026-09-08; license ID: Apache-2.0 |
+| [sascommunities/sas-prog-for-r-users](https://github.com/sascommunities/sas-prog-for-r-users) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 83 SAS files at 2026-09-08; license ID: CC-BY-4.0 |
+| [sasjs/core](https://github.com/sasjs/core) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 408 SAS files at 2026-09-08; license ID: MIT |
+| [sassoftware/enlighten-apply](https://github.com/sassoftware/enlighten-apply) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 23 SAS files at 2026-09-08; license ID: Apache-2.0; archived at lookup |
+| [sassoftware/sas-code-examples](https://github.com/sassoftware/sas-code-examples) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 51 SAS files at 2026-09-08; license ID: Apache-2.0 |
+| [sassoftware/sas-iml-packages](https://github.com/sassoftware/sas-iml-packages) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 42 SAS files at 2026-09-08; license ID: Apache-2.0 |
+| [sasutils/macros](https://github.com/sasutils/macros) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 49 SAS files at 2026-09-08; license ID: GPL-3.0 |
+| [wyp1125/SAS-Clinical-Trials-Toolkit](https://github.com/wyp1125/SAS-Clinical-Trials-Toolkit) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 22 SAS files at 2026-09-08; license ID: GPL-3.0 |
+| [yabwon/SAS_PACKAGES](https://github.com/yabwon/SAS_PACKAGES) | Repository included in the 2026-09-08 SAS macro testbed census. | repository-resolved; [source](https://github.com/the-pgh-cid/sas-campaign/blob/4a32c5338d0225a117fb14fd016942385c780e06/docs/macro_surface_census.md); 48 SAS files at 2026-09-08; license ID: MIT |
+
+## scaffold
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [sas_migration collected scaffold](https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md) | Collected migration starter kit with Python/R skill templates and DuckDB, Polars and R guides. | upstream-unresolved; [source](https://github.com/the-pgh-cid/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md) |
+
+## training
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [the-pgh-cid/sas-training-modules](https://github.com/the-pgh-cid/sas-training-modules) | Ten SAS migration teaching modules with prompt comparisons, expected results and recorded evidence. | source-inspected; [source](https://github.com/the-pgh-cid/sas-training-modules/blob/4be913210dcf3c1befc3367420c4ac9032bac39d/README.md) |
+
+## Reading the record
+
+Each JSON record carries a stable ID, tags, discovery source and revision,
+additional locations, evidence limits and provenance notes. A source revision
+pins the discovery record; it does not pretend to pin every external project.
+The collected migration scaffold has no known upstream URL. The training
+modules' original and consolidated locations are recorded as one resource.

@@ -1,136 +1,89 @@
-# Rosetta Code : SAS Solutions Corpus
+# SASchi-Roku
 
-A provenance-pinned snapshot of every SAS solution currently published on
-[Rosetta Code](https://rosettacode.org/wiki/Category:SAS): **56 tasks, 100% of
-the category**. First retrieved **2026-09-08**; refreshed **2026-09-11**.
+The SAS toolkit shelf: reference programs, migration skills, and an indexed map
+of the tools and lessons gathered across the SASchi projects.
 
-This repository is a *data corpus*, not a software project. It holds the SAS
-side of Rosetta Code's "same task, many languages" canon: community-written
-SAS, from classroom classics (FizzBuzz, Fibonacci, N-queens, Sudoku) to
-genuinely statistical material (Welch's t-test, QR decomposition, P-value
-correction, cumulative standard deviation). It exists so that SAS work can be
-searched, diffed, cited, and fed into tooling **without scraping the wiki**.
+Status: toolkit foundation for maintainer review. The preserved corpus is
+community probe material. The skills are initial workflow guidance, not a
+universal converter or a claim of live-SAS equivalence. MCP is planned.
 
-## Quick start
+## Start here
 
-```sas
-/* Run any single task's solution with SAS or SAS Studio: */
-%include "corpus/fizzbuzz.sas";
+| Need | Entry point |
+|---|---|
+| Read the existing 56 Rosetta Code SAS programs | [Preserved reference collection](references/rosetta-code/README.md) |
+| Assess a SAS program before migration | [SAS program assessment](skills/sas-assess/SKILL.md) |
+| Translate a bounded program to Python or R | [Translation with evidence](skills/sas-translate/SKILL.md) |
+| Move SAS datasets into Parquet | [Dataset interchange](skills/sas-to-parquet/SKILL.md) |
+| Find repositories and already gathered material | [Resource catalog](catalog/README.md) |
+| See the build sequence and future MCP work | [Roadmap](docs/ROADMAP.md) |
 
-/* Every solution is self-contained: read the provenance header, then the code. */
-```
+## Repository shape
 
-A browsable index of all 56 tasks lives in
-[`TASKS.csv`](TASKS.csv) (task → file → source URL → page revision) and is
-summarized in [`TASKS.md`](TASKS.md).
+| Path | Owns |
+|---|---|
+| `references/rosetta-code/` | SAS files, task indexes, collection documentation and attribution |
+| `skills/` | Individually usable agent workflow instructions and focused references |
+| `catalog/resources.json` | Source-backed resource records; generates `catalog/README.md` |
+| `docs/` | Scope decision, migration receipt and roadmap |
+| `tools/` and `scripts/` | Harvesting and repository checks |
+| `JOURNAL.md` | Current session handoff |
 
-## Repository layout
+The old `corpus/`, `TASKS.csv`, and `TASKS.md` paths are compatibility symlinks.
+They resolve to the nested collection, including for existing SASchi-Go checks.
+Use the nested paths for new integrations. Checkouts without symlink support
+should use those paths directly.
 
-| Path | Purpose |
-|------|---------|
-| `corpus/` | One `.sas` file per task. Filenames are slugified task titles. |
-| `TASKS.csv` | Machine-readable index: file, task title, source URL, revision, retrieval time. |
-| `tools/fetch_rosetta_sas.py` | The harvest pipeline: refresh the corpus against upstream, or check it with `--check`. |
-| `LICENSE` | Corpus-wide license statement (GFDL 1.2, see below). |
-| `NOTICE` | Provenance & attribution appendix. |
+## Skills
 
-Every `.sas` file opens with a provenance header, e.g.:
+Each folder under `skills/` is a self-contained skill. Read or explicitly invoke
+its `SKILL.md` in a compatible agent, or install that folder through the agent's
+normal skill installation mechanism. A clone alone does not install skills.
+The skills link to pinned source material and state what evidence a result needs.
+They do not install a translator, SAS runtime, or Parquet library.
 
-```sas
-/* Source: https://rosettacode.org/wiki/FizzBuzz
-   Rosetta Code task 'FizzBuzz', page revision 410510.
-   License: GFDL 1.2 (Rosetta_Code:Copyrights). Retrieved 2026-09-08T14:05:03Z. */
-```
+Program translation and dataset interchange are separate jobs. Python and R are
+execution targets; Parquet is a storage format. A readable output table does not
+by itself prove that the program or its metadata survived conversion.
 
-The **page revision ID** is the important part: it pins each file to the exact
-revision of the wikitext it was extracted from, so any file is reproducible and
-auditable against upstream.
+## Check and maintain
 
-## License and provenance
-
-The SAS text in this corpus originates from [Rosetta Code](https://rosettacode.org),
-which is published under the **GNU Free Documentation License 1.2**
-(see [Rosetta_Code:Copyrights](https://rosettacode.org/wiki/Rosetta_Code:Copyrights)).
-Individual contributors may have granted additional permissions; page history is
-the authority. Accordingly:
-
-- This collection, its headers, and this README are distributed under
-  **GFDL 1.2** (see [`LICENSE`](LICENSE)) with attribution to the Rosetta Code
-  project and the individual task authors.
-- Each file preserves its own provenance so downstream reuse can attribute
-  correctly. See [`NOTICE`](NOTICE.md).
-- This is a **point-in-time snapshot** of a wiki; upstream content is licensed
-  by its contributors, not by this repository.
-
-If you redistribute, modify, or build on these files, keep the provenance
-headers attached and reproduce this notice.
-
-## Status and caveats
-
-- **Community probe material, not verified gold.** Nothing here is a
-  correctness claim until it has been executed and checked. Contributions may
-  be partial, illustrative, or platform-specific (Base SAS vs. SAS/IML vs.
-  SAS Studio).
-- **Multiple examples per task are kept in one file**, separated by numbered
-  comment banners (`/* --- task: example 1 of 2 --- */`).
-- **Code-block language labels are not reliable upstream**; code inside a SAS
-  section is captured regardless of its `lang=` label (PROC IML has shipped as
-  `lang=text`, PROC SQL as `lang=sql`).
-
-## Lineage
-
-This corpus is the SAS material layer of a pair. The sibling repository,
-[SASchi-Go](https://github.com/buntas-tofu/SASchi-Go), carries the migration
-toolchain and documents the shared origin of the concept: a 2018
-statistical-agency wiki of side-by-side SAS, R, and Python examples built to
-move statistical work onto open languages, which itself names
-[Rosetta Code](https://rosettacode.org) (2007) as related prior work. The
-full citation lives in the sibling's Origins section.
-
-The roles differ by design. SASchi-Go proves SAS semantics with executable
-gates and receipts; SASchi-Roku preserves the community corpus that tooling
-is exercised against, pinned to source so it can be cited without scraping
-the wiki.
-
-## Refresh
-
-The snapshot is reproducible with the harvest pipeline in this repository:
+Run from the repository root:
 
 ```sh
-python3 tools/fetch_rosetta_sas.py --check   # report drift; exit 1 if any
-python3 tools/fetch_rosetta_sas.py           # refresh corpus/ and indexes
+python3 scripts/inertia-drift-lint .
+python3 scripts/check_corpus_index.py
+python3 scripts/check_toolkit.py
+python3 -m unittest discover -s tests -v
 ```
 
-The pipeline enumerates the `Category:SAS` members, fetches each task's
-wikitext, and extracts the `{{header|SAS}}` sections. A refresh is faithful
-and minimal: unchanged files keep their original retrieval stamps, changed
-pages are re-extracted with the fetched revision, and `TASKS.csv` plus
-`TASKS.md` are regenerated in the same pass. `--check` writes nothing and
-exits non-zero when the repository is not current, so it doubles as a drift
-alarm. See [CONTRIBUTING](CONTRIBUTING.md) before touching generated files
-by hand.
+CI also validates `agent-manifest.json` against its existing JSON schema.
+These checks cover repository integrity, not execution of the SAS corpus.
+The [contribution guide](CONTRIBUTING.md) explains catalog regeneration and
+upstream refresh. No upstream refresh is needed for a directory move.
 
-## Contributing
+## The family
 
-See [CONTRIBUTING.md](CONTRIBUTING.md): briefly: prefer a PR per task,
-keep provenance headers intact, and mark any additions that are *yours*
-(not re-scraped) clearly.
+[SASchi-Go](https://github.com/buntas-tofu/SASchi-Go) owns executable translation
+and semantic gates. [SASchi-Garage](https://github.com/buntas-tofu/SASchi-Garage)
+owns its authored field guide and research. Roku brings references, workflows,
+and discovery together without duplicating those implementation sources.
 
-## Governance
+The professional lane has [sas-campaign](https://github.com/the-pgh-cid/sas-campaign),
+[sas-ref](https://github.com/the-pgh-cid/sas-ref), and the collected
+[training modules](https://github.com/the-pgh-cid/sas-training-modules).
+Catalog records identify the inspected commits. Shared ancestry does not imply
+matching versions, gates, or results.
 
-This repository is governed under the
-[Inertia-Drift-Framework](https://github.com/buntas-tofu/Inertia-Drift-Framework)
-(DMF 2.0), file-based governance for projects worked on by humans and agents
-together. The contract is [`AGENTS.md`](AGENTS.md); the machine-readable
-descriptor is [`agent-manifest.json`](agent-manifest.json), validated against
-[`agent-manifest.schema.json`](agent-manifest.schema.json) in CI; and the
-invariants are checked by
-[`scripts/inertia-drift-lint`](scripts/inertia-drift-lint) on every push:
-fences, pointers, manifest shape, status lines, and the style floor of no em
-dashes and no ellipses in artifacts.
+## Governance and provenance
 
----
+The [scope decision](docs/decisions/0001-toolkit-scope.md) records the principal's
+2026-11-01 direction. [AGENTS.md](AGENTS.md) retains the DMF GLOBAL contract.
+[The relocation receipt](docs/migrations/2026-11-01-reference-move.json) records
+60 matching byte comparisons: 56 SAS files, two indexes, LICENSE and NOTICE.
+Collection navigation was adapted separately.
 
-*Mirrored snapshot of https://rosettacode.org/wiki/Category:SAS retrieved
-2026-09-08; refreshed 2026-09-11. Rosetta Code and its content are © their respective contributors
-and licensed under GFDL 1.2.*
+The existing [GFDL 1.2 license](LICENSE) and
+[attribution notice](references/rosetta-code/NOTICE.md) remain in place.
+Linked repositories retain their own terms. Inclusion in the catalog is not
+permission to copy their contents or a claim that their code has been tested.
