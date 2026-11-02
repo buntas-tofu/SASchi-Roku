@@ -28,5 +28,19 @@
     "pattern": "the-pgh-cid",
     "reason": "FROZEN TRIAL INPUTS: the starter replay hash-verifies these packets as evaluated; editing them trips the drift gate (correctly), and updating the hashes would misrepresent what the frozen candidates were generated against. The tokens here are citation URLs to since-private repositories, kept verbatim as receipt history.",
     "ruling": "PENDING OPERATOR: keep verbatim (receipt integrity) or re-freeze with repaired citations and fresh evaluations; until ruled, the collision is declared here rather than resolved by weakening either gate"
+  },
+  {
+    "path": "^trials/state\\-boundaries/packets/merge/skills/sas\\-translate/references/evidence\\.md$",
+    "pattern": "the-pgh-cid",
+    "sha256": "da999e1e82759c319fa51ca39c221c72e0bf3637bfacf303e2043abb861e949e",
+    "reason": "FROZEN TRIAL INPUT: one historical citation in the exact evaluated packet, retained with a content hash so edits lose the exception. No permission to copy private material is implied.",
+    "ruling": "Principal authorized completing the proposed PR 5 governance resolution on 2026-11-02; exact-file, hash-bound preservation is the recorded engineering choice in decision 0003."
+  },
+  {
+    "path": "^trials/state\\-boundaries/packets/widths/skills/sas\\-translate/references/evidence\\.md$",
+    "pattern": "the-pgh-cid",
+    "sha256": "da999e1e82759c319fa51ca39c221c72e0bf3637bfacf303e2043abb861e949e",
+    "reason": "FROZEN TRIAL INPUT: one historical citation in the exact evaluated packet, retained with a content hash so edits lose the exception. No permission to copy private material is implied.",
+    "ruling": "Principal authorized completing the proposed PR 5 governance resolution on 2026-11-02; exact-file, hash-bound preservation is the recorded engineering choice in decision 0003."
   }
 ]

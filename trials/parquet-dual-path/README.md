@@ -130,6 +130,9 @@ c2740e1f31abf778748bed9f6970d22a5d2bafc7. Its nine governance jobs and all froze
 trial bytes were preserved; the Parquet replay is an additive tenth job. The
 pull-request trigger also covers feature-branch targets so this work can be
 reviewed as a separate stacked PR while PR 5 remains open. The
-existing advisory MCP is separate from these file converters. Two inherited
-sanitization findings in historical frozen citation files still await the
-principal's ruling; the new trial adds no findings or exemptions.
+existing advisory MCP is separate from these file converters. The principal
+subsequently approved preserving the two historical frozen citation files.
+PR 5's [hash-bound resolution](../../docs/decisions/0003-frozen-citation-exceptions.md)
+was integrated with its regression tests. It checks exact paths, the classified
+token and original file hashes; no frozen byte changed. The initial two-finding
+checkpoint is historical, and the approved resolution now applies here.

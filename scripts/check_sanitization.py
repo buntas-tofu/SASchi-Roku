@@ -21,6 +21,8 @@ Every exemption and every surviving hit must be classified LEAK or SUBJECT
 MATTER (the scrub is a hypothesis; the classification is the deliverable).
 Adjudicated subject-matter hits live in scripts/sanitization-allowlist.json
 with a reason; the gate fails on anything unclassified.
+An optional sha256 field restricts a declaration to the exact file bytes.
+Changing those bytes removes that declaration's effect.
 
 Checks: file CONTENT (case-insensitive, word-boundary patterns plus a
 no-boundary pass for whole snake_case identifier segments) and FILE NAMES
@@ -30,6 +32,7 @@ is exactly what the floor forbids. Exit 0 clean, 1 findings, 2 usage error.
 Pure standard library.
 """
 
+import hashlib
 import json
 import re
 import sys
@@ -97,9 +100,16 @@ def is_exempt(path: Path, root: Path, exempt: list) -> bool:
     return False
 
 
-def allowed(allowlist, rel, pattern):
+def allowed(allowlist, rel, pattern, path):
     for row in allowlist:
         if re.search(row["path"], str(rel)) and row["pattern"] == pattern:
+            if "sha256" in row:
+                try:
+                    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+                except OSError:
+                    continue
+                if digest != row["sha256"]:
+                    continue
             return row
     return None
 
@@ -130,7 +140,7 @@ def run(profile: str, root: Path) -> int:
         # filename pass
         for p, rx in compiled:
             if rx.search(str(rel)):
-                row = allowed(allowlist, rel, p)
+                row = allowed(allowlist, rel, p, path)
                 if not row:
                     findings.append((str(rel), 0, p, "FILENAME"))
         if path.suffix not in TEXT_SUFFIXES:
@@ -142,7 +152,7 @@ def run(profile: str, root: Path) -> int:
         for i, line in enumerate(text.splitlines(), 1):
             for p, rx in compiled:
                 if rx.search(line):
-                    if not allowed(allowlist, rel, p):
+                    if not allowed(allowlist, rel, p, path):
                         findings.append((str(rel), i, p, line.strip()[:90]))
             else:
                 continue
@@ -156,7 +166,7 @@ def run(profile: str, root: Path) -> int:
                 # not an embed of "spira" (the match continues into a word)
                 if (before in ("", "_") and after in ("", "_")) \
                         and (before == "_" or after == "_"):
-                    if not allowed(allowlist, rel, p):
+                    if not allowed(allowlist, rel, p, path):
                         frag = text[max(0, m.start() - 30):m.end() + 30].replace("\n", " ")
                         findings.append((str(rel), 0, p + " [nobound]", frag[:90]))
                         break

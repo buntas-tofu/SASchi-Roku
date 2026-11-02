@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the PR 5 conflict resolution below. This
+2026-11-02. The latest checkpoint is the approved citation integration below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -263,6 +263,25 @@ Changing the packets would invalidate their freeze; broadening the allowlist
 would alter governance. Both remain unchanged for a separate maintainer ruling.
 Hosted CI and mergeability must be read from the resulting PR revision.
 
+## Frozen citation resolution, 2026-11-02
+
+Status: engineering implementation of the principal-approved continuation plan,
+for maintainer review. Public catalog PR 6 is merged; main was refreshed at
+`81e91d48d0db84cb3f01ea70a06314c6ad7cf736` without changing its catalog records.
+
+[Decision 0003](docs/decisions/0003-frozen-citation-exceptions.md) records the
+choice to preserve two historical packet citations using exact-path, token and
+SHA-256 exceptions. Changed bytes lose the exception. Five regression tests cover
+acceptance and rejection boundaries. No frozen trial, candidate, comparator or
+receipt changed. Existing pending declarations remain outside this decision.
+
+All 15 repository tests, the sanitization gate, corpus/catalog checks, manifest
+validation and every existing trial replay pass locally. The workflow remains
+unchanged, with all nine governance jobs. Hosted status belongs to this revision.
+The next bounded work is actual Parquet transport and broader metadata/byte
+preservation using current sanitized skill snapshots and frozen independent
+expectations. Live SAS remains unavailable.
+
 ## Accepted archival and analytical interchange, 2026-11-02
 
 At the principal's evening return, PR 5 remained open and was subsequently observed
@@ -315,3 +334,20 @@ The unchanged sanitization gate still reports exactly two historical citation
 findings inherited through PR 5. No new finding, allowlist edit or frozen-input
 rewrite was introduced. Their governance ruling remains separate from this
 passing interchange batch. Hosted results must be read from the new PR revision.
+
+## Approved citation integration, 2026-11-02
+
+The principal explicitly approved the proposed narrow exception in this chat.
+Concurrent PR 5 work had already recorded the same decision with exact-path, token
+and content-hash guards at a7be67a1dabccb4f43eb434fcb4c190a5ed8411e. Integrated
+that implementation, its five regression tests and the merged public catalog
+rather than adding a duplicate exception. Retained both journal handoffs and every
+frozen trial byte. The earlier two-finding checkpoint above is historical; the
+approved hash-bound resolution now applies to this branch.
+
+After integration, the sanitization gate reports zero findings. All 15 repository
+tests, the 39-record catalog, corpus/index, manifest and every prior trial replay
+pass. The invariant linter has zero errors and 25 warnings. The exact-path/hash
+exception implementation and tests match the approved PR 5 revision byte-for-byte.
+The 56-check dual-path replay also passes after integration. Hosted status must
+be read from the new merge revision.
