@@ -5,7 +5,7 @@ Status: Discovery catalog for maintainer use; reference inspection is not runtim
 Generated from [resources.json](resources.json). Edit that file, then run
 `python3 scripts/check_toolkit.py --write-index` from the repository root.
 
-30 resources. Source/lookup review date: 2026-11-01.
+39 resources. Source/lookup review date: 2026-11-02.
 
 September census counts describe the original testbed, not today's upstream.
 GitHub license identifiers are dated API observations, not per-file rights
@@ -22,6 +22,8 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [PSIAIMS/CAMIS](https://github.com/PSIAIMS/CAMIS) | Cross-software statistical comparison reference identified in Garage research. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+| [ceyson/polars_proc_compare](https://github.com/ceyson/polars_proc_compare) | Polars implementation of SAS PROC COMPARE-style structural and value reports, including missing-value comparisons. | source-inspected; [source](https://github.com/ceyson/polars_proc_compare/blob/1f72b6150ddb2389541f2ee16ef7bd2a767292c8/README.md); license ID: MIT |
+| [kulbshar/proccompy](https://github.com/kulbshar/proccompy) | Python dataframe comparator modeled on SAS PROC COMPARE, with per-column tolerances and SAS-style text listings. | source-inspected; [source](https://github.com/kulbshar/proccompy/blob/d56c006daeeffa379e391505914f3d8545837375/README.md); license ID: Apache-2.0 |
 
 ## dataframe
 
@@ -41,12 +43,17 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [apache/parquet-format](https://github.com/apache/parquet-format) | Apache Parquet storage-format specification, identified in the gathered sas-ref vendor shelf. | source-inspected; [source](https://github.com/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md); license ID: Apache-2.0 |
+| [scarnecchia/sas2parquet](https://github.com/scarnecchia/sas2parquet) | R batch conversion project for SAS7BDAT to zstd-compressed Parquet using DuckDB read_stat and Arrow. | source-inspected; [source](https://github.com/scarnecchia/sas2parquet/blob/1b103d348e5f32a9c3bfb06a9680fe97c4838f01/README.md); license ID: unknown |
 
 ## interop
 
 | Resource | Use | Evidence |
 |---|---|---|
+| [dylanmeysmans/duckdb-read-stat](https://github.com/dylanmeysmans/duckdb-read-stat) | DuckDB ReadStat community extension; README shows reads of SAS7BDAT and XPT files via read_stat. | source-inspected; [source](https://github.com/dylanmeysmans/duckdb-read-stat/blob/029c59b8514402dc4270dd6d9d3c9da9037a95fc/README.md); license ID: MIT |
 | [tidyverse/haven](https://github.com/tidyverse/haven) | R statistical-file interchange, including SAS readers and metadata representations. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+| [alipatti/polars_io](https://github.com/alipatti/polars_io) | Lazy Polars SAS7BDAT/XPT reader using pyreadstat with documented predicate and projection pushdown. | source-inspected; [source](https://github.com/alipatti/polars_io/blob/83e7486ba563210aee4666229a3af916f000b277/README.md); license ID: unknown |
+| [Roche/pyreadstat](https://github.com/Roche/pyreadstat) | Python ReadStat wrapper reading SAS datasets and catalogs into pandas or Polars frames with metadata support. | source-inspected; [source](https://github.com/Roche/pyreadstat/blob/e6e23bc0021875f35fccc3c2707c3e5151c130bb/README.md); license ID: NOASSERTION |
+| [junyuan-chen/ReadStatTables.jl](https://github.com/junyuan-chen/ReadStatTables.jl) | Julia Tables.jl interface using ReadStat to read SAS7BDAT/XPT, with metadata, labels and date handling. | source-inspected; [source](https://github.com/junyuan-chen/ReadStatTables.jl/blob/9c07e788241d44be667b9690f593491827bf2a25/README.md); license ID: MIT |
 
 ## sas-testbed
 
@@ -80,6 +87,18 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [sas_migration collected scaffold](https://github.com/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md) | Collected migration starter kit with Python/R skill templates and DuckDB, Polars and R guides. | upstream-unresolved; [source](https://github.com/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md) |
+
+## training
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [Bayer-Group/sas2r](https://github.com/Bayer-Group/sas2r) | Clinical R programming recipe knowledge hub aimed at SAS users; not a direct SAS source-code converter. | source-inspected; [source](https://github.com/Bayer-Group/sas2r/blob/4f40c303584bc6ac366081529e53f492d3b28554/README.md); license ID: MIT |
+
+## translation
+
+| Resource | Use | Evidence |
+|---|---|---|
+| [CSOIreland/Code-Transcompiler-using-LLMs-public](https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public) | Statistical-agency LLM translation framework; README documents CSO use for SAS-to-R and configurable review iterations. | source-inspected; [source](https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public/blob/7c0ca2f605aab2e76346d33b286d9dd40ba8d749/README.md); license ID: MIT |
 
 ## Reading the record
 

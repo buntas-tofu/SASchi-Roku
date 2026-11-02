@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the PR 5 conflict resolution below. This
+2026-11-02. The latest checkpoint is the frozen citation resolution below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -262,3 +262,22 @@ frozen merge and widths packets under `trials/state-boundaries/packets/`.
 Changing the packets would invalidate their freeze; broadening the allowlist
 would alter governance. Both remain unchanged for a separate maintainer ruling.
 Hosted CI and mergeability must be read from the resulting PR revision.
+
+## Frozen citation resolution, 2026-11-02
+
+Status: engineering implementation of the principal-approved continuation plan,
+for maintainer review. Public catalog PR 6 is merged; main was refreshed at
+`81e91d48d0db84cb3f01ea70a06314c6ad7cf736` without changing its catalog records.
+
+[Decision 0003](docs/decisions/0003-frozen-citation-exceptions.md) records the
+choice to preserve two historical packet citations using exact-path, token and
+SHA-256 exceptions. Changed bytes lose the exception. Five regression tests cover
+acceptance and rejection boundaries. No frozen trial, candidate, comparator or
+receipt changed. Existing pending declarations remain outside this decision.
+
+All 15 repository tests, the sanitization gate, corpus/catalog checks, manifest
+validation and every existing trial replay pass locally. The workflow remains
+unchanged, with all nine governance jobs. Hosted status belongs to this revision.
+The next bounded work is actual Parquet transport and broader metadata/byte
+preservation using current sanitized skill snapshots and frozen independent
+expectations. Live SAS remains unavailable.
