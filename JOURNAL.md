@@ -183,13 +183,20 @@ gate) was adapted to this repository's shape and landed on
   found 84 raw hits of the private professional account name in public
   files: ten trial-packet citation links, the decision record, the catalog
   (three entries describing private repositories), and README links. The
-  citations were re-voiced to neutral text pins (name, lane, private, the
-  40-hex commit pin kept); the three catalog entries for private
-  repositories were removed (the record contract requires a public HTTPS
-  URL for repository-kind entries, and the lane ruling forbids the account
-  token in public trees); the catalog README was regenerated with
-  `check_toolkit.py --write-index`. No trial results, evaluations, or
-  receipts were altered; only the citations' addresses.
+  citations in the live files (catalog, decision record, README, the live
+  sas-translate reference) were re-voiced to neutral text pins (name, lane,
+  private, the 40-hex commit pin kept); the three catalog entries for
+  private repositories were removed (the record contract requires a public
+  HTTPS URL for repository-kind entries, and the lane ruling forbids the
+  account token in public trees); the catalog README was regenerated with
+  `check_toolkit.py --write-index`. The FROZEN trial packets were first
+  repaired as well, and the starter replay correctly rejected the edit as
+  frozen-input drift: they were restored verbatim, because updating their
+  hashes would misrepresent what the frozen candidates were generated
+  against. Their citation tokens are allowlisted in the sanitization gate
+  with the collision declared for the principal's ruling: keep verbatim
+  (receipt integrity) or re-freeze with repaired citations and fresh
+  evaluations. No trial results, evaluations, or receipts were altered.
 - Receipts: both instances' corpora and harvested reference outputs are
   byte-identical; nine CI checks green on the branch; the professional
   instance runs the same server code against its own kb/corpus location.
