@@ -1,0 +1,9 @@
+PASS import: no CLI execution or output
+PASS main: API, CLI, exact table, fresh calls, input unchanged (4 rows)
+PASS edge: API, CLI, exact table, fresh calls, input unchanged (4 rows)
+PASS single: API, CLI, exact table, fresh calls, input unchanged (1 rows)
+PASS empty: API, CLI, exact table, fresh calls, input unchanged (0 rows)
+PASS typed API: leading and consecutive missing values, exact binary fractions (5 rows)
+PASS UTF-8 character field byte round-trip: spaces, non-ASCII, quotes, commas, LF, CRLF (5 rows)
+PASS negative control: comparator rejected missing-skipping lag variant; mismatch retained
+ALL SELF-TESTS PASSED; no live SAS comparison

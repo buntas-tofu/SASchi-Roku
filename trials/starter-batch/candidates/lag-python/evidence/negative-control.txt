@@ -1,0 +1,1 @@
+({'row_id': 'e7', 'value': -2.0, 'prev': 5.0, 'prev2': None, 'change': -7.0}, ['e7', -2.0, None, 5.0, None])

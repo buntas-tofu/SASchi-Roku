@@ -1,0 +1,14 @@
+{
+  "engine": "synthetic-starter-engine",
+  "version": "1",
+  "target": "Python",
+  "admitted": [
+    "single DATA step SET with scalar arithmetic"
+  ],
+  "not_admitted": [
+    "all PROC statements",
+    "macros",
+    "external I/O"
+  ],
+  "note": "Exercise capability contract, not a description of SASchi-Go or any real product."
+}

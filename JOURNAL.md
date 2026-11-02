@@ -72,3 +72,32 @@ foundation and this trial; its hosted checks are the external CI record.
 Resolve the collected migration scaffold's upstream before importing it. Choose
 a stateful or metadata-focused task for another behavioral skill trial. Decide the license for future
 original software before release. Keep the professional lane independent.
+
+
+## Starter batch, 2026-11-01
+
+The principal accepted four assessments plus LENGTH and unconditional LAG in
+Python and R as the representative starter. The accepted scope and later
+proposed phases are in [TEST_PLAN](docs/TEST_PLAN.md). Eight fresh evaluations
+used isolated input-only packets and exact skill snapshots, with no parent
+history or expected answers. Raw first deliveries remain unchanged.
+
+[Starter results](trials/starter-batch/README.md): all four assessments passed
+parent artifact review, five criteria each. All four target conversions passed
+32 parent checks across CLI and in-memory interfaces; 10 negative controls were
+rejected. Native R 4.3.3 and CPython 3.12.3 actually ran. SAS did not. Agent
+self-test counts and raw repair histories are separate from parent results.
+
+The broad ASCII wording left an unresolved NUL boundary for R's character
+interface. The original request was not narrowed after generation. Frozen
+witnesses pass; full-domain signoff remains false. A custom R CSV parser also
+exposed the need to separate semantic and transport testing. A self-test oracle
+naming failure was retained by the R evaluator; the parent oracle did not change.
+
+Candidate directions are dependency/macro inventory, character and metadata
+interchange contracts, and stateful failure diagnosis. These are labeled
+inferences and coverage-driven proposals, not new skills or established needs
+across a population. No skill instruction changes or later-phase runs occurred.
+Review this checkpoint before broadening tests. Model revision/settings were
+not exposed. Eleven linter warnings are the three existing skill-frontmatter
+warnings plus eight identical snapshots, with no linter changes.

@@ -1,0 +1,29 @@
+{
+  "status": "target-runtime evidence only; no live SAS comparison",
+  "environment": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "executable": "/usr/bin/python3"
+  },
+  "checks": [
+    "main: API and CLI exact comparison, 3 rows",
+    "edge: API and CLI exact comparison, 4 rows",
+    "single: API and CLI exact comparison, 1 rows",
+    "empty: API and CLI exact comparison, 0 rows",
+    "12 additional literal witnesses: API and CLI exact comparison",
+    "negative control rejected: generic rstrip returns 2 for AB\\t",
+    "import without CLI arguments succeeded silently",
+    "standard CSV numeric-missing serialization emits a blank cell"
+  ],
+  "sha256": {
+    "packet/request.txt": "4cb2eb53d6e54abe3692bd979cab30a86f98659909b24ef4369d50a8d6aec6cb",
+    "packet/source.sas": "7d885ba79a895afa2efa52282ce71ba39430bcb6ff9ea6d3ddc3ca6aa4c58880",
+    "packet/skill/SKILL.md": "6cdb948823b5fb1caccfee7c3c4754892bdb617a0b7da526272bbd21220ac91c",
+    "packet/edge.csv": "bfa6fddb9a13dc93b55e13085549d9904514cda641da1ce74552039338548236",
+    "packet/empty.csv": "2bcb01b44abe67c45803a909e9b3df30c306e0be2cb294bcdb0a256413031867",
+    "packet/main.csv": "483076b6bee43147cccd0dd46a5c5bdee6ac1d53daae5a04ff3d4248d522c3eb",
+    "packet/single.csv": "706575c77a29a86218f73be74bb574cd9ed15d5865e0190b09b136574b8df501",
+    "output/converted.py": "b226e2249c13cca76f21389b1052a56e832b49b7ad2b29572492a136aa3cd12f",
+    "output/selftest.py": "28838c8f3ca9481ca33e0a6da7d16a9fec22f10164decfbc87081f45866a9d0c"
+  }
+}

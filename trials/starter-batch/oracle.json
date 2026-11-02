@@ -1,0 +1,234 @@
+{
+  "status": "hand-derived before candidate generation; no SAS execution",
+  "length": {
+    "input_columns": [
+      "row_id",
+      "text"
+    ],
+    "output_columns": [
+      "row_id",
+      "text",
+      "len"
+    ],
+    "inputs": {
+      "main": [
+        [
+          "l7",
+          "KITE"
+        ],
+        [
+          "l2",
+          "ABCDEFGHIJ"
+        ],
+        [
+          "l9",
+          "Q "
+        ]
+      ],
+      "edge": [
+        [
+          "e9",
+          " AB  "
+        ],
+        [
+          "e2",
+          "AB\t"
+        ],
+        [
+          "e7",
+          ""
+        ],
+        [
+          "e4",
+          "   "
+        ]
+      ],
+      "single": [
+        [
+          "s1",
+          " Z"
+        ]
+      ],
+      "empty": []
+    },
+    "expected": {
+      "main": [
+        [
+          "l7",
+          "KITE      ",
+          4
+        ],
+        [
+          "l2",
+          "ABCDEFGHIJ",
+          10
+        ],
+        [
+          "l9",
+          "Q         ",
+          1
+        ]
+      ],
+      "edge": [
+        [
+          "e9",
+          " AB       ",
+          3
+        ],
+        [
+          "e2",
+          "AB\t       ",
+          3
+        ],
+        [
+          "e7",
+          "          ",
+          1
+        ],
+        [
+          "e4",
+          "          ",
+          1
+        ]
+      ],
+      "single": [
+        [
+          "s1",
+          " Z        ",
+          2
+        ]
+      ],
+      "empty": []
+    }
+  },
+  "lag": {
+    "input_columns": [
+      "row_id",
+      "value"
+    ],
+    "output_columns": [
+      "row_id",
+      "value",
+      "prev",
+      "prev2",
+      "change"
+    ],
+    "inputs": {
+      "main": [
+        [
+          "l7",
+          12
+        ],
+        [
+          "l2",
+          18
+        ],
+        [
+          "l9",
+          15
+        ],
+        [
+          "l1",
+          9
+        ]
+      ],
+      "edge": [
+        [
+          "e9",
+          5
+        ],
+        [
+          "e2",
+          null
+        ],
+        [
+          "e7",
+          -2
+        ],
+        [
+          "e4",
+          0
+        ]
+      ],
+      "single": [
+        [
+          "s1",
+          -3
+        ]
+      ],
+      "empty": []
+    },
+    "expected": {
+      "main": [
+        [
+          "l7",
+          12,
+          null,
+          null,
+          null
+        ],
+        [
+          "l2",
+          18,
+          12,
+          null,
+          6
+        ],
+        [
+          "l9",
+          15,
+          18,
+          12,
+          -3
+        ],
+        [
+          "l1",
+          9,
+          15,
+          18,
+          -6
+        ]
+      ],
+      "edge": [
+        [
+          "e9",
+          5,
+          null,
+          null,
+          null
+        ],
+        [
+          "e2",
+          null,
+          5,
+          null,
+          null
+        ],
+        [
+          "e7",
+          -2,
+          null,
+          5,
+          null
+        ],
+        [
+          "e4",
+          0,
+          -2,
+          null,
+          2
+        ]
+      ],
+      "single": [
+        [
+          "s1",
+          -3,
+          null,
+          null,
+          null
+        ]
+      ],
+      "empty": []
+    }
+  }
+}
