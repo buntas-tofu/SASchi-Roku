@@ -1,0 +1,72 @@
+PASS: main input bytes 
+PASS: main hand lengths 
+PASS: main row keys/order 
+PASS: main schema 
+PASS: main stored bytes 
+PASS: main no mutation 
+PASS: main fresh invocation 
+PASS: main CLI exit 
+PASS: main independent CSV reader comparison 
+PASS: edge input bytes 
+PASS: edge hand lengths 
+PASS: edge row keys/order 
+PASS: edge schema 
+PASS: edge stored bytes 
+PASS: edge no mutation 
+PASS: edge fresh invocation 
+PASS: edge CLI exit 
+PASS: edge independent CSV reader comparison 
+PASS: single input bytes 
+PASS: single hand lengths 
+PASS: single row keys/order 
+PASS: single schema 
+PASS: single stored bytes 
+PASS: single no mutation 
+PASS: single fresh invocation 
+PASS: single CLI exit 
+PASS: single independent CSV reader comparison 
+PASS: empty input bytes 
+PASS: empty hand lengths 
+PASS: empty row keys/order 
+PASS: empty schema 
+PASS: empty stored bytes 
+PASS: empty no mutation 
+PASS: empty fresh invocation 
+PASS: empty CLI exit 
+PASS: empty independent CSV reader comparison 
+PASS: 491 independent raw-byte witnesses 
+PASS: wrong trimws variant rejected on 428 rows 
+PASS: quoted CSV controls and punctuation preserved 
+PASS: special hand lengths 
+PASS: special CLI exit 
+PASS: special CLI exact output bytes 
+PASS: writer emits blank numeric missing cell 
+PASS: overwidth text rejected 
+PASS: non-ASCII text rejected 
+TOTAL PASS: 45 
+Failed to connect to bus: Operation not permitted
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 24.04.5 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: America/New_York
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.3
+Warning message:
+In system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1

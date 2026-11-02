@@ -22,6 +22,10 @@ seven rejected negative controls. It preserves an unassigned missing value rathe
 than inventing the product suggested by the source title. This is an initial
 observation; the broader workflow sequence below remains open.
 
+The principal accepted the [phased evaluation plan](TEST_PLAN.md), starting with
+four assessments plus LENGTH and unconditional LAG in Python and R. Review that
+eight-task starter before expanding the remaining phases.
+
 Start with small examples whose behavior can be observed. Suggested order is
 engineering judgment, not a measured ranking:
 

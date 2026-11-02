@@ -1,0 +1,129 @@
+{
+  "status": "parent artifact review against frozen rubric; prose judgment is not machine execution",
+  "cases": {
+    "A1": {
+      "verdict": "PASS",
+      "report_sha256": "eb69260e9a9c3ad9ebb1e08e6180cd01ee8b761b41834f915116c8bc3e9a02a3",
+      "criteria": [
+        {
+          "id": "input-output",
+          "verdict": "PASS",
+          "evidence": "Inventory and execution order: work.have input, work.want output, amount arithmetic."
+        },
+        {
+          "id": "target-and-slice",
+          "verdict": "PASS",
+          "evidence": "Practical first slice keeps Python, proposes numeric input scope and existing-column checks."
+        },
+        {
+          "id": "comparison-scope",
+          "verdict": "PASS",
+          "evidence": "Acceptance checks cover rows, order, schema, metadata, missingness and failures; all marked not run."
+        },
+        {
+          "id": "source-and-uncertainty",
+          "verdict": "PASS",
+          "evidence": "Evidence gives SHA-256 and line locations; observed code, documentation, inference and proposal are differentiated."
+        },
+        {
+          "id": "execution-boundary",
+          "verdict": "PASS",
+          "evidence": "Actions actually taken states no source, translator, target or tests executed; absent data prevents runtime claims."
+        }
+      ]
+    },
+    "A2": {
+      "verdict": "PASS",
+      "report_sha256": "defeabbdafc9647b7555291f5685f0c634bb8312f7cc8e8ed627552d120e2178",
+      "criteria": [
+        {
+          "id": "dependencies",
+          "verdict": "PASS",
+          "evidence": "Observed sequence names absent settings.sas and unresolved %score."
+        },
+        {
+          "id": "macro-layer",
+          "verdict": "PASS",
+          "evidence": "Scoring inputs/outputs inferred from parameter names, not asserted; expansion and effects remain unknown."
+        },
+        {
+          "id": "next-evidence",
+          "verdict": "PASS",
+          "evidence": "Missing evidence asks for includes, macro resolution, invocation/session state and generated SAS."
+        },
+        {
+          "id": "bounded-slice",
+          "verdict": "PASS",
+          "evidence": "Final projection proposed only with independently supplied work.scored; no invented score computation."
+        },
+        {
+          "id": "source-and-execution",
+          "verdict": "PASS",
+          "evidence": "Hash/locations and source versus documented semantics present; actions state no execution or translation."
+        }
+      ]
+    },
+    "A3": {
+      "verdict": "PASS",
+      "report_sha256": "9f6a457c578af0722cb58f80d59f6d9f907c7abf5ce783d83e171812430f9ecb",
+      "criteria": [
+        {
+          "id": "profile-boundary",
+          "verdict": "PASS",
+          "evidence": "Decision compares PROC GLM to explicit all-PROC exclusion in synthetic profile v1."
+        },
+        {
+          "id": "support-versus-parsing",
+          "verdict": "PASS",
+          "evidence": "No implementation inspected; no claim about actual diagnostic or real translator support."
+        },
+        {
+          "id": "no-substitution",
+          "verdict": "PASS",
+          "evidence": "Unsupported planning ticket proposed; no generic regression replacement, no claim Python is incapable."
+        },
+        {
+          "id": "inventory-and-next-evidence",
+          "verdict": "PASS",
+          "evidence": "Source inventory covers input/class/model/predictions; baseline, schema and statistical settings requested."
+        },
+        {
+          "id": "source-and-execution",
+          "verdict": "PASS",
+          "evidence": "Program and profile hashes/locations verified; static facts and inferred intent separated; no execution claimed."
+        }
+      ]
+    },
+    "A4": {
+      "verdict": "PASS",
+      "report_sha256": "a49e1d5cce4737b3a87e7a95ae4566481ee166e4900ff0d1906fa20c4caacf1f",
+      "criteria": [
+        {
+          "id": "source-versus-dataset",
+          "verdict": "PASS",
+          "evidence": "Opening identifies SAS text, absent data, and Parquet as storage format; desired summary output labeled inference."
+        },
+        {
+          "id": "inventory",
+          "verdict": "PASS",
+          "evidence": "Observed inventory names both libraries, source.measurements and results.summary, without claiming access."
+        },
+        {
+          "id": "metadata-and-loss-policy",
+          "verdict": "PASS",
+          "evidence": "Missing evidence requests member type, descriptor, encoding, formats, missing categories and required metadata; output mapping must be agreed."
+        },
+        {
+          "id": "bounded-next-step",
+          "verdict": "PASS",
+          "evidence": "First slice selects variables after data is supplied; checks include reopen, types, duplicates, ordering, exact values and failure behavior."
+        },
+        {
+          "id": "source-and-execution",
+          "verdict": "PASS",
+          "evidence": "Source hash and lines verified; report states no dataset reader, source execution, conversion or output creation."
+        }
+      ]
+    }
+  }
+}

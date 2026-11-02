@@ -1,0 +1,64 @@
+PASS: main API exact hand truth 
+PASS: main input unchanged 
+PASS: main fresh invocation 
+PASS: main CLI exit 
+PASS: main CSV exact hand truth 
+PASS: main missing cells written blank 
+PASS: edge API exact hand truth 
+PASS: edge input unchanged 
+PASS: edge fresh invocation 
+PASS: edge CLI exit 
+PASS: edge CSV exact hand truth 
+PASS: edge missing cells written blank 
+PASS: single API exact hand truth 
+PASS: single input unchanged 
+PASS: single fresh invocation 
+PASS: single CLI exit 
+PASS: single CSV exact hand truth 
+PASS: single missing cells written blank 
+PASS: empty API exact hand truth 
+PASS: empty input unchanged 
+PASS: empty fresh invocation 
+PASS: empty CLI exit 
+PASS: empty CSV exact hand truth 
+PASS: empty missing cells written blank 
+PASS: 0 rows queue witness 
+PASS: 1 rows queue witness 
+PASS: 2 rows queue witness 
+PASS: 3 rows queue witness 
+PASS: 7 rows queue witness 
+PASS: 1000 rows queue witness 
+PASS: comparator rejects missing-skipping lag variant 
+PASS: text CLI exit 
+PASS: UTF-8 and special text key bytes preserved 
+PASS: text CLI values and schema 
+PASS: sourcing does not run CLI 
+TOTAL: 35 checks passed
+
+Environment:
+Failed to connect to bus: Operation not permitted
+R version 4.3.3 (2024-02-29)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 24.04.5 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.12.0 
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: America/New_York
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.3
+Warning message:
+In system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1

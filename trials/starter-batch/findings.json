@@ -1,0 +1,31 @@
+{
+  "status": "parent observations and labeled follow-up proposals; no general skill or SAS equivalence claim",
+  "observations": [
+    {
+      "id": "input-alphabet",
+      "task": "length-r",
+      "evidence": "candidates/length-r/converted.R explicitly rejects NUL bytes; its report identifies the R character representation limit. The frozen request says ASCII without excluding NUL.",
+      "finding": "The request's full byte alphabet is underspecified for the chosen in-memory R interface. Passing the supplied witnesses does not close that scope gap.",
+      "next_action": "Before broader character tests, specify accepted bytes and a policy for unrepresentable values. Preserve this original request and candidate unchanged."
+    },
+    {
+      "id": "transport-versus-semantics",
+      "task": "length-r",
+      "evidence": "The delivered R program includes a custom CSV parser; the report attributes it to a CRLF-normalization probe. The parent inspected the parser but its broader CSV behavior is outside the frozen witness set.",
+      "finding": "Transport behavior can dominate a small semantic conversion. Additional self-test claims remain agent evidence, separate from parent verification.",
+      "next_action": "Keep in-memory semantic checks and transport checks distinct; consider a shared, independently validated adapter in a later phase."
+    },
+    {
+      "id": "test-harness-failure",
+      "task": "length-r",
+      "evidence": "self_test.first_failure.log records an extra byte-witness comparison failure. The final self-test and report describe removing accidental vector names in the oracle. Both original logs are retained.",
+      "finding": "Failures in evaluator-owned checks must remain distinguishable from failures in delivered conversions. The parent frozen oracle was not changed.",
+      "next_action": "Continue retaining first deliveries, self-test repair history and parent comparisons separately."
+    }
+  ],
+  "candidate_skill_directions": [
+    {"name": "SAS dependency and macro expansion inventory", "basis": "A2 preserved the unknown include and scoring expansion instead of inventing behavior.", "status": "inference: useful candidate for richer dependency cases, not yet a new skill"},
+    {"name": "Character and metadata interchange contracts", "basis": "A4 required real data and metadata; LENGTH/R exposed the input-alphabet and transport boundary.", "status": "inference: next requirements should cover decoding, widths, missing tags and loss policies"},
+    {"name": "Stateful conversion failure diagnosis", "basis": "The starter covers only unconditional queues; conditional LAG, retained state and composition remain untested.", "status": "planning hypothesis from coverage gaps, not an observed failure or delivered capability"}
+  ]
+}

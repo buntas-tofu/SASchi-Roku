@@ -17,6 +17,7 @@ universal converter or a claim of live-SAS equivalence. MCP is planned.
 | Move SAS datasets into Parquet | [Dataset interchange](skills/sas-to-parquet/SKILL.md) |
 | Find repositories and already gathered material | [Resource catalog](catalog/README.md) |
 | See the build sequence and future MCP work | [Roadmap](docs/ROADMAP.md) |
+| Review staged tests and starter observations | [Test plan](docs/TEST_PLAN.md), [starter results](trials/starter-batch/README.md) |
 
 ## Repository shape
 
@@ -47,6 +48,11 @@ one isolated skill invocation, the unchanged-source Python candidate, an
 independent oracle and seven rejected negative controls. It is a bounded example,
 not a general skill validation. CI replays its archived candidate.
 
+The [eight-task starter batch](trials/starter-batch/README.md) records four static
+assessments and LENGTH/LAG conversions in Python and native R. Its 32 runtime
+checks and 10 rejected controls are bounded evidence; an explicit character-byte
+domain gap remains. Full-domain and live-SAS acceptance are not claimed.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.
@@ -62,6 +68,9 @@ python3 scripts/check_toolkit.py
 python3 -m unittest discover -s tests -v
 python3 trials/sas-translate-sum-array/verify.py
 ```
+
+For the starter replay, with native Rscript available, also run
+`python3 trials/starter-batch/verify.py`.
 
 CI also validates `agent-manifest.json` against its existing JSON schema.
 These checks cover repository integrity, not execution of the SAS corpus.

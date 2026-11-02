@@ -21,6 +21,12 @@ every line can be traced to its commit.
 - First isolated translation skill trial: archived candidate, independent
   arithmetic/missingness oracle, seven rejected negative controls and CI replay.
 
+- Accepted phased test plan and eight independent starter deliveries: four
+  reviewed assessments, four Python/native-R conversions, 32 parent runtime
+  checks, 10 rejected controls, immutable packets and separate CI replay.
+- Parent findings preserve the open ASCII/NUL interface boundary and distinguish
+  agent self-test repair from independent verification.
+
 ### Changed
 
 - Preserve the Rosetta Code corpus, indexes and attribution under
