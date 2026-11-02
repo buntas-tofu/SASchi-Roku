@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "Discovery catalog for maintainer use; reference inspection is not runtime validation or a redistribution grant.",
-  "updated_on": "2026-11-01",
+  "updated_on": "2026-11-02",
   "resources": [
     {
       "id": "sas-lexer",
@@ -895,6 +895,282 @@
         "notes": "Upstream repository URL and revision were not recorded. No code copied or setup script executed."
       },
       "github_snapshot": null,
+      "historical_census": null
+    },
+    {
+      "id": "cso-code-transcompiler",
+      "name": "CSOIreland/Code-Transcompiler-using-LLMs-public",
+      "kind": "repository",
+      "category": "translation",
+      "url": "https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public",
+      "description": "Statistical-agency LLM translation framework; README documents CSO use for SAS-to-R and configurable review iterations.",
+      "tags": [
+        "sas",
+        "r",
+        "llm",
+        "translation",
+        "statistics"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public/blob/7c0ca2f605aab2e76346d33b286d9dd40ba8d749/README.md",
+        "source_revision": "7c0ca2f605aab2e76346d33b286d9dd40ba8d749",
+        "notes": "README documents translation workflow but not independent semantic equivalence tests; model/service configuration and output require review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "bayer-sas2r",
+      "name": "Bayer-Group/sas2r",
+      "kind": "repository",
+      "category": "training",
+      "url": "https://github.com/Bayer-Group/sas2r",
+      "description": "Clinical R programming recipe knowledge hub aimed at SAS users; not a direct SAS source-code converter.",
+      "tags": [
+        "sas",
+        "r",
+        "clinical",
+        "training"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/Bayer-Group/sas2r/blob/4f40c303584bc6ac366081529e53f492d3b28554/README.md",
+        "source_revision": "4f40c303584bc6ac366081529e53f492d3b28554",
+        "notes": "Clinical examples are useful leads, not evidence of one-to-one SAS/R procedure parity or independently executed conversions."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "duckdb-read-stat",
+      "name": "dylanmeysmans/duckdb-read-stat",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/dylanmeysmans/duckdb-read-stat",
+      "description": "DuckDB ReadStat community extension; README shows reads of SAS7BDAT and XPT files via read_stat.",
+      "tags": [
+        "sas",
+        "duckdb",
+        "readstat",
+        "sas7bdat",
+        "xpt"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/dylanmeysmans/duckdb-read-stat/blob/029c59b8514402dc4270dd6d9d3c9da9037a95fc/README.md",
+        "source_revision": "029c59b8514402dc4270dd6d9d3c9da9037a95fc",
+        "notes": "Documented file reader, not a translator; metadata, encoding and special-missing preservation need round-trip checks."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "develop"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "polars-io",
+      "name": "alipatti/polars_io",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/alipatti/polars_io",
+      "description": "Lazy Polars SAS7BDAT/XPT reader using pyreadstat with documented predicate and projection pushdown.",
+      "tags": [
+        "sas",
+        "polars",
+        "python",
+        "readstat",
+        "arrow",
+        "numpy"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/alipatti/polars_io/blob/83e7486ba563210aee4666229a3af916f000b277/README.md",
+        "source_revision": "83e7486ba563210aee4666229a3af916f000b277",
+        "notes": "README flags non-UTF-8 metadata problems; performance/zero-copy claims and rights not independently checked. GitHub API license identifier was unavailable."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "polars-proc-compare",
+      "name": "ceyson/polars_proc_compare",
+      "kind": "repository",
+      "category": "comparison",
+      "url": "https://github.com/ceyson/polars_proc_compare",
+      "description": "Polars implementation of SAS PROC COMPARE-style structural and value reports, including missing-value comparisons.",
+      "tags": [
+        "sas",
+        "polars",
+        "python",
+        "proc-compare",
+        "validation"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/ceyson/polars_proc_compare/blob/1f72b6150ddb2389541f2ee16ef7bd2a767292c8/README.md",
+        "source_revision": "1f72b6150ddb2389541f2ee16ef7bd2a767292c8",
+        "notes": "API and tolerance behavior described by author; not established as exact SAS PROC COMPARE semantics or run in this review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "readstat-tables-julia",
+      "name": "junyuan-chen/ReadStatTables.jl",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/junyuan-chen/ReadStatTables.jl",
+      "description": "Julia Tables.jl interface using ReadStat to read SAS7BDAT/XPT, with metadata, labels and date handling.",
+      "tags": [
+        "sas",
+        "julia",
+        "tables",
+        "readstat",
+        "sas7bdat",
+        "xpt"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/junyuan-chen/ReadStatTables.jl/blob/9c07e788241d44be667b9690f593491827bf2a25/README.md",
+        "source_revision": "9c07e788241d44be667b9690f593491827bf2a25",
+        "notes": "README documents supported file formats and types; no SAS binary or Julia execution performed for this review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "pyreadstat",
+      "name": "Roche/pyreadstat",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/Roche/pyreadstat",
+      "description": "Python ReadStat wrapper reading SAS datasets and catalogs into pandas or Polars frames with metadata support.",
+      "tags": [
+        "sas",
+        "python",
+        "pandas",
+        "polars",
+        "sas7bdat",
+        "sas7bcat",
+        "xpt"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/Roche/pyreadstat/blob/e6e23bc0021875f35fccc3c2707c3e5151c130bb/README.md",
+        "source_revision": "e6e23bc0021875f35fccc3c2707c3e5151c130bb",
+        "notes": "Upstream README explicitly says package is not validated for critical reporting; repository API license identifier NOASSERTION is not a rights review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "NOASSERTION",
+        "default_branch": "master"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sas2parquet-r",
+      "name": "scarnecchia/sas2parquet",
+      "kind": "repository",
+      "category": "format",
+      "url": "https://github.com/scarnecchia/sas2parquet",
+      "description": "R batch conversion project for SAS7BDAT to zstd-compressed Parquet using DuckDB read_stat and Arrow.",
+      "tags": [
+        "sas",
+        "r",
+        "duckdb",
+        "arrow",
+        "parquet",
+        "sas7bdat"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/scarnecchia/sas2parquet/blob/1b103d348e5f32a9c3bfb06a9680fe97c4838f01/README.md",
+        "source_revision": "1b103d348e5f32a9c3bfb06a9680fe97c4838f01",
+        "notes": "README describes tests and workflows only; no SAS binary round trip tested here. No GitHub license identifier at review."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "proccompy",
+      "name": "kulbshar/proccompy",
+      "kind": "repository",
+      "category": "comparison",
+      "url": "https://github.com/kulbshar/proccompy",
+      "description": "Python dataframe comparator modeled on SAS PROC COMPARE, with per-column tolerances and SAS-style text listings.",
+      "tags": [
+        "sas",
+        "python",
+        "duckdb",
+        "polars",
+        "pandas",
+        "proc-compare",
+        "validation"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Public README inspected at pinned upstream commit; no code execution, translation equivalence test or redistribution rights review performed.",
+        "source_url": "https://github.com/kulbshar/proccompy/blob/d56c006daeeffa379e391505914f3d8545837375/README.md",
+        "source_revision": "d56c006daeeffa379e391505914f3d8545837375",
+        "notes": "Author's comparison reports are a potential independent witness; semantic parity with SAS PROC COMPARE is untested."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "main"
+      },
       "historical_census": null
     }
   ]
