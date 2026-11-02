@@ -1,0 +1,71 @@
+{
+  "status": "Parent artifact review for maintainer engineering review; this record is not live-SAS evidence. Runtime results are in receipt.json.",
+  "verdict": "PASS",
+  "criteria": [
+    {
+      "id": "D1",
+      "verdict": "PASS",
+      "evidence": "The graph resolves main -> config/blue -> config/common -> macros/score from the packet-root working directory, with source locations."
+    },
+    {
+      "id": "D2",
+      "verdict": "PASS",
+      "evidence": "The included factor-2 SCORE definition is selected conditionally under the synthetic fresh-session context. The factor-99 autocall file remains a candidate."
+    },
+    {
+      "id": "D3",
+      "verdict": "PASS",
+      "evidence": "post_hook, its effects and absent work.have remain unresolved. Complete closure and final results are not claimed."
+    },
+    {
+      "id": "D4",
+      "verdict": "PASS",
+      "evidence": "The report matches factor 2 and work.have/work.scored, and excludes the later open-code want step from macro emission."
+    },
+    {
+      "id": "D5",
+      "verdict": "PASS",
+      "evidence": "All 12 inspected input and skill hashes were checked by the parent. The generated-source hash agrees; provenance remains synthetic, with no SAS execution."
+    },
+    {
+      "id": "D6",
+      "verdict": "PASS",
+      "evidence": "The proposed wrapper uses the MPRINT fileref with MPRINT/MFILE/SOURCE2. The recipe records context, finalized raw log/emitted bytes and hashes, and separates output validation."
+    },
+    {
+      "id": "D7",
+      "verdict": "PASS",
+      "evidence": "Both requested artifacts exist. Their status limits use to static engineering analysis and leaves actual capture pending."
+    },
+    {
+      "id": "I1",
+      "verdict": "PASS",
+      "evidence": "The contract separates source bytes, decoded cells and CSV transport, preserving NUL/undefined-byte fallbacks by row_no rather than duplicate id."
+    },
+    {
+      "id": "I2",
+      "verdict": "PASS",
+      "evidence": "Descriptor unknowns remain unknown. Tags, source/output identity and exact raw-byte metadata are specified. No SAS-binary, R-import or Parquet result is claimed."
+    },
+    {
+      "id": "S1",
+      "verdict": "PASS",
+      "evidence": "The first differing output cell is r8.total, missing instead of 115. The explanation distinguishes earlier silent-row state loss at r2 from missing-poisoned accumulation at r8."
+    },
+    {
+      "id": "S2",
+      "verdict": "PASS",
+      "evidence": "The repair separately manages the conditional queue, nonretained receiver, initialized retained sum, explicit output events and materialized second step."
+    }
+  ],
+  "reviewed_hashes": {
+    "candidates/dependencies/report.md": "9e1b35503ee8793438359948dba1d466896d71c3bf0292971f17bbc0d10d7266",
+    "candidates/dependencies/inventory.json": "09884a2908b6c1d6fa06bf01d1a9484f50b28cfd4e235ed8559a31fd0b19e2c2",
+    "candidates/interchange/contract.md": "87bc55e6b9a3744ce9f66b0c4d65a764722dfa730bd6f8fd2448d23d840d0c06",
+    "candidates/interchange/report.md": "cfb298d2934b51235da01b121197d1177350d997367d819aeaf643477ad74243",
+    "candidates/interchange/bundle.py": "5569c90930377b5622baa7fb7cd4f117079a3e50ace6d7a09b8fcd7c8519c78d",
+    "candidates/state/report.md": "0b425bb778a659fc8daa3ba636c7ce4de41e37d46430377cdbaa35c04ee268a3",
+    "candidates/state/converted.py": "e8c315b12100bfe7a99ab7b16ae287bf55eb9b28b9321632e316907759956fc6",
+    "candidates/state/converted.R": "ca7f3f1c40095df0506f42e9ad97d3bc669ad44c3afb1b4adc8458251801c85c"
+  }
+}

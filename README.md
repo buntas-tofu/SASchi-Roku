@@ -15,6 +15,9 @@ universal converter or a claim of live-SAS equivalence. MCP is planned.
 | Assess a SAS program before migration | [SAS program assessment](skills/sas-assess/SKILL.md) |
 | Translate a bounded program to Python or R | [Translation with evidence](skills/sas-translate/SKILL.md) |
 | Move SAS datasets into Parquet | [Dataset interchange](skills/sas-to-parquet/SKILL.md) |
+| Trace includes, macro selection and capture evidence | [Dependency inventory](skills/sas-trace-dependencies/SKILL.md) |
+| Define byte, character and metadata preservation | [Interchange contracts](skills/sas-define-interchange/SKILL.md) |
+| Diagnose conditional queues and retained state | [Stateful failure diagnosis](skills/sas-diagnose-state/SKILL.md) |
 | Find repositories and already gathered material | [Resource catalog](catalog/README.md) |
 | See the build sequence and future MCP work | [Roadmap](docs/ROADMAP.md) |
 | Review staged tests and starter observations | [Test plan](docs/TEST_PLAN.md), [starter results](trials/starter-batch/README.md) |
@@ -53,6 +56,13 @@ assessments and LENGTH/LAG conversions in Python and native R. Its 32 runtime
 checks and 10 rejected controls are bounded evidence; an explicit character-byte
 domain gap remains. Full-domain and live-SAS acceptance are not claimed.
 
+The [three follow-on evaluations](trials/skill-proposals/README.md) add dependency
+inventory, character/metadata contracts and stateful diagnosis skills. Seven
+dependency review criteria and 35 independent replay checks passed. Conditional
+LAG repairs ran in Python and native R; the CSV witness preserves raw fallback
+bytes and missing tags. Actual macro capture, SAS-binary reading and Parquet
+round trips remain unperformed. All six skills retain initial-guidance status.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.
@@ -69,8 +79,8 @@ python3 -m unittest discover -s tests -v
 python3 trials/sas-translate-sum-array/verify.py
 ```
 
-For the starter replay, with native Rscript available, also run
-`python3 trials/starter-batch/verify.py`.
+With native Rscript available, also run `python3 trials/starter-batch/verify.py`
+and `python3 trials/skill-proposals/verify.py`.
 
 CI also validates `agent-manifest.json` against its existing JSON schema.
 These checks cover repository integrity, not execution of the SAS corpus.

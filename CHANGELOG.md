@@ -26,6 +26,12 @@ every line can be traced to its commit.
   checks, 10 rejected controls, immutable packets and separate CI replay.
 - Parent findings preserve the open ASCII/NUL interface boundary and distinguish
   agent self-test repair from independent verification.
+- Three accepted follow-on skills: dependency and macro capture inventory,
+  character/metadata interchange contracts, and stateful failure diagnosis.
+- Three isolated first deliveries, seven dependency review criteria, a CSV/raw
+  companion witness, conditional-state repairs in Python and native R, and
+  35 independent replay checks including 12 rejected corruption controls.
+- An executed original failure remains archived; actual SAS capture is pending.
 
 ### Changed
 

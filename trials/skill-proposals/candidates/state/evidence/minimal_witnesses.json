@@ -1,0 +1,527 @@
+{
+  "status": "PASS: inferred witnesses, not live SAS truth; every case also belongs to both languages' 4369-case exhaustive corpus.",
+  "cases": {
+    "early_filter": {
+      "input": [
+        {
+          "row_id": "x0",
+          "value": 3,
+          "take": 1,
+          "emit": 0
+        },
+        {
+          "row_id": "x1",
+          "value": -2,
+          "take": 1,
+          "emit": 1
+        }
+      ],
+      "expected": {
+        "stage": [
+          {
+            "row_id": "x1",
+            "value": -2,
+            "prev": 3,
+            "total": 11
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x1",
+            "value": -2,
+            "prev": 3,
+            "total": 11,
+            "delta": -5
+          }
+        ]
+      },
+      "repair": {
+        "stage": [
+          {
+            "row_id": "x1",
+            "value": -2.0,
+            "prev": 3.0,
+            "total": 11.0
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x1",
+            "value": -2.0,
+            "prev": 3.0,
+            "total": 11.0,
+            "delta": -5.0
+          }
+        ]
+      },
+      "wrong": {
+        "stage": [
+          {
+            "row_id": "x1",
+            "value": -2,
+            "prev": null,
+            "total": 8
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x1",
+            "value": -2,
+            "prev": null,
+            "total": 8,
+            "delta": null
+          }
+        ]
+      },
+      "first_difference": {
+        "table": "stage",
+        "position": 1,
+        "row_id": "x1",
+        "column": "prev",
+        "actual": null,
+        "expected": 3
+      }
+    },
+    "unconditional_queue": {
+      "input": [
+        {
+          "row_id": "x0",
+          "value": 3,
+          "take": 1,
+          "emit": 1
+        },
+        {
+          "row_id": "x1",
+          "value": 0,
+          "take": 0,
+          "emit": 1
+        },
+        {
+          "row_id": "x2",
+          "value": -2,
+          "take": 1,
+          "emit": 1
+        }
+      ],
+      "expected": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": null,
+            "total": 13
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": 3,
+            "total": 11
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": 3,
+            "total": 11,
+            "delta": -5
+          }
+        ]
+      },
+      "repair": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": 3.0,
+            "prev": null,
+            "total": 13.0
+          },
+          {
+            "row_id": "x1",
+            "value": 0.0,
+            "prev": null,
+            "total": 13.0
+          },
+          {
+            "row_id": "x2",
+            "value": -2.0,
+            "prev": 3.0,
+            "total": 11.0
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3.0,
+            "prev": null,
+            "total": 13.0,
+            "delta": null
+          },
+          {
+            "row_id": "x1",
+            "value": 0.0,
+            "prev": null,
+            "total": 13.0,
+            "delta": null
+          },
+          {
+            "row_id": "x2",
+            "value": -2.0,
+            "prev": 3.0,
+            "total": 11.0,
+            "delta": -5.0
+          }
+        ]
+      },
+      "wrong": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": null,
+            "total": 13
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": 0,
+            "total": 11
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": 0,
+            "total": 11,
+            "delta": -2
+          }
+        ]
+      },
+      "first_difference": {
+        "table": "stage",
+        "position": 3,
+        "row_id": "x2",
+        "column": "prev",
+        "actual": 0,
+        "expected": 3
+      }
+    },
+    "retained_receiver": {
+      "input": [
+        {
+          "row_id": "x0",
+          "value": 3,
+          "take": 1,
+          "emit": 1
+        },
+        {
+          "row_id": "x1",
+          "value": 0,
+          "take": 1,
+          "emit": 1
+        },
+        {
+          "row_id": "x2",
+          "value": -2,
+          "take": 0,
+          "emit": 1
+        }
+      ],
+      "expected": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": 3,
+            "total": 13
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": null,
+            "total": 11
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": 3,
+            "total": 13,
+            "delta": -3
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": null,
+            "total": 11,
+            "delta": null
+          }
+        ]
+      },
+      "repair": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": 3.0,
+            "prev": null,
+            "total": 13.0
+          },
+          {
+            "row_id": "x1",
+            "value": 0.0,
+            "prev": 3.0,
+            "total": 13.0
+          },
+          {
+            "row_id": "x2",
+            "value": -2.0,
+            "prev": null,
+            "total": 11.0
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3.0,
+            "prev": null,
+            "total": 13.0,
+            "delta": null
+          },
+          {
+            "row_id": "x1",
+            "value": 0.0,
+            "prev": 3.0,
+            "total": 13.0,
+            "delta": -3.0
+          },
+          {
+            "row_id": "x2",
+            "value": -2.0,
+            "prev": null,
+            "total": 11.0,
+            "delta": null
+          }
+        ]
+      },
+      "wrong": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": 3,
+            "total": 13
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": 3,
+            "total": 11
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          },
+          {
+            "row_id": "x1",
+            "value": 0,
+            "prev": 3,
+            "total": 13,
+            "delta": -3
+          },
+          {
+            "row_id": "x2",
+            "value": -2,
+            "prev": 3,
+            "total": 11,
+            "delta": -5
+          }
+        ]
+      },
+      "first_difference": {
+        "table": "stage",
+        "position": 3,
+        "row_id": "x2",
+        "column": "prev",
+        "actual": 3,
+        "expected": null
+      }
+    },
+    "ordinary_addition": {
+      "input": [
+        {
+          "row_id": "x0",
+          "value": null,
+          "take": 0,
+          "emit": 1
+        }
+      ],
+      "expected": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": null,
+            "prev": null,
+            "total": 10
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": null,
+            "prev": null,
+            "total": 10,
+            "delta": null
+          }
+        ]
+      },
+      "repair": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": null,
+            "prev": null,
+            "total": 10.0
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": null,
+            "prev": null,
+            "total": 10.0,
+            "delta": null
+          }
+        ]
+      },
+      "wrong": {
+        "stage": [
+          {
+            "row_id": "x0",
+            "value": null,
+            "prev": null,
+            "total": null
+          }
+        ],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": null,
+            "prev": null,
+            "total": null,
+            "delta": null
+          }
+        ]
+      },
+      "first_difference": {
+        "table": "stage",
+        "position": 1,
+        "row_id": "x0",
+        "column": "total",
+        "actual": null,
+        "expected": 10
+      }
+    },
+    "step_two_original_input": {
+      "input": [
+        {
+          "row_id": "x0",
+          "value": 3,
+          "take": 1,
+          "emit": 0
+        }
+      ],
+      "expected": {
+        "stage": [],
+        "want": []
+      },
+      "repair": {
+        "stage": [],
+        "want": []
+      },
+      "wrong": {
+        "stage": [],
+        "want": [
+          {
+            "row_id": "x0",
+            "value": 3,
+            "prev": null,
+            "total": 13,
+            "delta": null
+          }
+        ]
+      },
+      "first_difference": {
+        "table": "want",
+        "difference": "row count",
+        "actual": 1,
+        "expected": 0
+      }
+    }
+  }
+}

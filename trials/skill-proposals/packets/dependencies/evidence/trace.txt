@@ -1,0 +1,5 @@
+SYNTHETIC FIXTURE, NOT A SAS EXECUTION LOG
+MPRINT(SCORE): data work.scored;
+MPRINT(SCORE): set work.have;
+MPRINT(SCORE): score=amount*2;
+MPRINT(SCORE): run;

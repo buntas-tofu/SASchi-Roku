@@ -1,0 +1,76 @@
+{
+  "descriptor": {
+    "source_kind": "synthetic decoded fixture, not a SAS binary",
+    "encoding": "windows-1252",
+    "columns": [
+      {
+        "name": "id",
+        "type": "character",
+        "width_bytes": 4,
+        "label": "Study identifier",
+        "format": null,
+        "informat": null
+      },
+      {
+        "name": "text",
+        "type": "character",
+        "width_bytes": 6,
+        "label": "Source text",
+        "format": null,
+        "informat": null
+      },
+      {
+        "name": "amount",
+        "type": "numeric",
+        "label": "Measure",
+        "format": "VALUEFMT.",
+        "informat": null
+      },
+      {
+        "name": "event_day",
+        "type": "numeric",
+        "label": "Event date",
+        "format": "DATE9.",
+        "informat": null,
+        "unit": "days since 1960-01-01",
+        "timezone": null
+      }
+    ],
+    "catalog_status": "unavailable",
+    "value_labels": null
+  },
+  "rows": [
+    {
+      "row_no": 1,
+      "id": "0012",
+      "text_hex": "410d0a422020",
+      "amount": 1.25,
+      "event_day": 0
+    },
+    {
+      "row_no": 2,
+      "id": "0012",
+      "text_hex": "410042202020",
+      "amount": {
+        "missing": ".A"
+      },
+      "event_day": 1
+    },
+    {
+      "row_no": 3,
+      "id": "0003",
+      "text_hex": "e92020202020",
+      "amount": {
+        "missing": "."
+      },
+      "event_day": -1
+    },
+    {
+      "row_no": 4,
+      "id": "0004",
+      "text_hex": "812020202020",
+      "amount": 0,
+      "event_day": 2
+    }
+  ]
+}

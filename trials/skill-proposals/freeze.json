@@ -1,0 +1,33 @@
+{
+  "base_commit": "b2056275e789b6a082236926ea2bf475a7523a43",
+  "hashes": {
+    "CONTRACT.md": "c80051b52522ad3e932d991a17a9ff84151a5f02bc9f06514cd30625d4244485",
+    "oracle.json": "83d59ea3f962f70f39f2ceaf1dbc8e1f1062915dbc16fb585c6e360561e07790",
+    "packets/dependencies/autocall/score.sas": "1d2b1fe6e4bf887551f2ab1eda226f1fde8b4e06f3b9476f3c32a901f4d176cf",
+    "packets/dependencies/config/blue.sas": "fef008d58344ca1cc281978da5368dbef2a06e683a0738e87f523d478539221e",
+    "packets/dependencies/config/common.sas": "df34a9e3614697bb997309f4e7b1cdc7b6958ed400990b4c7326d9137395183a",
+    "packets/dependencies/context.json": "bddb0f0f2fbc800e2248ce54f7dd14ab7e5cd75afd2258c8a207375bdc3a78a0",
+    "packets/dependencies/evidence/macro-generated.sas": "d750e1abd40ebf4901196207061db2c66a5b7e2d5fd9b8b4b0253e1879752eb9",
+    "packets/dependencies/evidence/provenance.json": "435c16a523be4b9d83ff5f7220ceaa242be1978f2d7eadcbe41a8a3c4cbc3f71",
+    "packets/dependencies/evidence/trace.txt": "6dafee92929e6eddc33754b924e037769da715a6c149d1ceb07107bf2cdc7f88",
+    "packets/dependencies/macros/score.sas": "da4bb3368d476c0bc5a62f50fdb3d4780e2f27c4bb2a9b8c3b6898675877f41a",
+    "packets/dependencies/main.sas": "e55336a9903fc75f42d25fa86f44f6639ea694a2b450ac72a960c4d99176b4b2",
+    "packets/dependencies/request.txt": "ca4e391711bcce3a60e8f8e4b439182fcc3a797893bd356da58f8b4f592e21e3",
+    "packets/dependencies/skill/SKILL.md": "dcfa5d3798bd374a3305dac5ef504dd0be6d4abcfc834b7d25e75e4169e011e9",
+    "packets/dependencies/skill/references/capture.md": "8f5327912d15924e6f1eb42fc773df3e26614e646886703d22ffb5c0ea3bd910",
+    "packets/interchange/empty.json": "d0fe0ee8e0ba24eef2f5ee4ce6e1cafbe0b441a027970fb59f545264409e21fd",
+    "packets/interchange/main.json": "e26071328bde64b7f4fdf1ffb9a672f9e0bd1cc6a41391193a3d07152c34c43b",
+    "packets/interchange/request.txt": "ee3b4eafa8d314700d2904b85e88a09b7cc9b3cec925f5e797925f73a134f1fe",
+    "packets/interchange/skill/SKILL.md": "6c64545c5d511723c3c64c118afaefa7466f24c4961a2e012065fe27a0806b76",
+    "packets/interchange/skill/references/representations.md": "a33bb7bab10e506c5822a1bc7b9554f346811ff2b114f0ddf2aeb3b9afa49580",
+    "packets/state/buggy.py": "65af6f0034b2b734092cd7db6d15dc8eae84807e36a4f344a95909d13f1bf171",
+    "packets/state/empty.csv": "501cf9731f16a345e700ece3c95965b31f6e04a5bb99505b318400091fb82c3a",
+    "packets/state/main.csv": "5723e5a967f6b28d6048c62c3a111acae35614850129b6c3f1d055f17bf299e5",
+    "packets/state/request.txt": "92f4e9877188bd36454a530b0c1cd264d81367eddebaa544f3a23b3ba2ce2c1c",
+    "packets/state/silent.csv": "a6b704da4e1287075027bb0604892991209a8da311e04d9524765c917910f14a",
+    "packets/state/single.csv": "786934ea97183ac596afcca8ab4806c37258a46fb46cb6da3cde4ae38d67c79a",
+    "packets/state/skill/SKILL.md": "2b1af2424609948390b5856cebb3015c7e11c8cb393b28f82175e6838b511bd6",
+    "packets/state/skill/references/state.md": "fa6c42892055019298118eaaff40799351e6199415308e7e95b946ea1d371e43",
+    "packets/state/source.sas": "eb9868c960731e8fc9c5fe5ee8fa97c9edf075e8f048e774c06640b911245fd3"
+  }
+}
