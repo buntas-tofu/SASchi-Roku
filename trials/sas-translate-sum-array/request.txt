@@ -1,0 +1,11 @@
+Use the supplied sas-translate skill to convert the complete supplied SAS program
+to a standalone Python 3.11+ standard-library program. Preserve its behavior.
+Write converted.py and a concise explanation of the behavior, comparison policy,
+checks actually run, and remaining limits. Keep stdout to logical PUT records;
+use a period for ordinary numeric missing and do not reproduce SAS diagnostic
+log notes. Exact physical SAS log formatting is outside this task.
+
+Read only the supplied source and skill bundle plus primary language documentation
+if needed. Do not inspect other project implementations, expected outputs, tests,
+or parent evaluation artifacts. Write only inside the supplied candidate folder.
+Do not install packages, modify repository files, or execute SAS.

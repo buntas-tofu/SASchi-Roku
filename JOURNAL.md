@@ -46,8 +46,29 @@ readers now close through context managers with newline handling preserved.
 Hosted CI status belongs to the resulting PR, not this local check record.
 No upstream refresh, SAS execution, MCP server or skill installation has occurred.
 
+## First behavioral trial, 2026-11-01
+
+The principal accepted a small real conversion as the next step. Used the
+skill-creator independent-evaluation procedure with a fresh agent, the initial
+`sas-translate` skill and the unchanged complete sum-and-product corpus source.
+The evaluator received no parent history or expected answer. The parent already
+knew the source and selected the task deliberately; no randomized or held-out
+population claim is made.
+
+The [trial package](trials/sas-translate-sum-array/README.md) preserves the candidate
+and its original self-report. Parent execution independently produced `338350 .`
+and rejected seven negative controls, including an executed product-inventing
+rewrite. The source has no assignment to c, so preservation means missingness.
+The oracle uses closed-form arithmetic and documented initialization semantics,
+not candidate helpers. CPython 3.12.3 ran; SAS did not. Receipt hashes bind the
+source, candidate, oracle and verifier. CI replays the archived code, not the model.
+
+No change to the skill instructions was justified by this single successful
+invocation. Their initial-guidance status remains. Draft PR 3 carries the
+foundation and this trial; its hosted checks are the external CI record.
+
 ## Follow-up boundaries
 
 Resolve the collected migration scaffold's upstream before importing it. Choose
-a real task for the first behavioral skill trial. Decide the license for future
+a stateful or metadata-focused task for another behavioral skill trial. Decide the license for future
 original software before release. Keep the professional lane independent.

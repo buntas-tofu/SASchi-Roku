@@ -42,6 +42,11 @@ normal skill installation mechanism. A clone alone does not install skills.
 The skills link to pinned source material and state what evidence a result needs.
 They do not install a translator, SAS runtime, or Parquet library.
 
+The [first translation trial](trials/sas-translate-sum-array/README.md) records
+one isolated skill invocation, the unchanged-source Python candidate, an
+independent oracle and seven rejected negative controls. It is a bounded example,
+not a general skill validation. CI replays its archived candidate.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.
@@ -55,6 +60,7 @@ python3 scripts/inertia-drift-lint .
 python3 scripts/check_corpus_index.py
 python3 scripts/check_toolkit.py
 python3 -m unittest discover -s tests -v
+python3 trials/sas-translate-sum-array/verify.py
 ```
 
 CI also validates `agent-manifest.json` against its existing JSON schema.

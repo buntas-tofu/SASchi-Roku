@@ -16,6 +16,12 @@ instructions remain initial guidance until realistic use establishes their value
 
 ## 2. Prove the first workflows
 
+The [first translation trial](../trials/sas-translate-sum-array/README.md) is
+recorded: one complete source, one isolated generation, passing Python replay and
+seven rejected negative controls. It preserves an unassigned missing value rather
+than inventing the product suggested by the source title. This is an initial
+observation; the broader workflow sequence below remains open.
+
 Start with small examples whose behavior can be observed. Suggested order is
 engineering judgment, not a measured ranking:
 

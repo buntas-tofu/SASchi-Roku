@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "status": "Bounded Python replay for maintainer review; not live-SAS equivalence or a skill success rate",
+  "executed_at_utc": "2026-11-02T04:35:07.338254+00:00",
+  "scope": {
+    "candidate_generations": 1,
+    "candidate_executions_this_replay": 1,
+    "negative_controls": 7,
+    "live_sas_executions": 0
+  },
+  "environment": {
+    "python": "3.12.3",
+    "implementation": "CPython",
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "source_sha256": "06eca942365b06dec7e0f99b077856b4b33391e8addee0b39a44c0170987ea1a",
+  "candidate_sha256": "248dfb3e6e33d22180f516eedbaa21efc22f26c3319f802f60b7400ef38e13df",
+  "verifier_sha256": "dd8b9daaa0f408cd2c8b661e6d2b59b597906ed2978e2f48d355211c618150c7",
+  "oracle_sha256": "6258f818b7426452a3a9c6ed80d1a2958e35c4930ab6a8265b8492eeb5ac1b5d",
+  "generation_skill": {
+    "name": "sas-translate",
+    "commit": "03fc5b3916b7423619b5e4308604215feb6b2c96",
+    "sha256": "6cdb948823b5fb1caccfee7c3c4754892bdb617a0b7da526272bbd21220ac91c"
+  },
+  "comparison": "One record, two ordered tokens; whitespace between fields normalized; finite first-field Decimal value exact, ordinary missing second field exactly a period.",
+  "expected_records": [
+    [
+      "338350",
+      "."
+    ]
+  ],
+  "candidate": {
+    "exit_code": 0,
+    "stdout": "338350 .\n",
+    "stderr": "",
+    "timed_out": false,
+    "observed_records": [
+      [
+        "338350",
+        "."
+      ]
+    ],
+    "passed": true,
+    "unchanged_after_execution": true
+  },
+  "negative_controls": {
+    "missing_replaced_by_zero": {
+      "observed_records": [
+        [
+          "338350",
+          "0"
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    },
+    "invented_product": {
+      "observed_records": [
+        [
+          "338350",
+          "8709782489089480079416590161944485865569720643940840134215932536243379996346583325877967096332754920644690380762219607476364289411435920190573960677507881394607489905331729758013432992987184764607375889434313483382966801515156280854162691766195737493173453603519594496000000000000000000000000000000000000000000000000"
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    },
+    "off_by_one_range": {
+      "observed_records": [
+        [
+          "328350",
+          "."
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    },
+    "dropped_missing_field": {
+      "observed_records": [
+        [
+          "338350"
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    },
+    "extra_record": {
+      "observed_records": [
+        [
+          "338350",
+          "."
+        ],
+        [
+          "338350",
+          "."
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    },
+    "precision_loss_hidden_by_float": {
+      "observed_records": [
+        [
+          "338350.00000000000000000001",
+          "."
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    },
+    "executed_product_repair": {
+      "observed_records": [
+        [
+          "338350",
+          "8709782489089480079416590161944485865569720643940840134215932536243379996346583325877967096332754920644690380762219607476364289411435920190573960677507881394607489905331729758013432992987184764607375889434313483382966801515156280854162691766195737493173453603519594496000000000000000000000000000000000000000000000000"
+        ]
+      ],
+      "exit_code": 0,
+      "rejected": true
+    }
+  },
+  "verdict": "PASS"
+}

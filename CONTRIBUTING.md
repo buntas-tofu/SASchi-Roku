@@ -52,7 +52,7 @@ limits. Keep evaluation answers out of retrieval inputs for that evaluation.
 
 ## Checks
 
-Run the four commands listed in the [README](README.md) before committing.
+Run the check commands listed in the [README](README.md) before committing.
 The governance workflow also checks the existing manifest schema. Add meaningful
 negative controls when changing a validator or fragile preservation behavior.
 The vendored linter's missing-status-frontmatter warning is expected for
