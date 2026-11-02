@@ -11,7 +11,7 @@ toolkit repository. Preserve the existing content in a subfolder. Develop skills
 for interaction with SAS and conversion to Python, R, Parquet and further targets,
 using lessons from the SASchi projects. Add an indexed list of known repositories,
 starting with the already gathered collection. An MCP build is a longer-term goal.
-The principal identified `the-pgh-cid/sas-ref` as an existing collection and a
+The principal identified `sas-ref` (professional lane, private) as an existing collection and a
 useful base of operations. Its separate reconfiguration remains in that lane.
 
 This direction supersedes the former LOCAL data-corpus-only scope. The four DMF
