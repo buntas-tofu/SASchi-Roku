@@ -1,0 +1,8 @@
+{
+  "kind": "synthetic-trace",
+  "run_id": "synthetic-inventory-01",
+  "sas_executed": false,
+  "sas_version": null,
+  "macro_generated_sha256": "d750e1abd40ebf4901196207061db2c66a5b7e2d5fd9b8b4b0253e1879752eb9",
+  "note": "Handwritten trace fixture for provenance testing. No actual runtime capture is supplied."
+}

@@ -1,0 +1,12 @@
+data work.stage;
+  set work.have;
+  retain total 10;
+  if take=1 then prev=lag(value);
+  total + value;
+  if emit=1 then output;
+  keep row_id value prev total;
+run;
+data work.want;
+  set work.stage;
+  delta=value-prev;
+run;

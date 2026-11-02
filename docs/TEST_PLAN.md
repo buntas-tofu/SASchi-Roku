@@ -5,9 +5,10 @@ status: active
 
 # Phased skill evaluation plan
 
-Status: the principal accepted the starter batch on 2026-11-01. Maintainers may
-execute and review that batch. Later phases are a planning sequence, not executed
-results or a claim of general conversion reliability.
+Status: the principal accepted the starter batch on 2026-11-01 and three follow-on
+workflows on 2026-11-02. Maintainers may review their recorded bounded results.
+Unrun portions of the phases remain proposals, not executed results or a claim
+of general conversion reliability.
 
 The principal described the starter as representative enough to establish an
 analysis process and identify further skill directions. This records that scope.
@@ -40,5 +41,22 @@ Python, R and hand-derived expectations is not a live-SAS comparison. Source
 module references are candidate teaching evidence, not authority for unseen cases.
 
 See [the starter contract](../trials/starter-batch/CONTRACT.md) and its [recorded
-results](../trials/starter-batch/README.md) for the bounded test surface. Future skill directions are proposals until
-observed needs justify a scope and independent evaluation.
+results](../trials/starter-batch/README.md) for the bounded test surface.
+
+## Accepted follow-on workflows, 2026-11-02
+
+[Decision 0002](decisions/0002-three-skill-proposals.md) records approval to develop
+and evaluate three distinct skills. The [follow-on package](../trials/skill-proposals/README.md)
+preserves frozen expectations and unmodified first deliveries.
+
+| Workflow | Executed/reviewed surface | Remaining boundary |
+|---|---|---|
+| Dependency and macro inventory | Transitive includes, competing macro definitions, unresolved hook, synthetic provenance; seven review criteria passed | Actual SAS-generated source and observed runtime context |
+| Character and metadata contract | Decoded synthetic envelopes to reopened CSV and raw-byte/tag companions; 12 parent checks passed | SAS-binary reader, base R consumer and Parquet round trip |
+| Stateful failure diagnosis | Original failure reproduced; two-step Python/R repairs match stage and want through 16 interface/case checks; six incorrect outputs rejected | Live SAS, BY/WHERE, merge semantics and broader state combinations |
+
+These 35 machine checks and artifact review are one exploratory invocation per
+new skill. Python and R repairs came from the same state evaluator. The earlier
+ASCII/NUL gap is retained unchanged; an explicit raw representation in a new
+contract does not retroactively broaden acceptance of the old R interface.
+The remaining individual-behavior cases and later phases have not run.

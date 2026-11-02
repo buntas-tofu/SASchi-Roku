@@ -24,7 +24,12 @@ observation; the broader workflow sequence below remains open.
 
 The principal accepted the [phased evaluation plan](TEST_PLAN.md), starting with
 four assessments plus LENGTH and unconditional LAG in Python and R. Review that
-eight-task starter before expanding the remaining phases.
+eight-task starter's [results](../trials/starter-batch/README.md), then the
+[three accepted follow-on evaluations](../trials/skill-proposals/README.md).
+The latter add dependency inventory, interchange contracts and stateful failure
+diagnosis as separate initial skills. Seven dependency review criteria and
+35 replay checks passed. Actual macro capture, SAS-binary/Parquet round trips,
+and the remaining phases are still open.
 
 Start with small examples whose behavior can be observed. Suggested order is
 engineering judgment, not a measured ranking:
@@ -73,5 +78,5 @@ Do not describe a skill instruction as an MCP tool or a planned tool as installe
 
 - License for new original executable tooling before a software release.
 - Whether additional collected materials should be linked or imported, item by item.
-- Which real migration task will serve as the first skill trial.
+- Which live-SAS task will provide the first captured reference execution.
 - MCP deployment environment and whether it will ever execute user programs.

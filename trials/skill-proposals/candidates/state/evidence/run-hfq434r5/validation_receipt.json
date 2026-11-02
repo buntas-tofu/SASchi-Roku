@@ -1,0 +1,132 @@
+{
+  "status": "PASS against independent inferred witnesses; no SAS runtime",
+  "python_version": "3.12.3",
+  "R_output": "R API cases passed: 4369 \nR version 4.3.3 (2024-02-29)",
+  "python_api_cases": 4369,
+  "repeated_call_policy": "Every exhaustive case called twice, with an empty call between cases",
+  "caller_preservation": true,
+  "import_source_no_cli": true,
+  "stage_want_independence": true,
+  "negative_controls": {
+    "early_filter": {
+      "table": "stage",
+      "position": 2,
+      "row_id": "r8",
+      "column": "total",
+      "actual": 15.0,
+      "expected": 115
+    },
+    "unconditional_queue": {
+      "table": "stage",
+      "position": 2,
+      "row_id": "r8",
+      "column": "prev",
+      "actual": 100.0,
+      "expected": 5
+    },
+    "retained_receiver": {
+      "table": "stage",
+      "position": 3,
+      "row_id": "r1",
+      "column": "prev",
+      "actual": 5.0,
+      "expected": null
+    },
+    "ordinary_addition": {
+      "table": "stage",
+      "position": 2,
+      "row_id": "r8",
+      "column": "total",
+      "actual": null,
+      "expected": 115
+    },
+    "step_two_original_input": {
+      "table": "want",
+      "difference": "row count",
+      "actual": 8,
+      "expected": 6
+    }
+  },
+  "cli": [
+    {
+      "language": "python",
+      "fixture": "main.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_main",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Traceback (most recent call last):\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 60, in <module>\n    main()\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 50, in main\n    directory.mkdir(parents=True, exist_ok=False)\n  File \"/usr/lib/python3.12/pathlib.py\", line 1313, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_main'"
+    },
+    {
+      "language": "R",
+      "fixture": "main.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/R_main",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Error: Output directory must be new\nExecution halted"
+    },
+    {
+      "language": "python",
+      "fixture": "single.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_single",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Traceback (most recent call last):\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 60, in <module>\n    main()\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 50, in main\n    directory.mkdir(parents=True, exist_ok=False)\n  File \"/usr/lib/python3.12/pathlib.py\", line 1313, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_single'"
+    },
+    {
+      "language": "R",
+      "fixture": "single.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/R_single",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Error: Output directory must be new\nExecution halted"
+    },
+    {
+      "language": "python",
+      "fixture": "silent.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_silent",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Traceback (most recent call last):\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 60, in <module>\n    main()\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 50, in main\n    directory.mkdir(parents=True, exist_ok=False)\n  File \"/usr/lib/python3.12/pathlib.py\", line 1313, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_silent'"
+    },
+    {
+      "language": "R",
+      "fixture": "silent.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/R_silent",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Error: Output directory must be new\nExecution halted"
+    },
+    {
+      "language": "python",
+      "fixture": "empty.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_empty",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Traceback (most recent call last):\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 60, in <module>\n    main()\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 50, in main\n    directory.mkdir(parents=True, exist_ok=False)\n  File \"/usr/lib/python3.12/pathlib.py\", line 1313, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_empty'"
+    },
+    {
+      "language": "R",
+      "fixture": "empty.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/R_empty",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Error: Output directory must be new\nExecution halted"
+    },
+    {
+      "language": "python",
+      "fixture": "key_edges.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_key_edges",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Traceback (most recent call last):\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 60, in <module>\n    main()\n  File \"/tmp/roku-proposals-20261102/state/output/converted.py\", line 50, in main\n    directory.mkdir(parents=True, exist_ok=False)\n  File \"/usr/lib/python3.12/pathlib.py\", line 1313, in mkdir\n    os.mkdir(self, mode)\nFileExistsError: [Errno 17] File exists: '/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/python_key_edges'"
+    },
+    {
+      "language": "R",
+      "fixture": "key_edges.csv",
+      "output": "/tmp/roku-proposals-20261102/state/output/evidence/run-hfq434r5/R_key_edges",
+      "exit_code": 0,
+      "existing_directory_exit_code": 1,
+      "existing_directory_message": "Error: Output directory must be new\nExecution halted"
+    }
+  ]
+}

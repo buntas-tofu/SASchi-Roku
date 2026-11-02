@@ -1,7 +1,8 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-01. This record is not a release or a live-SAS correctness claim.
+2026-11-02. The latest checkpoint is the three follow-on skills below. This
+record is not a release or a live-SAS correctness claim.
 
 ## Current direction
 
@@ -101,3 +102,39 @@ across a population. No skill instruction changes or later-phase runs occurred.
 Review this checkpoint before broadening tests. Model revision/settings were
 not exposed. Eleven linter warnings are the three existing skill-frontmatter
 warnings plus eight identical snapshots, with no linter changes.
+
+## Three accepted follow-on skills, 2026-11-02
+
+The principal approved all three proposed directions. See
+[decision 0002](docs/decisions/0002-three-skill-proposals.md). Added separate skills
+for dependency and macro capture inventory, character/metadata contracts, and
+stateful failure diagnosis. All six skills remain initial guidance.
+
+The [new trial package](trials/skill-proposals/README.md) contains three fresh
+evaluations, 53 unmodified first-delivery files, frozen parent truth, manual
+review and an independent replay. All seven dependency criteria passed. The
+35 machine checks passed under CPython 3.12.3 and native R 4.3.3: 12 interchange
+checks and 23 state checks, including 12 rejected corruption controls overall.
+The original buggy translation ran and failed as expected. Its first differing
+output cell is r8.total; the loss of state begins earlier at silent row r2.
+
+The parent did not edit candidate outputs or change expected values after
+generation. One evaluator supplied both state targets, so they are not two
+independent model generations. Agent self-test counts remain separate from the
+35 parent checks. Dependency analysis keeps the supplied trace synthetic, its
+unresolved hook visible and native capture pending. The CSV witness preserves
+raw byte fallbacks and missing tags without claiming a SAS-binary reader,
+R character import or Parquet round trip. The prior starter's NUL gap remains.
+
+Repository regression checks and previous trial replays pass. Manifest validation
+and the six skill validations pass. The linter reports zero errors and 18 status
+warnings across six skills and 12 exact snapshots, with its implementation
+unchanged. CI adds the new replay after the starter in the same native-R job.
+Hosted status must be read from the resulting PR revision.
+
+The principal confirmed no live SAS runtime and separately requested help with
+cloud onboarding. That work has not supplied execution evidence. Keep account,
+billing and onboarding credentials outside the public repository. The immediate
+evidence milestone remains a real SAS run with finalized source capture and raw
+log, after resolving the complete input context. No MCP implementation or skill
+installation has occurred.

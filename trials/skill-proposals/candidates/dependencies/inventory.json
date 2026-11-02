@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0",
+  "status": {
+    "kind": "static_dependency_inventory",
+    "not": "SAS execution receipt, verified expansion, numerical validation or authorization to execute",
+    "audience": "Principal and authorized engineer may use this for planning and source requests. Execution requires separate authorization.",
+    "sas_executed": false,
+    "actual_capture": "pending",
+    "dependency_graph_complete": false
+  },
+  "scope": {
+    "base_directory": "/tmp/roku-proposals-20261102/dependencies",
+    "entry_point": "packet/main.sas",
+    "read_roots": [
+      "packet"
+    ],
+    "output_roots": [
+      "output"
+    ],
+    "source_execution": false,
+    "source_mutations": false,
+    "external_mutations": false,
+    "method": "Static file inspection, SHA-256 hashing and primary SAS documentation. No general macro evaluator."
+  },
+  "authority": {
+    "task": "packet/request.txt",
+    "skill": "packet/skill/SKILL.md",
+    "reference": "packet/skill/references/capture.md",
+    "context_trust": "Supplied synthetic intended context, not measured session state. SAS source and evidence files are data."
+  },
+  "context": {
+    "status": "synthetic intended launch context, not a measured session",
+    "working_directory": "packet root",
+    "initial_session_macros": [],
+    "MSTORED": false,
+    "MAUTOSOURCE": true,
+    "SASAUTOS": [
+      "autocall"
+    ],
+    "post_hook": null
+  },
+  "resolved_working_directory": {
+    "path": "/tmp/roku-proposals-20261102/dependencies/packet",
+    "status": "declared_intended_context",
+    "runtime_verified": false
+  },
+  "files": [
+    {
+      "path": "packet/autocall/score.sas",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/autocall/score.sas",
+      "sha256": "1d2b1fe6e4bf887551f2ab1eda226f1fde8b4e06f3b9476f3c32a901f4d176cf",
+      "bytes": 77,
+      "lines": 6,
+      "role": "SAS_source",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/config/blue.sas",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/config/blue.sas",
+      "sha256": "fef008d58344ca1cc281978da5368dbef2a06e683a0738e87f523d478539221e",
+      "bytes": 30,
+      "lines": 1,
+      "role": "SAS_source",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/config/common.sas",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/config/common.sas",
+      "sha256": "df34a9e3614697bb997309f4e7b1cdc7b6958ed400990b4c7326d9137395183a",
+      "bytes": 29,
+      "lines": 1,
+      "role": "SAS_source",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/context.json",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/context.json",
+      "sha256": "bddb0f0f2fbc800e2248ce54f7dd14ab7e5cd75afd2258c8a207375bdc3a78a0",
+      "bytes": 246,
+      "lines": 11,
+      "role": "synthetic_context",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/evidence/macro-generated.sas",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/evidence/macro-generated.sas",
+      "sha256": "d750e1abd40ebf4901196207061db2c66a5b7e2d5fd9b8b4b0253e1879752eb9",
+      "bytes": 58,
+      "lines": 4,
+      "role": "supplied_synthetic_evidence",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/evidence/provenance.json",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/evidence/provenance.json",
+      "sha256": "435c16a523be4b9d83ff5f7220ceaa242be1978f2d7eadcbe41a8a3c4cbc3f71",
+      "bytes": 316,
+      "lines": 8,
+      "role": "supplied_synthetic_evidence",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/evidence/trace.txt",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/evidence/trace.txt",
+      "sha256": "6dafee92929e6eddc33754b924e037769da715a6c149d1ceb07107bf2cdc7f88",
+      "bytes": 157,
+      "lines": 5,
+      "role": "supplied_synthetic_evidence",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/macros/score.sas",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/macros/score.sas",
+      "sha256": "da4bb3368d476c0bc5a62f50fdb3d4780e2f27c4bb2a9b8c3b6898675877f41a",
+      "bytes": 76,
+      "lines": 6,
+      "role": "SAS_source",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/main.sas",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/main.sas",
+      "sha256": "e55336a9903fc75f42d25fa86f44f6639ea694a2b450ac72a960c4d99176b4b2",
+      "bytes": 170,
+      "lines": 8,
+      "role": "SAS_source",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/request.txt",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/request.txt",
+      "sha256": "ca4e391711bcce3a60e8f8e4b439182fcc3a797893bd356da58f8b4f592e21e3",
+      "bytes": 614,
+      "lines": 1,
+      "role": "task_authority",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/skill/SKILL.md",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/skill/SKILL.md",
+      "sha256": "dcfa5d3798bd374a3305dac5ef504dd0be6d4abcfc834b7d25e75e4169e011e9",
+      "bytes": 2523,
+      "lines": 42,
+      "role": "task_authority",
+      "inspection": "static_read_only"
+    },
+    {
+      "path": "packet/skill/references/capture.md",
+      "absolute_path": "/tmp/roku-proposals-20261102/dependencies/packet/skill/references/capture.md",
+      "sha256": "8f5327912d15924e6f1eb42fc773df3e26614e646886703d22ffb5c0ea3bd910",
+      "bytes": 2451,
+      "lines": 44,
+      "role": "task_authority",
+      "inspection": "static_read_only"
+    }
+  ],
+  "graph": {
+    "edges": [
+      {
+        "id": "include-1",
+        "kind": "include",
+        "from": "packet/main.sas",
+        "to": "packet/config/blue.sas",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 2,
+          "line_end": 2
+        },
+        "expression": "config/&profile..sas",
+        "status": "resolved",
+        "evidence_level": "static_resolution_under_supplied_context",
+        "basis": [
+          "packet/main.sas:1 defines profile=blue",
+          "packet/context.json:3 declares packet root as working directory"
+        ],
+        "decision": "The first period delimits profile; the second is the literal extension period. The resulting relative pathname is config/blue.sas. No general macro expansion was attempted.",
+        "runtime_verified": false
+      },
+      {
+        "id": "include-2",
+        "kind": "include",
+        "from": "packet/config/blue.sas",
+        "to": "packet/config/common.sas",
+        "location": {
+          "path": "packet/config/blue.sas",
+          "line_start": 1,
+          "line_end": 1
+        },
+        "expression": "config/common.sas",
+        "status": "resolved",
+        "evidence_level": "static_resolution_under_supplied_context",
+        "decision": "Resolve from the declared packet-root working directory, not packet/config. No directory-changing statement is present in the inspected chain.",
+        "runtime_verified": false
+      },
+      {
+        "id": "include-3",
+        "kind": "include",
+        "from": "packet/config/common.sas",
+        "to": "packet/macros/score.sas",
+        "location": {
+          "path": "packet/config/common.sas",
+          "line_start": 1,
+          "line_end": 1
+        },
+        "expression": "macros/score.sas",
+        "status": "resolved",
+        "evidence_level": "static_resolution_under_supplied_context",
+        "decision": "Resolve from the same packet-root working directory.",
+        "runtime_verified": false
+      },
+      {
+        "id": "include-4",
+        "kind": "include",
+        "from": "packet/main.sas",
+        "to": "unresolved:post_hook",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 4,
+          "line_end": 4
+        },
+        "expression": "&post_hook",
+        "status": "unavailable",
+        "evidence_level": "missing_runtime_or_launch_value",
+        "decision": "context.json contains JSON null, not an established SAS macro-variable value. No assignment occurs in the inspected sources. Do not convert null to an empty path, omit the include or invent a hook.",
+        "runtime_verified": false
+      },
+      {
+        "id": "define-1",
+        "kind": "defines_macro",
+        "from": "packet/macros/score.sas",
+        "to": "macro:score:explicit",
+        "location": {
+          "path": "packet/macros/score.sas",
+          "line_start": 1,
+          "line_end": 6
+        },
+        "status": "resolved",
+        "evidence_level": "source_definition",
+        "runtime_verified": false
+      },
+      {
+        "id": "define-2",
+        "kind": "defines_macro",
+        "from": "packet/autocall/score.sas",
+        "to": "macro:score:autocall",
+        "location": {
+          "path": "packet/autocall/score.sas",
+          "line_start": 1,
+          "line_end": 6
+        },
+        "status": "resolved",
+        "evidence_level": "source_definition",
+        "runtime_verified": false
+      },
+      {
+        "id": "autocall-search-1",
+        "kind": "autocall_candidate",
+        "from": "call:main:3",
+        "to": "macro:score:autocall",
+        "location": {
+          "path": "packet/context.json",
+          "line_start": 6,
+          "line_end": 9
+        },
+        "status": "conditional",
+        "evidence_level": "configured_candidate",
+        "decision": "Only supplied SASAUTOS directory, in position 1. Search is not needed if the explicit include successfully compiles score before this call. File presence is not evidence of use.",
+        "runtime_verified": false
+      },
+      {
+        "id": "call-1",
+        "kind": "macro_call",
+        "from": "packet/main.sas",
+        "to": "macro:score:explicit",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 3,
+          "line_end": 3
+        },
+        "status": "conditional",
+        "evidence_level": "inference_under_supplied_context",
+        "arguments": {
+          "in": "work.have",
+          "out": "work.scored"
+        },
+        "decision": "The transitive include compiles this session definition before the call, assuming the stated launch context and successful includes. Session definitions precede autocall lookup. This is a selected definition for the static model, not an observed runtime selection.",
+        "runtime_verified": false
+      },
+      {
+        "id": "data-read-1",
+        "kind": "reads_dataset",
+        "from": "macro:score:explicit",
+        "to": "dataset:work.have",
+        "location": {
+          "path": "packet/macros/score.sas",
+          "line_start": 3,
+          "line_end": 3
+        },
+        "call_location": {
+          "path": "packet/main.sas",
+          "line_start": 3,
+          "line_end": 3
+        },
+        "status": "unavailable",
+        "evidence_level": "source_reference_with_missing_input",
+        "decision": "Call argument identifies WORK.HAVE, but no dataset, schema, input hash or provisioning step is supplied.",
+        "runtime_verified": false
+      },
+      {
+        "id": "data-write-1",
+        "kind": "writes_dataset",
+        "from": "macro:score:explicit",
+        "to": "dataset:work.scored",
+        "location": {
+          "path": "packet/macros/score.sas",
+          "line_start": 2,
+          "line_end": 5
+        },
+        "call_location": {
+          "path": "packet/main.sas",
+          "line_start": 3,
+          "line_end": 3
+        },
+        "status": "conditional",
+        "evidence_level": "inference_from_body_and_arguments",
+        "decision": "Body assigns score=amount*2. Successful creation and values are unverified.",
+        "runtime_verified": false
+      },
+      {
+        "id": "hook-effect-1",
+        "kind": "unknown_effect",
+        "from": "unresolved:post_hook",
+        "to": "dataset:work.scored",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 4,
+          "line_end": 4
+        },
+        "status": "unavailable",
+        "evidence_level": "possible_effect_not_claimed_actual",
+        "decision": "The unknown included source sits before the final DATA step and could modify WORK.SCORED or session state, introduce dependencies, terminate execution or fail.",
+        "runtime_verified": false
+      },
+      {
+        "id": "data-read-2",
+        "kind": "reads_dataset",
+        "from": "open_code:main:5-8",
+        "to": "dataset:work.scored",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 6,
+          "line_end": 6
+        },
+        "status": "conditional",
+        "evidence_level": "source_reference",
+        "runtime_verified": false
+      },
+      {
+        "id": "data-write-2",
+        "kind": "writes_dataset",
+        "from": "open_code:main:5-8",
+        "to": "dataset:work.want",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 5,
+          "line_end": 8
+        },
+        "status": "conditional",
+        "evidence_level": "source_reference",
+        "decision": "Open code reads WORK.SCORED and keeps id and score. It is outside the macro-generated file coverage.",
+        "runtime_verified": false
+      },
+      {
+        "id": "trace-match-1",
+        "kind": "synthetic_content_correspondence",
+        "from": "packet/evidence/macro-generated.sas",
+        "to": "call:main:3",
+        "location": {
+          "path": "packet/evidence/macro-generated.sas",
+          "line_start": 1,
+          "line_end": 4
+        },
+        "status": "resolved",
+        "evidence_level": "static_text_comparison_only",
+        "decision": "The statements agree with the explicit macro body and supplied call arguments. This relationship is not an execution or capture edge.",
+        "runtime_verified": false
+      },
+      {
+        "id": "trace-match-2",
+        "kind": "synthetic_content_correspondence",
+        "from": "packet/evidence/trace.txt",
+        "to": "packet/evidence/macro-generated.sas",
+        "location": {
+          "path": "packet/evidence/trace.txt",
+          "line_start": 2,
+          "line_end": 5
+        },
+        "status": "resolved",
+        "evidence_level": "static_text_comparison_only",
+        "decision": "Statements correspond after removing MPRINT labels and ignoring indentation. Raw files are preserved.",
+        "runtime_verified": false
+      },
+      {
+        "id": "hash-claim-1",
+        "kind": "declares_artifact_hash",
+        "from": "packet/evidence/provenance.json",
+        "to": "packet/evidence/macro-generated.sas",
+        "location": {
+          "path": "packet/evidence/provenance.json",
+          "line_start": 6,
+          "line_end": 6
+        },
+        "status": "resolved",
+        "evidence_level": "independently_recomputed_local_hash",
+        "decision": "Declared SHA-256 matches inspected bytes. This verifies the local hash claim only, not SAS execution.",
+        "runtime_verified": false
+      }
+    ],
+    "known_include_order": [
+      "packet/main.sas:2",
+      "packet/config/blue.sas:1",
+      "packet/config/common.sas:1"
+    ],
+    "macro_calls": [
+      {
+        "id": "call:main:3",
+        "name": "score",
+        "location": {
+          "path": "packet/main.sas",
+          "line_start": 3,
+          "line_end": 3
+        },
+        "arguments": {
+          "in": "work.have",
+          "out": "work.scored"
+        }
+      }
+    ],
+    "observed_static_cycles": [],
+    "observed_static_repeated_calls": [],
+    "coverage_note": "One explicit score call and no cycles or repeated include edges occur in the inspected reachable sources. The unresolved hook can expand that inventory; no global absence is asserted."
+  },
+  "macro_definitions": [
+    {
+      "id": "macro:score:explicit",
+      "location": {
+        "path": "packet/macros/score.sas",
+        "line_start": 1,
+        "line_end": 6
+      },
+      "sha256": "da4bb3368d476c0bc5a62f50fdb3d4780e2f27c4bb2a9b8c3b6898675877f41a",
+      "parameters": [
+        "in",
+        "out"
+      ],
+      "assignment": "score=amount*2",
+      "open_code_outside_definition": false,
+      "role": "selected_under_intended_context",
+      "selection_status": "conditional",
+      "runtime_verified": false
+    },
+    {
+      "id": "macro:score:autocall",
+      "location": {
+        "path": "packet/autocall/score.sas",
+        "line_start": 1,
+        "line_end": 6
+      },
+      "sha256": "1d2b1fe6e4bf887551f2ab1eda226f1fde8b4e06f3b9476f3c32a901f4d176cf",
+      "parameters": [
+        "in",
+        "out"
+      ],
+      "assignment": "score=amount*99",
+      "open_code_outside_definition": false,
+      "role": "autocall_candidate_not_selected_under_intended_context",
+      "search_path_position": 1,
+      "runtime_verified": false
+    }
+  ],
+  "resolution": {
+    "selected_for_call": "macro:score:explicit",
+    "status": "conditional",
+    "evidence_level": "inference_from_source_order_and_supplied_context",
+    "initial_session_macros": "Declared empty, not measured.",
+    "stored_compiled_macros": "MSTORED is declared false, so this search tier is disabled in the intended model.",
+    "redefinitions": "No redefinition before the call is present in inspected source. The unavailable later hook might redefine macros for future calls, but cannot retroactively change statements already emitted by the earlier call.",
+    "autocall_effects": "The candidate contains only a definition, with no open code outside it. Its discovery does not prove it was loaded or executed."
+  },
+  "capture": {
+    "kind": "synthetic-trace",
+    "run_id": "synthetic-inventory-01",
+    "sas_executed": false,
+    "sas_version": null,
+    "runtime_options": null,
+    "runtime_working_directory": null,
+    "input_identity": null,
+    "input_hash": null,
+    "start_time": null,
+    "end_time": null,
+    "exit_status": null,
+    "raw_execution_log": null,
+    "actual_emitted_file": null,
+    "synthetic_emitted_file": "packet/evidence/macro-generated.sas",
+    "declared_sha256": "d750e1abd40ebf4901196207061db2c66a5b7e2d5fd9b8b4b0253e1879752eb9",
+    "observed_sha256": "d750e1abd40ebf4901196207061db2c66a5b7e2d5fd9b8b4b0253e1879752eb9",
+    "hash_match": true,
+    "hash_match_scope": "Byte integrity against the supplied manifest assertion only.",
+    "trace": "packet/evidence/trace.txt",
+    "trace_status": "Explicitly synthetic, not a SAS execution log.",
+    "content_match": "Matches amount*2 source and call arguments. Does not match the amount*99 autocall body.",
+    "provenance_verdict": "Synthetic corroboration only; no verified runtime capture.",
+    "excluded_from_macro_generated_file": [
+      "main.sas:1 profile assignment",
+      "main.sas:2 include listing and macro-definition provenance",
+      "main.sas:4 unresolved hook and its effects",
+      "main.sas:5-8 open-code DATA step"
+    ],
+    "redactions": "Not stated; cannot infer absence.",
+    "actual_capture_status": "pending"
+  },
+  "unresolved_work": [
+    {
+      "id": "gap-hook",
+      "location": {
+        "path": "packet/main.sas",
+        "line_start": 4,
+        "line_end": 4
+      },
+      "status": "unavailable",
+      "impact": "Dependency graph and effects after the score call remain incomplete.",
+      "smallest_request": "Supply the intended post_hook value, how it is established in the SAS launch, and the approved hook source with its transitive files and hashes. If no hook is intended, obtain an explicit program-change decision; JSON null does not disable the existing include."
+    },
+    {
+      "id": "gap-input",
+      "location": {
+        "path": "packet/macros/score.sas",
+        "line_start": 3,
+        "line_end": 3
+      },
+      "status": "unavailable",
+      "impact": "Cannot execute the DATA step in a fresh session or validate any numerical result.",
+      "smallest_request": "Supply approved WORK.HAVE provisioning, input identity/hash, schema including id and amount, and intended test data. Hash the provisioning source and data snapshot."
+    },
+    {
+      "id": "gap-runtime",
+      "location": {
+        "path": "packet/context.json",
+        "line_start": 2,
+        "line_end": 10
+      },
+      "status": "unavailable",
+      "impact": "Working directory, macro state, options and successful include/selection remain intended assumptions.",
+      "smallest_request": "During a separately authorized fresh-session run, record the measured working directory, SAS version, relevant startup sources/options, macro state, SASAUTOS order and supplied hook binding."
+    },
+    {
+      "id": "gap-capture",
+      "location": {
+        "path": "packet/evidence/provenance.json",
+        "line_start": 2,
+        "line_end": 7
+      },
+      "status": "unavailable",
+      "impact": "No actual emitted SAS, raw execution log or successful run evidence exists in the packet.",
+      "smallest_request": "Produce an actual MPRINT/MFILE capture and raw log, then record run receipt, finalized hashes, timestamps, status and source/input linkage. Preserve synthetic fixtures separately."
+    }
+  ],
+  "capture_recipe": [
+    "Obtain separate execution authorization covering the exact entry point, approved input provisioning, resolved hook and its effects. Static planning does not authorize running SAS.",
+    "Resolve gap-hook and gap-input first. Inventory and hash any newly approved sources. Keep the original packet and synthetic evidence unchanged.",
+    "Allocate a unique run directory and fresh SAS session. Establish and measure packet root as the working directory. Record the actual version, startup sources, relevant macro state, MSTORED, MAUTOSOURCE, ordered SASAUTOS and the intended post_hook binding. Record differences from context.json rather than hiding them.",
+    "Provision WORK.HAVE through the approved method and record input identity, hash, schema and source. A fresh session does not inherit an earlier WORK.HAVE.",
+    "Before submitting the entry point, assign fileref MPRINT to an absolute run-specific filename and enable MPRINT MFILE SOURCE2. Preserve the raw SAS log. Do not enable SYMBOLGEN or dump all macro variables by default.",
+    "Submit the authorized main.sas once in the recorded context. Do not separately execute discovered macros or the synthetic expansion. Retain the wrapper/invocation and its hash.",
+    "End the dedicated session normally and confirm capture finalization before hashing. Inspect log for inaccessible/missing MPRINT targets, MFILE being disabled, include failures, unresolved variables/macros, DATA step errors, premature termination and truncation. If an existing session is explicitly required, record prior option values and restore those exact values; validate stream closure for that SAS version before hashing.",
+    "Link SOURCE2 include listings, macro compilation evidence and MPRINT(SCORE) statements to the main.sas line 3 call and its in/out arguments. Compare the emitted score assignment with the selected definition. A multiplier of 99 or other discrepancy requires investigation and remains an observed discrepancy.",
+    "Retain unmodified emitted bytes and raw log with a run receipt: source and input hashes, entry point, working directory, invocation, options/search paths, SAS version, start/end timestamps, exit/status evidence, output hashes and redactions. Unknown fields stay null.",
+    "Validate actual output datasets separately if numerical equivalence is required. MFILE alone does not establish successful data processing. Preserve any annotated reconstruction separately; include open code and hook/include evidence in execution order. Inspect delayed generation if introduced by the resolved hook."
+  ],
+  "primary_references": [
+    {
+      "url": "https://support.sas.com/kb/23/138.html",
+      "title": "SAS Usage Note 23138",
+      "supports": "MPRINT fileref plus MPRINT and MFILE instrumentation"
+    },
+    {
+      "url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a001328769.htm",
+      "title": "Saving Macros in an Autocall Library",
+      "supports": "Resolution precedence, ordered SASAUTOS lookup and autocall open code"
+    },
+    {
+      "url": "https://support.sas.com/documentation/cdl/en/hostunx/61879/HTML/default/specpath.htm",
+      "title": "Specifying Pathnames in UNIX Environments",
+      "supports": "Relative pathname interpretation uses the current directory"
+    },
+    {
+      "url": "https://support.sas.com/documentation/cdl/en/mcrolref/61885/HTML/default/a001066200.htm",
+      "title": "Macro debugging techniques",
+      "supports": "MFILE coverage, finalization at session termination and failure behavior"
+    }
+  ],
+  "documentation_note": "The skill-linked MFILE system-option page timed out on retrieval. The successfully retrieved primary SAS debugging documentation supplies the related capture failure and finalization details.",
+  "mechanical_style_check": "Pending parent linter. First delivered files must be preserved."
+}

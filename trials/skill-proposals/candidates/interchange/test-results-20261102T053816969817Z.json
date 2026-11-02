@@ -1,0 +1,299 @@
+{
+  "status": "local synthetic-envelope test evidence, not SAS binary or Parquet validation",
+  "executed_at_utc": "2026-11-02T05:38:16.968580+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "writer_sha256": "5569c90930377b5622baa7fb7cd4f117079a3e50ace6d7a09b8fcd7c8519c78d",
+  "test_runner_sha256": "d6712f31d8baaf19edeeb7656b87c16bf62cc99fc412634f9a6fab235f017c8d",
+  "main_source_sha256": "e26071328bde64b7f4fdf1ffb9a672f9e0bd1cc6a41391193a3d07152c34c43b",
+  "empty_source_sha256": "d0fe0ee8e0ba24eef2f5ee4ce6e1cafbe0b441a027970fb59f545264409e21fd",
+  "passed": 53,
+  "total": 53,
+  "tests": [
+    {
+      "test": "build main CLI",
+      "status": "PASS",
+      "details": {
+        "data_sha256": "9aa5179a3b043731b358450391d689c81c4579f35114757c88bb10d17cc64914",
+        "row_count": 4,
+        "source_sha256": "e26071328bde64b7f4fdf1ffb9a672f9e0bd1cc6a41391193a3d07152c34c43b",
+        "status": "built-and-checked"
+      }
+    },
+    {
+      "test": "check main CLI",
+      "status": "PASS",
+      "details": {
+        "data_sha256": "9aa5179a3b043731b358450391d689c81c4579f35114757c88bb10d17cc64914",
+        "row_count": 4,
+        "source_sha256": "e26071328bde64b7f4fdf1ffb9a672f9e0bd1cc6a41391193a3d07152c34c43b",
+        "status": "checked"
+      }
+    },
+    {
+      "test": "build empty CLI",
+      "status": "PASS",
+      "details": {
+        "data_sha256": "0fbf785c5cb9497448f80e76eee1608283497035fd333a6e15f996cfcbfac351",
+        "row_count": 0,
+        "source_sha256": "d0fe0ee8e0ba24eef2f5ee4ce6e1cafbe0b441a027970fb59f545264409e21fd",
+        "status": "built-and-checked"
+      }
+    },
+    {
+      "test": "check empty CLI",
+      "status": "PASS",
+      "details": {
+        "data_sha256": "0fbf785c5cb9497448f80e76eee1608283497035fd333a6e15f996cfcbfac351",
+        "row_count": 0,
+        "source_sha256": "d0fe0ee8e0ba24eef2f5ee4ce6e1cafbe0b441a027970fb59f545264409e21fd",
+        "status": "checked"
+      }
+    },
+    {
+      "test": "independent literal main contents and hashes",
+      "status": "PASS",
+      "details": "4 rows compared literally, including all fields, duplicate id and raw bytes"
+    },
+    {
+      "test": "empty header, descriptor and exact source snapshot",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "test": "exhaustive single-byte domain and all-missing amounts",
+      "status": "PASS",
+      "details": "256 source bytes; 6 raw fallbacks; all amount cells missing; nonascending positions retained"
+    },
+    {
+      "test": "quotes, delimiters, CR LF CRLF, empty and literal text, all SAS tags",
+      "status": "PASS",
+      "details": "28 tags, 9 text sequences, arbitrary descriptor property, duplicate identifiers"
+    },
+    {
+      "test": "exact decimal amount and fractional raw day",
+      "status": "PASS",
+      "details": "Exact decimal digits and fractional raw day counts; no binary-float conversion"
+    },
+    {
+      "test": "reject source before outputs: unsupported encoding",
+      "status": "PASS",
+      "details": "error: Unsupported encoding; supported names are windows-1252 and cp1252"
+    },
+    {
+      "test": "reject source before outputs: unknown encoding",
+      "status": "PASS",
+      "details": "error: Unsupported encoding; supported names are windows-1252 and cp1252"
+    },
+    {
+      "test": "reject source before outputs: overwidth text",
+      "status": "PASS",
+      "details": "error: Row 1: text exceeds descriptor byte width"
+    },
+    {
+      "test": "reject source before outputs: duplicate row_no",
+      "status": "PASS",
+      "details": "error: Duplicate row_no: 1"
+    },
+    {
+      "test": "reject source before outputs: boolean row_no",
+      "status": "PASS",
+      "details": "error: Row 0: row_no must be an integer"
+    },
+    {
+      "test": "reject source before outputs: numeric id",
+      "status": "PASS",
+      "details": "error: Row 1: id must be text"
+    },
+    {
+      "test": "reject source before outputs: overwidth id",
+      "status": "PASS",
+      "details": "error: Row 1: id exceeds descriptor byte width"
+    },
+    {
+      "test": "reject source before outputs: NUL id",
+      "status": "PASS",
+      "details": "error: Row 1: id contains NUL"
+    },
+    {
+      "test": "reject source before outputs: odd-length hex",
+      "status": "PASS",
+      "details": "error: Row 1: text_hex must be contiguous pairs of hex digits"
+    },
+    {
+      "test": "reject source before outputs: nonhex text",
+      "status": "PASS",
+      "details": "error: Row 1: text_hex must be contiguous pairs of hex digits"
+    },
+    {
+      "test": "reject source before outputs: whitespace hex",
+      "status": "PASS",
+      "details": "error: Row 1: text_hex must be contiguous pairs of hex digits"
+    },
+    {
+      "test": "reject source before outputs: invalid missing tag",
+      "status": "PASS",
+      "details": "error: Row 1: missing amount must have one original SAS tag"
+    },
+    {
+      "test": "reject source before outputs: boolean amount",
+      "status": "PASS",
+      "details": "error: Row 1 amount must be a finite JSON number, not text, bool or null"
+    },
+    {
+      "test": "reject source before outputs: null amount without tag",
+      "status": "PASS",
+      "details": "error: Row 1 amount must be a finite JSON number, not text, bool or null"
+    },
+    {
+      "test": "reject source before outputs: missing date units",
+      "status": "PASS",
+      "details": "error: event_day must declare its raw units"
+    },
+    {
+      "test": "reject source before outputs: duplicate JSON property",
+      "status": "PASS",
+      "details": "error: Duplicate JSON property: descriptor"
+    },
+    {
+      "test": "reject source before outputs: nonfinite JSON",
+      "status": "PASS",
+      "details": "error: Nonfinite JSON number is unsupported: NaN"
+    },
+    {
+      "test": "existing destinations rejected unchanged",
+      "status": "PASS",
+      "details": "Existing directory, file and dangling symlink preserved"
+    },
+    {
+      "test": "reject metadata corruption: raw byte association",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: mode association",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: missing tag association",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: ordinary nonmissing marker",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: duplicate companion row",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: boolean companion row",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: companion order",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: missing companion row",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: extra companion row",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: label",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: unit",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: timezone",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: catalog",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject metadata corruption: source hash",
+      "status": "PASS",
+      "details": "error: Source hash mismatch"
+    },
+    {
+      "test": "reject metadata corruption: data hash",
+      "status": "PASS",
+      "details": "error: Data hash mismatch"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: identifier conversion",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: decoded text",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: nonmissing numeric",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: raw day",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: raw fallback populated",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: missing amount populated",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject data corruption even with refreshed hash: row order",
+      "status": "PASS",
+      "details": "error: Metadata differs from source-derived contract"
+    },
+    {
+      "test": "reject swapped empty companion",
+      "status": "PASS",
+      "details": "error: Source hash mismatch"
+    },
+    {
+      "test": "reject semantically equal but byte-different source",
+      "status": "PASS",
+      "details": "error: Source hash mismatch"
+    },
+    {
+      "test": "reject corrupt archived source",
+      "status": "PASS",
+      "details": "error: Archived source bytes differ from supplied source"
+    },
+    {
+      "test": "reject duplicate metadata property",
+      "status": "PASS",
+      "details": "error: Duplicate JSON property: rows"
+    }
+  ]
+}

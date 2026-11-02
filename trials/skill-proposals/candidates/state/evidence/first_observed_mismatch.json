@@ -1,0 +1,410 @@
+{
+  "status": "Observed Python failure against independent hand-derived source semantics; no live SAS execution.",
+  "timestamp_utc": "2026-11-02T05:35:55.743804+00:00",
+  "comparison": "Exact row count, order, column order, missing positions and numeric equality; no tolerance for these small integer-valued witnesses.",
+  "input": [
+    {
+      "row_id": "r9",
+      "value": 5.0,
+      "take": 1,
+      "emit": 1
+    },
+    {
+      "row_id": "r2",
+      "value": 100.0,
+      "take": 0,
+      "emit": 0
+    },
+    {
+      "row_id": "r8",
+      "value": null,
+      "take": 1,
+      "emit": 1
+    },
+    {
+      "row_id": "r1",
+      "value": 7.0,
+      "take": 0,
+      "emit": 1
+    },
+    {
+      "row_id": "r4",
+      "value": 3.0,
+      "take": 1,
+      "emit": 0
+    },
+    {
+      "row_id": "r6",
+      "value": 9.0,
+      "take": 1,
+      "emit": 1
+    },
+    {
+      "row_id": "r3",
+      "value": 2.0,
+      "take": 0,
+      "emit": 1
+    },
+    {
+      "row_id": "r7",
+      "value": -4.0,
+      "take": 1,
+      "emit": 1
+    }
+  ],
+  "expected_basis": "Independent manual execution of supplied source.sas, informed by linked SAS documentation.",
+  "expected": {
+    "stage": [
+      {
+        "row_id": "r9",
+        "value": 5,
+        "prev": null,
+        "total": 15
+      },
+      {
+        "row_id": "r8",
+        "value": null,
+        "prev": 5,
+        "total": 115
+      },
+      {
+        "row_id": "r1",
+        "value": 7,
+        "prev": null,
+        "total": 122
+      },
+      {
+        "row_id": "r6",
+        "value": 9,
+        "prev": 3,
+        "total": 134
+      },
+      {
+        "row_id": "r3",
+        "value": 2,
+        "prev": null,
+        "total": 136
+      },
+      {
+        "row_id": "r7",
+        "value": -4,
+        "prev": 9,
+        "total": 132
+      }
+    ],
+    "want": [
+      {
+        "row_id": "r9",
+        "value": 5,
+        "prev": null,
+        "total": 15,
+        "delta": null
+      },
+      {
+        "row_id": "r8",
+        "value": null,
+        "prev": 5,
+        "total": 115,
+        "delta": null
+      },
+      {
+        "row_id": "r1",
+        "value": 7,
+        "prev": null,
+        "total": 122,
+        "delta": null
+      },
+      {
+        "row_id": "r6",
+        "value": 9,
+        "prev": 3,
+        "total": 134,
+        "delta": 6
+      },
+      {
+        "row_id": "r3",
+        "value": 2,
+        "prev": null,
+        "total": 136,
+        "delta": null
+      },
+      {
+        "row_id": "r7",
+        "value": -4,
+        "prev": 9,
+        "total": 132,
+        "delta": -13
+      }
+    ]
+  },
+  "actual": {
+    "stage": [
+      {
+        "row_id": "r9",
+        "value": 5.0,
+        "prev": null,
+        "total": 15.0
+      },
+      {
+        "row_id": "r8",
+        "value": null,
+        "prev": 5.0,
+        "total": null
+      },
+      {
+        "row_id": "r1",
+        "value": 7.0,
+        "prev": 5.0,
+        "total": null
+      },
+      {
+        "row_id": "r6",
+        "value": 9.0,
+        "prev": 7.0,
+        "total": null
+      },
+      {
+        "row_id": "r3",
+        "value": 2.0,
+        "prev": 7.0,
+        "total": null
+      },
+      {
+        "row_id": "r7",
+        "value": -4.0,
+        "prev": 2.0,
+        "total": null
+      }
+    ],
+    "want": [
+      {
+        "row_id": "r9",
+        "value": 5.0,
+        "prev": null,
+        "total": 15.0,
+        "delta": null
+      },
+      {
+        "row_id": "r8",
+        "value": null,
+        "prev": 5.0,
+        "total": null,
+        "delta": null
+      },
+      {
+        "row_id": "r1",
+        "value": 7.0,
+        "prev": 5.0,
+        "total": null,
+        "delta": 2.0
+      },
+      {
+        "row_id": "r6",
+        "value": 9.0,
+        "prev": 7.0,
+        "total": null,
+        "delta": 2.0
+      },
+      {
+        "row_id": "r3",
+        "value": 2.0,
+        "prev": 7.0,
+        "total": null,
+        "delta": -5.0
+      },
+      {
+        "row_id": "r7",
+        "value": -4.0,
+        "prev": 2.0,
+        "total": null,
+        "delta": -6.0
+      }
+    ]
+  },
+  "first_mismatch": {
+    "table": "stage",
+    "output_position": 2,
+    "row_id": "r8",
+    "column": "total",
+    "actual": null,
+    "expected": 115
+  },
+  "mismatches": [
+    {
+      "table": "stage",
+      "output_position": 2,
+      "row_id": "r8",
+      "column": "total",
+      "actual": null,
+      "expected": 115
+    },
+    {
+      "table": "stage",
+      "output_position": 3,
+      "row_id": "r1",
+      "column": "prev",
+      "actual": 5.0,
+      "expected": null
+    },
+    {
+      "table": "stage",
+      "output_position": 3,
+      "row_id": "r1",
+      "column": "total",
+      "actual": null,
+      "expected": 122
+    },
+    {
+      "table": "stage",
+      "output_position": 4,
+      "row_id": "r6",
+      "column": "prev",
+      "actual": 7.0,
+      "expected": 3
+    },
+    {
+      "table": "stage",
+      "output_position": 4,
+      "row_id": "r6",
+      "column": "total",
+      "actual": null,
+      "expected": 134
+    },
+    {
+      "table": "stage",
+      "output_position": 5,
+      "row_id": "r3",
+      "column": "prev",
+      "actual": 7.0,
+      "expected": null
+    },
+    {
+      "table": "stage",
+      "output_position": 5,
+      "row_id": "r3",
+      "column": "total",
+      "actual": null,
+      "expected": 136
+    },
+    {
+      "table": "stage",
+      "output_position": 6,
+      "row_id": "r7",
+      "column": "prev",
+      "actual": 2.0,
+      "expected": 9
+    },
+    {
+      "table": "stage",
+      "output_position": 6,
+      "row_id": "r7",
+      "column": "total",
+      "actual": null,
+      "expected": 132
+    },
+    {
+      "table": "want",
+      "output_position": 2,
+      "row_id": "r8",
+      "column": "total",
+      "actual": null,
+      "expected": 115
+    },
+    {
+      "table": "want",
+      "output_position": 3,
+      "row_id": "r1",
+      "column": "prev",
+      "actual": 5.0,
+      "expected": null
+    },
+    {
+      "table": "want",
+      "output_position": 3,
+      "row_id": "r1",
+      "column": "total",
+      "actual": null,
+      "expected": 122
+    },
+    {
+      "table": "want",
+      "output_position": 3,
+      "row_id": "r1",
+      "column": "delta",
+      "actual": 2.0,
+      "expected": null
+    },
+    {
+      "table": "want",
+      "output_position": 4,
+      "row_id": "r6",
+      "column": "prev",
+      "actual": 7.0,
+      "expected": 3
+    },
+    {
+      "table": "want",
+      "output_position": 4,
+      "row_id": "r6",
+      "column": "total",
+      "actual": null,
+      "expected": 134
+    },
+    {
+      "table": "want",
+      "output_position": 4,
+      "row_id": "r6",
+      "column": "delta",
+      "actual": 2.0,
+      "expected": 6
+    },
+    {
+      "table": "want",
+      "output_position": 5,
+      "row_id": "r3",
+      "column": "prev",
+      "actual": 7.0,
+      "expected": null
+    },
+    {
+      "table": "want",
+      "output_position": 5,
+      "row_id": "r3",
+      "column": "total",
+      "actual": null,
+      "expected": 136
+    },
+    {
+      "table": "want",
+      "output_position": 5,
+      "row_id": "r3",
+      "column": "delta",
+      "actual": -5.0,
+      "expected": null
+    },
+    {
+      "table": "want",
+      "output_position": 6,
+      "row_id": "r7",
+      "column": "prev",
+      "actual": 2.0,
+      "expected": 9
+    },
+    {
+      "table": "want",
+      "output_position": 6,
+      "row_id": "r7",
+      "column": "total",
+      "actual": null,
+      "expected": 132
+    },
+    {
+      "table": "want",
+      "output_position": 6,
+      "row_id": "r7",
+      "column": "delta",
+      "actual": -6.0,
+      "expected": -13
+    }
+  ]
+}

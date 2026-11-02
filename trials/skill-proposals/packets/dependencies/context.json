@@ -1,0 +1,11 @@
+{
+  "status": "synthetic intended launch context, not a measured session",
+  "working_directory": "packet root",
+  "initial_session_macros": [],
+  "MSTORED": false,
+  "MAUTOSOURCE": true,
+  "SASAUTOS": [
+    "autocall"
+  ],
+  "post_hook": null
+}

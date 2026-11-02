@@ -1,0 +1,43 @@
+{
+  "descriptor": {
+    "source_kind": "synthetic decoded fixture, not a SAS binary",
+    "encoding": "windows-1252",
+    "columns": [
+      {
+        "name": "id",
+        "type": "character",
+        "width_bytes": 4,
+        "label": "Study identifier",
+        "format": null,
+        "informat": null
+      },
+      {
+        "name": "text",
+        "type": "character",
+        "width_bytes": 6,
+        "label": "Source text",
+        "format": null,
+        "informat": null
+      },
+      {
+        "name": "amount",
+        "type": "numeric",
+        "label": "Measure",
+        "format": "VALUEFMT.",
+        "informat": null
+      },
+      {
+        "name": "event_day",
+        "type": "numeric",
+        "label": "Event date",
+        "format": "DATE9.",
+        "informat": null,
+        "unit": "days since 1960-01-01",
+        "timezone": null
+      }
+    ],
+    "catalog_status": "unavailable",
+    "value_labels": null
+  },
+  "rows": []
+}
