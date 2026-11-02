@@ -1,0 +1,45 @@
+{
+  "status": "Independent skill evaluation setup; instruction/directory isolation",
+  "recorded_at_utc": "2026-11-02T23:36:23.050813+00:00",
+  "fork_turns": "none",
+  "base_commit": "c6b8a41f77efaed8eb5c0c6346e447ae1a75416b",
+  "model_override": null,
+  "model_revision": null,
+  "sampling_parameters": null,
+  "evaluators": [
+    {
+      "language": "python",
+      "agent": "/root/parquet_python",
+      "workspace": "/tmp/roku-parquet-evaluation-mzmr7dqs/python",
+      "packet": "packet",
+      "output": "candidates/python",
+      "scope": "Own raw packet and primary public documentation only; no parent truth, sibling work, earlier trials, git, installations, external writes or further delegation"
+    },
+    {
+      "language": "r",
+      "agent": "/root/parquet_r",
+      "workspace": "/tmp/roku-parquet-evaluation-mzmr7dqs/r",
+      "packet": "packet",
+      "output": "candidates/r",
+      "scope": "Own raw packet and primary public documentation only; no parent truth, sibling work, earlier trials, git, installations, external writes or further delegation"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.16",
+    "pyarrow": "25.0.1",
+    "pyreadstat": "1.3.7",
+    "pandas": "3.1.0",
+    "r": "4.4.3",
+    "r-arrow": "25.0.1",
+    "r-haven": "2.5.5",
+    "r-jsonlite": "2.0.0",
+    "runtime_scope": "Isolated task environment; existing repository gates continue in their existing runtimes"
+  },
+  "linter": {
+    "source": "scripts/inertia-drift-lint",
+    "sha256": "af77a5c3749f36ec09da921220968f4f5e1a9553bfdc1085e02a1f377dcaf16d",
+    "delivery": "Unchanged copy supplied before dispatch, outside immutable packet"
+  },
+  "fixture_delivery": "Four pinned external files, including original license, copied byte-for-byte into each isolated packet/fixtures. Their hashes bind to packet/FIXTURES.json; no binary files enter the repository.",
+  "artifact_policy": "Preserve every regular first-delivery file unchanged; expanded evaluator histories/self-test counts remain self-reports until independently replayed."
+}

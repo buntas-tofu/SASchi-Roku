@@ -1,0 +1,16 @@
+{
+  "status": "Corrective reader-metadata observation; raw values and source identity remain unchanged",
+  "source_sha256": "007425379a0504f5c54a7c0bb8f9776670a2456d3692f37907d38e080ac4b07b",
+  "reader": "pyreadstat 1.3.7",
+  "field": "original_variable_informats",
+  "sample_informats": {
+    "mychar": "$1",
+    "mynum": "BEST32",
+    "mydate": "YYMMDD10",
+    "dtime": "ANYDTDTM40",
+    "mylabl": "BEST32",
+    "myord": "BEST32",
+    "mytime": "TIME20.3"
+  },
+  "r_boundary": "haven 2.5.5 does not expose these source informats through this path; null remains required with disclosed gaps."
+}

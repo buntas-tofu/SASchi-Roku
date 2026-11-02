@@ -1,0 +1,12 @@
+{
+  "status": "Transparent parent-adapter correction; no candidate or frozen source/value oracle changed",
+  "recorded_at_utc": "2026-11-02T23:43:04.569141+00:00",
+  "original_failure": "mychar: descriptor differs at informat",
+  "cause": "The parent oracle initialized source informat to null without probing pyreadstat.original_variable_informats. The contract requires retaining available descriptor fields. A correct Python candidate exposed this parent defect.",
+  "correction": "The original verifier remains byte-for-byte in parent-original/verify.py and is checked against the original freeze. The corrected comparator requires the separately observed informat map for the Python SAS sample, while R unavailable informats remain null. Other values, schemas, controls and checks are unchanged.",
+  "hashes": {
+    "verify.py": "3481fb4a43000f11c8d0846644b10536cce84da3bfd408c701f00227fe192fad",
+    "reader-metadata-correction.json": "09c2f39b33cd18f7365c63e4bdbc3cb3733f51c81e76f2bd0069d83fcbc1e9e2",
+    "parent-original/verify.py": "ccb702c136c7f105d73bff2855178d4bf66dee1bdd9a757b64b876eb5735e3c9"
+  }
+}

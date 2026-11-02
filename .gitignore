@@ -7,3 +7,6 @@ __pycache__/
 # the pinned 9.4 PDFs regenerate from their public URLs (sha256 stamps in
 # kb/reference/extracted/*/PROVENANCE.json); this instance does not redistribute them
 kb/reference/pdfs/
+
+# Local, reproducible example output; source and receipts remain tracked.
+trials/parquet-dual-path/demo/

@@ -66,8 +66,9 @@ The [three follow-on evaluations](trials/skill-proposals/README.md) add dependen
 inventory, character/metadata contracts and stateful diagnosis skills. Seven
 dependency review criteria and 35 independent replay checks passed. Conditional
 LAG repairs ran in Python and native R; the CSV witness preserves raw fallback
-bytes and missing tags. Actual macro capture, SAS-binary reading and Parquet
-round trips remain unperformed. All six skills retain initial-guidance status.
+bytes and missing tags. Actual macro capture remains open; the later dual-path
+batch below adds bounded SAS-reader and Parquet evidence. All six workflow skills
+retain initial-guidance status.
 
 The [filter-timing trial](trials/state-filter-timing/README.md) extends state
 diagnosis to WHERE versus subsetting IF. One fresh paired Python/R delivery passes
@@ -81,6 +82,13 @@ Three fresh paired deliveries cover nested group flags and queue state, duplicat
 and missing-key match merges, and physical character widths through two DATA
 steps and reopened CSV. First deliveries and frozen expectations are preserved.
 The six skill instructions remain unchanged; live-SAS validation is pending.
+
+The [dual-path interchange batch](trials/parquet-dual-path/README.md) adds actual
+archival and analytical Parquet through Python and native R. All 56 parent checks
+and ten artifact criteria passed over five synthetic envelopes and two pinned
+upstream SAS files, including a catalog-present/absent pair. Retained source bytes,
+per-cell missing tags, typed dates and logged text fallbacks are checked through
+both consumers. Reader-normalized strings remain distinct from original SAS bytes.
 
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
@@ -102,6 +110,11 @@ With native Rscript available, also run `python3 trials/starter-batch/verify.py`
 `python3 trials/skill-proposals/verify.py`,
 `python3 trials/state-filter-timing/verify.py` and
 `python3 trials/state-boundaries/verify.py`.
+
+The Parquet replay uses its separate pinned
+[environment](trials/parquet-dual-path/environment.yml). See its
+[reproduction instructions](trials/parquet-dual-path/README.md) for fetching the
+licensed fixtures and running Python/R comparisons.
 
 CI also validates `agent-manifest.json` against its existing JSON schema.
 These checks cover repository integrity, not execution of the SAS corpus.

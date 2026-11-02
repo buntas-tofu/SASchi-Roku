@@ -1,0 +1,21 @@
+{
+  "status": "Reproducible local example bundle, generated from the accepted main-envelope implementation; parent acceptance is recorded separately",
+  "writer": "candidates/python/convert.py",
+  "writer_sha256": "e3b01e1014f0f7e804934a49a03e3a704dc60e9ee5eb0dc7f467fd47db9e5eb2",
+  "input": "packet/synthetic/main.json",
+  "output_directory": "demo",
+  "row_count": 5,
+  "outputs": {
+    "analysis.parquet": "ab1b2812a73d0ddf4cee3a91d5b5aa7ef14676856b2dd34548e1ff72c036a003",
+    "archive.parquet": "9768a578f15c0b0a0031ca10f394fb1abd12804053b7cb7ac537cabb850c933b",
+    "metadata.json": "023b6113aad03297f5c86445eba8c1eca79c0f6127e30aba458ca7bc77f66653",
+    "source/main.json": "aa8586fa34601264264587bb9e7b88019d7d14defcb8593fd6093d0803031408"
+  },
+  "version_scope": {
+    "python": "3.12.16",
+    "pyarrow": "25.0.1",
+    "pyreadstat": "1.3.7"
+  },
+  "source_fidelity": "exact-envelope-bytes",
+  "git_scope": "The generated demo directory is ignored; this receipt and original source are tracked."
+}
