@@ -122,8 +122,11 @@ def run(profile: str, root: Path) -> int:
         if not path.is_file() or is_exempt(path, root, exempt):
             continue
         rel = path.relative_to(root)
-        if str(rel) == "scripts/check_sanitization.py":
-            continue  # this file is the list; exempt from its own scan by declaration
+        if str(rel) in {"scripts/check_sanitization.py",
+                        "scripts/sanitization-allowlist.json"}:
+            continue  # the gate and its allowlist ARE the lists; exempt from
+                      # their own scan by declaration (quoted patterns would
+                      # otherwise self-detect)
         # filename pass
         for p, rx in compiled:
             if rx.search(str(rel)):
