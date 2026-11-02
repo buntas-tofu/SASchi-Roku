@@ -4,6 +4,35 @@
   "updated_on": "2026-11-01",
   "resources": [
     {
+      "id": "sas-lexer",
+      "name": "mishamsk/sas-lexer",
+      "kind": "repository",
+      "category": "analysis",
+      "url": "https://github.com/mishamsk/sas-lexer",
+      "description": "Static SAS lexer with a Rust core and Python bindings; useful for source inventories with documented contextual limitations.",
+      "tags": [
+        "sas",
+        "lexer",
+        "rust",
+        "python"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-01",
+        "scope": "Public README and repository metadata inspected; no lexer benchmark or runtime validation performed in Roku.",
+        "source_url": "https://github.com/mishamsk/sas-lexer/blob/7cd39aba21776f4ebbaa2689707e0c45f6097dce/README.md",
+        "source_revision": "7cd39aba21776f4ebbaa2689707e0c45f6097dce",
+        "notes": "Identified in the principal-supplied reference inventory, then resolved against public upstream. Static tokenization is not execution or proof of conversion support."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "AGPL-3.0",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
       "id": "camis",
       "name": "PSIAIMS/CAMIS",
       "kind": "repository",
