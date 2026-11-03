@@ -1,0 +1,35 @@
+{
+  "status": "Pinned licensed raw inputs; no expected values supplied",
+  "upstream_commit": "e6e23bc0021875f35fccc3c2707c3e5151c130bb",
+  "license": "Apache-2.0 for pyreadstat as a whole; bundled ReadStat MIT notice also retained",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/Roche/pyreadstat/e6e23bc0021875f35fccc3c2707c3e5151c130bb/LICENSE",
+      "bytes": 12903,
+      "sha256": "07487bc4080297d9c65ffa3f66e3c405f9fd08e4af990cd54212d373eb28debc",
+      "filename": "LICENSE"
+    },
+    {
+      "path": "test_data/basic/sample.sas7bdat",
+      "url": "https://raw.githubusercontent.com/Roche/pyreadstat/e6e23bc0021875f35fccc3c2707c3e5151c130bb/test_data/basic/sample.sas7bdat",
+      "bytes": 131072,
+      "sha256": "007425379a0504f5c54a7c0bb8f9776670a2456d3692f37907d38e080ac4b07b",
+      "filename": "sample.sas7bdat"
+    },
+    {
+      "path": "test_data/missing_data/missing_test.sas7bdat",
+      "url": "https://raw.githubusercontent.com/Roche/pyreadstat/e6e23bc0021875f35fccc3c2707c3e5151c130bb/test_data/missing_data/missing_test.sas7bdat",
+      "bytes": 131072,
+      "sha256": "620f8eac41710b7ea4293a5ab4a0fb8d1fbc886fa5fa2d0d2165f45a7a10865c",
+      "filename": "missing.sas7bdat"
+    },
+    {
+      "path": "test_data/missing_data/missing_formats.sas7bcat",
+      "url": "https://raw.githubusercontent.com/Roche/pyreadstat/e6e23bc0021875f35fccc3c2707c3e5151c130bb/test_data/missing_data/missing_formats.sas7bcat",
+      "bytes": 24576,
+      "sha256": "d1fc24e992e8fbd921d614615ff7281fec58d6b705e2de227e813bd6867c8c91",
+      "filename": "missing.sas7bcat"
+    }
+  ]
+}

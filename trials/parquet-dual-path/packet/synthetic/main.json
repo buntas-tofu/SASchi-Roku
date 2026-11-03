@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "encoding": "windows-1252",
+  "dataset_label": "Original synthetic interchange witness",
+  "columns": [
+    {
+      "name": "id",
+      "kind": "character",
+      "logical": "text",
+      "width_bytes": 6,
+      "label": "Business identifier",
+      "format": "$6.",
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "note",
+      "kind": "character",
+      "logical": "text",
+      "width_bytes": 8,
+      "label": "Source text",
+      "format": "$CHAR8.",
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "amount",
+      "kind": "numeric",
+      "logical": "number",
+      "width_bytes": 8,
+      "label": "Amount",
+      "format": "COMMA12.2",
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": {
+        "0": "Zero"
+      }
+    },
+    {
+      "name": "day",
+      "kind": "numeric",
+      "logical": "date",
+      "width_bytes": 8,
+      "label": "Calendar date",
+      "format": "DATE9.",
+      "informat": null,
+      "origin": "1960-01-01",
+      "units": "days",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "kind": "numeric",
+      "logical": "datetime",
+      "width_bytes": 8,
+      "label": "Local clock reading",
+      "format": "DATETIME20.3",
+      "informat": null,
+      "origin": "1960-01-01T00:00:00",
+      "units": "seconds",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "clock",
+      "kind": "numeric",
+      "logical": "time",
+      "width_bytes": 8,
+      "label": "Time of day",
+      "format": "TIME20.3",
+      "informat": null,
+      "origin": null,
+      "units": "seconds",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "empty_num",
+      "kind": "numeric",
+      "logical": "number",
+      "width_bytes": 8,
+      "label": null,
+      "format": null,
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": null
+    }
+  ],
+  "rows": [
+    {
+      "id": {
+        "hex": "303030372020"
+      },
+      "note": {
+        "hex": "636166e920202020"
+      },
+      "amount": {
+        "value": 1.5
+      },
+      "day": {
+        "value": 0
+      },
+      "stamp": {
+        "value": 0
+      },
+      "clock": {
+        "value": 0
+      },
+      "empty_num": {
+        "missing": "."
+      }
+    },
+    {
+      "id": {
+        "hex": "4e4120202020"
+      },
+      "note": {
+        "hex": "612c220d0a202020"
+      },
+      "amount": {
+        "missing": ".A"
+      },
+      "day": {
+        "value": 1
+      },
+      "stamp": {
+        "value": 1.25
+      },
+      "clock": {
+        "value": 36610
+      },
+      "empty_num": {
+        "missing": "."
+      }
+    },
+    {
+      "id": {
+        "hex": "303030372020"
+      },
+      "note": {
+        "hex": "6261640020202020"
+      },
+      "amount": {
+        "missing": "._"
+      },
+      "day": {
+        "value": -3653
+      },
+      "stamp": {
+        "value": -1
+      },
+      "clock": {
+        "value": 83410
+      },
+      "empty_num": {
+        "missing": "."
+      }
+    },
+    {
+      "id": {
+        "hex": "207820202020"
+      },
+      "note": {
+        "hex": "8120202020202020"
+      },
+      "amount": {
+        "missing": "."
+      },
+      "day": {
+        "value": 21310
+      },
+      "stamp": {
+        "value": 1841220610
+      },
+      "clock": {
+        "value": 0.5
+      },
+      "empty_num": {
+        "missing": "."
+      }
+    },
+    {
+      "id": {
+        "hex": "7a2020202020"
+      },
+      "note": {
+        "hex": "2020202020202020"
+      },
+      "amount": {
+        "value": -7.25
+      },
+      "day": {
+        "missing": ".A"
+      },
+      "stamp": {
+        "missing": "."
+      },
+      "clock": {
+        "missing": ".Z"
+      },
+      "empty_num": {
+        "missing": "."
+      }
+    }
+  ],
+  "catalog": null,
+  "timezone": null
+}

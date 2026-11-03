@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the frozen citation resolution below. This
+2026-11-02. The latest checkpoint is the approved citation integration below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -281,3 +281,73 @@ unchanged, with all nine governance jobs. Hosted status belongs to this revision
 The next bounded work is actual Parquet transport and broader metadata/byte
 preservation using current sanitized skill snapshots and frozen independent
 expectations. Live SAS remains unavailable.
+
+## Accepted archival and analytical interchange, 2026-11-02
+
+At the principal's evening return, PR 5 remained open and was subsequently observed
+ready for review rather than draft. The principal selected both archival fidelity
+and analytical convenience for the next interchange batch. Work starts from
+`c6b8a41f77efaed8eb5c0c6346e447ae1a75416b` on `codex/parquet-dual-path-trial`.
+PR 5 remains a separate review checkpoint.
+
+The [contract](trials/parquet-dual-path/CONTRACT.md) freezes five synthetic envelopes
+and three invocations over two pinned upstream SAS fixtures. Both original bytes
+and available metadata are retained, while analytical mappings are explicit and
+logged. Metadata unavailable through a reader stays unknown. No source timezone
+is inferred from haven's UTC display attribute.
+
+Two fresh evaluators receive unchanged sas-to-parquet and sas-define-interchange
+snapshots, one assigned Python and one R. Parent expected tables and both consumers
+were checked and frozen before dispatch. Task dependencies are isolated under
+`/tmp`, with pinned direct versions in the trial. Actual SAS files and their
+original upstream license are fetched by identity, not imported into the tree.
+
+While evaluations ran, PR 5 advanced to
+`c2740e1f31abf778748bed9f6970d22a5d2bafc7`, incorporating main's reference-home
+layers. Backed up the three local tracked edits, fast-forwarded, and reapplied
+only the additive interchange sections. Preserved all nine jobs, the evidence
+linter exemption, source stamps, reference outputs, MCP code and old frozen
+trials. The new Parquet job is additive; LOCAL documents ten total jobs.
+
+[Interchange results](trials/parquet-dual-path/README.md): all 56 parent machine
+checks and ten artifact criteria passed. Both writers were compared through
+complete Python and R consumers, including empty schemas, dates back to 1583,
+tags, byte fallbacks, source/license copies and catalog availability. All nine
+first-delivery files remain unchanged. Expanded evaluator tests and pre-delivery
+repairs are retained separately from parent acceptance.
+
+One parent metadata defect was reproduced: the frozen comparator expected null
+SAS informats even where pyreadstat exposed them. Preserved the original verifier
+and freeze, recorded the probed informat map, and hashed the corrected comparator.
+It requires those available Python fields while keeping unavailable haven fields
+null. No raw value, typed projection, candidate or packet contract changed.
+
+Generated a local ignored five-row demo with both Parquet projections, metadata
+and retained envelope. Its output hashes are recorded in the tracked demo receipt.
+All existing replays, corpus/catalog checks, ten repository tests, manifest,
+synced-copy stamps, pinned reference regeneration and advisory MCP self-test pass.
+Workflow comparison confirms all nine inherited jobs are unchanged.
+The pull-request trigger covers feature-branch targets as well as main, allowing
+this work to be reviewed separately on top of the still-open PR 5.
+
+The unchanged sanitization gate still reports exactly two historical citation
+findings inherited through PR 5. No new finding, allowlist edit or frozen-input
+rewrite was introduced. Their governance ruling remains separate from this
+passing interchange batch. Hosted results must be read from the new PR revision.
+
+## Approved citation integration, 2026-11-02
+
+The principal explicitly approved the proposed narrow exception in this chat.
+Concurrent PR 5 work had already recorded the same decision with exact-path, token
+and content-hash guards at a7be67a1dabccb4f43eb434fcb4c190a5ed8411e. Integrated
+that implementation, its five regression tests and the merged public catalog
+rather than adding a duplicate exception. Retained both journal handoffs and every
+frozen trial byte. The earlier two-finding checkpoint above is historical; the
+approved hash-bound resolution now applies to this branch.
+
+After integration, the sanitization gate reports zero findings. All 15 repository
+tests, the 39-record catalog, corpus/index, manifest and every prior trial replay
+pass. The invariant linter has zero errors and 25 warnings. The exact-path/hash
+exception implementation and tests match the approved PR 5 revision byte-for-byte.
+The 56-check dual-path replay also passes after integration. Hosted status must
+be read from the new merge revision.

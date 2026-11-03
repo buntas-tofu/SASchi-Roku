@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "encoding": "windows-1252",
+  "dataset_label": "Original synthetic interchange witness",
+  "columns": [
+    {
+      "name": "id",
+      "kind": "character",
+      "logical": "text",
+      "width_bytes": 6,
+      "label": "Business identifier",
+      "format": "$6.",
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "note",
+      "kind": "character",
+      "logical": "text",
+      "width_bytes": 8,
+      "label": "Source text",
+      "format": "$CHAR8.",
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "amount",
+      "kind": "numeric",
+      "logical": "number",
+      "width_bytes": 8,
+      "label": "Amount",
+      "format": "COMMA12.2",
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": {
+        "0": "Zero"
+      }
+    },
+    {
+      "name": "day",
+      "kind": "numeric",
+      "logical": "date",
+      "width_bytes": 8,
+      "label": "Calendar date",
+      "format": "DATE9.",
+      "informat": null,
+      "origin": "1960-01-01",
+      "units": "days",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "kind": "numeric",
+      "logical": "datetime",
+      "width_bytes": 8,
+      "label": "Local clock reading",
+      "format": "DATETIME20.3",
+      "informat": null,
+      "origin": "1960-01-01T00:00:00",
+      "units": "seconds",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "clock",
+      "kind": "numeric",
+      "logical": "time",
+      "width_bytes": 8,
+      "label": "Time of day",
+      "format": "TIME20.3",
+      "informat": null,
+      "origin": null,
+      "units": "seconds",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "empty_num",
+      "kind": "numeric",
+      "logical": "number",
+      "width_bytes": 8,
+      "label": null,
+      "format": null,
+      "informat": null,
+      "origin": null,
+      "units": null,
+      "timezone": null,
+      "value_labels": null
+    }
+  ],
+  "rows": [
+    {
+      "id": {
+        "hex": "202020202020"
+      },
+      "note": {
+        "hex": "2020202020202020"
+      },
+      "amount": {
+        "missing": "."
+      },
+      "day": {
+        "missing": "."
+      },
+      "stamp": {
+        "missing": "."
+      },
+      "clock": {
+        "missing": "."
+      },
+      "empty_num": {
+        "missing": "."
+      }
+    }
+  ],
+  "catalog": null,
+  "timezone": null
+}

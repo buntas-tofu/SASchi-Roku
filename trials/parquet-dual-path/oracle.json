@@ -1,0 +1,2644 @@
+{
+  "main": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "amount__sas_missing",
+        "string"
+      ],
+      [
+        "day",
+        "double"
+      ],
+      [
+        "day__sas_missing",
+        "string"
+      ],
+      [
+        "stamp",
+        "double"
+      ],
+      [
+        "stamp__sas_missing",
+        "string"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "clock__sas_missing",
+        "string"
+      ],
+      [
+        "empty_num",
+        "double"
+      ],
+      [
+        "empty_num__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "day",
+        "date32[day]"
+      ],
+      [
+        "stamp",
+        "timestamp[us]"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "empty_num",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        "303030372020",
+        "636166e920202020",
+        1.5,
+        "",
+        0,
+        "",
+        0,
+        "",
+        0,
+        "",
+        null,
+        "."
+      ],
+      [
+        1,
+        "4e4120202020",
+        "612c220d0a202020",
+        null,
+        ".A",
+        1,
+        "",
+        1.25,
+        "",
+        36610,
+        "",
+        null,
+        "."
+      ],
+      [
+        2,
+        "303030372020",
+        "6261640020202020",
+        null,
+        "._",
+        -3653,
+        "",
+        -1,
+        "",
+        83410,
+        "",
+        null,
+        "."
+      ],
+      [
+        3,
+        "207820202020",
+        "8120202020202020",
+        null,
+        ".",
+        21310,
+        "",
+        1841220610,
+        "",
+        0.5,
+        "",
+        null,
+        "."
+      ],
+      [
+        4,
+        "7a2020202020",
+        "2020202020202020",
+        -7.25,
+        "",
+        null,
+        ".A",
+        null,
+        ".",
+        null,
+        ".Z",
+        null,
+        "."
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        "0007",
+        "caf\u00e9",
+        1.5,
+        -3653,
+        -315619200000000,
+        0,
+        null
+      ],
+      [
+        1,
+        "NA",
+        "a,\"\r\n",
+        null,
+        -3652,
+        -315619198750000,
+        36610,
+        null
+      ],
+      [
+        2,
+        "0007",
+        null,
+        null,
+        -7306,
+        -315619201000000,
+        83410,
+        null
+      ],
+      [
+        3,
+        " x",
+        null,
+        null,
+        17657,
+        1525601410000000,
+        0.5,
+        null
+      ],
+      [
+        4,
+        "z",
+        null,
+        -7.25,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 0,
+        "column": "note",
+        "action": "right-trim"
+      },
+      {
+        "row": 0,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 0,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 0,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 1,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 1,
+        "column": "note",
+        "action": "right-trim"
+      },
+      {
+        "row": 1,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": ".A"
+      },
+      {
+        "row": 1,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 1,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 1,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 2,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 2,
+        "column": "note",
+        "action": "embedded-nul"
+      },
+      {
+        "row": 2,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": "._"
+      },
+      {
+        "row": 2,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 2,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 2,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 3,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 3,
+        "column": "note",
+        "action": "decode-error"
+      },
+      {
+        "row": 3,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 3,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 3,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 3,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 4,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 4,
+        "column": "note",
+        "action": "blank-to-null"
+      },
+      {
+        "row": 4,
+        "column": "day",
+        "action": "missing-to-null",
+        "tag": ".A"
+      },
+      {
+        "row": 4,
+        "column": "stamp",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 4,
+        "column": "clock",
+        "action": "missing-to-null",
+        "tag": ".Z"
+      },
+      {
+        "row": 4,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "id",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 6,
+        "label": "Business identifier",
+        "format": "$6.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "note",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 8,
+        "label": "Source text",
+        "format": "$CHAR8.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "amount",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": "Amount",
+        "format": "COMMA12.2",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": {
+          "0": "Zero"
+        }
+      },
+      {
+        "name": "day",
+        "kind": "numeric",
+        "logical": "date",
+        "width_bytes": 8,
+        "label": "Calendar date",
+        "format": "DATE9.",
+        "informat": null,
+        "origin": "1960-01-01",
+        "units": "days",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "stamp",
+        "kind": "numeric",
+        "logical": "datetime",
+        "width_bytes": 8,
+        "label": "Local clock reading",
+        "format": "DATETIME20.3",
+        "informat": null,
+        "origin": "1960-01-01T00:00:00",
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "clock",
+        "kind": "numeric",
+        "logical": "time",
+        "width_bytes": 8,
+        "label": "Time of day",
+        "format": "TIME20.3",
+        "informat": null,
+        "origin": null,
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "empty_num",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "windows-1252",
+    "character_fidelity": "exact-envelope-bytes",
+    "source_kind": "envelope",
+    "catalog_status": "absent"
+  },
+  "empty": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "amount__sas_missing",
+        "string"
+      ],
+      [
+        "day",
+        "double"
+      ],
+      [
+        "day__sas_missing",
+        "string"
+      ],
+      [
+        "stamp",
+        "double"
+      ],
+      [
+        "stamp__sas_missing",
+        "string"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "clock__sas_missing",
+        "string"
+      ],
+      [
+        "empty_num",
+        "double"
+      ],
+      [
+        "empty_num__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "day",
+        "date32[day]"
+      ],
+      [
+        "stamp",
+        "timestamp[us]"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "empty_num",
+        "double"
+      ]
+    ],
+    "archive_rows": [],
+    "analysis_rows": [],
+    "events": [],
+    "columns": [
+      {
+        "name": "id",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 6,
+        "label": "Business identifier",
+        "format": "$6.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "note",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 8,
+        "label": "Source text",
+        "format": "$CHAR8.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "amount",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": "Amount",
+        "format": "COMMA12.2",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": {
+          "0": "Zero"
+        }
+      },
+      {
+        "name": "day",
+        "kind": "numeric",
+        "logical": "date",
+        "width_bytes": 8,
+        "label": "Calendar date",
+        "format": "DATE9.",
+        "informat": null,
+        "origin": "1960-01-01",
+        "units": "days",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "stamp",
+        "kind": "numeric",
+        "logical": "datetime",
+        "width_bytes": 8,
+        "label": "Local clock reading",
+        "format": "DATETIME20.3",
+        "informat": null,
+        "origin": "1960-01-01T00:00:00",
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "clock",
+        "kind": "numeric",
+        "logical": "time",
+        "width_bytes": 8,
+        "label": "Time of day",
+        "format": "TIME20.3",
+        "informat": null,
+        "origin": null,
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "empty_num",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "windows-1252",
+    "character_fidelity": "exact-envelope-bytes",
+    "source_kind": "envelope",
+    "catalog_status": "absent"
+  },
+  "all-missing": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "amount__sas_missing",
+        "string"
+      ],
+      [
+        "day",
+        "double"
+      ],
+      [
+        "day__sas_missing",
+        "string"
+      ],
+      [
+        "stamp",
+        "double"
+      ],
+      [
+        "stamp__sas_missing",
+        "string"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "clock__sas_missing",
+        "string"
+      ],
+      [
+        "empty_num",
+        "double"
+      ],
+      [
+        "empty_num__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "day",
+        "date32[day]"
+      ],
+      [
+        "stamp",
+        "timestamp[us]"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "empty_num",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        "202020202020",
+        "2020202020202020",
+        null,
+        ".",
+        null,
+        ".",
+        null,
+        ".",
+        null,
+        ".",
+        null,
+        "."
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "id",
+        "action": "blank-to-null"
+      },
+      {
+        "row": 0,
+        "column": "note",
+        "action": "blank-to-null"
+      },
+      {
+        "row": 0,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 0,
+        "column": "day",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 0,
+        "column": "stamp",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 0,
+        "column": "clock",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 0,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "id",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 6,
+        "label": "Business identifier",
+        "format": "$6.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "note",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 8,
+        "label": "Source text",
+        "format": "$CHAR8.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "amount",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": "Amount",
+        "format": "COMMA12.2",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": {
+          "0": "Zero"
+        }
+      },
+      {
+        "name": "day",
+        "kind": "numeric",
+        "logical": "date",
+        "width_bytes": 8,
+        "label": "Calendar date",
+        "format": "DATE9.",
+        "informat": null,
+        "origin": "1960-01-01",
+        "units": "days",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "stamp",
+        "kind": "numeric",
+        "logical": "datetime",
+        "width_bytes": 8,
+        "label": "Local clock reading",
+        "format": "DATETIME20.3",
+        "informat": null,
+        "origin": "1960-01-01T00:00:00",
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "clock",
+        "kind": "numeric",
+        "logical": "time",
+        "width_bytes": 8,
+        "label": "Time of day",
+        "format": "TIME20.3",
+        "informat": null,
+        "origin": null,
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "empty_num",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "windows-1252",
+    "character_fidelity": "exact-envelope-bytes",
+    "source_kind": "envelope",
+    "catalog_status": "absent"
+  },
+  "reordered": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "amount__sas_missing",
+        "string"
+      ],
+      [
+        "day",
+        "double"
+      ],
+      [
+        "day__sas_missing",
+        "string"
+      ],
+      [
+        "stamp",
+        "double"
+      ],
+      [
+        "stamp__sas_missing",
+        "string"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "clock__sas_missing",
+        "string"
+      ],
+      [
+        "empty_num",
+        "double"
+      ],
+      [
+        "empty_num__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "day",
+        "date32[day]"
+      ],
+      [
+        "stamp",
+        "timestamp[us]"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "empty_num",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        "303030372020",
+        "6261640020202020",
+        null,
+        "._",
+        -3653,
+        "",
+        -1,
+        "",
+        83410,
+        "",
+        null,
+        "."
+      ],
+      [
+        1,
+        "303030372020",
+        "636166e920202020",
+        1.5,
+        "",
+        0,
+        "",
+        0,
+        "",
+        0,
+        "",
+        null,
+        "."
+      ],
+      [
+        2,
+        "4e4120202020",
+        "612c220d0a202020",
+        null,
+        ".A",
+        1,
+        "",
+        1.25,
+        "",
+        36610,
+        "",
+        null,
+        "."
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        "0007",
+        null,
+        null,
+        -7306,
+        -315619201000000,
+        83410,
+        null
+      ],
+      [
+        1,
+        "0007",
+        "caf\u00e9",
+        1.5,
+        -3653,
+        -315619200000000,
+        0,
+        null
+      ],
+      [
+        2,
+        "NA",
+        "a,\"\r\n",
+        null,
+        -3652,
+        -315619198750000,
+        36610,
+        null
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 0,
+        "column": "note",
+        "action": "embedded-nul"
+      },
+      {
+        "row": 0,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": "._"
+      },
+      {
+        "row": 0,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 0,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 0,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 1,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 1,
+        "column": "note",
+        "action": "right-trim"
+      },
+      {
+        "row": 1,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 1,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 1,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 2,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 2,
+        "column": "note",
+        "action": "right-trim"
+      },
+      {
+        "row": 2,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": ".A"
+      },
+      {
+        "row": 2,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 2,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 2,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "id",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 6,
+        "label": "Business identifier",
+        "format": "$6.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "note",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 8,
+        "label": "Source text",
+        "format": "$CHAR8.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "amount",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": "Amount",
+        "format": "COMMA12.2",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": {
+          "0": "Zero"
+        }
+      },
+      {
+        "name": "day",
+        "kind": "numeric",
+        "logical": "date",
+        "width_bytes": 8,
+        "label": "Calendar date",
+        "format": "DATE9.",
+        "informat": null,
+        "origin": "1960-01-01",
+        "units": "days",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "stamp",
+        "kind": "numeric",
+        "logical": "datetime",
+        "width_bytes": 8,
+        "label": "Local clock reading",
+        "format": "DATETIME20.3",
+        "informat": null,
+        "origin": "1960-01-01T00:00:00",
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "clock",
+        "kind": "numeric",
+        "logical": "time",
+        "width_bytes": 8,
+        "label": "Time of day",
+        "format": "TIME20.3",
+        "informat": null,
+        "origin": null,
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "empty_num",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "windows-1252",
+    "character_fidelity": "exact-envelope-bytes",
+    "source_kind": "envelope",
+    "catalog_status": "absent"
+  },
+  "utf8": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "amount__sas_missing",
+        "string"
+      ],
+      [
+        "day",
+        "double"
+      ],
+      [
+        "day__sas_missing",
+        "string"
+      ],
+      [
+        "stamp",
+        "double"
+      ],
+      [
+        "stamp__sas_missing",
+        "string"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "clock__sas_missing",
+        "string"
+      ],
+      [
+        "empty_num",
+        "double"
+      ],
+      [
+        "empty_num__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "id",
+        "string"
+      ],
+      [
+        "note",
+        "string"
+      ],
+      [
+        "amount",
+        "double"
+      ],
+      [
+        "day",
+        "date32[day]"
+      ],
+      [
+        "stamp",
+        "timestamp[us]"
+      ],
+      [
+        "clock",
+        "double"
+      ],
+      [
+        "empty_num",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        "303030372020",
+        "e99baa2020202020",
+        1.5,
+        "",
+        0,
+        "",
+        0,
+        "",
+        0,
+        "",
+        null,
+        "."
+      ],
+      [
+        1,
+        "4e4120202020",
+        "ff20202020202020",
+        null,
+        ".A",
+        1,
+        "",
+        1.25,
+        "",
+        36610,
+        "",
+        null,
+        "."
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        "0007",
+        "\u96ea",
+        1.5,
+        -3653,
+        -315619200000000,
+        0,
+        null
+      ],
+      [
+        1,
+        "NA",
+        null,
+        null,
+        -3652,
+        -315619198750000,
+        36610,
+        null
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 0,
+        "column": "note",
+        "action": "right-trim"
+      },
+      {
+        "row": 0,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 0,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 0,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 1,
+        "column": "id",
+        "action": "right-trim"
+      },
+      {
+        "row": 1,
+        "column": "note",
+        "action": "decode-error"
+      },
+      {
+        "row": 1,
+        "column": "amount",
+        "action": "missing-to-null",
+        "tag": ".A"
+      },
+      {
+        "row": 1,
+        "column": "day",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 1,
+        "column": "stamp",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 1,
+        "column": "empty_num",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "id",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 6,
+        "label": "Business identifier",
+        "format": "$6.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "note",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 8,
+        "label": "Source text",
+        "format": "$CHAR8.",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "amount",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": "Amount",
+        "format": "COMMA12.2",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": {
+          "0": "Zero"
+        }
+      },
+      {
+        "name": "day",
+        "kind": "numeric",
+        "logical": "date",
+        "width_bytes": 8,
+        "label": "Calendar date",
+        "format": "DATE9.",
+        "informat": null,
+        "origin": "1960-01-01",
+        "units": "days",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "stamp",
+        "kind": "numeric",
+        "logical": "datetime",
+        "width_bytes": 8,
+        "label": "Local clock reading",
+        "format": "DATETIME20.3",
+        "informat": null,
+        "origin": "1960-01-01T00:00:00",
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "clock",
+        "kind": "numeric",
+        "logical": "time",
+        "width_bytes": 8,
+        "label": "Time of day",
+        "format": "TIME20.3",
+        "informat": null,
+        "origin": null,
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "empty_num",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "utf-8",
+    "character_fidelity": "exact-envelope-bytes",
+    "source_kind": "envelope",
+    "catalog_status": "absent"
+  },
+  "sas-sample": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "mychar",
+        "string"
+      ],
+      [
+        "mynum",
+        "double"
+      ],
+      [
+        "mynum__sas_missing",
+        "string"
+      ],
+      [
+        "mydate",
+        "double"
+      ],
+      [
+        "mydate__sas_missing",
+        "string"
+      ],
+      [
+        "dtime",
+        "double"
+      ],
+      [
+        "dtime__sas_missing",
+        "string"
+      ],
+      [
+        "mylabl",
+        "double"
+      ],
+      [
+        "mylabl__sas_missing",
+        "string"
+      ],
+      [
+        "myord",
+        "double"
+      ],
+      [
+        "myord__sas_missing",
+        "string"
+      ],
+      [
+        "mytime",
+        "double"
+      ],
+      [
+        "mytime__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "mychar",
+        "string"
+      ],
+      [
+        "mynum",
+        "double"
+      ],
+      [
+        "mydate",
+        "date32[day]"
+      ],
+      [
+        "dtime",
+        "timestamp[us]"
+      ],
+      [
+        "mylabl",
+        "double"
+      ],
+      [
+        "myord",
+        "double"
+      ],
+      [
+        "mytime",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        "61",
+        1.1,
+        "",
+        21310,
+        "",
+        1841220610.0,
+        "",
+        1.0,
+        "",
+        1.0,
+        "",
+        36610.0,
+        ""
+      ],
+      [
+        1,
+        "62",
+        1.2,
+        "",
+        -29093,
+        "",
+        -2513598590.0,
+        "",
+        2.0,
+        "",
+        2.0,
+        "",
+        83410.0,
+        ""
+      ],
+      [
+        2,
+        "63",
+        -1000.3,
+        "",
+        0,
+        "",
+        0.0,
+        "",
+        1.0,
+        "",
+        3.0,
+        "",
+        0.0,
+        ""
+      ],
+      [
+        3,
+        "64",
+        -1.4,
+        "",
+        -137696,
+        "",
+        -11896934400.0,
+        "",
+        2.0,
+        "",
+        1.0,
+        "",
+        58210.0,
+        ""
+      ],
+      [
+        4,
+        "65",
+        1000.3,
+        "",
+        null,
+        ".",
+        null,
+        ".",
+        1.0,
+        "",
+        1.0,
+        "",
+        null,
+        "."
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        "a",
+        1.1,
+        17657,
+        1525601410000000,
+        1.0,
+        1.0,
+        36610.0
+      ],
+      [
+        1,
+        "b",
+        1.2,
+        -32746,
+        -2829217790000000,
+        2.0,
+        2.0,
+        83410.0
+      ],
+      [
+        2,
+        "c",
+        -1000.3,
+        -3653,
+        -315619200000000,
+        1.0,
+        3.0,
+        0.0
+      ],
+      [
+        3,
+        "d",
+        -1.4,
+        -141349,
+        -12212553600000000,
+        2.0,
+        1.0,
+        58210.0
+      ],
+      [
+        4,
+        "e",
+        1000.3,
+        null,
+        null,
+        1.0,
+        1.0,
+        null
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "mydate",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 0,
+        "column": "dtime",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 1,
+        "column": "mydate",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 1,
+        "column": "dtime",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 2,
+        "column": "mydate",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 2,
+        "column": "dtime",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 3,
+        "column": "mydate",
+        "action": "date-to-date32"
+      },
+      {
+        "row": 3,
+        "column": "dtime",
+        "action": "datetime-to-timestamp-us"
+      },
+      {
+        "row": 4,
+        "column": "mydate",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 4,
+        "column": "dtime",
+        "action": "missing-to-null",
+        "tag": "."
+      },
+      {
+        "row": 4,
+        "column": "mytime",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "mychar",
+        "kind": "character",
+        "logical": "text",
+        "width_bytes": 1,
+        "label": null,
+        "format": "$1",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "mynum",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": "BEST12",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "mydate",
+        "kind": "numeric",
+        "logical": "date",
+        "width_bytes": 8,
+        "label": null,
+        "format": "YYMMDD10",
+        "informat": null,
+        "origin": "1960-01-01",
+        "units": "days",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "dtime",
+        "kind": "numeric",
+        "logical": "datetime",
+        "width_bytes": 8,
+        "label": null,
+        "format": "DATETIME",
+        "informat": null,
+        "origin": "1960-01-01T00:00:00",
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "mylabl",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": "BEST12",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "myord",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": "BEST12",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "mytime",
+        "kind": "numeric",
+        "logical": "time",
+        "width_bytes": 8,
+        "label": null,
+        "format": "TIME20.3",
+        "informat": null,
+        "origin": null,
+        "units": "seconds",
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "utf-8",
+    "character_fidelity": "reader-utf8-reencoding",
+    "source_kind": "sas7bdat",
+    "catalog_status": "absent"
+  },
+  "sas-missing-no-catalog": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "var1",
+        "double"
+      ],
+      [
+        "var1__sas_missing",
+        "string"
+      ],
+      [
+        "var2",
+        "double"
+      ],
+      [
+        "var2__sas_missing",
+        "string"
+      ],
+      [
+        "var3",
+        "double"
+      ],
+      [
+        "var3__sas_missing",
+        "string"
+      ],
+      [
+        "var4",
+        "double"
+      ],
+      [
+        "var4__sas_missing",
+        "string"
+      ],
+      [
+        "var5",
+        "double"
+      ],
+      [
+        "var5__sas_missing",
+        "string"
+      ],
+      [
+        "var6",
+        "double"
+      ],
+      [
+        "var6__sas_missing",
+        "string"
+      ],
+      [
+        "var7",
+        "double"
+      ],
+      [
+        "var7__sas_missing",
+        "string"
+      ],
+      [
+        "var8",
+        "double"
+      ],
+      [
+        "var8__sas_missing",
+        "string"
+      ],
+      [
+        "var9",
+        "double"
+      ],
+      [
+        "var9__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "var1",
+        "double"
+      ],
+      [
+        "var2",
+        "double"
+      ],
+      [
+        "var3",
+        "double"
+      ],
+      [
+        "var4",
+        "double"
+      ],
+      [
+        "var5",
+        "double"
+      ],
+      [
+        "var6",
+        "double"
+      ],
+      [
+        "var7",
+        "double"
+      ],
+      [
+        "var8",
+        "double"
+      ],
+      [
+        "var9",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        null,
+        ".A",
+        null,
+        ".B",
+        null,
+        ".C",
+        null,
+        ".X",
+        null,
+        ".Y",
+        null,
+        ".Z",
+        null,
+        "._",
+        null,
+        ".",
+        1,
+        ""
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "var1",
+        "action": "missing-to-null",
+        "tag": ".A"
+      },
+      {
+        "row": 0,
+        "column": "var2",
+        "action": "missing-to-null",
+        "tag": ".B"
+      },
+      {
+        "row": 0,
+        "column": "var3",
+        "action": "missing-to-null",
+        "tag": ".C"
+      },
+      {
+        "row": 0,
+        "column": "var4",
+        "action": "missing-to-null",
+        "tag": ".X"
+      },
+      {
+        "row": 0,
+        "column": "var5",
+        "action": "missing-to-null",
+        "tag": ".Y"
+      },
+      {
+        "row": 0,
+        "column": "var6",
+        "action": "missing-to-null",
+        "tag": ".Z"
+      },
+      {
+        "row": 0,
+        "column": "var7",
+        "action": "missing-to-null",
+        "tag": "._"
+      },
+      {
+        "row": 0,
+        "column": "var8",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "var1",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": "A",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var2",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var3",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var4",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var5",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var6",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var7",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var8",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var9",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "utf-8",
+    "character_fidelity": "reader-utf8-reencoding",
+    "source_kind": "sas7bdat",
+    "catalog_status": "absent"
+  },
+  "sas-missing-catalog": {
+    "archive_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "var1",
+        "double"
+      ],
+      [
+        "var1__sas_missing",
+        "string"
+      ],
+      [
+        "var2",
+        "double"
+      ],
+      [
+        "var2__sas_missing",
+        "string"
+      ],
+      [
+        "var3",
+        "double"
+      ],
+      [
+        "var3__sas_missing",
+        "string"
+      ],
+      [
+        "var4",
+        "double"
+      ],
+      [
+        "var4__sas_missing",
+        "string"
+      ],
+      [
+        "var5",
+        "double"
+      ],
+      [
+        "var5__sas_missing",
+        "string"
+      ],
+      [
+        "var6",
+        "double"
+      ],
+      [
+        "var6__sas_missing",
+        "string"
+      ],
+      [
+        "var7",
+        "double"
+      ],
+      [
+        "var7__sas_missing",
+        "string"
+      ],
+      [
+        "var8",
+        "double"
+      ],
+      [
+        "var8__sas_missing",
+        "string"
+      ],
+      [
+        "var9",
+        "double"
+      ],
+      [
+        "var9__sas_missing",
+        "string"
+      ]
+    ],
+    "analysis_schema": [
+      [
+        "__row_index",
+        "int64"
+      ],
+      [
+        "var1",
+        "double"
+      ],
+      [
+        "var2",
+        "double"
+      ],
+      [
+        "var3",
+        "double"
+      ],
+      [
+        "var4",
+        "double"
+      ],
+      [
+        "var5",
+        "double"
+      ],
+      [
+        "var6",
+        "double"
+      ],
+      [
+        "var7",
+        "double"
+      ],
+      [
+        "var8",
+        "double"
+      ],
+      [
+        "var9",
+        "double"
+      ]
+    ],
+    "archive_rows": [
+      [
+        0,
+        null,
+        ".A",
+        null,
+        ".B",
+        null,
+        ".C",
+        null,
+        ".X",
+        null,
+        ".Y",
+        null,
+        ".Z",
+        null,
+        "._",
+        null,
+        ".",
+        1,
+        ""
+      ]
+    ],
+    "analysis_rows": [
+      [
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1
+      ]
+    ],
+    "events": [
+      {
+        "row": 0,
+        "column": "var1",
+        "action": "missing-to-null",
+        "tag": ".A"
+      },
+      {
+        "row": 0,
+        "column": "var2",
+        "action": "missing-to-null",
+        "tag": ".B"
+      },
+      {
+        "row": 0,
+        "column": "var3",
+        "action": "missing-to-null",
+        "tag": ".C"
+      },
+      {
+        "row": 0,
+        "column": "var4",
+        "action": "missing-to-null",
+        "tag": ".X"
+      },
+      {
+        "row": 0,
+        "column": "var5",
+        "action": "missing-to-null",
+        "tag": ".Y"
+      },
+      {
+        "row": 0,
+        "column": "var6",
+        "action": "missing-to-null",
+        "tag": ".Z"
+      },
+      {
+        "row": 0,
+        "column": "var7",
+        "action": "missing-to-null",
+        "tag": "._"
+      },
+      {
+        "row": 0,
+        "column": "var8",
+        "action": "missing-to-null",
+        "tag": "."
+      }
+    ],
+    "columns": [
+      {
+        "name": "var1",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": "A",
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": {
+          ".A": "missing"
+        }
+      },
+      {
+        "name": "var2",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var3",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var4",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var5",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var6",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var7",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var8",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      },
+      {
+        "name": "var9",
+        "kind": "numeric",
+        "logical": "number",
+        "width_bytes": 8,
+        "label": null,
+        "format": null,
+        "informat": null,
+        "origin": null,
+        "units": null,
+        "timezone": null,
+        "value_labels": null
+      }
+    ],
+    "encoding": "utf-8",
+    "character_fidelity": "reader-utf8-reencoding",
+    "source_kind": "sas7bdat",
+    "catalog_status": "provided"
+  }
+}

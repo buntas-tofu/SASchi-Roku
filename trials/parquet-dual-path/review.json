@@ -1,0 +1,75 @@
+{
+  "status": "Parent artifact review, separate from frozen-case machine replay and expanded evaluator self-reports",
+  "recorded_at_utc": "2026-11-02T23:43:52.649321+00:00",
+  "verdict": "PASS",
+  "criteria": [
+    {
+      "writer": "python",
+      "criterion": "preservation-boundaries",
+      "verdict": "PASS",
+      "evidence": "Code and report retain byte-identical data/catalog/LICENSE, distinguish exact envelope hex from reader UTF-8 reencoding, and disclose the original SAS padding boundary."
+    },
+    {
+      "writer": "python",
+      "criterion": "descriptor-and-missing-byte-policy",
+      "verdict": "PASS",
+      "evidence": "Descriptors preserve exposed widths, labels, formats, informats and canonical catalog tags; strict decoding, missing tags and ordinal events are explicit. Reader informat availability is separately corrected in the parent harness."
+    },
+    {
+      "writer": "python",
+      "criterion": "typed-date-time-and-events",
+      "verdict": "PASS",
+      "evidence": "Code explicitly chooses date32 and timezone-free microsecond timestamps from the 1960 origin, leaves time seconds numeric, keeps all-missing types, and records ordered cell events."
+    },
+    {
+      "writer": "python",
+      "criterion": "association-and-licensing",
+      "verdict": "PASS",
+      "evidence": "Both footers bind source/catalog/mode/version. Full source-derived reopening, sidecar comparisons and retained-copy SHA checks are implemented; the original fixture license accompanies copies."
+    },
+    {
+      "writer": "python",
+      "criterion": "execution-and-history",
+      "verdict": "PASS",
+      "evidence": "Report and history retain unsupported API-keyword and consumer-introspection failures, corrections and commands. Expanded byte/tag matrix and 49 CLI assertions remain evaluator self-reports; parent acceptance uses the fixed batch."
+    },
+    {
+      "writer": "r",
+      "criterion": "preservation-boundaries",
+      "verdict": "PASS",
+      "evidence": "Native R code retains original files and license, explicitly labels decoded-character reencoding, and preserves exact envelope hex alongside the analytical projection."
+    },
+    {
+      "writer": "r",
+      "criterion": "descriptor-and-missing-byte-policy",
+      "verdict": "PASS",
+      "evidence": "Haven-unavailable encoding/widths/informats stay null with explained gaps; tagged NA keys become canonical SAS markers, and CP1252 undefined bytes have an explicit fallback."
+    },
+    {
+      "writer": "r",
+      "criterion": "typed-date-time-and-events",
+      "verdict": "PASS",
+      "evidence": "Source origin is restored from Haven date classes for archive, while analysis uses declared Arrow types and no source timezone. Empty/all-missing fields and per-cell events are explicit."
+    },
+    {
+      "writer": "r",
+      "criterion": "association-and-licensing",
+      "verdict": "PASS",
+      "evidence": "Native R reopens complete typed tables and metadata from external source; hashes bind both projections, retained source and optional catalog, with the original LICENSE copied."
+    },
+    {
+      "writer": "r",
+      "criterion": "execution-and-history",
+      "verdict": "PASS",
+      "evidence": "Commands, parse/destination/type/API-name and checker failures are preserved with repairs. The report explains version-doc retrieval limits and shared ReadStat ancestry. Expanded mutation/interop tests remain self-reports."
+    }
+  ],
+  "reviewed_hashes": {
+    "candidates/python/convert.py": "e3b01e1014f0f7e804934a49a03e3a704dc60e9ee5eb0dc7f467fd47db9e5eb2",
+    "candidates/python/history.md": "81b349b52439806c76a85f06833fc91fd9f8b92e97697d4b9ed649762d4fd417",
+    "candidates/python/report.md": "f8c584de2d97d9fbc9e402501144eaba4c55646cd043b42504951776094dd6eb",
+    "candidates/r/convert.R": "c809a68efbb926b7d7e16938147ef76b6b18730877ab6d14861b278b9e77c697",
+    "candidates/r/history.md": "ca364f5b5bdd8575fceb964ae2f629a80e06caf30cda840aaafea792865ebb0a",
+    "candidates/r/report.md": "77ebc81102baf02e952be9b55eea8ae74e77296ace994d59f4ef0bb113fcea01"
+  }
+}

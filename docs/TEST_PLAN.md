@@ -107,3 +107,32 @@ The width companion is now exercised in base R under the narrow ASCII contract.
 The wider metadata contract, Parquet round trips, live-SAS capture and the
 with/without skill repeatability study remain unrun. Numeric overflow/recovery is
 a candidate additional vector inferred from the evaluator's recorded failure.
+
+## Accepted dual-path interchange, 2026-11-02
+
+The principal selected both faithful archival preservation and convenient
+analytical use. The [dual-path contract](../trials/parquet-dual-path/CONTRACT.md)
+records the resulting implementation choices. Original bytes accompany an archival
+Parquet projection; the analytical table uses declared text, date/time and null
+mappings, with a per-cell event log and preserved source descriptors.
+
+The frozen batch has five synthetic envelope cases plus three invocations over
+two licensed, pinned upstream SAS files, including a catalog-present/absent pair.
+Two fresh evaluations implement Python and native R. Complete-file checks use
+both parent consumers. Their shared ReadStat reader ancestry is explicit; this
+does not establish an independent live-SAS oracle. Expected values and adapters
+were frozen before dispatch, including old dates and empty typed schemas.
+
+[Recorded results](../trials/parquet-dual-path/README.md): all 56 parent checks
+and ten artifact criteria passed. Sixteen conversions include 32 full Python/R
+consumer comparisons; another 16 checks validate outputs from external source,
+16 reject corruptions and eight reject invalid envelopes. All nine first-delivery
+files are unchanged. The original parent informat expectation was corrected with
+a separately recorded reader observation; its original verifier remains preserved
+and hash-checked. Raw values and the pre-dispatch packet contract did not change.
+
+This establishes the selected archival/analytical profile for these fixtures.
+Broader metadata/format coverage, precision edges, streaming, live SAS and the
+with/without repeatability study remain open. The actual advisory MCP landed in
+concurrent reference-home work; execution/conversion integration is a separate
+boundary from that read-only knowledge service.
