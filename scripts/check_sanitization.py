@@ -51,7 +51,7 @@ ESTATE = [
 
 PERSONA = [
     r"\bsaschi\b", r"\bspeedstars\b", r"\bbuntas\b", r"hachi", r"ae86",
-    r"redrum", r"inertia-drift", r"\broku\b", r"initial d", r"fujiwara",
+    r"redrum", r"inertia-drift", r"\broku\b", r"initial d\b", r"fujiwara",
 ]
 
 DESK_FORBIDDEN = ESTATE + PERSONA + [r"\bseats?\b"]
