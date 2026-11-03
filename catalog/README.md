@@ -5,7 +5,7 @@ Status: Discovery catalog for maintainer use; reference inspection is not runtim
 Generated from [resources.json](resources.json). Edit that file, then run
 `python3 scripts/check_toolkit.py --write-index` from the repository root.
 
-47 resources. Source/lookup review date: 2026-11-02.
+55 resources. Source/lookup review date: 2026-11-02.
 
 September census counts describe the original testbed, not today's upstream.
 GitHub license identifiers are dated API observations, not per-file rights
@@ -15,7 +15,10 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 
 | Resource | Use | Evidence |
 |---|---|---|
+| [ceyson/sas-parser](https://github.com/ceyson/sas-parser) | Best-effort static SAS inventory producing dependency, input/output, macro, lineage and review-risk records without executing SAS. | source-inspected; [source](https://github.com/ceyson/sas-parser/blob/da51082a01580078d5ca09fb219e540b123cdd3b/README.md); license ID: unknown |
+| [Dronakurl/sas_datalin_helper](https://github.com/Dronakurl/sas_datalin_helper) | SAS field-usage probe that reruns a target program on copied inputs with one field removed and inspects resulting log messages. | source-inspected; [source](https://github.com/Dronakurl/sas_datalin_helper/blob/11566bef6ba88e5cd11a2aa08e549cca2d879589/README.md); license ID: MIT |
 | [mishamsk/sas-lexer](https://github.com/mishamsk/sas-lexer) | Static SAS lexer with a Rust core and Python bindings; useful for source inventories with documented contextual limitations. | source-inspected; [source](https://github.com/mishamsk/sas-lexer/blob/7cd39aba21776f4ebbaa2689707e0c45f6097dce/README.md); license ID: AGPL-3.0 |
+| [sasjs/cli](https://github.com/sasjs/cli) | SAS project build and deployment CLI with configured dependency loading, log checks, documentation and testing commands. | source-inspected; [source](https://github.com/sasjs/cli/blob/4e925cc270cb6f2e18e9a35dac3114d72f3875a9/README.md); license ID: MIT |
 | [sassoftware/vscode-sas-extension](https://github.com/sassoftware/vscode-sas-extension) | Official SAS editor extension with syntax help, completion, content navigation and multi-language notebooks. | source-inspected; [source](https://github.com/sassoftware/vscode-sas-extension/blob/c3312ee076e84bbc749983cccbd4836cbcb3f412/README.md); license ID: Apache-2.0 |
 
 ## comparison
@@ -23,6 +26,8 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [PSIAIMS/CAMIS](https://github.com/PSIAIMS/CAMIS) | Cross-software statistical comparison reference identified in Garage research. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+| [capitalone/datacompy](https://github.com/capitalone/datacompy) | Python dataframe comparison library with pandas, Polars, Spark and Snowpark interfaces, reports and configurable tolerances. | source-inspected; [source](https://github.com/capitalone/datacompy/blob/5a7a1eac257c2efdfa9a6f162647233c4ee7de9f/README.md); license ID: Apache-2.0 |
+| [gowerc/diffdf](https://github.com/gowerc/diffdf) | R data-frame comparator with keyed matching, attribute and class checks, configurable coercion and numeric tolerances. | source-inspected; [source](https://github.com/gowerc/diffdf/blob/ca1b5331ec567d3450660251f21853937b2436dc/README.md); license ID: NOASSERTION |
 | [ceyson/polars_proc_compare](https://github.com/ceyson/polars_proc_compare) | Polars implementation of SAS PROC COMPARE-style structural and value reports, including missing-value comparisons. | source-inspected; [source](https://github.com/ceyson/polars_proc_compare/blob/1f72b6150ddb2389541f2ee16ef7bd2a767292c8/README.md); license ID: MIT |
 | [kulbshar/proccompy](https://github.com/kulbshar/proccompy) | Python dataframe comparator modeled on SAS PROC COMPARE, with per-column tolerances and SAS-style text listings. | source-inspected; [source](https://github.com/kulbshar/proccompy/blob/d56c006daeeffa379e391505914f3d8545837375/README.md); license ID: Apache-2.0 |
 
@@ -99,6 +104,8 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [Bayer-Group/sas2r](https://github.com/Bayer-Group/sas2r) | Clinical R programming recipe knowledge hub aimed at SAS users; not a direct SAS source-code converter. | source-inspected; [source](https://github.com/Bayer-Group/sas2r/blob/4f40c303584bc6ac366081529e53f492d3b28554/README.md); license ID: MIT |
+| [RConsortium/submissions-pilot1](https://github.com/RConsortium/submissions-pilot1) | Historical package-based R clinical analysis and reporting pilot with environment restoration instructions and SAS-related statistical modeling notes. | source-inspected; [source](https://github.com/RConsortium/submissions-pilot1/blob/ba1d3e7af60e281def02df11c76c64f8352526f4/README.md); license ID: GPL-3.0 |
+| [dbosak01/sassy](https://github.com/dbosak01/sassy) | R meta-package assembling SAS-familiar data steps, libraries, formats, logging and reporting for workflow adaptation. | source-inspected; [source](https://github.com/dbosak01/sassy/blob/2a0cc84e4087b32d47259abdb528d4c6aef72a89/README.md); license ID: CC0-1.0 |
 
 ## translation
 
@@ -107,6 +114,7 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | [CSOIreland/Code-Transcompiler-using-LLMs-public](https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public) | Statistical-agency LLM translation framework; README documents CSO use for SAS-to-R and configurable review iterations. | source-inspected; [source](https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public/blob/7c0ca2f605aab2e76346d33b286d9dd40ba8d749/README.md); license ID: MIT |
 | [bparbhu/sas_migrator.py](https://github.com/bparbhu/sas_migrator.py) | SAS-to-Python migration project documenting dependency analysis, pandas output and Spark-target generation. | source-inspected; [source](https://github.com/bparbhu/sas_migrator.py/blob/0637c216c19410eb3e0f6fcbf38b20ecf8655304/README.md); license ID: unknown |
 | [navintkr/sas2databricks](https://github.com/navintkr/sas2databricks) | SAS-to-Databricks project describing rule-based and LLM-assisted generation of PySpark, Spark SQL and deployment artifacts. | source-inspected; [source](https://github.com/navintkr/sas2databricks/blob/392d3a34c1390f6335fb47e165a4f4f3ac03111c/README.md); license ID: MIT |
+| [songyue-chen/sas2r](https://github.com/songyue-chen/sas2r) | R package for rule-based and optional model-assisted SAS-to-R translation, generated-code execution and supplied-reference comparisons. | source-inspected; [source](https://github.com/songyue-chen/sas2r/blob/7bec159a0a0c6820b097e0dbb790f9bc672a6b5c/README.md); license ID: Apache-2.0 |
 
 ## Reading the record
 
