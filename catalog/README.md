@@ -5,7 +5,7 @@ Status: Discovery catalog for maintainer use; reference inspection is not runtim
 Generated from [resources.json](resources.json). Edit that file, then run
 `python3 scripts/check_toolkit.py --write-index` from the repository root.
 
-39 resources. Source/lookup review date: 2026-11-02.
+47 resources. Source/lookup review date: 2026-11-02.
 
 September census counts describe the original testbed, not today's upstream.
 GitHub license identifiers are dated API observations, not per-file rights
@@ -16,6 +16,7 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [mishamsk/sas-lexer](https://github.com/mishamsk/sas-lexer) | Static SAS lexer with a Rust core and Python bindings; useful for source inventories with documented contextual limitations. | source-inspected; [source](https://github.com/mishamsk/sas-lexer/blob/7cd39aba21776f4ebbaa2689707e0c45f6097dce/README.md); license ID: AGPL-3.0 |
+| [sassoftware/vscode-sas-extension](https://github.com/sassoftware/vscode-sas-extension) | Official SAS editor extension with syntax help, completion, content navigation and multi-language notebooks. | source-inspected; [source](https://github.com/sassoftware/vscode-sas-extension/blob/c3312ee076e84bbc749983cccbd4836cbcb3f412/README.md); license ID: Apache-2.0 |
 
 ## comparison
 
@@ -43,7 +44,9 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [apache/parquet-format](https://github.com/apache/parquet-format) | Apache Parquet storage-format specification, identified in the gathered sas-ref vendor shelf. | source-inspected; [source](https://github.com/sas-ref/blob/9760721edf0c7fccae15b41a331a8cae904ec0e5/vendor/README.md); license ID: Apache-2.0 |
+| [lexjansen/dataset-json-sas](https://github.com/lexjansen/dataset-json-sas) | SAS implementation for converting datasets to and from CDISC Dataset-JSON with metadata, comparison and validation examples. | source-inspected; [source](https://github.com/lexjansen/dataset-json-sas/blob/3e38d991a787e2e6df129be74e09a38766c8d6ae/README.md); license ID: MIT |
 | [scarnecchia/sas2parquet](https://github.com/scarnecchia/sas2parquet) | R batch conversion project for SAS7BDAT to zstd-compressed Parquet using DuckDB read_stat and Arrow. | source-inspected; [source](https://github.com/scarnecchia/sas2parquet/blob/1b103d348e5f32a9c3bfb06a9680fe97c4838f01/README.md); license ID: unknown |
+| [FredHutch/sas7bdat](https://github.com/FredHutch/sas7bdat) | Java SAS7BDAT exporter with descriptor, label, format and ordinary missing-value examples. | source-inspected; [source](https://github.com/FredHutch/sas7bdat/blob/7b28fd3b3da8c161f3c6f8d110f33933aa76a7d0/README.md); license ID: MIT |
 
 ## interop
 
@@ -51,9 +54,12 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 |---|---|---|
 | [dylanmeysmans/duckdb-read-stat](https://github.com/dylanmeysmans/duckdb-read-stat) | DuckDB ReadStat community extension; README shows reads of SAS7BDAT and XPT files via read_stat. | source-inspected; [source](https://github.com/dylanmeysmans/duckdb-read-stat/blob/029c59b8514402dc4270dd6d9d3c9da9037a95fc/README.md); license ID: MIT |
 | [tidyverse/haven](https://github.com/tidyverse/haven) | R statistical-file interchange, including SAS readers and metadata representations. | source-inspected; [source](https://github.com/buntas-tofu/SASchi-Garage/blob/8c78212041ac65478d93bb1f394edaa48d53025f/research/SOURCES_20260915.json) |
+| [epam/parso](https://github.com/epam/parso) | Java SAS7BDAT reader with stream and row APIs plus data and metadata export to CSV. | source-inspected; [source](https://github.com/epam/parso/blob/3c514e66264f5f3d5b2970bc2509d749065630c0/README.md); license ID: Apache-2.0 |
 | [alipatti/polars_io](https://github.com/alipatti/polars_io) | Lazy Polars SAS7BDAT/XPT reader using pyreadstat with documented predicate and projection pushdown. | source-inspected; [source](https://github.com/alipatti/polars_io/blob/83e7486ba563210aee4666229a3af916f000b277/README.md); license ID: unknown |
 | [Roche/pyreadstat](https://github.com/Roche/pyreadstat) | Python ReadStat wrapper reading SAS datasets and catalogs into pandas or Polars frames with metadata support. | source-inspected; [source](https://github.com/Roche/pyreadstat/blob/e6e23bc0021875f35fccc3c2707c3e5151c130bb/README.md); license ID: NOASSERTION |
+| [WizardMac/ReadStat](https://github.com/WizardMac/ReadStat) | C statistical-file library and CLI documenting SAS data/catalog readers and dataset writers. | source-inspected; [source](https://github.com/WizardMac/ReadStat/blob/79816b65f717803ceab84d93b990f7ea3e038a40/README.md); license ID: MIT |
 | [junyuan-chen/ReadStatTables.jl](https://github.com/junyuan-chen/ReadStatTables.jl) | Julia Tables.jl interface using ReadStat to read SAS7BDAT/XPT, with metadata, labels and date handling. | source-inspected; [source](https://github.com/junyuan-chen/ReadStatTables.jl/blob/9c07e788241d44be667b9690f593491827bf2a25/README.md); license ID: MIT |
+| [sassoftware/saspy](https://github.com/sassoftware/saspy) | Python interface to a running SAS deployment for mixed workflows, SAS execution and pandas data exchange. | source-inspected; [source](https://github.com/sassoftware/saspy/blob/ab3c55f0b6366418f5c63ab5c0d81e1c1bca51d3/README.md); license ID: NOASSERTION |
 
 ## sas-testbed
 
@@ -99,6 +105,8 @@ reviews. Unknown identifiers and upstream origins remain explicit.
 | Resource | Use | Evidence |
 |---|---|---|
 | [CSOIreland/Code-Transcompiler-using-LLMs-public](https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public) | Statistical-agency LLM translation framework; README documents CSO use for SAS-to-R and configurable review iterations. | source-inspected; [source](https://github.com/CSOIreland/Code-Transcompiler-using-LLMs-public/blob/7c0ca2f605aab2e76346d33b286d9dd40ba8d749/README.md); license ID: MIT |
+| [bparbhu/sas_migrator.py](https://github.com/bparbhu/sas_migrator.py) | SAS-to-Python migration project documenting dependency analysis, pandas output and Spark-target generation. | source-inspected; [source](https://github.com/bparbhu/sas_migrator.py/blob/0637c216c19410eb3e0f6fcbf38b20ecf8655304/README.md); license ID: unknown |
+| [navintkr/sas2databricks](https://github.com/navintkr/sas2databricks) | SAS-to-Databricks project describing rule-based and LLM-assisted generation of PySpark, Spark SQL and deployment artifacts. | source-inspected; [source](https://github.com/navintkr/sas2databricks/blob/392d3a34c1390f6335fb47e165a4f4f3ac03111c/README.md); license ID: MIT |
 
 ## Reading the record
 

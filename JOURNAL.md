@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the Parquet trial and separate repair below. This
+2026-11-02. The latest checkpoint is public discovery batch 02 below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -410,3 +410,38 @@ Retained all metadata-trial freeze and first-delivery hashes. Shared README,
 test-plan and journal sections now describe both boundaries. PR 8 is retargeted
 to PR 7 so its review diff contains the supplemental work only. PR 7's branch,
 PR 5 and main were not changed by this reconciliation. No new experiment began.
+
+## Public discovery batch 02, 2026-11-02
+
+Status: public source-discovery augmentation prepared for maintainer review,
+not an execution result or a redistribution grant. The principal asked to resume
+hunting after PRs 5, 7 and 8 were observed merged. Started from main at
+`8066a384ab6535a0a7eed0d4626a6a3b7f85e264` with a clean checkout and no open PRs.
+
+Added eight previously uncataloged repositories to the existing catalog source:
+ReadStat, Parso, FredHutch's SAS7BDAT writer, SASPy, the official SAS VS Code
+extension, a dependency-aware Python migration project, a Databricks-target
+project, and the Dataset-JSON SAS implementation. The catalog now has 47 records
+and 46 distinct non-null URLs. All 39 prior records, their IDs, historical census
+measurements and unresolved origin remain unchanged. The index was regenerated
+with the existing generator rather than edited independently.
+
+Each addition pins the inspected README commit and records the API license
+identifier, default branch and archive state. Evidence is README-section
+inspection only. No candidate tool was installed, executed or endorsed, and no
+upstream source, dataset or license file was copied into the repository.
+
+Important distinctions remain in the records: SASPy and editor execution require
+an existing SAS deployment; ReadStat's development README says its SAS7BDAT writer
+has not been verified in SAS; the Java exporter has a narrow format/encoding
+profile; translation coverage and validation claims remain upstream assertions.
+SASPy's API NOASSERTION and the Python migrator's null license identifier remain
+unresolved observations. Dataset-JSON's mixed license notice and documentation
+lag are explicit. The similarly named Python migrator does not establish the
+origin of the older collected migration scaffold.
+
+The discovery branch changes only the catalog source, generated index and this
+handoff. Existing toolkit, linter, sanitization, corpus and manifest checks pass;
+hosted CI must be read from the resulting PR revision. Future runtime trials are
+separate decisions. The source acquisition hunt remains distinct from the merged
+Parquet evaluations and the still-proposed repeatability/MCP studies.
