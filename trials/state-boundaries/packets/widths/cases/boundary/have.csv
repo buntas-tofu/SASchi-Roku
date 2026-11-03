@@ -1,0 +1,4 @@
+row_id,raw,suffix,flag
+b1,AB    ,  ,0
+b2,ABC   ,12,1
+b3,ABCD  ,34,0

@@ -81,3 +81,29 @@ The instructions remain unchanged. Parent acceptance stays with the six supplied
 cases and declared interfaces. Agent-expanded self-tests are retained separately.
 BY boundaries, merge keys, R metadata consumption, Parquet and live-SAS capture
 remain open work.
+
+## Accepted group, merge and width batch, 2026-11-02
+
+The principal accepted the next immediate batch: group boundaries, merge behavior
+and character-width propagation. The [frozen contract](../trials/state-boundaries/CONTRACT.md)
+defines 16 cases across three fresh evaluations using existing skills. The parent
+oracle and adapters were frozen before dispatch. Each evaluation supplies both
+Python and R, so targets are paired rather than independently generated.
+
+The planned checks cover nested FIRST/LAST flags and queue state, duplicate and
+ordinary-missing merge keys with shared columns, and fixed widths through two
+DATA steps into reopened CSV plus a width companion. Exact printable-ASCII scope
+does not close the earlier NUL gap or establish general metadata interchange.
+Parquet, broader repeatability and MCP remain separate phases.
+
+[Recorded results](../trials/state-boundaries/README.md): all 89 parent checks
+and 12 artifact criteria passed against unchanged first deliveries under Python
+3.12.3 and native R 4.3.3. The 89 comprise 64 case/target/interface comparisons,
+12 unsorted-input refusals, one reproduced original failure and 12 rejected wrong
+outputs. No skill instruction changed. Expanded evaluator self-tests, including
+a reported overflow failure and repair, remain separate from parent acceptance.
+
+The width companion is now exercised in base R under the narrow ASCII contract.
+The wider metadata contract, Parquet round trips, live-SAS capture and the
+with/without skill repeatability study remain unrun. Numeric overflow/recovery is
+a candidate additional vector inferred from the evaluator's recorded failure.

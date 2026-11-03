@@ -1,0 +1,24 @@
+{
+  "status": "All 18 regular first-delivery files archived byte-for-byte; no exclusions, symlinks or parent edits",
+  "recorded_at_utc": "2026-11-02T06:53:10.733931+00:00",
+  "hashes": {
+    "candidates/groups/converted.R": "c781a218575cf41975e8f7e79d8a60c5d47872f92f5d3c2abdd7f76dc83927da",
+    "candidates/groups/converted.py": "e756fba70b732bde12c8fb786c03ebde8a931c6b941a385aa1d732194b7410e4",
+    "candidates/groups/history.md": "ca025503fada68168fbe39186635f982a84bc0f874675e6439c36d28c3ae215e",
+    "candidates/groups/report.md": "d43267149e74cba2a60beb045120e253aa469b4dfac7de119d25e747f523e708",
+    "candidates/groups/selftest.R": "15b87fbf979d2788cd73f4b803345562fefe210455bc5e86559008ba1962b9e5",
+    "candidates/groups/selftest.py": "9fce7b25607f99505953fdc3fb57324039d84183dbf27f7679566b56f11bbef0",
+    "candidates/merge/converted.R": "730665e2ef6d0b88a978214d2e0c225ea9058e7881cea01307eabd31bc07fe4c",
+    "candidates/merge/converted.py": "9beb2d98b0c32a459a5a2506d97cd197d41dd11e6a47b0356f338263fc91e597",
+    "candidates/merge/history.md": "9e1bd36204296e8aa2e3e948c68b6ccb17433c691d4d400e6d5e241bf059fded",
+    "candidates/merge/report.md": "1a49094e835d7c254b32f80b0a7f110c22207bb7339670bf3644b762465f1695",
+    "candidates/merge/selftest.R": "56e03fb6cac6752d59715747c29c084fe83bb71d1c10b26208a9d8c67ea0a14b",
+    "candidates/merge/selftest.py": "3bfad7b63d04e301ee24729b4618e3db7d44e72afd5283d296b378dd9e958be3",
+    "candidates/widths/converted.R": "a65a2d287fa409229943ae63492ebd650dcc1dcfb42bd97f2af3596d19753581",
+    "candidates/widths/converted.py": "37144f568a20a7aad8ee12edb0c320188088cb701f549ca168afda175ea2520c",
+    "candidates/widths/history.md": "c029728042100751a4ae08a84dc16d280829977b326f6d21fd5629b18a7a086a",
+    "candidates/widths/report.md": "6e0115c42db92daf883255c19a1fbcc87bf7e1ca2745eb402b6709303d72f48d",
+    "candidates/widths/selftest.R": "797f9a0f53cc48ca9658aa1e0ec6bdace4e7182f58748925dae5caf189d859dd",
+    "candidates/widths/selftest.py": "09d56e6bf2713aae85d4f3ea1567f1be7761d90ac1c8d37c5d751e31c5673a7a"
+  }
+}

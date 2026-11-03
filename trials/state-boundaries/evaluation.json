@@ -1,0 +1,41 @@
+{
+  "status": "Evaluation setup record; directory/instruction isolation, not OS isolation",
+  "recorded_at_utc": "2026-11-02T06:50:57.179215+00:00",
+  "parent_base_commit": "27025665bb89e0b67c3f5f6fcf0f6113b9c54e10",
+  "fork_turns": "none",
+  "model_override": null,
+  "model_revision": null,
+  "sampling_parameters": null,
+  "evaluators": [
+    {
+      "task": "groups",
+      "agent": "/root/boundaries_groups",
+      "workspace": "/tmp/roku-state-boundaries-9ku9xsi3/groups",
+      "request": "packets/groups/request.txt",
+      "output": "candidates/groups",
+      "scope": "Read own packet and primary public SAS documentation; Python standard library and base R; no parent/sibling answers, installations, git, external writes or further delegation"
+    },
+    {
+      "task": "merge",
+      "agent": "/root/boundaries_merge",
+      "workspace": "/tmp/roku-state-boundaries-9ku9xsi3/merge",
+      "request": "packets/merge/request.txt",
+      "output": "candidates/merge",
+      "scope": "Read own packet and primary public SAS documentation; Python standard library and base R; no parent/sibling answers, installations, git, external writes or further delegation"
+    },
+    {
+      "task": "widths",
+      "agent": "/root/boundaries_widths",
+      "workspace": "/tmp/roku-state-boundaries-9ku9xsi3/widths",
+      "request": "packets/widths/request.txt",
+      "output": "candidates/widths",
+      "scope": "Read own packet and primary public SAS documentation; Python standard library and base R; no parent/sibling answers, installations, git, external writes or further delegation"
+    }
+  ],
+  "supplemental_tool": {
+    "path": "scripts/inertia-drift-lint",
+    "sha256": "af77a5c3749f36ec09da921220968f4f5e1a9553bfdc1085e02a1f377dcaf16d",
+    "delivery": "Copied unchanged into each isolated workspace after dispatch, outside the frozen packet. Agents were asked to lint output before first delivery and record the result. No semantic hint or expected output was supplied."
+  },
+  "artifact_policy": "Preserve all regular first-delivery files unchanged; separately record exclusions or literal symlink targets if any. Agent-authored history and self-test counts are self-reports until independently replayed."
+}

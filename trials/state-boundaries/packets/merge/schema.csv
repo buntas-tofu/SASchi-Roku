@@ -1,0 +1,17 @@
+side,table,column,type
+input,left,key,number
+input,left,left_seq,number
+input,left,a,number
+input,left,shared,number
+input,right,key,number
+input,right,right_seq,number
+input,right,b,number
+input,right,shared,number
+output,want,key,number
+output,want,left_seq,number
+output,want,right_seq,number
+output,want,a,number
+output,want,b,number
+output,want,shared,number
+output,want,from_left,number
+output,want,from_right,number
