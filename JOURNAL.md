@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is public discovery batch 02 below. This
+2026-11-02. The latest checkpoint is public discovery batch 03 below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -445,3 +445,54 @@ handoff. Existing toolkit, linter, sanitization, corpus and manifest checks pass
 hosted CI must be read from the resulting PR revision. Future runtime trials are
 separate decisions. The source acquisition hunt remains distinct from the merged
 Parquet evaluations and the still-proposed repeatability/MCP studies.
+
+## Public discovery batch 03, 2026-11-02
+
+Status: public source-discovery augmentation for maintainer review, not an
+execution result, migration acceptance or redistribution grant. The principal
+requested the next stage of data gathering, continuing the existing catalog.
+The principal reports PR 9 merged and its branch deleted. The connected GitHub
+view still returns that PR as open, and a direct branch lookup also shows its
+branch present and main at
+`8066a384ab6535a0a7eed0d4626a6a3b7f85e264`. This branch uses PR 9's inspected
+47-record head, `a87e03c393b398ce8f0c8bc03ac08b45208dd0e2`, preserving those
+additions without attempting to merge or modify PR 9. Treat the connected
+merge-state observation as potentially stale, not a reversal of the principal's
+reported merge. The new PR targets the still-visible batch 02 branch so its
+review diff remains eight additions; it can target main once the merge is
+visible in this repository view.
+
+Added eight previously uncataloged repositories: songyue-chen/sas2r, sassy,
+diffdf, DataComPy, ceyson/sas-parser, SASjs CLI, the R Consortium's first
+submission pilot, and sas_datalin_helper. The catalog now has 55 records and
+54 distinct non-null URLs. All 47 earlier records, their IDs, historical census
+observations and the unresolved collected origin remain unchanged. The existing
+generator rebuilt the index.
+
+Inference for curation: R translation/comparison, dependency inventory and
+reproducible reporting fill useful gaps alongside the prior reader and format
+coverage. This is a discovery judgment, not a comparative ranking of tools.
+Each new record pins its README and selected supporting files to one source
+commit, names the actual inspection scope and preserves the API license
+observation. No upstream code or dataset was copied, installed or executed.
+
+The distinctions are load-bearing: sassy supplies familiar R workflows rather
+than source translation; diffdf/DataComPy require explicit matching and tolerance
+policies; static inventory cannot prove runtime-generated dependencies. SASjs
+CLI's inspected wrapper delegates dependency loading to an uninspected utility
+implementation. The field-removal probe requires repeated native SAS runs and
+review of its scratch paths. The R pilot reuses already cataloged PHUSE inputs,
+so it is a new workflow reference rather than an independent dataset. Neither
+historical review links nor documented model settings establish equivalence or
+regulatory approval. diffdf's NOASSERTION/MIT metadata difference and the static
+parser's null license identifier remain unresolved observations.
+
+This branch changes only the catalog source, generated index and this handoff.
+Existing gates remain unchanged. The catalog check, all 15 regression tests,
+corpus index, manifest schema, synced-copy stamps, cached reference regeneration,
+sanitization and MCP self-test pass locally. The invariant linter reports zero
+errors and the same 27 warnings. Existing starter, proposal, state-timing,
+state-boundary and repaired metadata replays also pass; none executes these
+eight new upstream tools. The separate pinned dual-path Parquet environment is
+covered by hosted CI, whose outcome belongs to the resulting revision. Future
+execution trials remain separate work.

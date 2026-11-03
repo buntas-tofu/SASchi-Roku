@@ -1422,6 +1422,275 @@
         "default_branch": "master"
       },
       "historical_census": null
+    },
+    {
+      "id": "songyue-sas2r",
+      "name": "songyue-chen/sas2r",
+      "kind": "repository",
+      "category": "translation",
+      "url": "https://github.com/songyue-chen/sas2r",
+      "description": "R package for rule-based and optional model-assisted SAS-to-R translation, generated-code execution and supplied-reference comparisons.",
+      "tags": [
+        "sas",
+        "r",
+        "translation",
+        "dependency-analysis",
+        "reference-comparison"
+      ],
+      "locations": [
+        "https://github.com/songyue-chen/sas2r/blob/7bec159a0a0c6820b097e0dbb790f9bc672a6b5c/DESCRIPTION"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README sections on translation, execution, comparison, privacy and development status, plus DESCRIPTION, inspected. No upstream tool executed, SAS equivalence established or per-file rights audit performed.",
+        "source_url": "https://github.com/songyue-chen/sas2r/blob/7bec159a0a0c6820b097e0dbb790f9bc672a6b5c/README.md",
+        "source_revision": "7bec159a0a0c6820b097e0dbb790f9bc672a6b5c",
+        "notes": "Translation and generated R execution do not require SAS, but comparisons need matching supplied reference outputs. Automated review and repair do not replace independent statistical QC. The inspected README describes CRAN resubmission preparation and separates main from the fuller development test suite; no package acceptance or passing suite is asserted here."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sassy",
+      "name": "dbosak01/sassy",
+      "kind": "repository",
+      "category": "training",
+      "url": "https://github.com/dbosak01/sassy",
+      "description": "R meta-package assembling SAS-familiar data steps, libraries, formats, logging and reporting for workflow adaptation.",
+      "tags": [
+        "sas",
+        "r",
+        "data-step",
+        "formats",
+        "reporting",
+        "workflow"
+      ],
+      "locations": [
+        "https://github.com/dbosak01/sassy/blob/2a0cc84e4087b32d47259abdb528d4c6aef72a89/DESCRIPTION"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README and DESCRIPTION inspected for the package purpose, workflow components and stated differences from SAS. No upstream tool executed, SAS equivalence established or per-file rights audit performed.",
+        "source_url": "https://github.com/dbosak01/sassy/blob/2a0cc84e4087b32d47259abdb528d4c6aef72a89/README.md",
+        "source_revision": "2a0cc84e4087b32d47259abdb528d4c6aef72a89",
+        "notes": "This is a workflow toolkit rather than a SAS source translator. README explicitly distinguishes R's vector and in-memory behavior from SAS and says the systems are not identical. The CC0 identifier describes the inspected repository metadata, not a license audit of every package in the dependency stack."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "CC0-1.0",
+        "default_branch": "master"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "diffdf",
+      "name": "gowerc/diffdf",
+      "kind": "repository",
+      "category": "comparison",
+      "url": "https://github.com/gowerc/diffdf",
+      "description": "R data-frame comparator with keyed matching, attribute and class checks, configurable coercion and numeric tolerances.",
+      "tags": [
+        "r",
+        "data-frame",
+        "comparison",
+        "proc-compare",
+        "tolerance",
+        "validation"
+      ],
+      "locations": [
+        "https://github.com/gowerc/diffdf/blob/ca1b5331ec567d3450660251f21853937b2436dc/DESCRIPTION",
+        "https://github.com/gowerc/diffdf/blob/ca1b5331ec567d3450660251f21853937b2436dc/R/diffdf.R"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README, DESCRIPTION and R/diffdf.R lines 1-95 inspected for documented comparison controls. No upstream tool executed, SAS PROC COMPARE equivalence established or per-file rights audit performed.",
+        "source_url": "https://github.com/gowerc/diffdf/blob/ca1b5331ec567d3450660251f21853937b2436dc/README.md",
+        "source_revision": "ca1b5331ec567d3450660251f21853937b2436dc",
+        "notes": "The API documentation requires keys to identify unique rows and distinguishes strict numeric/factor handling, key columns and tolerance controls. A migration must choose and test those policies against its own references. GitHub reports NOASSERTION while DESCRIPTION says MIT plus a LICENSE file; both observations remain visible without resolving per-file rights."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "NOASSERTION",
+        "default_branch": "master"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "datacompy",
+      "name": "capitalone/datacompy",
+      "kind": "repository",
+      "category": "comparison",
+      "url": "https://github.com/capitalone/datacompy",
+      "description": "Python dataframe comparison library with pandas, Polars, Spark and Snowpark interfaces, reports and configurable tolerances.",
+      "tags": [
+        "python",
+        "pandas",
+        "polars",
+        "spark",
+        "comparison",
+        "proc-compare",
+        "tolerance"
+      ],
+      "locations": [
+        "https://github.com/capitalone/datacompy/blob/5a7a1eac257c2efdfa9a6f162647233c4ee7de9f/docs/source/pandas_usage.rst",
+        "https://github.com/capitalone/datacompy/blob/5a7a1eac257c2efdfa9a6f162647233c4ee7de9f/pyproject.toml"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README, pandas_usage.rst lines 1-100 and pyproject.toml lines 1-110 inspected for supported interfaces, comparison setup and package requirements. No upstream tool executed, SAS PROC COMPARE equivalence established or per-file rights audit performed.",
+        "source_url": "https://github.com/capitalone/datacompy/blob/5a7a1eac257c2efdfa9a6f162647233c4ee7de9f/README.md",
+        "source_revision": "5a7a1eac257c2efdfa9a6f162647233c4ee7de9f",
+        "notes": "The pandas example documents join columns or index matching and absolute/relative tolerances. README distinguishes current main from the legacy 0.19 line and describes CLI match/difference/error exits. Backend parity, duplicate-key behavior and SAS-specific missing-value semantics remain untested here; a readable comparison report is not itself migration acceptance."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "ceyson-sas-parser",
+      "name": "ceyson/sas-parser",
+      "kind": "repository",
+      "category": "analysis",
+      "url": "https://github.com/ceyson/sas-parser",
+      "description": "Best-effort static SAS inventory producing dependency, input/output, macro, lineage and review-risk records without executing SAS.",
+      "tags": [
+        "sas",
+        "python",
+        "static-analysis",
+        "inventory",
+        "lineage",
+        "macros"
+      ],
+      "locations": [
+        "https://github.com/ceyson/sas-parser/blob/da51082a01580078d5ca09fb219e540b123cdd3b/pyproject.toml",
+        "https://github.com/ceyson/sas-parser/blob/da51082a01580078d5ca09fb219e540b123cdd3b/docs/LIMITATIONS.md"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README sections, pyproject.toml and docs/LIMITATIONS.md inspected for the inventory interface and explicit analysis limits. No upstream tool executed, dependency completeness established or per-file rights audit performed.",
+        "source_url": "https://github.com/ceyson/sas-parser/blob/da51082a01580078d5ca09fb219e540b123cdd3b/README.md",
+        "source_revision": "da51082a01580078d5ca09fb219e540b123cdd3b",
+        "notes": "Limitations exclude macro execution and runtime-generated code, describe partial macro-variable resolution and ambiguous basename include matching, and qualify lineage as dataflow-shaped rather than proven. Treat outputs as review leads requiring native capture, not a complete execution graph. GitHub's null license identifier leaves rights unresolved."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sasjs-cli",
+      "name": "sasjs/cli",
+      "kind": "repository",
+      "category": "analysis",
+      "url": "https://github.com/sasjs/cli",
+      "description": "SAS project build and deployment CLI with configured dependency loading, log checks, documentation and testing commands.",
+      "tags": [
+        "sas",
+        "cli",
+        "dependency-analysis",
+        "build",
+        "log-checks",
+        "testing"
+      ],
+      "locations": [
+        "https://github.com/sasjs/cli/blob/4e925cc270cb6f2e18e9a35dac3114d72f3875a9/package.json",
+        "https://github.com/sasjs/cli/blob/4e925cc270cb6f2e18e9a35dac3114d72f3875a9/src/commands/compile/internal/loadDependencies.ts"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README feature/documentation sections, package.json metadata and loadDependencies.ts inspected. No upstream tool executed, dependency completeness established or per-file rights audit performed.",
+        "source_url": "https://github.com/sasjs/cli/blob/4e925cc270cb6f2e18e9a35dac3114d72f3875a9/README.md",
+        "source_revision": "4e925cc270cb6f2e18e9a35dac3114d72f3875a9",
+        "notes": "The inspected wrapper passes configured macro/program folders and compile-tree context to a dependency loader in a separate utility package; that loader's implementation was not inspected. This is build tooling, not an independent SAS interpreter or proof of dynamic lineage. Remote execution/deployment needs a configured SAS target. The already cataloged sasjs/core is a separate macro resource, not another independent validation result."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "rconsortium-submissions-pilot1",
+      "name": "RConsortium/submissions-pilot1",
+      "kind": "repository",
+      "category": "training",
+      "url": "https://github.com/RConsortium/submissions-pilot1",
+      "description": "Historical package-based R clinical analysis and reporting pilot with environment restoration instructions and SAS-related statistical modeling notes.",
+      "tags": [
+        "r",
+        "clinical",
+        "reproducibility",
+        "reporting",
+        "ancova",
+        "reference-workflow"
+      ],
+      "locations": [
+        "https://github.com/RConsortium/submissions-pilot1/blob/ba1d3e7af60e281def02df11c76c64f8352526f4/DESCRIPTION",
+        "https://github.com/RConsortium/submissions-pilot1/blob/ba1d3e7af60e281def02df11c76c64f8352526f4/R/eff_models.R"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README, DESCRIPTION and R/eff_models.R inspected for workflow structure, environment instructions and model settings. No environment restored, statistical comparison executed, regulatory conclusion drawn or per-file rights audit performed.",
+        "source_url": "https://github.com/RConsortium/submissions-pilot1/blob/ba1d3e7af60e281def02df11c76c64f8352526f4/README.md",
+        "source_revision": "ba1d3e7af60e281def02df11c76c64f8352526f4",
+        "notes": "README records an older Ubuntu/R environment and a 2021 package snapshot; current restoration was not tested. The ANCOVA source makes contrast and least-squares-mean weighting choices explicit, including a SAS PROC GLM option reference. The ADaM input source is the already cataloged PHUSE scripts project, not a new independent dataset. Historical submission/review links do not establish general regulatory approval or equivalence."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "GPL-3.0",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sas-datalin-helper",
+      "name": "Dronakurl/sas_datalin_helper",
+      "kind": "repository",
+      "category": "analysis",
+      "url": "https://github.com/Dronakurl/sas_datalin_helper",
+      "description": "SAS field-usage probe that reruns a target program on copied inputs with one field removed and inspects resulting log messages.",
+      "tags": [
+        "sas",
+        "macros",
+        "lineage",
+        "field-usage",
+        "runtime-required",
+        "log-analysis"
+      ],
+      "locations": [
+        "https://github.com/Dronakurl/sas_datalin_helper/blob/11566bef6ba88e5cd11a2aa08e549cca2d879589/checkomat.sas"
+      ],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned README and checkomat.sas inspected for the perturbation method, scratch paths and stated operating limits. No SAS program executed, lineage completeness established or per-file rights audit performed.",
+        "source_url": "https://github.com/Dronakurl/sas_datalin_helper/blob/11566bef6ba88e5cd11a2aa08e549cca2d879589/README.md",
+        "source_revision": "11566bef6ba88e5cd11a2aa08e549cca2d879589",
+        "notes": "Requires a SAS runtime and repeated target-script execution; this is not static parsing. README limits inputs to one directory, warns that log settings can break inference, and notes the cost of full table copies. Source contains fixed scratch-library and log paths requiring review before use. Errors or uninitialized-variable messages are usage signals, not proof that all dependencies or runtime paths were exercised."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
     }
   ]
 }
