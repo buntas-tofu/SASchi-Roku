@@ -1,0 +1,29 @@
+{
+  "status": "independent parent comparison of six archived delivered bundles, separate from 68 replay checks",
+  "checks": [
+    {
+      "case": "all-missing",
+      "verdict": "PASS"
+    },
+    {
+      "case": "all-tags",
+      "verdict": "PASS"
+    },
+    {
+      "case": "controls",
+      "verdict": "PASS"
+    },
+    {
+      "case": "empty",
+      "verdict": "PASS"
+    },
+    {
+      "case": "latin1",
+      "verdict": "PASS"
+    },
+    {
+      "case": "main",
+      "verdict": "PASS"
+    }
+  ]
+}

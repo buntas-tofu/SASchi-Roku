@@ -1,0 +1,739 @@
+{
+  "source_format": "decoded-synthetic-v1",
+  "encoding": "utf-8",
+  "columns": [
+    {
+      "name": "id",
+      "source_type": "char",
+      "byte_width": 4,
+      "label": "Record identifier",
+      "format": "$CHAR4.",
+      "informat": "$CHAR4.",
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "text",
+      "source_type": "char",
+      "byte_width": 8,
+      "label": "Exact text bytes",
+      "format": "$CHAR8.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "value",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Measured value",
+      "format": "BEST12.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "date",
+      "source_type": "date",
+      "byte_width": null,
+      "label": "Observation date",
+      "format": "DATE9.",
+      "informat": null,
+      "units": "days",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Unzoned timestamp",
+      "format": "DATETIME20.",
+      "informat": null,
+      "units": "seconds",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "all_missing",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "",
+      "format": null,
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "status",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Response",
+      "format": "RESP.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": {
+        "1": "Yes",
+        "2": "No"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": "."
+      },
+      {
+        "missing": "."
+      },
+      {
+        "missing": "."
+      },
+      {
+        "missing": "."
+      },
+      {
+        "missing": "."
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": "._"
+      },
+      {
+        "missing": "._"
+      },
+      {
+        "missing": "._"
+      },
+      {
+        "missing": "._"
+      },
+      {
+        "missing": "._"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".A"
+      },
+      {
+        "missing": ".A"
+      },
+      {
+        "missing": ".A"
+      },
+      {
+        "missing": ".A"
+      },
+      {
+        "missing": ".A"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".B"
+      },
+      {
+        "missing": ".B"
+      },
+      {
+        "missing": ".B"
+      },
+      {
+        "missing": ".B"
+      },
+      {
+        "missing": ".B"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".C"
+      },
+      {
+        "missing": ".C"
+      },
+      {
+        "missing": ".C"
+      },
+      {
+        "missing": ".C"
+      },
+      {
+        "missing": ".C"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".D"
+      },
+      {
+        "missing": ".D"
+      },
+      {
+        "missing": ".D"
+      },
+      {
+        "missing": ".D"
+      },
+      {
+        "missing": ".D"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".E"
+      },
+      {
+        "missing": ".E"
+      },
+      {
+        "missing": ".E"
+      },
+      {
+        "missing": ".E"
+      },
+      {
+        "missing": ".E"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".F"
+      },
+      {
+        "missing": ".F"
+      },
+      {
+        "missing": ".F"
+      },
+      {
+        "missing": ".F"
+      },
+      {
+        "missing": ".F"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".G"
+      },
+      {
+        "missing": ".G"
+      },
+      {
+        "missing": ".G"
+      },
+      {
+        "missing": ".G"
+      },
+      {
+        "missing": ".G"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".H"
+      },
+      {
+        "missing": ".H"
+      },
+      {
+        "missing": ".H"
+      },
+      {
+        "missing": ".H"
+      },
+      {
+        "missing": ".H"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".I"
+      },
+      {
+        "missing": ".I"
+      },
+      {
+        "missing": ".I"
+      },
+      {
+        "missing": ".I"
+      },
+      {
+        "missing": ".I"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".J"
+      },
+      {
+        "missing": ".J"
+      },
+      {
+        "missing": ".J"
+      },
+      {
+        "missing": ".J"
+      },
+      {
+        "missing": ".J"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".K"
+      },
+      {
+        "missing": ".K"
+      },
+      {
+        "missing": ".K"
+      },
+      {
+        "missing": ".K"
+      },
+      {
+        "missing": ".K"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".L"
+      },
+      {
+        "missing": ".L"
+      },
+      {
+        "missing": ".L"
+      },
+      {
+        "missing": ".L"
+      },
+      {
+        "missing": ".L"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".M"
+      },
+      {
+        "missing": ".M"
+      },
+      {
+        "missing": ".M"
+      },
+      {
+        "missing": ".M"
+      },
+      {
+        "missing": ".M"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".N"
+      },
+      {
+        "missing": ".N"
+      },
+      {
+        "missing": ".N"
+      },
+      {
+        "missing": ".N"
+      },
+      {
+        "missing": ".N"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".O"
+      },
+      {
+        "missing": ".O"
+      },
+      {
+        "missing": ".O"
+      },
+      {
+        "missing": ".O"
+      },
+      {
+        "missing": ".O"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".P"
+      },
+      {
+        "missing": ".P"
+      },
+      {
+        "missing": ".P"
+      },
+      {
+        "missing": ".P"
+      },
+      {
+        "missing": ".P"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".Q"
+      },
+      {
+        "missing": ".Q"
+      },
+      {
+        "missing": ".Q"
+      },
+      {
+        "missing": ".Q"
+      },
+      {
+        "missing": ".Q"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".R"
+      },
+      {
+        "missing": ".R"
+      },
+      {
+        "missing": ".R"
+      },
+      {
+        "missing": ".R"
+      },
+      {
+        "missing": ".R"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".S"
+      },
+      {
+        "missing": ".S"
+      },
+      {
+        "missing": ".S"
+      },
+      {
+        "missing": ".S"
+      },
+      {
+        "missing": ".S"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".T"
+      },
+      {
+        "missing": ".T"
+      },
+      {
+        "missing": ".T"
+      },
+      {
+        "missing": ".T"
+      },
+      {
+        "missing": ".T"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".U"
+      },
+      {
+        "missing": ".U"
+      },
+      {
+        "missing": ".U"
+      },
+      {
+        "missing": ".U"
+      },
+      {
+        "missing": ".U"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".V"
+      },
+      {
+        "missing": ".V"
+      },
+      {
+        "missing": ".V"
+      },
+      {
+        "missing": ".V"
+      },
+      {
+        "missing": ".V"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".W"
+      },
+      {
+        "missing": ".W"
+      },
+      {
+        "missing": ".W"
+      },
+      {
+        "missing": ".W"
+      },
+      {
+        "missing": ".W"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".X"
+      },
+      {
+        "missing": ".X"
+      },
+      {
+        "missing": ".X"
+      },
+      {
+        "missing": ".X"
+      },
+      {
+        "missing": ".X"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".Y"
+      },
+      {
+        "missing": ".Y"
+      },
+      {
+        "missing": ".Y"
+      },
+      {
+        "missing": ".Y"
+      },
+      {
+        "missing": ".Y"
+      }
+    ],
+    [
+      {
+        "hex": "64757020"
+      },
+      {
+        "hex": "7461677320202020"
+      },
+      {
+        "missing": ".Z"
+      },
+      {
+        "missing": ".Z"
+      },
+      {
+        "missing": ".Z"
+      },
+      {
+        "missing": ".Z"
+      },
+      {
+        "missing": ".Z"
+      }
+    ]
+  ]
+}

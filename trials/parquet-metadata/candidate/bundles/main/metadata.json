@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "policy": "preserve-v1",
+  "source_format": "decoded-synthetic-v1",
+  "encoding": "utf-8",
+  "columns": [
+    {
+      "name": "id",
+      "source_type": "char",
+      "byte_width": 4,
+      "label": "Record identifier",
+      "format": "$CHAR4.",
+      "informat": "$CHAR4.",
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "text",
+      "source_type": "char",
+      "byte_width": 8,
+      "label": "Exact text bytes",
+      "format": "$CHAR8.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "value",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Measured value",
+      "format": "BEST12.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "date",
+      "source_type": "date",
+      "byte_width": null,
+      "label": "Observation date",
+      "format": "DATE9.",
+      "informat": null,
+      "units": "days",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Unzoned timestamp",
+      "format": "DATETIME20.",
+      "informat": null,
+      "units": "seconds",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "all_missing",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "",
+      "format": null,
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "status",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Response",
+      "format": "RESP.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": {
+        "1": "Yes",
+        "2": "No"
+      }
+    }
+  ],
+  "row_count": 4,
+  "source_sha256": "33157ab6754a521e60f9fcc8f5e2d31440b910a3c1aeddbeb159bcf0885a1936",
+  "missing_tags": [
+    {
+      "row": 0,
+      "column": "all_missing",
+      "tag": "."
+    },
+    {
+      "row": 1,
+      "column": "value",
+      "tag": ".A"
+    },
+    {
+      "row": 1,
+      "column": "all_missing",
+      "tag": "._"
+    },
+    {
+      "row": 2,
+      "column": "all_missing",
+      "tag": ".Z"
+    },
+    {
+      "row": 3,
+      "column": "value",
+      "tag": "."
+    },
+    {
+      "row": 3,
+      "column": "date",
+      "tag": ".Z"
+    },
+    {
+      "row": 3,
+      "column": "stamp",
+      "tag": ".A"
+    },
+    {
+      "row": 3,
+      "column": "all_missing",
+      "tag": ".A"
+    },
+    {
+      "row": 3,
+      "column": "status",
+      "tag": "."
+    }
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "pyarrow": "26.0.0"
+  },
+  "parquet_sha256": "4871df2a0a098bc18528841d0ce08b2aa0a8d09eaddcb4974e89edefc30ef82c"
+}

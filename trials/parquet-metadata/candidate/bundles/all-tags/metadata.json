@@ -1,0 +1,804 @@
+{
+  "version": 1,
+  "policy": "preserve-v1",
+  "source_format": "decoded-synthetic-v1",
+  "encoding": "utf-8",
+  "columns": [
+    {
+      "name": "id",
+      "source_type": "char",
+      "byte_width": 4,
+      "label": "Record identifier",
+      "format": "$CHAR4.",
+      "informat": "$CHAR4.",
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "text",
+      "source_type": "char",
+      "byte_width": 8,
+      "label": "Exact text bytes",
+      "format": "$CHAR8.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "value",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Measured value",
+      "format": "BEST12.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "date",
+      "source_type": "date",
+      "byte_width": null,
+      "label": "Observation date",
+      "format": "DATE9.",
+      "informat": null,
+      "units": "days",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Unzoned timestamp",
+      "format": "DATETIME20.",
+      "informat": null,
+      "units": "seconds",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "all_missing",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "",
+      "format": null,
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "status",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Response",
+      "format": "RESP.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": {
+        "1": "Yes",
+        "2": "No"
+      }
+    }
+  ],
+  "row_count": 28,
+  "source_sha256": "5566d5f6d2b309efde5fcb9f18499c102682dc724ffdd86f9ee27b8a4ef9bbd2",
+  "missing_tags": [
+    {
+      "row": 0,
+      "column": "value",
+      "tag": "."
+    },
+    {
+      "row": 0,
+      "column": "date",
+      "tag": "."
+    },
+    {
+      "row": 0,
+      "column": "stamp",
+      "tag": "."
+    },
+    {
+      "row": 0,
+      "column": "all_missing",
+      "tag": "."
+    },
+    {
+      "row": 0,
+      "column": "status",
+      "tag": "."
+    },
+    {
+      "row": 1,
+      "column": "value",
+      "tag": "._"
+    },
+    {
+      "row": 1,
+      "column": "date",
+      "tag": "._"
+    },
+    {
+      "row": 1,
+      "column": "stamp",
+      "tag": "._"
+    },
+    {
+      "row": 1,
+      "column": "all_missing",
+      "tag": "._"
+    },
+    {
+      "row": 1,
+      "column": "status",
+      "tag": "._"
+    },
+    {
+      "row": 2,
+      "column": "value",
+      "tag": ".A"
+    },
+    {
+      "row": 2,
+      "column": "date",
+      "tag": ".A"
+    },
+    {
+      "row": 2,
+      "column": "stamp",
+      "tag": ".A"
+    },
+    {
+      "row": 2,
+      "column": "all_missing",
+      "tag": ".A"
+    },
+    {
+      "row": 2,
+      "column": "status",
+      "tag": ".A"
+    },
+    {
+      "row": 3,
+      "column": "value",
+      "tag": ".B"
+    },
+    {
+      "row": 3,
+      "column": "date",
+      "tag": ".B"
+    },
+    {
+      "row": 3,
+      "column": "stamp",
+      "tag": ".B"
+    },
+    {
+      "row": 3,
+      "column": "all_missing",
+      "tag": ".B"
+    },
+    {
+      "row": 3,
+      "column": "status",
+      "tag": ".B"
+    },
+    {
+      "row": 4,
+      "column": "value",
+      "tag": ".C"
+    },
+    {
+      "row": 4,
+      "column": "date",
+      "tag": ".C"
+    },
+    {
+      "row": 4,
+      "column": "stamp",
+      "tag": ".C"
+    },
+    {
+      "row": 4,
+      "column": "all_missing",
+      "tag": ".C"
+    },
+    {
+      "row": 4,
+      "column": "status",
+      "tag": ".C"
+    },
+    {
+      "row": 5,
+      "column": "value",
+      "tag": ".D"
+    },
+    {
+      "row": 5,
+      "column": "date",
+      "tag": ".D"
+    },
+    {
+      "row": 5,
+      "column": "stamp",
+      "tag": ".D"
+    },
+    {
+      "row": 5,
+      "column": "all_missing",
+      "tag": ".D"
+    },
+    {
+      "row": 5,
+      "column": "status",
+      "tag": ".D"
+    },
+    {
+      "row": 6,
+      "column": "value",
+      "tag": ".E"
+    },
+    {
+      "row": 6,
+      "column": "date",
+      "tag": ".E"
+    },
+    {
+      "row": 6,
+      "column": "stamp",
+      "tag": ".E"
+    },
+    {
+      "row": 6,
+      "column": "all_missing",
+      "tag": ".E"
+    },
+    {
+      "row": 6,
+      "column": "status",
+      "tag": ".E"
+    },
+    {
+      "row": 7,
+      "column": "value",
+      "tag": ".F"
+    },
+    {
+      "row": 7,
+      "column": "date",
+      "tag": ".F"
+    },
+    {
+      "row": 7,
+      "column": "stamp",
+      "tag": ".F"
+    },
+    {
+      "row": 7,
+      "column": "all_missing",
+      "tag": ".F"
+    },
+    {
+      "row": 7,
+      "column": "status",
+      "tag": ".F"
+    },
+    {
+      "row": 8,
+      "column": "value",
+      "tag": ".G"
+    },
+    {
+      "row": 8,
+      "column": "date",
+      "tag": ".G"
+    },
+    {
+      "row": 8,
+      "column": "stamp",
+      "tag": ".G"
+    },
+    {
+      "row": 8,
+      "column": "all_missing",
+      "tag": ".G"
+    },
+    {
+      "row": 8,
+      "column": "status",
+      "tag": ".G"
+    },
+    {
+      "row": 9,
+      "column": "value",
+      "tag": ".H"
+    },
+    {
+      "row": 9,
+      "column": "date",
+      "tag": ".H"
+    },
+    {
+      "row": 9,
+      "column": "stamp",
+      "tag": ".H"
+    },
+    {
+      "row": 9,
+      "column": "all_missing",
+      "tag": ".H"
+    },
+    {
+      "row": 9,
+      "column": "status",
+      "tag": ".H"
+    },
+    {
+      "row": 10,
+      "column": "value",
+      "tag": ".I"
+    },
+    {
+      "row": 10,
+      "column": "date",
+      "tag": ".I"
+    },
+    {
+      "row": 10,
+      "column": "stamp",
+      "tag": ".I"
+    },
+    {
+      "row": 10,
+      "column": "all_missing",
+      "tag": ".I"
+    },
+    {
+      "row": 10,
+      "column": "status",
+      "tag": ".I"
+    },
+    {
+      "row": 11,
+      "column": "value",
+      "tag": ".J"
+    },
+    {
+      "row": 11,
+      "column": "date",
+      "tag": ".J"
+    },
+    {
+      "row": 11,
+      "column": "stamp",
+      "tag": ".J"
+    },
+    {
+      "row": 11,
+      "column": "all_missing",
+      "tag": ".J"
+    },
+    {
+      "row": 11,
+      "column": "status",
+      "tag": ".J"
+    },
+    {
+      "row": 12,
+      "column": "value",
+      "tag": ".K"
+    },
+    {
+      "row": 12,
+      "column": "date",
+      "tag": ".K"
+    },
+    {
+      "row": 12,
+      "column": "stamp",
+      "tag": ".K"
+    },
+    {
+      "row": 12,
+      "column": "all_missing",
+      "tag": ".K"
+    },
+    {
+      "row": 12,
+      "column": "status",
+      "tag": ".K"
+    },
+    {
+      "row": 13,
+      "column": "value",
+      "tag": ".L"
+    },
+    {
+      "row": 13,
+      "column": "date",
+      "tag": ".L"
+    },
+    {
+      "row": 13,
+      "column": "stamp",
+      "tag": ".L"
+    },
+    {
+      "row": 13,
+      "column": "all_missing",
+      "tag": ".L"
+    },
+    {
+      "row": 13,
+      "column": "status",
+      "tag": ".L"
+    },
+    {
+      "row": 14,
+      "column": "value",
+      "tag": ".M"
+    },
+    {
+      "row": 14,
+      "column": "date",
+      "tag": ".M"
+    },
+    {
+      "row": 14,
+      "column": "stamp",
+      "tag": ".M"
+    },
+    {
+      "row": 14,
+      "column": "all_missing",
+      "tag": ".M"
+    },
+    {
+      "row": 14,
+      "column": "status",
+      "tag": ".M"
+    },
+    {
+      "row": 15,
+      "column": "value",
+      "tag": ".N"
+    },
+    {
+      "row": 15,
+      "column": "date",
+      "tag": ".N"
+    },
+    {
+      "row": 15,
+      "column": "stamp",
+      "tag": ".N"
+    },
+    {
+      "row": 15,
+      "column": "all_missing",
+      "tag": ".N"
+    },
+    {
+      "row": 15,
+      "column": "status",
+      "tag": ".N"
+    },
+    {
+      "row": 16,
+      "column": "value",
+      "tag": ".O"
+    },
+    {
+      "row": 16,
+      "column": "date",
+      "tag": ".O"
+    },
+    {
+      "row": 16,
+      "column": "stamp",
+      "tag": ".O"
+    },
+    {
+      "row": 16,
+      "column": "all_missing",
+      "tag": ".O"
+    },
+    {
+      "row": 16,
+      "column": "status",
+      "tag": ".O"
+    },
+    {
+      "row": 17,
+      "column": "value",
+      "tag": ".P"
+    },
+    {
+      "row": 17,
+      "column": "date",
+      "tag": ".P"
+    },
+    {
+      "row": 17,
+      "column": "stamp",
+      "tag": ".P"
+    },
+    {
+      "row": 17,
+      "column": "all_missing",
+      "tag": ".P"
+    },
+    {
+      "row": 17,
+      "column": "status",
+      "tag": ".P"
+    },
+    {
+      "row": 18,
+      "column": "value",
+      "tag": ".Q"
+    },
+    {
+      "row": 18,
+      "column": "date",
+      "tag": ".Q"
+    },
+    {
+      "row": 18,
+      "column": "stamp",
+      "tag": ".Q"
+    },
+    {
+      "row": 18,
+      "column": "all_missing",
+      "tag": ".Q"
+    },
+    {
+      "row": 18,
+      "column": "status",
+      "tag": ".Q"
+    },
+    {
+      "row": 19,
+      "column": "value",
+      "tag": ".R"
+    },
+    {
+      "row": 19,
+      "column": "date",
+      "tag": ".R"
+    },
+    {
+      "row": 19,
+      "column": "stamp",
+      "tag": ".R"
+    },
+    {
+      "row": 19,
+      "column": "all_missing",
+      "tag": ".R"
+    },
+    {
+      "row": 19,
+      "column": "status",
+      "tag": ".R"
+    },
+    {
+      "row": 20,
+      "column": "value",
+      "tag": ".S"
+    },
+    {
+      "row": 20,
+      "column": "date",
+      "tag": ".S"
+    },
+    {
+      "row": 20,
+      "column": "stamp",
+      "tag": ".S"
+    },
+    {
+      "row": 20,
+      "column": "all_missing",
+      "tag": ".S"
+    },
+    {
+      "row": 20,
+      "column": "status",
+      "tag": ".S"
+    },
+    {
+      "row": 21,
+      "column": "value",
+      "tag": ".T"
+    },
+    {
+      "row": 21,
+      "column": "date",
+      "tag": ".T"
+    },
+    {
+      "row": 21,
+      "column": "stamp",
+      "tag": ".T"
+    },
+    {
+      "row": 21,
+      "column": "all_missing",
+      "tag": ".T"
+    },
+    {
+      "row": 21,
+      "column": "status",
+      "tag": ".T"
+    },
+    {
+      "row": 22,
+      "column": "value",
+      "tag": ".U"
+    },
+    {
+      "row": 22,
+      "column": "date",
+      "tag": ".U"
+    },
+    {
+      "row": 22,
+      "column": "stamp",
+      "tag": ".U"
+    },
+    {
+      "row": 22,
+      "column": "all_missing",
+      "tag": ".U"
+    },
+    {
+      "row": 22,
+      "column": "status",
+      "tag": ".U"
+    },
+    {
+      "row": 23,
+      "column": "value",
+      "tag": ".V"
+    },
+    {
+      "row": 23,
+      "column": "date",
+      "tag": ".V"
+    },
+    {
+      "row": 23,
+      "column": "stamp",
+      "tag": ".V"
+    },
+    {
+      "row": 23,
+      "column": "all_missing",
+      "tag": ".V"
+    },
+    {
+      "row": 23,
+      "column": "status",
+      "tag": ".V"
+    },
+    {
+      "row": 24,
+      "column": "value",
+      "tag": ".W"
+    },
+    {
+      "row": 24,
+      "column": "date",
+      "tag": ".W"
+    },
+    {
+      "row": 24,
+      "column": "stamp",
+      "tag": ".W"
+    },
+    {
+      "row": 24,
+      "column": "all_missing",
+      "tag": ".W"
+    },
+    {
+      "row": 24,
+      "column": "status",
+      "tag": ".W"
+    },
+    {
+      "row": 25,
+      "column": "value",
+      "tag": ".X"
+    },
+    {
+      "row": 25,
+      "column": "date",
+      "tag": ".X"
+    },
+    {
+      "row": 25,
+      "column": "stamp",
+      "tag": ".X"
+    },
+    {
+      "row": 25,
+      "column": "all_missing",
+      "tag": ".X"
+    },
+    {
+      "row": 25,
+      "column": "status",
+      "tag": ".X"
+    },
+    {
+      "row": 26,
+      "column": "value",
+      "tag": ".Y"
+    },
+    {
+      "row": 26,
+      "column": "date",
+      "tag": ".Y"
+    },
+    {
+      "row": 26,
+      "column": "stamp",
+      "tag": ".Y"
+    },
+    {
+      "row": 26,
+      "column": "all_missing",
+      "tag": ".Y"
+    },
+    {
+      "row": 26,
+      "column": "status",
+      "tag": ".Y"
+    },
+    {
+      "row": 27,
+      "column": "value",
+      "tag": ".Z"
+    },
+    {
+      "row": 27,
+      "column": "date",
+      "tag": ".Z"
+    },
+    {
+      "row": 27,
+      "column": "stamp",
+      "tag": ".Z"
+    },
+    {
+      "row": 27,
+      "column": "all_missing",
+      "tag": ".Z"
+    },
+    {
+      "row": 27,
+      "column": "status",
+      "tag": ".Z"
+    }
+  ],
+  "versions": {
+    "python": "3.12.3",
+    "pyarrow": "26.0.0"
+  },
+  "parquet_sha256": "499e122a50f1c26013d44e50b8c7cfc6cfe2ddab1351ce01a7f6fc415a94d6bc"
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "attempt": 1,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 2,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 3,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 4,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 5,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 6,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 7,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 8,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 9,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 10,
+    "case": "all-missing",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 11,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 12,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 13,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 14,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 15,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 16,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 17,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 18,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 19,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  },
+  {
+    "attempt": 20,
+    "case": "all-tags",
+    "exit": 0,
+    "stderr": ""
+  }
+]

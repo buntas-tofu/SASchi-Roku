@@ -1,0 +1,129 @@
+{
+  "status": "candidate self-tests only; independent acceptance not observed",
+  "versions": {
+    "python": "3.12.3",
+    "pyarrow": "26.0.0",
+    "r": "Rscript (R) version 4.3.3 (2024-02-29)"
+  },
+  "valid": [
+    {
+      "case": "all-missing.json",
+      "rows": 2,
+      "tags": 10,
+      "r_result": "R bridge self-test passed: 2 rows, 10 tags"
+    },
+    {
+      "case": "all-tags.json",
+      "rows": 28,
+      "tags": 140,
+      "r_result": "R bridge self-test passed: 28 rows, 140 tags"
+    },
+    {
+      "case": "controls.json",
+      "rows": 8,
+      "tags": 8,
+      "r_result": "R bridge self-test passed: 8 rows, 8 tags"
+    },
+    {
+      "case": "empty.json",
+      "rows": 0,
+      "tags": 0,
+      "r_result": "R bridge self-test passed: 0 rows, 0 tags"
+    },
+    {
+      "case": "latin1.json",
+      "rows": 2,
+      "tags": 2,
+      "r_result": "R bridge self-test passed: 2 rows, 2 tags"
+    },
+    {
+      "case": "main.json",
+      "rows": 4,
+      "tags": 9,
+      "r_result": "R bridge self-test passed: 4 rows, 9 tags"
+    }
+  ],
+  "invalid": [
+    {
+      "case": "bad-tag.json",
+      "exception": "ValueError",
+      "message": "row 0 column value: invalid missing tag"
+    },
+    {
+      "case": "boolean-number.json",
+      "exception": "ValueError",
+      "message": "row 0 column value: expected a JSON number"
+    },
+    {
+      "case": "duplicate-column.json",
+      "exception": "ValueError",
+      "message": "wrong or duplicate column name/order"
+    },
+    {
+      "case": "fractional-date.json",
+      "exception": "ValueError",
+      "message": "row 0 column date: fractional source date"
+    },
+    {
+      "case": "invalid-utf8.json",
+      "exception": "UnicodeDecodeError",
+      "message": "'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+    },
+    {
+      "case": "over-width.json",
+      "exception": "ValueError",
+      "message": "row 0 column id: source byte width mismatch"
+    },
+    {
+      "case": "unknown-encoding.json",
+      "exception": "ValueError",
+      "message": "unsupported encoding"
+    }
+  ],
+  "adversarial": [
+    "wrong-source-hash",
+    "wrong-source-hash-rebound",
+    "bad-parquet-hash",
+    "absent-versions",
+    "malformed-version",
+    "malformed-version-rebound",
+    "malformed-versions",
+    "malformed-versions-rebound",
+    "wrong-row-count",
+    "wrong-row-count-rebound",
+    "duplicate-tag",
+    "duplicate-tag-rebound",
+    "out-of-range-tag",
+    "out-of-range-tag-rebound",
+    "unknown-tag",
+    "unknown-tag-rebound",
+    "unknown-tag-column",
+    "unknown-tag-column-rebound",
+    "tag-on-non-null",
+    "tag-on-non-null-rebound",
+    "untagged-null",
+    "untagged-null-rebound",
+    "unordered-tags",
+    "unordered-tags-rebound",
+    "malformed-tag-row",
+    "malformed-tag-row-rebound",
+    "changed-descriptor",
+    "wrong-schema-type",
+    "wrong-schema-order",
+    "changed-row-count",
+    "corrupt-parquet-bytes",
+    "absent-companion",
+    "malformed-companion"
+  ],
+  "additional": [
+    "existing destination unchanged",
+    "restoration after relocation and source deletion",
+    "descriptor extensions, both zero signs, subnormal and maximum finite binary64",
+    "full date32 endpoints in Python",
+    "Python preserves NUL id; R visibly rejects its unrepresentable character id",
+    "R rejects text-tag",
+    "R rejects missing-numeric-payload",
+    "R rejects wrong-cell-order",
+    "conversion CLI"
+  ]
+}

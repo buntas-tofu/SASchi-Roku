@@ -90,6 +90,15 @@ upstream SAS files, including a catalog-present/absent pair. Retained source byt
 per-cell missing tags, typed dates and logged text fallbacks are checked through
 both consumers. Reader-normalized strings remain distinct from original SAS bytes.
 
+The supplemental [Parquet and metadata trial](trials/parquet-metadata/README.md) exercises
+actual typed Parquet from synthetic decoded input and an explicit base R bridge.
+Its first delivery exposed an intermittent CLI process abort. A separate repaired
+attempt passes 68 frozen parent checks; original files and failure receipts remain
+unchanged. This supplement uses decoded inputs and an R bridge; its NUL-bearing
+R character identifiers and broader R dates remain explicit limits. The dual-path
+batch above separately covers selected SAS binaries and direct R Parquet. Neither
+trial establishes live-SAS equivalence. No skill was promoted.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.

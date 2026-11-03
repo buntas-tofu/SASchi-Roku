@@ -1,0 +1,36 @@
+{
+  "status": "bounded engineering evaluation for maintainer review",
+  "date": "2026-11-02",
+  "start_revision": "a7be67a1dabccb4f43eb434fcb4c190a5ed8411e",
+  "evaluators": 1,
+  "targets": "paired Python writer/restorer and base R bridge consumer",
+  "model_revision": null,
+  "sampling_settings": null,
+  "isolation": "input-only packet by directory and instructions, not an operating-system boundary",
+  "freeze_chronology": "parent tool sequence created freeze.json and checked independent witnesses before evaluator dispatch; no signed timestamp is claimed",
+  "freeze_sha256": "48842ff75b85a6aabc15f394e1345726401a682c2b3b0cb566edf9910bebe4b6",
+  "original_delivery_sha256": "2b8d6b7b8dd667e96c6569be703e2325d0baf68da7d042ee5f31e60abe55fa06",
+  "first_delivery_acceptance": false,
+  "full_domain_acceptance": false,
+  "initial_parent_result": {
+    "passed": 67,
+    "total": 68,
+    "receipt": "receipt.initial.json"
+  },
+  "repair_result": {
+    "passed": 68,
+    "total": 68,
+    "receipt": "receipt.repaired.json",
+    "targeted_cli_repetitions": 20,
+    "observed_aborts": 0
+  },
+  "remaining_limits": [
+    "SAS-binary input untested",
+    "live SAS unavailable",
+    "direct R Parquet untested",
+    "R character IDs cannot carry NUL",
+    "R bridge dates limited to four-digit ISO years",
+    "threaded-reader root cause not established",
+    "repeatability and adversarial MCP study remain later phases"
+  ]
+}
