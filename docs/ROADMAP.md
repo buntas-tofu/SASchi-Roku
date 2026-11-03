@@ -11,8 +11,9 @@ record byte equality, and update governance. Seed the catalog from the gathered
 sources, including the 22-repository Campaign census, sas-ref consolidation,
 training modules, Go and Garage. Ship three initial skill entry points.
 
-Completion requires passing repository checks and a reviewable change. The skill
-instructions remain initial guidance until realistic use establishes their value.
+The foundation and reference-home layers have landed. The existing skill
+instructions remain initial guidance; bounded trials record their observed
+behavior without establishing general conversion reliability.
 
 ## 2. Prove the first workflows
 
@@ -36,6 +37,13 @@ WHERE/subsetting-IF timing with 31 parent checks and native Python/R execution.
 This exercises the existing state skill; it does not add another overlapping
 skill or establish live-SAS equivalence.
 
+The [group, merge and width batch](../trials/state-boundaries/README.md) adds 89
+bounded parent checks. The [decoded Parquet trial](../trials/parquet-metadata/README.md)
+now exercises actual typed Parquet and a metadata-aware base R bridge. Its first
+delivery has an observed CLI abort; a separate repaired attempt passes 68 checks.
+Frozen inputs, the original delivery, failures and the repair remain distinct.
+SAS-binary reading, direct R Parquet and live-SAS evidence remain open boundaries.
+
 Start with small examples whose behavior can be observed. Suggested order is
 engineering judgment, not a measured ranking:
 
@@ -53,6 +61,11 @@ their own skill boundaries. A router can follow if discovery becomes difficult.
 
 ## 3. Grow a maintained catalog
 
+Public catalog PR 6 added nine pinned resources on 2026-11-02, bringing the catalog
+to 39 records. Its README inspections are discovery evidence, not executed
+conversion results. Further additions should fill a demonstrated gap in the
+existing catalog rather than create a parallel collection.
+
 Resolve the collected `sas_migration` scaffold's upstream and rights before any
 import. Review useful entries individually, recording a commit, relevant surface,
 license evidence, local trial and last review date. Preserve unreviewed entries
@@ -63,21 +76,21 @@ Keep those as two locations of one resource, not two independent bodies of proof
 Avoid importing the real-world program archive into the persona repository as a
 side effect of indexing it.
 
-## 4. Build the MCP interface
+## 4. Exercise the existing MCP interface
 
-Candidate first surface: search catalog records, retrieve a reference with its
-provenance, look up a semantic rule, and report the scope of a verification
-receipt. Stable resource IDs and explicit evidence fields can serve this layer.
+The advisory [MCP subproject](../mcp/README.md) landed with the reference-home
+layers on 2026-11-02. Its current surface exposes knowledge lookup, reference
+retrieval and workflow prompts, with a direct and in-memory protocol self-test
+in governance. It is no longer an unimplemented roadmap item.
 
-Before implementation, choose transport, deployment, authentication and the
-allowed data boundary. Start with read-only retrieval. Execution or conversion
-tools need bounded inputs, dependency discovery, output isolation, cancellation
-and refusal behavior, plus tests against the same contracts used outside MCP.
-An MCP response must preserve source revision and evidence status.
+The next evaluation boundary is exact, ambiguous, stale, missing and conflicting
+retrieval, hostile instruction-shaped content and tool failures. Provenance and
+uncertainty must survive retrieval. The current self-test establishes its recorded
+surface only; it does not establish every adversarial retrieval case.
 
-The server should call shared tooling rather than invent a second translator.
+Any future execution or conversion tools need a separate data boundary, bounded
+inputs, dependency discovery, output isolation, cancellation and refusal behavior.
 SASchi-Go remains the implementation home for its supported execution surface.
-Do not describe a skill instruction as an MCP tool or a planned tool as installed.
 
 ## Decisions for later
 

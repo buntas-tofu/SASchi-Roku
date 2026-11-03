@@ -1,14 +1,15 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is the frozen citation resolution below. This
+2026-11-02. The latest checkpoint is the Parquet trial and separate repair below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
 
 Read [decision 0001](docs/decisions/0001-toolkit-scope.md). The principal requested
 a toolkit home, preserving the existing reference in a subfolder, adding skills
-and an index of gathered repositories, with MCP as a longer-term goal.
+and an index of gathered repositories. The advisory MCP implementation has since
+landed; its broader evaluation remains on the roadmap.
 
 Sources explicitly identified by the principal: sas-ref, sas-campaign/docs and
 sas-training-modules in the professional lane. Inspected commit pins are in
@@ -281,3 +282,45 @@ unchanged, with all nine governance jobs. Hosted status belongs to this revision
 The next bounded work is actual Parquet transport and broader metadata/byte
 preservation using current sanitized skill snapshots and frozen independent
 expectations. Live SAS remains unavailable.
+
+## Parquet metadata trial and separate repair, 2026-11-02
+
+Status: bounded engineering evidence prepared for maintainer review. PR 5 now has
+all nine hosted checks passing at `a7be67a1dabccb4f43eb434fcb4c190a5ed8411e` and
+remains open. The new work is on `codex/parquet-metadata-trial`, based on that
+reviewable revision. Catalog PR 6 is already merged and its 39 records are
+unchanged. The roadmap now reflects the advisory MCP implementation that landed.
+
+The [new trial](trials/parquet-metadata/README.md) uses existing sanitized
+`sas-to-parquet` and `sas-define-interchange` snapshots. The parent froze 28 files,
+including literal expected cells, metadata, adapters and the 68-check comparator,
+before dispatching one fresh evaluator with an input-only packet. Parent witness
+self-tests ran before dispatch. Python and R targets are paired outputs of that
+one evaluation, not independent generations. Model revision/settings are unknown.
+
+The evaluator's 21 delivered files include six real Parquet/companion pairs and
+were archived unchanged before execution. The initial independent replay passed
+67/68, with one CLI abort. The normal runner passed 66/68 with two aborts. Original
+CLI diagnostics observed four aborts in ten runs; one-worker diagnostics still
+observed three in ten, despite one passing 68-check replay. All receipts remain.
+The failures do not support blaming the restricted runner.
+
+The parent made a separate one-line reader-path repair, preserving the original
+candidate and frozen comparator. The repaired attempt passes all 68 checks and
+20 targeted CLI repetitions without an observed abort. Six independently checked
+archived bundles match their frozen values, types, bytes, dates, descriptors and
+169 positional missing tags across 44 rows. The larger evaluator self-test corpus
+is separate self-reported evidence. No existing skill instruction changed.
+
+First-delivery and full-domain acceptance remain false. R consumes a declared
+bridge from reopened Parquet, not Parquet directly. Raw text supports the supplied
+NUL witnesses; R character identifiers cannot hold NUL, and the R date bridge
+admits four-digit ISO years. Actual SAS-binary reading and live SAS remain open.
+CI replays the explicitly repaired attempt after verifying the original hashes.
+The broader repeatability and adversarial MCP phases remain future work.
+
+A merge attempt for the green PR 5 was rejected by automatic approval review:
+branch updates and validation were authorized, but merging into main was not
+explicitly authorized. PR 5 remains open; main is unchanged by this work. The
+Parquet draft depends on PR 5 and targets main so its complete tree receives
+hosted governance checks. Merging PR 5 later will remove that shared parent diff.

@@ -1,0 +1,33 @@
+{
+  "status": "frozen before independent evaluator dispatch",
+  "hashes": {
+    "CONTRACT.md": "0cea4a1d811cce6aa6d2804817e80835b52621ef216e778ec5f46640f209192c",
+    "DERIVATION.md": "3179298b557d23379ac6a5da055f8b86e91d682608dbfe9f741d4e5a4a79845e",
+    "bridge.py": "f5e391508fe92c1c45a6e90dfb434a44f65eb0e991618275fd66769358a4e6b2",
+    "make_fixtures.py": "f346c8c60e054ee62df3bfe04ce6a2a3dc60bd2476addce1e27d58b56aef9f60",
+    "make_oracle.py": "4e9df59513ac746d241dac7d5298a30425a553afcfc31a40a8a41b761e6f2ba6",
+    "oracle.json": "f3ad19187433fc538ae9367ed4bce3b80d38d36c1df325975d99746dd1743bce",
+    "packet/AGENTS.md": "6510f66954624de1ae05c9ab91fa959ecf6d46f3944b5899db6cf928a6c364d1",
+    "packet/cases/all-missing.json": "a5c06cf65c5dc0494f0de36155042a83e920b4d6dec762eaa7018ffd6dcaa3b7",
+    "packet/cases/all-tags.json": "5566d5f6d2b309efde5fcb9f18499c102682dc724ffdd86f9ee27b8a4ef9bbd2",
+    "packet/cases/controls.json": "d09018cb9da31bd506156193bda0f826f99b0e8e9300c1e7c604b64c5c5df52b",
+    "packet/cases/empty.json": "9f33c003de85baaff0cefe06a21fade7f205614888f11e550f545fc2b964a9b4",
+    "packet/cases/latin1.json": "6c0e5a344146fd80b35b68c99433f59b398965c4a36ea91ed8d4e7127b614775",
+    "packet/cases/main.json": "33157ab6754a521e60f9fcc8f5e2d31440b910a3c1aeddbeb159bcf0885a1936",
+    "packet/invalid/bad-tag.json": "284aacd0af4d54b34780e9a13b39c944884b8355af1f4bda8a9e28e4f6ba9f16",
+    "packet/invalid/boolean-number.json": "60dc212a42778e8cefadaa07205059e502cb14bbe1475d96ac0a4f66c54ed40e",
+    "packet/invalid/duplicate-column.json": "355ec12782ff6c19d5c208880353018c221b14eb1b0da9cac705523830352c27",
+    "packet/invalid/fractional-date.json": "a9998855435d446fa2fab55cd018fcb285a5ebe2d4753ea176afc0b7ebb9ff25",
+    "packet/invalid/invalid-utf8.json": "f6ba9d4469b3f89afb8120a22ef53106076a9afd6aea0d0337549580b8c1e132",
+    "packet/invalid/over-width.json": "a5d116cd3d0c9aad22299341162ff520e92d947520714db7d5849a1b0dc29a49",
+    "packet/invalid/unknown-encoding.json": "9e96f82ad88f9f72b1c29459bf2521c26d45e888c4c2328256ff2fc78def1b80",
+    "packet/request.md": "701704f099a93a4ef6d25901133d221e690412a927b04da5b3cc9d8f47a3a219",
+    "packet/skills/sas-define-interchange/SKILL.md": "6c64545c5d511723c3c64c118afaefa7466f24c4961a2e012065fe27a0806b76",
+    "packet/skills/sas-define-interchange/references/representations.md": "a33bb7bab10e506c5822a1bc7b9554f346811ff2b114f0ddf2aeb3b9afa49580",
+    "packet/skills/sas-to-parquet/SKILL.md": "c0d85dc959371df5f5e6a200fe67c78c9e86d495b804f3712469b3451eecffd7",
+    "packet/skills/sas-to-parquet/references/preservation.md": "0559bfa7e4aa5181e95c9f725ac914ede2abb8eb951dc87c47f36119667376c4",
+    "parent_selftest.py": "51d6ac48a9fe2ba09543d1a2b2a908fd7cac6c829a1ec6b5edbc1b62d0200359",
+    "r_driver.R": "aa001c559e5a35722467bf64bfa368a6793297d96be2ac6faa12e97f120872cd",
+    "verify.py": "6991bf72a205ba146c4f8d93786c6a997f69c59ffd5b2c17c05877e7b56c29b0"
+  }
+}

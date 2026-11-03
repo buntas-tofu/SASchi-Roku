@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "policy": "preserve-v1",
+  "source_format": "decoded-synthetic-v1",
+  "encoding": "utf-8",
+  "columns": [
+    {
+      "name": "id",
+      "source_type": "char",
+      "byte_width": 4,
+      "label": "Record identifier",
+      "format": "$CHAR4.",
+      "informat": "$CHAR4.",
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "text",
+      "source_type": "char",
+      "byte_width": 8,
+      "label": "Exact text bytes",
+      "format": "$CHAR8.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "value",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Measured value",
+      "format": "BEST12.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "date",
+      "source_type": "date",
+      "byte_width": null,
+      "label": "Observation date",
+      "format": "DATE9.",
+      "informat": null,
+      "units": "days",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Unzoned timestamp",
+      "format": "DATETIME20.",
+      "informat": null,
+      "units": "seconds",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "all_missing",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "",
+      "format": null,
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "status",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Response",
+      "format": "RESP.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": {
+        "1": "Yes",
+        "2": "No"
+      }
+    }
+  ],
+  "row_count": 0,
+  "source_sha256": "9f33c003de85baaff0cefe06a21fade7f205614888f11e550f545fc2b964a9b4",
+  "missing_tags": [],
+  "versions": {
+    "python": "3.12.3",
+    "pyarrow": "26.0.0"
+  },
+  "parquet_sha256": "ca1816cd0413f24af7efa26d2c72d3826a9e1482903325db313d5d07630ade74"
+}

@@ -1,0 +1,165 @@
+{
+  "source_format": "decoded-synthetic-v1",
+  "encoding": "unknown-codec",
+  "columns": [
+    {
+      "name": "id",
+      "source_type": "char",
+      "byte_width": 4,
+      "label": "Record identifier",
+      "format": "$CHAR4.",
+      "informat": "$CHAR4.",
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "text",
+      "source_type": "char",
+      "byte_width": 8,
+      "label": "Exact text bytes",
+      "format": "$CHAR8.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "value",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Measured value",
+      "format": "BEST12.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "date",
+      "source_type": "date",
+      "byte_width": null,
+      "label": "Observation date",
+      "format": "DATE9.",
+      "informat": null,
+      "units": "days",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "stamp",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Unzoned timestamp",
+      "format": "DATETIME20.",
+      "informat": null,
+      "units": "seconds",
+      "origin": "1960-01-01",
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "all_missing",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "",
+      "format": null,
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": null
+    },
+    {
+      "name": "status",
+      "source_type": "numeric",
+      "byte_width": null,
+      "label": "Response",
+      "format": "RESP.",
+      "informat": null,
+      "units": null,
+      "origin": null,
+      "timezone": null,
+      "value_labels": {
+        "1": "Yes",
+        "2": "No"
+      }
+    }
+  ],
+  "rows": [
+    [
+      {
+        "hex": "30303031"
+      },
+      {
+        "hex": "636166c3a9202020"
+      },
+      1.5,
+      0,
+      0.0,
+      {
+        "missing": "."
+      },
+      1
+    ],
+    [
+      {
+        "hex": "30303031"
+      },
+      {
+        "hex": "4100422020202020"
+      },
+      {
+        "missing": ".A"
+      },
+      -1,
+      0.5,
+      {
+        "missing": "._"
+      },
+      2
+    ],
+    [
+      {
+        "hex": "4e412020"
+      },
+      {
+        "hex": "4e41202020202020"
+      },
+      -0.0,
+      3653,
+      -0.0,
+      {
+        "missing": ".Z"
+      },
+      1
+    ],
+    [
+      {
+        "hex": "20202020"
+      },
+      {
+        "hex": "65cc812020202020"
+      },
+      {
+        "missing": "."
+      },
+      {
+        "missing": ".Z"
+      },
+      {
+        "missing": ".A"
+      },
+      {
+        "missing": ".A"
+      },
+      {
+        "missing": "."
+      }
+    ]
+  ]
+}

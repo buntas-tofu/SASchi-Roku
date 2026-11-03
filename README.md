@@ -82,6 +82,13 @@ and missing-key match merges, and physical character widths through two DATA
 steps and reopened CSV. First deliveries and frozen expectations are preserved.
 The six skill instructions remain unchanged; live-SAS validation is pending.
 
+The [Parquet and metadata trial](trials/parquet-metadata/README.md) exercises
+actual typed Parquet from synthetic decoded input and an explicit base R bridge.
+Its first delivery exposed an intermittent CLI process abort. A separate repaired
+attempt passes 68 frozen parent checks; original files and failure receipts remain
+unchanged. NUL-bearing R character identifiers, broader R dates, actual SAS-binary
+reading and live-SAS execution remain explicit limits. No skill was promoted.
+
 Program translation and dataset interchange are separate jobs. Python and R are
 execution targets; Parquet is a storage format. A readable output table does not
 by itself prove that the program or its metadata survived conversion.

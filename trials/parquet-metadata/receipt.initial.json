@@ -1,0 +1,290 @@
+{
+  "status": "bounded engineering replay, not live SAS or direct R Parquet",
+  "python": "3.12.3",
+  "pyarrow": "26.0.0",
+  "R": "Rscript (R) version 4.3.3 (2024-02-29)",
+  "checks": [
+    {
+      "name": "all-missing/cli/Parquet-and-companion",
+      "verdict": "FAIL",
+      "detail": "terminate called without an active exception\n"
+    },
+    {
+      "name": "all-missing/cli/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-missing/api/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-missing/api/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-missing/restore-from-Parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-missing/R-typed-values-raw-bytes-tags-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-tags/cli/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-tags/cli/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-tags/api/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-tags/api/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-tags/restore-from-Parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "all-tags/R-typed-values-raw-bytes-tags-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "controls/cli/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "controls/cli/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "controls/api/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "controls/api/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "controls/restore-from-Parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "controls/R-typed-values-raw-bytes-tags-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "empty/cli/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "empty/cli/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "empty/api/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "empty/api/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "empty/restore-from-Parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "empty/R-typed-values-raw-bytes-tags-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "latin1/cli/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "latin1/cli/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "latin1/api/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "latin1/api/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "latin1/restore-from-Parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "latin1/R-typed-values-raw-bytes-tags-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "main/cli/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "main/cli/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "main/api/Parquet-and-companion",
+      "verdict": "PASS"
+    },
+    {
+      "name": "main/api/existing-destination-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "main/restore-from-Parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "main/R-typed-values-raw-bytes-tags-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "bad-tag/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "bad-tag/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "boolean-number/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "boolean-number/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "duplicate-column/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "duplicate-column/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "fractional-date/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "fractional-date/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "invalid-utf8/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "invalid-utf8/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "over-width/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "over-width/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "unknown-encoding/cli/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "unknown-encoding/api/invalid-input-refusal",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/swapped-companion/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/swapped-companion/candidate-validation",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/wrong-source-hash/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/wrong-source-hash/candidate-validation",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/wrong-Parquet-hash/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/wrong-Parquet-hash/candidate-validation",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/lost-tag/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/lost-tag/candidate-validation",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/tag-on-value/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/tag-on-value/candidate-validation",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/missing-column-metadata/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/wrong-all-null-type/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/wrong-all-null-type/candidate-validation",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/trimmed-ID/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/date-origin-offset/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/signed-zero-lost/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/label-changed/independent-comparator",
+      "verdict": "PASS"
+    },
+    {
+      "name": "control/Unicode-normalized/independent-comparator",
+      "verdict": "PASS"
+    }
+  ],
+  "total": 68,
+  "passed": 67,
+  "failures": [
+    {
+      "name": "all-missing/cli/Parquet-and-companion",
+      "verdict": "FAIL",
+      "detail": "terminate called without an active exception\n"
+    }
+  ]
+}

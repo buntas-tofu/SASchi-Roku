@@ -20,7 +20,7 @@ analysis process and identify further skill directions. This records that scope.
 | 3. State and composition | Conditional LAG, retained state, WHERE versus IF, explicit OUTPUT, duplicate/missing merge keys, character widths through transforms | Whole-program outputs and state transitions match a declared contract |
 | 4. Parquet | Ordinary types; dates and IDs; labels/catalogs/special missings; empty/encoding cases | Reopened typed values and metadata sidecars meet a recorded loss policy |
 | 5. Repeatability | Six fresh tasks, three attempts each, with and without skill: 36 proposed generations | All first attempts retained, equivalent resources, descriptive results without population claims |
-| 6. Catalog and MCP | Exact/ambiguous/stale/missing/conflicting retrieval, hostile retrieved instructions and tool failures | Provenance and uncertainty survive retrieval; MCP tests wait for an implementation |
+| 6. Catalog and MCP | Exact/ambiguous/stale/missing/conflicting retrieval, hostile retrieved instructions and tool failures | Provenance and uncertainty survive retrieval; the advisory MCP exists, with broader retrieval evaluation still pending |
 
 ## Accepted starter
 
@@ -107,3 +107,25 @@ The width companion is now exercised in base R under the narrow ASCII contract.
 The wider metadata contract, Parquet round trips, live-SAS capture and the
 with/without skill repeatability study remain unrun. Numeric overflow/recovery is
 a candidate additional vector inferred from the evaluator's recorded failure.
+
+## Decoded metadata and actual Parquet, 2026-11-02
+
+The principal approved the next bounded interchange trial after public catalog
+PR 6 merged. The [Parquet package](../trials/parquet-metadata/README.md) freezes
+six valid decoded envelopes, seven invalid envelopes and an independent 68-check
+comparison before one fresh evaluator supplies paired Python and base R targets.
+The actual Parquet files cover 44 rows, 308 cells and 169 positional missing tags.
+Types, dates, identifiers, source bytes, labels and unknown metadata are explicit.
+R consumes a declared bridge from reopened Parquet and the descriptor companion.
+
+The initial first-delivery replay passed 67/68 with one CLI process abort. A
+second runner also observed aborts. The original 21 files and all failed receipts
+remain unchanged. A separate parent reader-path repair passes the unchanged 68
+checks and 20 targeted CLI repetitions without an observed abort. This is a
+repaired attempt, not a passing first delivery or a general Arrow root-cause claim.
+
+Full-domain acceptance remains false: ordinary R character IDs cannot carry NUL,
+and the R date bridge is limited to four-digit ISO years. Raw text NUL witnesses
+pass. Actual SAS-binary input, direct R Parquet and live SAS remain untested.
+No skill instructions changed. The repeatability study and adversarial MCP tests
+remain later phases; this trial does not claim they have been completed.
