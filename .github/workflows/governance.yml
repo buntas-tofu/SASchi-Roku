@@ -4,7 +4,6 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
 
 jobs:
   drift:
@@ -157,3 +156,19 @@ jobs:
           python-version: "3.x"
       - name: The tree carries no tokens beyond this instance's allowed identity
         run: python3 scripts/check_sanitization.py buntas
+
+  parquet:
+    name: Archival and analytical Parquet replay
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v3
+        with:
+          environment-file: trials/parquet-dual-path/environment.yml
+          cache-environment: true
+      - name: Fetch pinned SAS fixtures with their original license
+        shell: micromamba-shell {0}
+        run: python trials/parquet-dual-path/fetch_fixtures.py "$RUNNER_TEMP/roku-parquet-fixtures"
+      - name: Reopen both projections in Python and native R
+        shell: micromamba-shell {0}
+        run: python trials/parquet-dual-path/verify.py --fixtures "$RUNNER_TEMP/roku-parquet-fixtures"

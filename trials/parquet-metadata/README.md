@@ -1,5 +1,11 @@
 # Parquet, metadata and base R bridge trial
 
+This is supplemental evidence beside the primary
+[archival and analytical interchange trial](../parquet-dual-path/README.md).
+It adds distinct byte/tag/type witnesses and an observed reader-path failure.
+It does not replace that trial's actual SAS-file and direct R Parquet coverage,
+and their results are not pooled into one score or an A/B tool comparison.
+
 Status: bounded engineering evaluation for maintainer review. The first delivery
 has an observed CLI process-abort failure; a separate repaired attempt passes
 68 parent checks. Synthetic decoded inputs exercise real Parquet transport and

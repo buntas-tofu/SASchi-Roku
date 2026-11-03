@@ -38,11 +38,16 @@ This exercises the existing state skill; it does not add another overlapping
 skill or establish live-SAS equivalence.
 
 The [group, merge and width batch](../trials/state-boundaries/README.md) adds 89
-bounded parent checks. The [decoded Parquet trial](../trials/parquet-metadata/README.md)
-now exercises actual typed Parquet and a metadata-aware base R bridge. Its first
-delivery has an observed CLI abort; a separate repaired attempt passes 68 checks.
-Frozen inputs, the original delivery, failures and the repair remain distinct.
-SAS-binary reading, direct R Parquet and live-SAS evidence remain open boundaries.
+bounded parent checks. The primary [dual-path interchange trial](../trials/parquet-dual-path/README.md)
+records 56 checks over archival and analytical projections, selected SAS files,
+and complete Python/R consumers. Its reader and live-SAS limitations remain explicit.
+
+The supplemental [decoded Parquet trial](../trials/parquet-metadata/README.md)
+exercises typed Parquet, exact byte/tag witnesses and a separate base R bridge.
+Its first delivery has an observed CLI abort; a separate repaired attempt passes
+68 checks. Frozen inputs, original deliveries, harness corrections and candidate
+repairs stay distinct across both trials. Their counts are not a pooled score or
+a controlled comparison of tools. Broader reader coverage and live SAS remain open.
 
 Start with small examples whose behavior can be observed. Suggested order is
 engineering judgment, not a measured ranking:

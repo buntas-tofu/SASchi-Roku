@@ -1,0 +1,286 @@
+{
+  "status": "Bounded actual-file interchange evidence for maintainer review; no live SAS execution",
+  "recorded_at_utc": "2026-11-02T23:44:26.584892+00:00",
+  "environment": {
+    "python": "3.12.16",
+    "pyarrow": "25.0.1",
+    "r": "Rscript (R) version 4.4.3 (2025-02-28)"
+  },
+  "model_revision": null,
+  "sampling_parameters": null,
+  "model_details": "Not exposed. Two fresh evaluators, one per writer language; both readers share ReadStat.",
+  "manual_review": "PASS",
+  "checks": [
+    {
+      "name": "python/main/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/main/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/empty/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/empty/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/all-missing/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/all-missing/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reordered/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reordered/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/utf8/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/utf8/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/sas-sample/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/sas-sample/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/sas-missing-no-catalog/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/sas-missing-no-catalog/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/sas-missing-catalog/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/sas-missing-catalog/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/corrupt-parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/swapped-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/changed-analysis",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/collapsed-tag",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/reordered-analysis",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/wrong-date",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/modified-source",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/reject/wrong-external-source",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/domain/wrong-width",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/domain/ambiguous-number",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/domain/invalid-tag",
+      "verdict": "PASS"
+    },
+    {
+      "name": "python/domain/reserved-name",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/main/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/main/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/empty/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/empty/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/all-missing/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/all-missing/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reordered/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reordered/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/utf8/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/utf8/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/sas-sample/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/sas-sample/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/sas-missing-no-catalog/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/sas-missing-no-catalog/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/sas-missing-catalog/convert-two-consumers",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/sas-missing-catalog/validate",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/corrupt-parquet",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/swapped-metadata",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/changed-analysis",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/collapsed-tag",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/reordered-analysis",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/wrong-date",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/modified-source",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/reject/wrong-external-source",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/domain/wrong-width",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/domain/ambiguous-number",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/domain/invalid-tag",
+      "verdict": "PASS"
+    },
+    {
+      "name": "r/domain/reserved-name",
+      "verdict": "PASS"
+    }
+  ],
+  "hashes": {
+    "CONTRACT.md": "68066e548b6f032d04571bf0d7a172a3da1a1f11300a85c8ce005be6970aa88b",
+    "DERIVATION.md": "e311a6c14f1ad5f19638f47baa59f6d4be2455fae55f8d756ed5847d4f9b2c54",
+    "candidates/python/convert.py": "e3b01e1014f0f7e804934a49a03e3a704dc60e9ee5eb0dc7f467fd47db9e5eb2",
+    "candidates/python/history.md": "81b349b52439806c76a85f06833fc91fd9f8b92e97697d4b9ed649762d4fd417",
+    "candidates/python/report.md": "f8c584de2d97d9fbc9e402501144eaba4c55646cd043b42504951776094dd6eb",
+    "candidates/python/selftest.py": "d1b417436a42411547e2537db4bf69ba5834c2c13dd236fe256b20c5ec216d3c",
+    "candidates/r/convert.R": "c809a68efbb926b7d7e16938147ef76b6b18730877ab6d14861b278b9e77c697",
+    "candidates/r/history.md": "ca364f5b5bdd8575fceb964ae2f629a80e06caf30cda840aaafea792865ebb0a",
+    "candidates/r/interop_test.py": "aee0a4e436a2f2f99ecc112eb5fb5bccc9be07f4c679479609c529b3610a7869",
+    "candidates/r/report.md": "77ebc81102baf02e952be9b55eea8ae74e77296ace994d59f4ef0bb113fcea01",
+    "candidates/r/selftest.R": "f95383de638e279e10b46b8d91f1784b201804ba66136989e7903a78e68e1ff4",
+    "delivery.json": "c7cf3c6fe82f2a3e1f24fccdd2daacb6dde18de198329a80bac06f4cdd4e2aad",
+    "environment.json": "c8ba7d21d6103333f0ffab9ee4dd2877ad6293eb8d94b60c85ac1549fd506671",
+    "environment.yml": "b2a68832a3ab69f8dc2035b5f5c870c6457387086c6b9193699d8b158ca616a1",
+    "evaluation.json": "0bdddf71d7394394f6f627f2c63589694cc6fe8e6b16e522c08791acbad8a0ef",
+    "fetch_fixtures.py": "ffced6cfe52f3f191756eb1d68193e940b8d1c464c2622fd4f7f18f8be480563",
+    "freeze.json": "5f5db06ced8c576b53f89e8a79bcdb2fa1a3a489a44d468e7b6a3cccf4b421cc",
+    "harness-correction.json": "226ee5bcb15534467562bfb20f9acf49fd3fc7e6f9a12e24942470ded4049f2c",
+    "oracle.json": "6303b9e6781e68412c66af207edec784b408ecbb522715592cb710613287c1e2",
+    "packet/AGENTS.md": "184dcc3afd7252fef7688bf97ee4d4266f92a5d5d8d58cb0c00505a27bf2d199",
+    "packet/CONTRACT.md": "7bce422034a7020a1fd40ec4ddddd8ae3ea20b56b539dfb10b76af28c9677148",
+    "packet/FIXTURES.json": "d5f35d93f953a3ddcfd03d19be712b82f254de727a5af032a90f7fd7bb20c0d5",
+    "packet/request.txt": "09f3b2f8ac142db458784ce10a8a36ccf083d1ac96b93c10df0702c7935e88e5",
+    "packet/skills/sas-define-interchange/SKILL.md": "6c64545c5d511723c3c64c118afaefa7466f24c4961a2e012065fe27a0806b76",
+    "packet/skills/sas-define-interchange/references/representations.md": "a33bb7bab10e506c5822a1bc7b9554f346811ff2b114f0ddf2aeb3b9afa49580",
+    "packet/skills/sas-to-parquet/SKILL.md": "c0d85dc959371df5f5e6a200fe67c78c9e86d495b804f3712469b3451eecffd7",
+    "packet/skills/sas-to-parquet/references/preservation.md": "0559bfa7e4aa5181e95c9f725ac914ede2abb8eb951dc87c47f36119667376c4",
+    "packet/synthetic/all-missing.json": "6fb75595ff96e7644e12dd0cecec215a3bba924cb148fa97d74249e2de3dd0b3",
+    "packet/synthetic/empty.json": "e1ae62410713baa12a0bc4c8c378fe15cc6853f04e7f618396e5618c3ea3a822",
+    "packet/synthetic/main.json": "aa8586fa34601264264587bb9e7b88019d7d14defcb8593fd6093d0803031408",
+    "packet/synthetic/reordered.json": "d528afafbe2be7cc65160cb659865efe42178a6fce7bbe1ced9898844f4fb9a9",
+    "packet/synthetic/utf8.json": "b2e1ea0249375df52b7aafd66d461b4ffc8a28c3f9dfcd1207adfda085b486c6",
+    "parent-original/verify.py": "ccb702c136c7f105d73bff2855178d4bf66dee1bdd9a757b64b876eb5735e3c9",
+    "r_observer.R": "d2b7e3f2be4ae38d58935b79b44cc721d96fc60ef64163562f52b470bbc701a1",
+    "reader-metadata-correction.json": "09c2f39b33cd18f7365c63e4bdbc3cb3733f51c81e76f2bd0069d83fcbc1e9e2",
+    "review.json": "15ece406a1d2fa5a0a87f94d1fb48fc42c70738f3b4e6e47fa20efb4ed32d14d",
+    "upstream.json": "1bbf323bd4609ab5381bdc7caddddd846144182d3c359ac406a0f7cf17b23575",
+    "verify.py": "3481fb4a43000f11c8d0846644b10536cce84da3bfd408c701f00227fe192fad"
+  },
+  "fixture_hashes": {
+    "LICENSE": "07487bc4080297d9c65ffa3f66e3c405f9fd08e4af990cd54212d373eb28debc",
+    "missing.sas7bcat": "d1fc24e992e8fbd921d614615ff7281fec58d6b705e2de227e813bd6867c8c91",
+    "missing.sas7bdat": "620f8eac41710b7ea4293a5ab4a0fb8d1fbc886fa5fa2d0d2165f45a7a10865c",
+    "sample.sas7bdat": "007425379a0504f5c54a7c0bb8f9776670a2456d3692f37907d38e080ac4b07b"
+  },
+  "verdict": "PASS"
+}

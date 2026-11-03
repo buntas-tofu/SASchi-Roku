@@ -1,0 +1,15 @@
+{
+  "status": "All nine regular first-delivery files preserved byte-for-byte; no exclusions, symlinks or parent edits",
+  "recorded_at_utc": "2026-11-02T23:42:23.484671+00:00",
+  "hashes": {
+    "candidates/python/convert.py": "e3b01e1014f0f7e804934a49a03e3a704dc60e9ee5eb0dc7f467fd47db9e5eb2",
+    "candidates/python/history.md": "81b349b52439806c76a85f06833fc91fd9f8b92e97697d4b9ed649762d4fd417",
+    "candidates/python/report.md": "f8c584de2d97d9fbc9e402501144eaba4c55646cd043b42504951776094dd6eb",
+    "candidates/python/selftest.py": "d1b417436a42411547e2537db4bf69ba5834c2c13dd236fe256b20c5ec216d3c",
+    "candidates/r/convert.R": "c809a68efbb926b7d7e16938147ef76b6b18730877ab6d14861b278b9e77c697",
+    "candidates/r/history.md": "ca364f5b5bdd8575fceb964ae2f629a80e06caf30cda840aaafea792865ebb0a",
+    "candidates/r/interop_test.py": "aee0a4e436a2f2f99ecc112eb5fb5bccc9be07f4c679479609c529b3610a7869",
+    "candidates/r/report.md": "77ebc81102baf02e952be9b55eea8ae74e77296ace994d59f4ef0bb113fcea01",
+    "candidates/r/selftest.R": "f95383de638e279e10b46b8d91f1784b201804ba66136989e7903a78e68e1ff4"
+  }
+}

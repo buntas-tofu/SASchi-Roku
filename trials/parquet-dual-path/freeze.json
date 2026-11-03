@@ -1,0 +1,29 @@
+{
+  "status": "Frozen before independent evaluator dispatch",
+  "recorded_at_utc": "2026-11-02T23:34:54.847949+00:00",
+  "base_commit": "c6b8a41f77efaed8eb5c0c6346e447ae1a75416b",
+  "hashes": {
+    "CONTRACT.md": "68066e548b6f032d04571bf0d7a172a3da1a1f11300a85c8ce005be6970aa88b",
+    "DERIVATION.md": "e311a6c14f1ad5f19638f47baa59f6d4be2455fae55f8d756ed5847d4f9b2c54",
+    "environment.json": "c8ba7d21d6103333f0ffab9ee4dd2877ad6293eb8d94b60c85ac1549fd506671",
+    "environment.yml": "b2a68832a3ab69f8dc2035b5f5c870c6457387086c6b9193699d8b158ca616a1",
+    "fetch_fixtures.py": "ffced6cfe52f3f191756eb1d68193e940b8d1c464c2622fd4f7f18f8be480563",
+    "oracle.json": "6303b9e6781e68412c66af207edec784b408ecbb522715592cb710613287c1e2",
+    "packet/AGENTS.md": "184dcc3afd7252fef7688bf97ee4d4266f92a5d5d8d58cb0c00505a27bf2d199",
+    "packet/CONTRACT.md": "7bce422034a7020a1fd40ec4ddddd8ae3ea20b56b539dfb10b76af28c9677148",
+    "packet/FIXTURES.json": "d5f35d93f953a3ddcfd03d19be712b82f254de727a5af032a90f7fd7bb20c0d5",
+    "packet/request.txt": "09f3b2f8ac142db458784ce10a8a36ccf083d1ac96b93c10df0702c7935e88e5",
+    "packet/skills/sas-define-interchange/SKILL.md": "6c64545c5d511723c3c64c118afaefa7466f24c4961a2e012065fe27a0806b76",
+    "packet/skills/sas-define-interchange/references/representations.md": "a33bb7bab10e506c5822a1bc7b9554f346811ff2b114f0ddf2aeb3b9afa49580",
+    "packet/skills/sas-to-parquet/SKILL.md": "c0d85dc959371df5f5e6a200fe67c78c9e86d495b804f3712469b3451eecffd7",
+    "packet/skills/sas-to-parquet/references/preservation.md": "0559bfa7e4aa5181e95c9f725ac914ede2abb8eb951dc87c47f36119667376c4",
+    "packet/synthetic/all-missing.json": "6fb75595ff96e7644e12dd0cecec215a3bba924cb148fa97d74249e2de3dd0b3",
+    "packet/synthetic/empty.json": "e1ae62410713baa12a0bc4c8c378fe15cc6853f04e7f618396e5618c3ea3a822",
+    "packet/synthetic/main.json": "aa8586fa34601264264587bb9e7b88019d7d14defcb8593fd6093d0803031408",
+    "packet/synthetic/reordered.json": "d528afafbe2be7cc65160cb659865efe42178a6fce7bbe1ced9898844f4fb9a9",
+    "packet/synthetic/utf8.json": "b2e1ea0249375df52b7aafd66d461b4ffc8a28c3f9dfcd1207adfda085b486c6",
+    "r_observer.R": "d2b7e3f2be4ae38d58935b79b44cc721d96fc60ef64163562f52b470bbc701a1",
+    "upstream.json": "1bbf323bd4609ab5381bdc7caddddd846144182d3c359ac406a0f7cf17b23575",
+    "verify.py": "ccb702c136c7f105d73bff2855178d4bf66dee1bdd9a757b64b876eb5735e3c9"
+  }
+}
