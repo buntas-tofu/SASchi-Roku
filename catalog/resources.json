@@ -1172,6 +1172,256 @@
         "default_branch": "main"
       },
       "historical_census": null
+    },
+    {
+      "id": "readstat",
+      "name": "WizardMac/ReadStat",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/WizardMac/ReadStat",
+      "description": "C statistical-file library and CLI documenting SAS data/catalog readers and dataset writers.",
+      "tags": [
+        "sas",
+        "c",
+        "readstat",
+        "sas7bdat",
+        "sas7bcat",
+        "xpt",
+        "reader",
+        "writer"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/WizardMac/ReadStat/blob/79816b65f717803ceab84d93b990f7ea3e038a40/README.md",
+        "source_revision": "79816b65f717803ceab84d93b990f7ea3e038a40",
+        "notes": "The pinned default branch is dev. README says the SAS7BDAT writer has not been verified against a SAS installation and lists haven and pyreadstat as bindings; those wrappers are not independent reader oracles."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "dev"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "parso",
+      "name": "epam/parso",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/epam/parso",
+      "description": "Java SAS7BDAT reader with stream and row APIs plus data and metadata export to CSV.",
+      "tags": [
+        "sas",
+        "java",
+        "sas7bdat",
+        "reader",
+        "csv",
+        "metadata"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/epam/parso/blob/3c514e66264f5f3d5b2970bc2509d749065630c0/README.md",
+        "source_revision": "3c514e66264f5f3d5b2970bc2509d749065630c0",
+        "notes": "Potential alternative implementation for reader comparisons, an engineering inference from the documented Java API. Reader ancestry, missing-tag fidelity, compression coverage and date/encoding behavior have not been audited or executed here."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "master"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sas7bdat-java-writer",
+      "name": "FredHutch/sas7bdat",
+      "kind": "repository",
+      "category": "format",
+      "url": "https://github.com/FredHutch/sas7bdat",
+      "description": "Java SAS7BDAT exporter with descriptor, label, format and ordinary missing-value examples.",
+      "tags": [
+        "sas",
+        "java",
+        "sas7bdat",
+        "writer",
+        "metadata",
+        "fixture-generation"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/FredHutch/sas7bdat/blob/7b28fd3b3da8c161f3c6f8d110f33933aa76a7d0/README.md",
+        "source_revision": "7b28fd3b3da8c161f3c6f8d110f33933aa76a7d0",
+        "notes": "README limits output to 64-bit UNIX little-endian UTF-8, requires Java 17+, and excludes compression and reading. A possible fixture-generation lead, not evidence that its outputs are accepted by a SAS runtime."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "saspy",
+      "name": "sassoftware/saspy",
+      "kind": "repository",
+      "category": "interop",
+      "url": "https://github.com/sassoftware/saspy",
+      "description": "Python interface to a running SAS deployment for mixed workflows, SAS execution and pandas data exchange.",
+      "tags": [
+        "sas",
+        "python",
+        "runtime-bridge",
+        "pandas",
+        "sas9",
+        "viya"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/sassoftware/saspy/blob/ab3c55f0b6366418f5c63ab5c0d81e1c1bca51d3/README.md",
+        "source_revision": "ab3c55f0b6366418f5c63ab5c0d81e1c1bca51d3",
+        "notes": "Requires an accessible SAS deployment; it is not a static SAS-to-Python translator or a bundled SAS runtime. README states Apache-2.0 while the repository API reports NOASSERTION; the API observation is retained without resolving file-level rights."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "NOASSERTION",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "vscode-sas-extension",
+      "name": "sassoftware/vscode-sas-extension",
+      "kind": "repository",
+      "category": "analysis",
+      "url": "https://github.com/sassoftware/vscode-sas-extension",
+      "description": "Official SAS editor extension with syntax help, completion, content navigation and multi-language notebooks.",
+      "tags": [
+        "sas",
+        "vscode",
+        "language-tooling",
+        "notebooks",
+        "runtime-bridge"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/sassoftware/vscode-sas-extension/blob/c3312ee076e84bbc749983cccbd4836cbcb3f412/README.md",
+        "source_revision": "c3312ee076e84bbc749983cccbd4836cbcb3f412",
+        "notes": "README requires configuring a SAS 9.4 or Viya connection before SAS execution. Editor features and notebooks do not establish static translation, semantic validation or a free SAS runtime."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "Apache-2.0",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sas-migrator-py",
+      "name": "bparbhu/sas_migrator.py",
+      "kind": "repository",
+      "category": "translation",
+      "url": "https://github.com/bparbhu/sas_migrator.py",
+      "description": "SAS-to-Python migration project documenting dependency analysis, pandas output and Spark-target generation.",
+      "tags": [
+        "sas",
+        "python",
+        "pandas",
+        "pyspark",
+        "databricks",
+        "dependency-analysis",
+        "translation"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/bparbhu/sas_migrator.py/blob/0637c216c19410eb3e0f6fcbf38b20ecf8655304/README.md",
+        "source_revision": "0637c216c19410eb3e0f6fcbf38b20ecf8655304",
+        "notes": "README says this is not a complete SAS compiler and distinguishes pandas reference comparisons from Spark generation/syntax checks. No such checks were run here. The GitHub license identifier is null, leaving rights unresolved. No provenance link to the unresolved collected migration scaffold was established."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": null,
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "sas2databricks",
+      "name": "navintkr/sas2databricks",
+      "kind": "repository",
+      "category": "translation",
+      "url": "https://github.com/navintkr/sas2databricks",
+      "description": "SAS-to-Databricks project describing rule-based and LLM-assisted generation of PySpark, Spark SQL and deployment artifacts.",
+      "tags": [
+        "sas",
+        "databricks",
+        "pyspark",
+        "spark-sql",
+        "llm",
+        "translation"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/navintkr/sas2databricks/blob/392d3a34c1390f6335fb47e165a4f4f3ac03111c/README.md",
+        "source_revision": "392d3a34c1390f6335fb47e165a4f4f3ac03111c",
+        "notes": "README marks the project beta and statistical-procedure outputs as review scaffolds. Coverage claims, LLM paths and parity notebooks remain unexecuted upstream claims in this catalog; no migration-equivalence result is asserted."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "main"
+      },
+      "historical_census": null
+    },
+    {
+      "id": "dataset-json-sas",
+      "name": "lexjansen/dataset-json-sas",
+      "kind": "repository",
+      "category": "format",
+      "url": "https://github.com/lexjansen/dataset-json-sas",
+      "description": "SAS implementation for converting datasets to and from CDISC Dataset-JSON with metadata, comparison and validation examples.",
+      "tags": [
+        "sas",
+        "dataset-json",
+        "cdisc",
+        "metadata",
+        "json",
+        "interchange"
+      ],
+      "locations": [],
+      "evidence": {
+        "status": "source-inspected",
+        "reviewed_on": "2026-11-02",
+        "scope": "Pinned public README sections inspected for the documented interface, prerequisites and limits; no upstream code executed, SAS equivalence or data round trip verified, or per-file rights audit performed.",
+        "source_url": "https://github.com/lexjansen/dataset-json-sas/blob/3e38d991a787e2e6df129be74e09a38766c8d6ae/README.md",
+        "source_revision": "3e38d991a787e2e6df129be74e09a38766c8d6ae",
+        "notes": "README targets Dataset-JSON 1.1 and SAS 9.4 TS1M7+, but says its documentation has not yet been updated for 1.1. The validation example needs configured SAS Python objects. README identifies selected macros under Apache-2.0 alongside the project MIT license."
+      },
+      "github_snapshot": {
+        "archived": false,
+        "license_identifier": "MIT",
+        "default_branch": "master"
+      },
+      "historical_census": null
     }
   ]
 }
