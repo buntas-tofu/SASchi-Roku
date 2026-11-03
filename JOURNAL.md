@@ -1,7 +1,7 @@
 # Session handoff
 
 Status: locally checked toolkit foundation prepared for maintainer review, dated
-2026-11-02. The latest checkpoint is public discovery batch 03 below. This
+2026-11-03. The latest checkpoint is catalog merge integration below. This
 record is not a release or a live-SAS correctness claim.
 
 ## Current direction
@@ -496,3 +496,24 @@ state-boundary and repaired metadata replays also pass; none executes these
 eight new upstream tools. The separate pinned dual-path Parquet environment is
 covered by hosted CI, whose outcome belongs to the resulting revision. Future
 execution trials remain separate work.
+
+## Catalog merge integration, 2026-11-03
+
+Status: integration checkpoint for maintainer use, not a new source-inspection
+or upstream execution result. The principal explicitly authorized merging PRs
+9 and 10. Fresh repository inspection found both still open with all ten checks
+passing at their inspected heads. PR 9 was merged into main at
+`fb6d6ecda2418a5d60e4bd23390f8e06ac145cbe`; its 47-record catalog is now on main.
+
+Retargeted PR 10 to main and integrated that same main revision into its branch
+before requesting fresh CI. This also preserves main's existing sanitization
+pattern boundary correction at `968dfcdaade73f3cd67e6e12dfefce8d9eca6dbb`.
+No gate was rewritten by this integration. The catalog remains 55 records and
+54 distinct non-null URLs; all 47 records from PR 9 are unchanged, and the review
+diff remains the eight batch 03 additions plus the generated index and handoff.
+
+The earlier batch 03 merge-state note is a historical observation. PR 9's merge
+is now directly confirmed, and PR 10 no longer depends on its feature branch.
+The final merge result and refreshed check outcomes are recorded on
+[PR 10](https://github.com/buntas-tofu/SASchi-Roku/pull/10). The authorized merge
+uses the checked branch revision after its complete governance suite succeeds.
