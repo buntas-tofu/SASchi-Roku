@@ -530,3 +530,21 @@ No existing stamped KB files, external discovery catalog records, SAS corpus,
 trial receipts, gates or MCP endpoints change. Standalone executable examples
 remain outside this public landing pending the existing original-software
 licensing decision. Hosted CI and merge results must be checked separately.
+
+## Julia language reference and SAS migration considerations, 2026-11-04
+
+Status: candidate documentation branch for maintainer review; not a merged
+release or a tested SAS-to-Julia translation.
+
+The principal identified a small Julia community and requested Julia and
+SAS conversion content. Proposed decision 0005 separates native Julia API
+reference in `references/julia/` from candidate SAS semantic crosswalk in
+`docs/targets/`. The existing catalog's ReadStatTables source record is
+reused. Upstream limits about special missing tags, SAS value labels and
+experimental native writer compatibility are explicitly documented.
+
+Julia's first proposed trial reuses the existing frozen Python shelf fixture;
+neither values nor expected outputs are copied or regenerated. No changes
+were made to source corpus, stamped KB, external discovery catalog, original
+trials, gates, MCP tools or license policy. Managed Julia execution, package
+inventory and live SAS remain separate future evidence milestones.

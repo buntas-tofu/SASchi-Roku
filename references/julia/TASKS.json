@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "future bounded tasks, no executed results",
+  "tasks": [
+    {
+      "id": "ENV",
+      "goal": "inspect approved Julia version and Project/Manifest",
+      "acceptance": "read-only inventory and hashes"
+    },
+    {
+      "id": "TABULAR",
+      "goal": "reproduce frozen customers/orders fixture",
+      "acceptance": "all groups, missing amounts, 4350 cents, negative controls"
+    },
+    {
+      "id": "READER",
+      "goal": "assess ReadStatTables against pinned SAS binary",
+      "acceptance": "source bytes, descriptors and missing loss receipt"
+    },
+    {
+      "id": "STATE",
+      "goal": "replay conditional LAG and retained-state cases",
+      "acceptance": "frozen intermediate and final outputs"
+    },
+    {
+      "id": "MERGE",
+      "goal": "replay duplicate/missing BY match-merge",
+      "acceptance": "source cardinality, row order and overwrite behavior"
+    },
+    {
+      "id": "MODELING",
+      "goal": "evaluate a bounded SAS statistical procedure",
+      "acceptance": "specified model, weights, contrasts, SE, DF and tolerance"
+    }
+  ]
+}

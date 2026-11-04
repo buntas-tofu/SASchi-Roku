@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "status": "curated API navigation, not equivalence",
+  "families": [
+    {
+      "id": "language",
+      "role": "Base, Dates, Statistics",
+      "sources": [
+        "JL-001",
+        "JL-002",
+        "JL-003",
+        "JL-004",
+        "JL-005"
+      ],
+      "symbols": [
+        "missing",
+        "ismissing",
+        "skipmissing",
+        "isequal",
+        "Union{Missing,T}",
+        "Date(1960,1,1) + Day(n)",
+        "ncodeunits",
+        "mean",
+        "std"
+      ]
+    },
+    {
+      "id": "tables",
+      "role": "DataFrames and CSV",
+      "sources": [
+        "JL-008",
+        "JL-009",
+        "JL-010",
+        "JL-011"
+      ],
+      "symbols": [
+        "DataFrame",
+        "CSV.File",
+        "CSV.read",
+        "select",
+        "transform",
+        "subset",
+        "groupby",
+        "combine",
+        "leftjoin",
+        "matchmissing"
+      ]
+    },
+    {
+      "id": "readstat",
+      "role": "SAS file interoperability",
+      "sources": [
+        "JL-012",
+        "JL-013"
+      ],
+      "symbols": [
+        "ReadStatTable",
+        "readstat",
+        "readstatallmeta",
+        "writestat"
+      ]
+    },
+    {
+      "id": "columnar",
+      "role": "Arrow transport",
+      "sources": [
+        "JL-011",
+        "JL-014"
+      ],
+      "symbols": [
+        "Tables.jl interface",
+        "Arrow.Table",
+        "Arrow.write"
+      ]
+    },
+    {
+      "id": "modeling",
+      "role": "Statistical models",
+      "sources": [
+        "JL-005",
+        "JL-015",
+        "JL-016",
+        "JL-017"
+      ],
+      "symbols": [
+        "Statistics.mean",
+        "Statistics.std",
+        "@formula",
+        "GLM.lm",
+        "GLM.glm",
+        "MixedModels"
+      ]
+    }
+  ]
+}

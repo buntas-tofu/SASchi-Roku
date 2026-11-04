@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "status": "proposed controls, not verified",
+  "risks": [
+    {
+      "id": "JL-R01",
+      "severity": "critical",
+      "topic": "Tagged missings",
+      "risk": "ReadStatTables collapses original distinct missing tags to Julia missing",
+      "control": "Retain original bytes and positional tag associations",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R02",
+      "severity": "critical",
+      "topic": "Match merge",
+      "risk": "SAS MERGE BY is an ordered state operation, not an ordinary relational join",
+      "control": "Test duplicates, missing keys, exhaustion and overwritten values",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R03",
+      "severity": "critical",
+      "topic": "Conditional LAG",
+      "risk": "SAS LAG is a queue whose state depends on call timing",
+      "control": "Freeze intermediate states, branch execution and queue initialization",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R04",
+      "severity": "high",
+      "topic": "WHERE versus IF",
+      "risk": "Input filtering and post-compute rejection may differ",
+      "control": "Verify row state before and after filtering",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R05",
+      "severity": "high",
+      "topic": "Missing join keys",
+      "risk": "DataFrames join defaults to matchmissing=:error",
+      "control": "Choose explicit missing-key policy; verify source meaning",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R06",
+      "severity": "high",
+      "topic": "All-null aggregate",
+      "risk": "sum(skipmissing(values)) may yield zero for no nonmissing values",
+      "control": "Use a nonmissing-count guard and independent null oracle",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R07",
+      "severity": "high",
+      "topic": "Date epoch and time",
+      "risk": "SAS dates are days and datetime seconds since 1960-01-01",
+      "control": "Check epoch, units, negative dates, timezone and precision",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R08",
+      "severity": "high",
+      "topic": "Character widths",
+      "risk": "Julia Unicode length differs from SAS declared storage bytes",
+      "control": "Compare raw bytes, code units, padding, truncation and encodings",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R09",
+      "severity": "high",
+      "topic": "Macro generation",
+      "risk": "SAS macro code generation and includes are not ordinary Julia functions",
+      "control": "Inventory source expansion and runtime dependencies",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R10",
+      "severity": "high",
+      "topic": "Statistical inference",
+      "risk": "Same model family does not imply equal contrasts, weights, SE or degrees of freedom",
+      "control": "Freeze model specification, output meaning and tolerance",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R11",
+      "severity": "high",
+      "topic": "Native SAS writing",
+      "risk": "ReadStatTables SAS writing is experimental and may produce files SAS rejects",
+      "control": "Require native SAS readback before claiming writable interchange",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R12",
+      "severity": "medium",
+      "topic": "Package environments",
+      "risk": "Julia package lock and versions may differ across enterprise hosts",
+      "control": "Record Julia binary and Project/Manifest hashes",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R13",
+      "severity": "medium",
+      "topic": "Row order",
+      "risk": "Group and join order may not match SAS observation order",
+      "control": "Declare deterministic key and explicit ordering",
+      "evidence": "no Julia execution in this PR"
+    },
+    {
+      "id": "JL-R14",
+      "severity": "high",
+      "topic": "Text ID inference",
+      "risk": "CSV may coerce leading-zero IDs to numbers",
+      "control": "Force string schema and assert key identity",
+      "evidence": "no Julia execution in this PR"
+    }
+  ]
+}
