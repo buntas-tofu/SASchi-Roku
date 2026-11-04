@@ -548,3 +548,24 @@ neither values nor expected outputs are copied or regenerated. No changes
 were made to source corpus, stamped KB, external discovery catalog, original
 trials, gates, MCP tools or license policy. Managed Julia execution, package
 inventory and live SAS remain separate future evidence milestones.
+
+## Julia relational fixture evaluation staged, 2026-11-04
+
+Status: candidate trial and isolated hosted workflow for maintainer review.
+No Julia runtime success, SAS parity or merge is asserted in this checkpoint.
+
+The principal confirmed PR 13 merged and authorized moving on to evaluation.
+The first bounded contract reuses the existing Python dependency shelf's
+five-customer, eight-order fixture and independent JSON oracle, with original
+Git blob identities stored in trials/julia-fixture/freeze.json. Two Julia
+implementations (Base and DataFrames/CSV) emit grouped records. An independent
+Python comparator checks the frozen oracle and rejects eight altered-output
+controls; two malformed-input refusals are exercised per implementation.
+
+The authoring container has no Julia executable and cannot resolve remote
+hosts, so local Julia execution was not claimed. An additive, trial-only
+GitHub-hosted workflow runs exact Julia 1.10.13 LTS and constrained package
+versions, preserving the resolved Manifest and comparator outputs as artifacts.
+The original ten-job governance workflow and prior trial corpus remain
+unchanged. A live-SAS comparison, enterprise approval and standalone software
+release remain outside this trial. Hosted outcomes must be read from the PR.

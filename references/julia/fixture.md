@@ -1,11 +1,9 @@
-# First Julia test: reuse the frozen synthetic fixture
+# First Julia evaluation: reuse the frozen synthetic fixture
 
-Status: proposed test, not Julia execution. No duplicate data is committed.
+Status: evaluation designed; its actual execution evidence belongs to the [bounded Julia trial](../../trials/julia-fixture/README.md).
 
-Use [customers.csv](../python-libraries/fixtures/customers.csv), [orders.csv](../python-libraries/fixtures/orders.csv) and [expected.json](../python-libraries/fixtures/expected.json). The frozen independent oracle describes five customers, eight orders, two missing amounts, one zero, a negative adjustment, an unmatched key and leading-zero identifiers.
+The shared [customers.csv](../python-libraries/fixtures/customers.csv), [orders.csv](../python-libraries/fixtures/orders.csv) and [expected.json](../python-libraries/fixtures/expected.json) are unchanged. The reference covers five customers, eight orders, two missing amounts, one zero, a negative adjustment, an orphan order and leading-zero identifiers.
 
-Required outcome: preserve string keys and all eight orders; left join without dropping the orphan; group with deterministic order; compare row counts and nonmissing counts; expect total 4350 integer cents. The C segment has one row but an all-missing sum and requires `missing` rather than a default zero if following the source oracle.
+The first trial implements the same bounded contract in Base Julia and separately in DataFrames/CSV, followed by an independent comparator with eight mutation controls and two malformed-input refusals per implementation. Each actual pass requires a hosted Julia log and an environment receipt. A static check or Python execution is not a Julia result.
 
-Negative controls: converting `0007` to 7, dropping the orphan, reversing -400, treating zero as missing or replacing an all-missing sum with zero. Record Julia and package versions, command, first candidate output, independent comparisons and rejected controls before calling any result verified.
-
-This verifies a small cross-engine tabular behavior, not complete DATA-step semantics. A later Julia trial should use Roku's existing frozen state and match-merge witnesses.
+This is not yet an evaluation of SAS retained state, conditional LAG, BY match merges, native SAS missing tags or statistical inference. Subsequent trials can reuse Roku's frozen source cases without modifying their independent expected values.
