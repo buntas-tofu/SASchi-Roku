@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "status": "open candidate risks, not executed controls",
+  "risks": [
+    {
+      "id": "faker-1",
+      "library": "faker",
+      "risk": "Seed, locale, provider version and call order jointly affect generated values.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "faker-2",
+      "library": "faker",
+      "risk": "Do not treat realistic generated contacts as safe real-world destinations.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "faker-3",
+      "library": "faker",
+      "risk": "Use separate surrogate keys, explicit date bounds and deliberate negative cases.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "numpy-1",
+      "library": "numpy",
+      "risk": "Preserve leading-zero IDs as text, not floating point.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "numpy-2",
+      "library": "numpy",
+      "risk": "Integer cents need an explicit null mask and overflow check.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "numpy-3",
+      "library": "numpy",
+      "risk": "NaN, NULL and SAS tagged missing values are not interchangeable.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "numpy-4",
+      "library": "numpy",
+      "risk": "Random seeds need pinned generator/NumPy versions for literal comparisons.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "polars-1",
+      "library": "polars",
+      "risk": "Infer and validate schema before joining; customer IDs remain strings.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "polars-2",
+      "library": "polars",
+      "risk": "Grouping and joins do not imply stable SAS observation order.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "polars-3",
+      "library": "polars",
+      "risk": "Distinguish nulls, NaNs and missing tags; guard all-null group sums.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "polars-4",
+      "library": "polars",
+      "risk": "Relational joins with duplicate keys may differ from SAS match merges.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "polars-5",
+      "library": "polars",
+      "risk": "Do not presume every lazy plan is streamable.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "duckdb-1",
+      "library": "duckdb",
+      "risk": "CSV inference may remove leading zeros; force text keys.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "duckdb-2",
+      "library": "duckdb",
+      "risk": "COUNT(*) counts rows; COUNT(amount) excludes null; SUM(all-null) is NULL.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "duckdb-3",
+      "library": "duckdb",
+      "risk": "Order is undefined without ORDER BY; join duplication requires checks.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    },
+    {
+      "id": "duckdb-4",
+      "library": "duckdb",
+      "risk": "Use explicit connection and parameterized values; untrusted SQL and external extensions require review.",
+      "acceptance": "requires a documented case-specific assertion and execution receipt"
+    }
+  ]
+}

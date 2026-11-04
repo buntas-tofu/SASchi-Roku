@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "library": "numpy",
+  "scope": "curated upstream-informed API navigation",
+  "source_ids": [
+    "NP-001",
+    "NP-002",
+    "NP-003"
+  ],
+  "apis": [
+    {
+      "symbol": "np.asarray",
+      "purpose": "array conversion",
+      "review": "dtype and copy"
+    },
+    {
+      "symbol": "np.array",
+      "purpose": "typed arrays",
+      "review": "shape and dtype"
+    },
+    {
+      "symbol": "np.sum",
+      "purpose": "reduction",
+      "review": "mask, overflow, nulls"
+    },
+    {
+      "symbol": "np.isfinite",
+      "purpose": "finite mask",
+      "review": "NaN and infinities"
+    },
+    {
+      "symbol": "np.testing.assert_allclose",
+      "purpose": "tolerant comparison",
+      "review": "explicit tolerance"
+    },
+    {
+      "symbol": "np.random.default_rng",
+      "purpose": "RNG construction",
+      "review": "bit generator and version"
+    }
+  ]
+}

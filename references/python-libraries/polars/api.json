@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "library": "polars",
+  "scope": "curated upstream-informed API navigation",
+  "source_ids": [
+    "PL-001",
+    "PL-002",
+    "PL-003"
+  ],
+  "apis": [
+    {
+      "symbol": "pl.scan_csv",
+      "purpose": "lazy CSV",
+      "review": "schema_overrides"
+    },
+    {
+      "symbol": "pl.scan_parquet",
+      "purpose": "lazy Parquet",
+      "review": "types and projection"
+    },
+    {
+      "symbol": "pl.col",
+      "purpose": "column expression",
+      "review": "type and scope"
+    },
+    {
+      "symbol": "LazyFrame.join",
+      "purpose": "join",
+      "review": "cardinality and key types"
+    },
+    {
+      "symbol": "LazyFrame.group_by",
+      "purpose": "aggregate",
+      "review": "null-only groups"
+    },
+    {
+      "symbol": "LazyFrame.collect_schema",
+      "purpose": "schema inspection",
+      "review": "inference"
+    },
+    {
+      "symbol": "LazyFrame.collect",
+      "purpose": "run plan",
+      "review": "execution engine"
+    },
+    {
+      "symbol": "LazyFrame.sink_parquet",
+      "purpose": "write plan",
+      "review": "format and runtime support"
+    }
+  ]
+}

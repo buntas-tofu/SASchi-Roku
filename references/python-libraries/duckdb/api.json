@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "library": "duckdb",
+  "scope": "curated upstream-informed API navigation",
+  "source_ids": [
+    "DB-001",
+    "DB-002",
+    "DB-003"
+  ],
+  "apis": [
+    {
+      "symbol": "duckdb.connect",
+      "purpose": "explicit connection",
+      "review": "state and persistence"
+    },
+    {
+      "symbol": "DuckDBPyConnection.sql",
+      "purpose": "relations",
+      "review": "lazy materialization"
+    },
+    {
+      "symbol": "DuckDBPyConnection.execute",
+      "purpose": "SQL execution",
+      "review": "safe parameterization"
+    },
+    {
+      "symbol": "read_csv",
+      "purpose": "CSV scan",
+      "review": "type inference"
+    },
+    {
+      "symbol": "read_parquet",
+      "purpose": "Parquet scan",
+      "review": "typed data, metadata limits"
+    },
+    {
+      "symbol": "COUNT(*)",
+      "purpose": "row count",
+      "review": "includes null measure rows"
+    },
+    {
+      "symbol": "COUNT(expr)",
+      "purpose": "non-null count",
+      "review": "null handling"
+    },
+    {
+      "symbol": "SUM(expr)",
+      "purpose": "aggregate",
+      "review": "all-null returns NULL"
+    },
+    {
+      "symbol": "COPY TO",
+      "purpose": "export",
+      "review": "rights and destination"
+    }
+  ]
+}
