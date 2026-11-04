@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-04",
+  "status": "source-linked reference, no upstream texts copied or packages executed",
+  "sources": [
+    {
+      "id": "JL-001",
+      "title": "Julia manual",
+      "url": "https://docs.julialang.org/en/v1/manual/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-002",
+      "title": "Julia missing",
+      "url": "https://docs.julialang.org/en/v1/manual/missing/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-003",
+      "title": "Julia string code units",
+      "url": "https://docs.julialang.org/en/v1/base/strings/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-004",
+      "title": "Dates standard library",
+      "url": "https://docs.julialang.org/en/v1/stdlib/Dates/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-005",
+      "title": "Statistics standard library",
+      "url": "https://docs.julialang.org/en/v1/stdlib/Statistics/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-006",
+      "title": "Pkg Project and Manifest",
+      "url": "https://pkgdocs.julialang.org/v1/toml-files/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-007",
+      "title": "Julia upstream releases",
+      "url": "https://julialang.org/downloads/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-008",
+      "title": "DataFrames docs",
+      "url": "https://dataframes.juliadata.org/stable/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-009",
+      "title": "DataFrames join behavior",
+      "url": "https://dataframes.juliadata.org/stable/man/joins/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-010",
+      "title": "CSV docs",
+      "url": "https://csv.juliadata.org/stable/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-011",
+      "title": "Tables docs",
+      "url": "https://tables.juliadata.org/stable/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-012",
+      "title": "ReadStatTables docs",
+      "url": "https://junyuan-chen.github.io/ReadStatTables.jl/stable/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-013",
+      "title": "ReadStatTables getting started and limitations",
+      "url": "https://junyuan-chen.github.io/ReadStatTables.jl/stable/man/getting-started/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-014",
+      "title": "Arrow Julia docs",
+      "url": "https://arrow.apache.org/julia/stable/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-015",
+      "title": "StatsModels",
+      "url": "https://juliastats.org/StatsModels.jl/stable/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-016",
+      "title": "GLM API",
+      "url": "https://juliastats.org/GLM.jl/stable/api/",
+      "source_kind": "official documentation or upstream project"
+    },
+    {
+      "id": "JL-017",
+      "title": "MixedModels upstream",
+      "url": "https://github.com/JuliaStats/MixedModels.jl",
+      "source_kind": "official documentation or upstream project"
+    }
+  ],
+  "release_observation": {
+    "stable": "1.13.3",
+    "lts": "1.10.13",
+    "source_id": "JL-007",
+    "not_enterprise_inventory": true
+  }
+}

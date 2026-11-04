@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-04",
+  "status": "candidate mapping only, no Julia test",
+  "julia_reference": "../../references/julia/INDEX.json",
+  "cases": [
+    {
+      "id": "STATE",
+      "sas_construct": "RETAIN, LAG, FIRST/LAST",
+      "julia_candidate": "Explicit Julia row loop/queue or verified grouped operation",
+      "evidence_path": "../../trials/state-filter-timing/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "FILTER",
+      "sas_construct": "WHERE versus subsetting IF",
+      "julia_candidate": "Pre-filter vs post-state conditional output",
+      "evidence_path": "../../trials/state-filter-timing/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "MERGE",
+      "sas_construct": "Match MERGE BY with duplicate keys",
+      "julia_candidate": "Ordered merge procedure; relational joins only when appropriate",
+      "evidence_path": "../../trials/state-boundaries/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "WIDTH",
+      "sas_construct": "LENGTH, SUBSTR, fixed char widths",
+      "julia_candidate": "Unicode strings and byte sidecar",
+      "evidence_path": "../../trials/state-boundaries/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "TAG",
+      "sas_construct": "Ordinary and tagged missings",
+      "julia_candidate": "missing plus independently captured positional tags",
+      "evidence_path": "../../trials/parquet-dual-path/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "DATE",
+      "sas_construct": "Date, datetime, INTCK and INTNX",
+      "julia_candidate": "Dates and explicit SAS epoch rules",
+      "evidence_path": "../../trials/parquet-dual-path/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "PROC-SQL",
+      "sas_construct": "SQL joins and aggregations",
+      "julia_candidate": "DataFrames joins and grouped reductions",
+      "evidence_path": "../../kb/convert/sas_to_duckdb.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "PROC-MEANS",
+      "sas_construct": "MEANS, SUMMARY, STD",
+      "julia_candidate": "Statistics with explicit missing and sample correction",
+      "evidence_path": "../../docs/TEST_PLAN.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "PROC-GLM",
+      "sas_construct": "REG, GLM, LOGISTIC",
+      "julia_candidate": "GLM and StatsModels, conditional on model validation",
+      "evidence_path": "../../docs/TEST_PLAN.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "PROC-MIXED",
+      "sas_construct": "Mixed effects, random effects",
+      "julia_candidate": "MixedModels, after inference/optimizer review",
+      "evidence_path": "../../docs/TEST_PLAN.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "MACRO",
+      "sas_construct": "%MACRO, %INCLUDE, CALL SYMPUT",
+      "julia_candidate": "Dependency inventory and explicit generation phases",
+      "evidence_path": "../../skills/sas-trace-dependencies/SKILL.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    },
+    {
+      "id": "READER",
+      "sas_construct": "Native SAS datasets and transport",
+      "julia_candidate": "ReadStatTables, original source and metadata sidecar",
+      "evidence_path": "../../trials/parquet-dual-path/README.md",
+      "disposition": "proposed; Julia and source SAS validation pending"
+    }
+  ]
+}
