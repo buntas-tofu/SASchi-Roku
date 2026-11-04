@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "frozen fixture identity at merged main before candidate execution",
+  "fixture_source_commit": "0721f317f976f17b2ded582fc101de4c587f4c3a",
+  "original_fixture_git_blobs": {
+    "customers.csv": "f3675310cc405407ecafca8a438c11b60c15b6c4",
+    "orders.csv": "e422f796a0eecea8dba779fede5c33cfc2b4d98d",
+    "expected.json": "ac2ef7d75ae451093ca5b8fcec0f42467441dbdb"
+  },
+  "oracle_owner": "references/python-libraries/fixtures/expected.json",
+  "acceptance": "exact ordered grouped rows plus independent negative controls",
+  "scope_limit": "8-row synthetic relational input, not native SAS or procedural state equivalence"
+}

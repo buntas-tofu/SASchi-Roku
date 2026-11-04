@@ -1,0 +1,94 @@
+name: Julia bounded fixture evaluation
+
+on:
+  pull_request:
+    paths:
+      - 'trials/julia-fixture/**'
+      - '.github/workflows/julia-fixture-evaluation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  julia-base:
+    name: Julia Base fixture and refusal controls
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Set up Julia 1.10.13 LTS
+        uses: julia-actions/setup-julia@fa02766e078afaaf09b14210362cee14137e6a32
+        with:
+          version: '1.10.13'
+      - name: Run Base Julia candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/julia-base"
+          julia --startup-file=no trials/julia-fixture/candidate_base.jl \
+            references/python-libraries/fixtures/customers.csv \
+            references/python-libraries/fixtures/orders.csv \
+            "$RUNNER_TEMP/julia-base/observed.tsv"
+          python3 trials/julia-fixture/verify.py "$RUNNER_TEMP/julia-base/observed.tsv" \
+            --receipt "$RUNNER_TEMP/julia-base/comparison.json"
+          python3 trials/julia-fixture/test_refusals.py julia \
+            trials/julia-fixture/candidate_base.jl
+          julia --version | tee "$RUNNER_TEMP/julia-base/julia-version.txt"
+          sha256sum "$RUNNER_TEMP/julia-base/observed.tsv" \
+            | tee "$RUNNER_TEMP/julia-base/hashes.txt"
+      - name: Retain bounded Base Julia evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: julia-base-fixture-evidence
+          path: ${{ runner.temp }}/julia-base
+          retention-days: 30
+
+  julia-dataframes:
+    name: Julia DataFrames and CSV fixture
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      JULIA_NUM_THREADS: '2'
+      JULIA_PKG_PRECOMPILE_AUTO: '0'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Set up Julia 1.10.13 LTS
+        uses: julia-actions/setup-julia@fa02766e078afaaf09b14210362cee14137e6a32
+        with:
+          version: '1.10.13'
+      - name: Install bounded trial dependencies only
+        shell: bash
+        run: |
+          set -euo pipefail
+          julia --startup-file=no --project=trials/julia-fixture -e \
+            'using Pkg; Pkg.instantiate(); Pkg.status()'
+      - name: Run DataFrames candidate and verify
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/julia-dataframes"
+          julia --startup-file=no --project=trials/julia-fixture \
+            trials/julia-fixture/candidate_dataframes.jl \
+            references/python-libraries/fixtures/customers.csv \
+            references/python-libraries/fixtures/orders.csv \
+            "$RUNNER_TEMP/julia-dataframes/observed.tsv"
+          python3 trials/julia-fixture/verify.py "$RUNNER_TEMP/julia-dataframes/observed.tsv" \
+            --receipt "$RUNNER_TEMP/julia-dataframes/comparison.json"
+          python3 trials/julia-fixture/test_refusals.py julia \
+            trials/julia-fixture/candidate_dataframes.jl --project trials/julia-fixture
+          julia --version | tee "$RUNNER_TEMP/julia-dataframes/julia-version.txt"
+          sha256sum trials/julia-fixture/Project.toml \
+            trials/julia-fixture/Manifest.toml \
+            "$RUNNER_TEMP/julia-dataframes/observed.tsv" \
+            | tee "$RUNNER_TEMP/julia-dataframes/hashes.txt"
+          cp trials/julia-fixture/Manifest.toml \
+            "$RUNNER_TEMP/julia-dataframes/Manifest.toml"
+      - name: Retain bounded DataFrames evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: julia-dataframes-fixture-evidence
+          path: ${{ runner.temp }}/julia-dataframes
+          retention-days: 30
