@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "saschi-roku-python-dependency-reference",
+  "reviewed_on": "2026-11-03",
+  "status": "candidate reference only",
+  "source_registry": "SOURCES.json",
+  "libraries": [
+    {
+      "id": "faker",
+      "distribution": "Faker",
+      "role": "synthetic test data",
+      "entry": "faker/README.md",
+      "api": "faker/api.json",
+      "source_ids": [
+        "FK-001",
+        "FK-002",
+        "FK-003"
+      ],
+      "enterprise_validation": "not performed by this integration"
+    },
+    {
+      "id": "numpy",
+      "distribution": "numpy",
+      "role": "typed arrays and numerical computation",
+      "entry": "numpy/README.md",
+      "api": "numpy/api.json",
+      "source_ids": [
+        "NP-001",
+        "NP-002",
+        "NP-003"
+      ],
+      "enterprise_validation": "not performed by this integration"
+    },
+    {
+      "id": "polars",
+      "distribution": "polars",
+      "role": "typed eager and lazy dataframe transformations",
+      "entry": "polars/README.md",
+      "api": "polars/api.json",
+      "source_ids": [
+        "PL-001",
+        "PL-002",
+        "PL-003"
+      ],
+      "enterprise_validation": "not performed by this integration"
+    },
+    {
+      "id": "duckdb",
+      "distribution": "duckdb",
+      "role": "embedded analytical SQL and Parquet access",
+      "entry": "duckdb/README.md",
+      "api": "duckdb/api.json",
+      "source_ids": [
+        "DB-001",
+        "DB-002",
+        "DB-003"
+      ],
+      "enterprise_validation": "not performed by this integration"
+    }
+  ],
+  "shared": [
+    "OPERATING_BOUNDARIES.md",
+    "docs/environment.md",
+    "docs/interoperability.md",
+    "docs/verification.md",
+    "fixtures/expected.json",
+    "TASKS.json",
+    "RISKS.json"
+  ],
+  "external_catalog": "../../catalog/resources.json",
+  "sas_guides": [
+    "../../kb/convert/sas_to_polars.md",
+    "../../kb/convert/sas_to_duckdb.md"
+  ]
+}

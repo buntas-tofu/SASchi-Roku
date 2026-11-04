@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "library": "faker",
+  "scope": "curated upstream-informed API navigation",
+  "source_ids": [
+    "FK-001",
+    "FK-002",
+    "FK-003"
+  ],
+  "apis": [
+    {
+      "symbol": "Faker(locale)",
+      "purpose": "set locale",
+      "review": "record locale and version"
+    },
+    {
+      "symbol": "seed_instance(seed)",
+      "purpose": "control one generator",
+      "review": "not cross-version golden output"
+    },
+    {
+      "symbol": "name()",
+      "purpose": "person-like text",
+      "review": "not an anonymity guarantee"
+    },
+    {
+      "symbol": "safe_email()",
+      "purpose": "test-only email",
+      "review": "never send to generated contacts"
+    },
+    {
+      "symbol": "date_between(start_date,end_date)",
+      "purpose": "bounded date",
+      "review": "fix bounds"
+    },
+    {
+      "symbol": "unique",
+      "purpose": "uniqueness pool",
+      "review": "finite pool can exhaust"
+    },
+    {
+      "symbol": "add_provider",
+      "purpose": "custom source",
+      "review": "review provider behavior"
+    }
+  ]
+}

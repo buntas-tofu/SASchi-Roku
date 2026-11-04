@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "candidate, not executed",
+  "tasks": [
+    {
+      "id": "inventory",
+      "goal": "record approved installed versions",
+      "reference": "docs/environment.md"
+    },
+    {
+      "id": "synthetic",
+      "goal": "generate controlled synthetic records with independent negative tests",
+      "reference": "faker/README.md"
+    },
+    {
+      "id": "numeric",
+      "goal": "typed cents and null mask",
+      "reference": "numpy/README.md"
+    },
+    {
+      "id": "frame",
+      "goal": "typed join and all-null group",
+      "reference": "polars/README.md"
+    },
+    {
+      "id": "sql",
+      "goal": "NULL-aware summary and explicit ordering",
+      "reference": "duckdb/README.md"
+    },
+    {
+      "id": "verify",
+      "goal": "compare against frozen independent oracle",
+      "reference": "docs/verification.md"
+    }
+  ]
+}

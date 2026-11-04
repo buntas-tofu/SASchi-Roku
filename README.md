@@ -13,6 +13,7 @@ MCP server is landed: an advisory knowledge layer over kb/, gated by CI.
 | Need | Entry point |
 |---|---|
 | Read the existing 56 Rosetta Code SAS programs | [Preserved reference collection](references/rosetta-code/README.md) |
+| Read Python dependency APIs and references | [Faker, NumPy, Polars and DuckDB](references/python-libraries/README.md) |
 | Assess a SAS program before migration | [SAS program assessment](skills/sas-assess/SKILL.md) |
 | Translate a bounded program to Python or R | [Translation with evidence](skills/sas-translate/SKILL.md) |
 | Move SAS datasets into Parquet | [Dataset interchange](skills/sas-to-parquet/SKILL.md) |
@@ -30,6 +31,7 @@ MCP server is landed: an advisory knowledge layer over kb/, gated by CI.
 | Path | Owns |
 |---|---|
 | `references/rosetta-code/` | SAS files, task indexes, collection documentation and attribution |
+| `references/python-libraries/` | Independent Python library documentation, JSON indexes and synthetic fixtures |
 | `skills/` | Individually usable agent workflow instructions and focused references |
 | `kb/` | The layered knowledge base: stamped canonical copies (rulebook, capability, semantics, census, evidence), the harvested SAS 9.4 reference (148 page-pinned entries), landmine cards, conversion guides, research |
 | `mcp/` | The advisory MCP server subproject (`sas-ref-mcp`): twelve tools, nine resources, three prompts |

@@ -517,3 +517,16 @@ is now directly confirmed, and PR 10 no longer depends on its feature branch.
 The final merge result and refreshed check outcomes are recorded on
 [PR 10](https://github.com/buntas-tofu/SASchi-Roku/pull/10). The authorized merge
 uses the checked branch revision after its complete governance suite succeeds.
+
+## Python dependency reference shelf proposed, 2026-11-03
+
+Status: documentation-only branch prepared for maintainer review, not merged or
+certified against a managed client or live SAS. The principal authorized the
+separate Faker, NumPy, Polars and DuckDB reference shelf. Decision 0004 records
+that boundary. The new shelf includes linked API documentation, a first-party
+machine index, source registry, agent guidelines and an independent static fixture.
+
+No existing stamped KB files, external discovery catalog records, SAS corpus,
+trial receipts, gates or MCP endpoints change. Standalone executable examples
+remain outside this public landing pending the existing original-software
+licensing decision. Hosted CI and merge results must be checked separately.

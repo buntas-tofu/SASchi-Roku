@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-03",
+  "authority": "official source links, not installed package versions or redistributed upstream docs",
+  "seed_reference_kits": [
+    {
+      "name": "Faker Machine Reference Kit",
+      "edition": "1.0.0",
+      "compiled_on": "2026-11-02",
+      "status": "candidate prior artifact"
+    },
+    {
+      "name": "SASchi-Roku Python Reference Set",
+      "edition": "1.0.0",
+      "compiled_on": "2026-11-02",
+      "status": "candidate prior artifact"
+    }
+  ],
+  "sources": [
+    {
+      "id": "FK-001",
+      "library": "faker",
+      "url": "https://faker.readthedocs.io/en/master/",
+      "kind": "official source"
+    },
+    {
+      "id": "FK-002",
+      "library": "faker",
+      "url": "https://github.com/joke2k/faker",
+      "kind": "official source"
+    },
+    {
+      "id": "FK-003",
+      "library": "faker",
+      "url": "https://pypi.org/project/Faker/",
+      "kind": "official source"
+    },
+    {
+      "id": "NP-001",
+      "library": "numpy",
+      "url": "https://numpy.org/doc/stable/",
+      "kind": "official source"
+    },
+    {
+      "id": "NP-002",
+      "library": "numpy",
+      "url": "https://numpy.org/doc/stable/reference/",
+      "kind": "official source"
+    },
+    {
+      "id": "NP-003",
+      "library": "numpy",
+      "url": "https://numpy.org/doc/stable/reference/random/generator.html",
+      "kind": "official source"
+    },
+    {
+      "id": "PL-001",
+      "library": "polars",
+      "url": "https://docs.pola.rs/user-guide/",
+      "kind": "official source"
+    },
+    {
+      "id": "PL-002",
+      "library": "polars",
+      "url": "https://docs.pola.rs/api/python/stable/reference/",
+      "kind": "official source"
+    },
+    {
+      "id": "PL-003",
+      "library": "polars",
+      "url": "https://docs.pola.rs/user-guide/lazy/schemas/",
+      "kind": "official source"
+    },
+    {
+      "id": "DB-001",
+      "library": "duckdb",
+      "url": "https://duckdb.org/docs/stable/clients/python/overview",
+      "kind": "official source"
+    },
+    {
+      "id": "DB-002",
+      "library": "duckdb",
+      "url": "https://duckdb.org/docs/stable/sql/functions/aggregates",
+      "kind": "official source"
+    },
+    {
+      "id": "DB-003",
+      "library": "duckdb",
+      "url": "https://duckdb.org/docs/stable/data/csv/overview",
+      "kind": "official source"
+    }
+  ]
+}
