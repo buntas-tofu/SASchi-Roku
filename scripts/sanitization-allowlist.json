@@ -1,11 +1,5 @@
 [
   {
-    "path": "^archive/AGENTS\\.md$",
-    "pattern": "\\bsaschi\\b",
-    "reason": "imported nested contract kept verbatim as provenance (ledger M3); the sentence describes the source-lane topology of the imported tree",
-    "ruling": "operator ruling 2026-11-01 (D1/D3, whole-tree verbatim imports)"
-  },
-  {
     "path": "^tools/sync_knowledge\\.py$",
     "pattern": "\\bsaschi\\b",
     "reason": "the sync pointer names the canonical source repository by design (design doc section 5)",
@@ -42,5 +36,11 @@
     "sha256": "da999e1e82759c319fa51ca39c221c72e0bf3637bfacf303e2043abb861e949e",
     "reason": "FROZEN TRIAL INPUT: one historical citation in the exact evaluated packet, retained with a content hash so edits lose the exception. No permission to copy private material is implied.",
     "ruling": "Principal authorized completing the proposed PR 5 governance resolution on 2026-11-02; exact-file, hash-bound preservation is the recorded engineering choice in decision 0003."
+  },
+  {
+    "path": "^skills/(sas-conversion|sas-kb-maintenance)/SKILL\\.md$",
+    "pattern": "^\\s*(?:author|written by)\\s*:\\s*[A-Z][a-z]+(?:\\s+[A-Z]\\.?)?\\s+[A-Z][a-z]+",
+    "reason": "SUBJECT MATTER: the skill frontmatter's author line names this instance's principal and the agent that co-authored the skill. The name is the public lane's identity by design, not a third party's.",
+    "ruling": "operator ruling 2026-11-10: personal-identifier class added; principal bylines declared"
   }
 ]
