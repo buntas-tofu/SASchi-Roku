@@ -1,0 +1,34 @@
+# Line endings are a build input, not a preference.
+#
+# The fixture gates pin sha256 over file BYTES, and the run receipt records
+# source_sha256 over every tracked file. Git for Windows defaults
+# core.autocrlf=true, so a plain checkout lands CRLF, git reports a clean
+# status, and the same commit then hashes differently from the Linux receipt.
+# These rules override that default for every clone on every platform.
+* text=auto eol=lf
+*.sas text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.sas7bdat binary
+*.7bdat binary
+*.deb binary
+*.whl binary
+*.gz binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# FROZEN BYTES. Evidence, receipts and stamps are sha256-pinned, and a pinned
+# receipt records what was measured at the time it was measured. Renormalizing
+# one would invalidate the pin that cites it, so these paths take no end-of-line
+# conversion at all: -text leaves every byte exactly as committed, on every
+# platform, including the files that already carry CRLF or mixed endings.
+# Measured 2026-11-25: 132 pinned files, 446 sha256 cross-references, all of
+# them under the paths below. Operator ruling 2026-11-25: exempt, do not lift.
+trials/** -text
+kb/census/macro_surface_census.csv -text
+references/rosetta-code/TASKS.csv -text
