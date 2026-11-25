@@ -1194,7 +1194,7 @@
      "valid_in": ""
     }
    },
-   "pdf_sha256": "b6e04675b26a5f8882816c939d1f76e06199627a617377640a4beb09dd4fdb11"
+   "pdf_sha256": "7af0304c565186391b072b9a71faec6c71aa0fde289d7c1313bfe8aeb8d61aa1"
   }
  },
  "generated_by": "tools/fetch_sas_reference.py"

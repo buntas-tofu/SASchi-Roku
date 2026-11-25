@@ -9,7 +9,7 @@ Statements: Reference
 
 
                  SAS® Documentation
-                         June 15, 2026
+                     November 16, 2026
 The correct bibliographic citation for this manual is as follows: SAS Institute Inc. 2016. SAS® 9.4 DATA Step Statements: Reference. Cary, NC:
 SAS Institute Inc.
 SAS® 9.4 DATA Step Statements: Reference
@@ -31,7 +31,7 @@ as set out in FAR 52.227-19 (DEC 2007). If FAR 52.227-19 is applicable, this pro
 notice is required to be affixed to the Software or documentation. The Government’s rights in Software and documentation shall be only
 those set forth in this Agreement.
 SAS Institute Inc., SAS Campus Drive, Cary, NC 27513-2414
-June 2026
+November 2026
 SAS® and all other SAS Institute Inc. product or service names are registered trademarks or trademarks of SAS Institute Inc. in the USA and
 other countries. ® indicates USA registration.
 Other brand and product names are trademarks of their respective companies.
@@ -4682,7 +4682,7 @@ Requirement:     You must specify the PGM= option in the DATA step.
                  Statements:
                  n “DATA Statement” on page 49
                  n “DESCRIBE Statement” on page 66
-                                                                                    FILE Statement     85
+                                                                                    FILE Statement    85
 
 
 
@@ -4698,6 +4698,10 @@ Restriction:     When SAS is in a locked-down state, the FILENAME statement is n
                  files that are not in the locked-down path list. For more information, see “SAS
                  Processing Restrictions for Servers in a Locked-Down State” in SAS Language
                  Reference: Concepts.
+Note:            The options specified in FILE statements accumulate. If you have multiple FILE
+                 statements, options that are specified for one applies to the others. For example, if
+                 you use the MOD option on one FILE Statement, it will apply to the other FILE
+                 statements in the same DATA Step.
 See:             FILE Statement under Windows, UNIX, and z/OS
 
 
@@ -4728,13 +4732,13 @@ See:             FILE Statement under Windows, UNIX, and z/OS
                         Requirement   You must have associated fileref with an external file in a
                                       FILENAME statement or function in a previous step or in an
                                       appropriate operating environment command. The only way to
-                                      assign fileref at run time is to use the FILEVAR= option in the
-                                      FILE statement.
-
-                        Note          If your fileref is associated with the EMAIL access method,
-                                      additional options are available for the FILE statement. For a
 86 Chapter 2 / Dictionary of SAS DATA Step Statements
 
+                                       assign fileref at run time is to use the FILEVAR= option in the
+                                       FILE statement.
+
+                        Note           If your fileref is associated with the EMAIL access method,
+                                       additional options are available for the FILE statement. For a
                                        complete list of options, see “FILENAME Statement: EMAIL
                                        (SMTP) Access Method” on page 109.
 
@@ -4783,14 +4787,14 @@ See:             FILE Statement under Windows, UNIX, and z/OS
 
                         Restriction       This argument is not supported in a DATA step that runs in
                                           CAS.
-
-                        Interaction       When you write to a file, the value of the N= option must be
-                                          either 1 or PAGESIZE.
-
-                        Operating         The carriage-control characters that are written to a file can
-                        environment       be specific to the operating environment. For more
                                                                         FILE Statement       87
 
+
+         Interaction       When you write to a file, the value of the N= option must be
+                           either 1 or PAGESIZE.
+
+         Operating         The carriage-control characters that are written to a file can
+         environment       be specific to the operating environment. For more
                            information, see the SAS documentation for your operating
                            environment.
 
@@ -4840,12 +4844,12 @@ device-type
       specifies the CLIPBOARD access method.
 
          Restriction   This argument is not supported in a DATA step that runs in CAS.
-
-         Interaction   If the DATA step does not recognize the access method option,
-                       the DATA step passes the option to the access method for
-                       handling.
 88 Chapter 2 / Dictionary of SAS DATA Step Statements
 
+
+                        Interaction   If the DATA step does not recognize the access method option,
+                                      the DATA step passes the option to the access method for
+                                      handling.
 
                         See           For a complete list of options that are available with the
                                       CLIPBOARD access method, see “FILENAME Statement:
@@ -4898,12 +4902,11 @@ device-type
                         See           For a complete list of options that are available with the Hadoop
                                       access method, see “FILENAME Statement: Hadoop Access
                                       Method” on page 110.
-
-                     GTERM
-                       indicates that the output device type is a graphics device that receives
-                       graphics data.
                                                                   FILE Statement   89
 
+GTERM
+  indicates that the output device type is a graphics device that receives
+  graphics data.
 
    Restriction   This argument is not supported in a DATA step that runs in CAS.
 
@@ -4957,11 +4960,10 @@ SOCKET
    See           For a complete list of options that are available with the
                  SOCKET access method, see “FILENAME Statement: SOCKET
                  Access Method” on page 110.
-
-TAPE
-  specifies a tape drive.
 90 Chapter 2 / Dictionary of SAS DATA Step Statements
 
+                     TAPE
+                       specifies a tape drive.
 
                         Restriction    This argument is not supported in a DATA step that runs in CAS.
 
